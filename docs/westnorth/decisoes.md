@@ -122,4 +122,5 @@ entradas antigas (se mudar, criar nova entrada que substitui a anterior).
 - [x] D3: repo público (feito pelo dono em 2026-11-27).
 - [ ] Apagar o ramo `debug-release-perms` no GitHub (sobra de um teste; o ambiente do agente não consegue apagar ramos).
 - [ ] D29: a regra de troca de classe está boa? (vila/castelo, custa o turno)
+- [ ] Sprites (`plano-sprites.md`, seção 4): zoom inicial no celular (recomendado 108 = 1,5×), direção de arte das classes (recomendado: estilo tático com cabeça maior) e ferramenta/validador no desktop.
 - [ ] Instalar o APK do release `nightly` no A06 e anotar o que achar (pode ser em issue ou comentário no PR já mergeado).
