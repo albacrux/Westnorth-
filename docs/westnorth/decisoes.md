@@ -44,6 +44,14 @@ entradas antigas (se mudar, criar nova entrada que substitui a anterior).
 | D20 | Itens raros de Menu e Ações vão para um submenu "Mais..." (conquistas, estatísticas, replays, salvar mapa, log de conversa / planejamento, melhores movimentos, falar, rótulos, comando) | Linhas de ~53 px; com 19 itens o menu não caberia em 720 px | Agente |
 | D21 | Tradução pt-BR de strings novas do fork vai direto em `po/*/pt_BR.po` | O fork não sincroniza `.pot` com o upstream; simples e reversível | Agente |
 
+## 2026-11-27 — Correção do UI-2 e traduções
+
+| # | Decisão | Motivo | Quem |
+|---|---|---|---|
+| D22 | Botões de 72 px só na definição nova `touch` (Atacar, Cálculo de Dano, Cancelar, Recrutar); `default`/`large`/`transparent` voltam ao tamanho do upstream | Aplicar em todos os botões fazia a tela inicial não caber em 720 px e o jogo fechava ao abrir (regressão do UI-2, nunca chegou a um APK publicado) | Agente |
+| D23 | Smoke test `utils/westnorth/smoke_1600x720.sh` no CI | Pega layouts que não cabem na tela do A06 | Agente |
+| D24 | `wesnoth-lib` pt-BR 100% traduzido (188 textos: 88 sem tradução + 100 "fuzzy", que o jogo ignorava) | Itens do brief ("Show Topics", "Tip of the Day", "About") e outros textos em inglês ou com tradução errada | Agente |
+
 ## Pendências do dono
 
 - [x] D3: repo público (feito pelo dono em 2026-11-27).

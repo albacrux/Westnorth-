@@ -16,6 +16,7 @@
 #   key KEYSYM       e.g. Return, Escape, ctrl+r
 #   shot NAME        save OUTDIR/NAME.png
 # Without a script it waits 25 s and saves OUTDIR/screen.png.
+# Env: WESTNORTH_GUI_THEME=celes|default (UI theme), WESTNORTH_TIPS=yes (title tips).
 #
 # Example:
 #   utils/westnorth/screenshot.sh out -- -c The_Rise_of_Wesnoth --campaign-skip-story
@@ -65,7 +66,8 @@ yresolution=720
 sound=no
 music=no
 turbo=yes
-show_tip_of_day=no
+show_tip_of_day=${WESTNORTH_TIPS:-no}
+gui2_theme="${WESTNORTH_GUI_THEME:-}"
 EOF
 "$bin" --nobanner --no-log-to-file --userdata-dir "$userdata" -r 1600x720 --windowed \
 	--nosound --nomusic "$@" >"$outdir/game.log" 2>&1 &
@@ -82,6 +84,7 @@ shot() { move_window; import -window root "$outdir/$1.png"; echo "saved $outdir/
 
 if [ -z "$script" ]; then
 	sleep 25
+	kill -0 "$game_pid" 2>/dev/null || { echo "game exited, see $outdir/game.log" >&2; exit 1; }
 	shot screen
 	exit 0
 fi

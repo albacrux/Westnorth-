@@ -85,6 +85,12 @@ jobs:
             output=$(./wesnoth --nobanner --"$opt"-path)
             [ -n "$output" ] || { echo "--$opt-path prints nothing" >&2; exit 1; }
           done
+      - name: Smoke test at 1600x720 (Galaxy A06 screen)
+        if: success() || steps.build.outcome == 'success'
+        run: |
+          apt-get update -qq && apt-get install -y -qq xdotool imagemagick > /dev/null
+          export XDG_RUNTIME_DIR=$(mktemp -d)
+          utils/westnorth/smoke_1600x720.sh ./wesnoth
       - name: Run unit tests
         if: success() || steps.build.outcome == 'success'
         run: ./run_boost_tests
