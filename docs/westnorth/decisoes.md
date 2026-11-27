@@ -100,6 +100,7 @@ entradas antigas (se mudar, criar nova entrada que substitui a anterior).
 | D39 | Recrutar/Lista de Unidades: o painel da esquerda mostra o tipo grande e o nome pequeno embaixo; HP/XP/MP em tamanho normal (não "small"); colunas da lista na ordem Tipo, Nv, HP, Movimentos, XP, Nome, Características | Mesma hierarquia (D37). Efeito colateral aceito: no diálogo de depuração "criar unidade" a coluna de raça aparece antes do tipo | Agente |
 | D40 | Menu de toque longo: descrição da unidade antes da do terreno; "Renomear Unidade" sai (fica na Lista de Unidades); rótulos de mapa ficam no fim com nome claro ("Rótulo no Mapa", "Apagar Rótulos" em vez de "Definir Nome"/"Apagar Nomes") | O menu de contexto é o atalho mais usado no toque; "Definir Nome" parecia renomear a unidade | Agente |
 | D41 | Tabela de Estatísticas com os números (ouro, aldeias, unidades, manutenção, receita) no tamanho normal; escolhas das falas ([message] com [option]) com linhas de ~72 px no Android | A tabela passou a guardar o que saiu da barra superior (D37) e tinha os números menores que o nome do líder; as escolhas tinham ~38 px de altura, abaixo do alvo de toque | Agente |
+| D42 | Tema Celes com os mesmos tamanhos de toque do default: definição `touch` (72 px nos botões principais) e botões comuns de 44/48 px no Android. Substitui a ressalva do D36 | O Celes não tinha a definição `touch`, então Atacar/Recrutar/Cancelar ficavam pequenos nesse tema | Agente |
 
 ## Pendências do dono
 

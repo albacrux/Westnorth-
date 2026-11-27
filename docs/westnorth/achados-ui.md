@@ -72,8 +72,11 @@ regras do layout de celular). Documentos detalhados: `diagnostico-toque.md` (eve
   com 44 px só no Android.
 - Diálogo de ataque com fontes de Android: com botões em duas linhas, a segunda arma
   ficava atrás de rolagem; agora uma linha só (#19).
+- Uma definição de widget que não existe num tema (ex.: `touch` no Celes) cai em
+  silêncio na `default` daquele tema; nada no log. Ao criar definição nova no tema
+  default, crie também no Celes.
 - Diálogos verificados no modo Android (cabem): tela inicial, ataque, recrutar, menu,
-  carregar, salvar, sair, ajuda. O tema Celes ainda usa botões pequenos.
+  carregar, salvar, sair, ajuda. O tema Celes tem as mesmas definições de toque (#29).
 
 ## 5. Toque
 
