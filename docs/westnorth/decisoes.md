@@ -59,8 +59,18 @@ entradas antigas (se mudar, criar nova entrada que substitui a anterior).
 | D25 | Botões "Desfazer" e "Próxima" (84x76 px) no painel lateral, logo acima do "Terminar Turno" | Brief: Desfazer sempre visível depois de mover; o canto inferior direito é onde o polegar já está. O tema desabilita o botão quando a ação não está disponível | Agente |
 | D26 | Zoom: nenhuma mudança por enquanto; diagnóstico em `diagnostico-zoom.md` | O ambiente de teste mostra hexes pretos com zoom diferente de 1x, com ou sem as correções. Sem o aparelho não dá para separar bug do jogo de artefato do Mesa | Agente |
 
+## 2026-11-27 — M2/M4: classes (rodada 1)
+
+| # | Decisão | Motivo | Quem |
+|---|---|---|---|
+| D27 | Conteúdo do fork em `data/westnorth/`, carregado por `data/_main.cfg`, com textos escritos direto em pt-BR | Vai no pacote `patch` (sem APK novo) e evita a infraestrutura de tradução enquanto o projeto é pessoal. Tradução para outros idiomas fica para depois (`.po` do domínio `wesnoth-westnorth`) | Agente |
+| D28 | Classes herdam arte e animações do upstream com `[base_unit]` até existirem sprites próprios | Permite jogar e balancear já; os sprites vêm do desktop do dono (M6) | Agente |
+| D29 | **Troca de classe** só em vila ou castelo, custa o resto do turno, não é permitida depois de atacar, mantém nível, experiência (abaixo do máximo), traços e proporção de vida | Era decisão em aberto no roadmap ("livre, só em cidade, ou custo"). Escolhi a opção que cria decisão tática sem burocracia. **Pendente de validação do dono** | Agente |
+| D30 | Facções do protótipo: Ordem da Coroa (Escudeiro, Cavaleiro, Arqueiro, Mago Branco) e Companhia Sombria (Ladino, Mago Negro, Arqueiro, Escudeiro) | Duas facções mínimas pedidas no M2, com estilos opostos (linha firme × infiltração/magia) | Agente |
+
 ## Pendências do dono
 
 - [x] D3: repo público (feito pelo dono em 2026-11-27).
 - [ ] Apagar o ramo `debug-release-perms` no GitHub (sobra de um teste; o ambiente do agente não consegue apagar ramos).
+- [ ] D29: a regra de troca de classe está boa? (vila/castelo, custa o turno)
 - [ ] Instalar o APK do release `nightly` no A06 e anotar o que achar (pode ser em issue ou comentário no PR já mergeado).
