@@ -116,6 +116,7 @@ entradas antigas (se mudar, criar nova entrada que substitui a anterior).
 | D50 | Etapa 2: diálogo de ataque em tela cheia no formato "duelo" — retratos grandes, nível/alinhamento/bônus/defesa, **HP atual → esperado** com barra, lista de armas no centro e chances de **derrotar** e de **morrer** (da simulação de combate que o "Cálculo de Dano" já usa). Os painéis de pré-visualização com botão "Perfil" saem | Protótipo `2-ataque.jpg`; as duas chances e o HP esperado eram a informação que faltava para decidir o ataque no celular | Agente |
 | D51 | Etapa 3: Recrutar numa janela própria (`westnorth_recruit`, mesmo C++ do diálogo de unidades) em tela cheia com **grade de cartões** (arte 144 px, nome, custo; sem ouro → cinza), detalhes da escolhida ao lado. Recrutar e Convocar também no menu ☰ do tema Westnorth | Protótipo `3-recrutar.jpg`. Pendências: papel da classe no cartão e retrato grande no painel de detalhes | Agente |
 | D52 | Zoom com dois dedos implementado a partir dos eventos de dedo (não dos eventos de pinça do SDL 3.4, que dependem do backend); um nível de zoom por 25% de variação da distância; centrado na tela | Pedido do dono; funciona igual em qualquer aparelho e é testável por teste unitário | Agente |
+| D53 | Etapa 4: escolha de evolução em tela cheia com um cartão por caminho, lado a lado (retrato, nome, HP/MP/XP, armas, habilidades); o painel de detalhes antigo sai. Ainda sem o "antes → depois" do protótipo (o diálogo não recebe a unidade original) | Protótipo `4-evolucao.jpg` | Agente |
 
 ## Pendências do dono
 
