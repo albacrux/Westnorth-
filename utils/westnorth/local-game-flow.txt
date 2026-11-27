@@ -1,0 +1,13 @@
+# Westnorth: title > Multiplayer > Local game > Create Game > side setup (no scenario argument)
+sleep 25
+click 1350 200
+sleep 3
+shot mp1
+click 1050 480
+sleep 1
+key Return
+sleep 6
+shot create
+click 1160 679
+sleep 5
+shot staging

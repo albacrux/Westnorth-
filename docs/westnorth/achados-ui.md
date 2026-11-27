@@ -75,6 +75,13 @@ regras do layout de celular). Documentos detalhados: `diagnostico-toque.md` (eve
 - Uma definição de widget que não existe num tema (ex.: `touch` no Celes) cai em
   silêncio na `default` daquele tema; nada no log. Ao criar definição nova no tema
   default, crie também no Celes.
+- "Criar Jogo" (`mp_create_game`): tem layout `default` (≥1200x700) e `tiny` (800x600).
+  No A06 vale o `default`; a largura estourava por causa dos nomes das abas. O `tiny`
+  com fontes de Android estoura na altura (descrição do mapa não encolhe). O log
+  "Failed to fit horizontal list…" aparece nos dois casos e não indica o problema:
+  confira a captura (`utils/westnorth/local-game-flow.txt`). O smoke test não abre essa tela.
+- `.po` com a entrada só como obsoleta (`#~`): o texto aparece em inglês no jogo. Tabelas
+  `<domínio>-new.py` reativam (o script remove a cópia obsoleta antes de acrescentar).
 - Diálogos verificados no modo Android (cabem): tela inicial, ataque, recrutar, menu,
   carregar, salvar, sair, ajuda. O tema Celes tem as mesmas definições de toque (#29).
 

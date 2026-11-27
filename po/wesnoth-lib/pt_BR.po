@@ -8974,16 +8974,14 @@ msgstr "Ações Bônus"
 msgid "Time for each attack, recruit, and capture"
 msgstr "Tempo para cada ataque, recrutamento e captura"
 
-#
 # File: data/gui/default/window/formula_debugger.cfg, line: 94
 # File: data/gui/default/window/formula_debugger.cfg, line: 94
 # File: data/gui/default/window/formula_debugger.cfg, line: 94
 #. [widget]: id=tab_label
 #: data/gui/themes/default/dialogs/mp_create_game.cfg:577
 msgid "Custom Options"
-msgstr "Opções Personalizadas"
+msgstr "Opções"
 
-#
 # File: data/gui/default/window/editor_generate_map.cfg, line: 86
 # File: data/gui/default/window/editor_generate_map.cfg, line: 87
 # File: data/gui/default/window/editor_generate_map.cfg, line: 86
@@ -8993,7 +8991,7 @@ msgstr "Opções Personalizadas"
 #. [widget]: id=tab_label
 #: data/gui/themes/default/dialogs/mp_create_game.cfg:590
 msgid "Game Settings"
-msgstr "Preferências do Jogo"
+msgstr "Ajustes"
 
 #. [slider]: id=num_players
 #: data/gui/themes/default/dialogs/mp_create_game.cfg:733

@@ -36,6 +36,23 @@ def entry_spans(lines):
     return spans
 
 
+def drop_obsolete(lines, msgid):
+    """Removes the obsolete ("#~") entry for a single-line msgid, if any."""
+    marker = "#~ msgid " + polib.escape(msgid).join('""')
+    if marker not in lines:
+        return
+    i = lines.index(marker)
+    start = i
+    while start > 0 and lines[start - 1].startswith("#"):
+        start -= 1
+    end = i
+    while end + 1 < len(lines) and lines[end + 1].startswith("#~"):
+        end += 1
+    if end + 1 < len(lines) and lines[end + 1] == "":
+        end += 1
+    del lines[start:end + 1]
+
+
 def main():
     check_only = "--check" in sys.argv
     missing = 0
@@ -51,13 +68,20 @@ def main():
         by_id = {e.msgid: e for e in po if not e.obsolete}
         with open(po_path, encoding="utf-8") as f:
             lines = f.read().split("\n")
+        if path.endswith("-new.py"):
+            # An obsolete copy of a string we append would be a duplicate for
+            # msgfmt; drop it before the line spans below are computed.
+            for msgid in table:
+                if msgid not in by_id:
+                    drop_obsolete(lines, msgid)
         spans = entry_spans(lines)
         replacements = {}
         appended = 0
         for msgid, msgstr in table.items():
             entry = by_id.get(msgid)
             if entry is None and path.endswith("-new.py"):
-                # Strings that only exist in the fork: append them to the .po.
+                # Strings that only exist in the fork (or that the .po only has as
+                # an obsolete "#~" entry): append them to the .po.
                 entry = polib.POEntry(msgid=msgid, msgstr=msgstr,
                                       comment="Westnorth: string added by the fork")
                 lines.extend(entry.__unicode__(wrapwidth=79).split("\n"))
