@@ -13541,7 +13541,7 @@ msgstr[1] "usa $num ataques"
 #: src/gui/widgets/unit_preview_pane.cpp:458
 #: src/gui/widgets/unit_preview_pane.cpp:490
 msgid "Lvl $lvl"
-msgstr "Lvl $lvl"
+msgstr "Nv $lvl"
 
 #: src/gui/widgets/unit_preview_pane.cpp:356
 #: src/gui/widgets/unit_preview_pane.cpp:369
@@ -17249,3 +17249,15 @@ msgstr "Na seção ‘[$section|]’, falta a subtag obrigatória ‘[$tag|]’.
 # File: src/game_preferences_display.cpp, line: 393
 #~ msgid "Add this username to your ignores list"
 #~ msgstr "Adiciona este nome à sua lista de ignorados"
+
+#. Westnorth: string added by the fork
+msgid "attack^Defense"
+msgstr "Defesa"
+
+#. Westnorth: string added by the fork
+msgid "attack^Defeat the enemy"
+msgstr "Derrotar o inimigo"
+
+#. Westnorth: string added by the fork
+msgid "attack^Your unit dies"
+msgstr "Sua unidade morrer"

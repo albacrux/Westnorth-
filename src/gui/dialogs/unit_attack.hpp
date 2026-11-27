@@ -47,6 +47,11 @@ private:
 
 	void damage_calc_callback();
 
+	// Westnorth: fill the "duel" layout (see unit_attack.cfg): the sides once,
+	// the expected HP and the odds whenever another weapon is selected.
+	void fill_side(const std::string& side, const unit& u, bool mirror);
+	void update_forecast();
+
 	/** The index of the selected weapon. */
 	int selected_weapon_;
 

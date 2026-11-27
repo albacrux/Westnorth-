@@ -58,6 +58,8 @@ save(card, hud + "card.png")
 save(rounded((250, 18), 4, (0, 0, 0, 160), (213, 213, 213, 160), hilite=False), hud + "bar18-bg.png")
 save(Image.new("RGBA", (248, 16), (255, 255, 255, 255)), hud + "bar18-fill.png")
 save(rounded((250, 8), 3, (0, 0, 0, 160), (213, 213, 213, 140), hilite=False), hud + "bar8-bg.png")
+save(rounded((320, 22), 5, (0, 0, 0, 160), (213, 213, 213, 160), hilite=False), hud + "bar22-bg.png")
+save(Image.new("RGBA", (318, 20), (255, 255, 255, 255)), hud + "bar22-fill.png")
 save(Image.new("RGBA", (248, 6), (255, 255, 255, 255)), hud + "bar8-fill.png")
 
 # Buttons: GUI1 needs <name>.png, -active, -pressed, -active-pressed.

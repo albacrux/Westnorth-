@@ -1,0 +1,14 @@
+# Westnorth: attack dialog with the phone HUD theme (touch-emulation build; WESTNORTH_THEME=Westnorth) on: wesnoth -t westnorth_touch
+sleep 30
+tap 1200 650
+sleep 1
+tap 710 410
+sleep 1
+tap 880 380
+sleep 1
+tap 880 380
+sleep 3
+shot attack
+click 800 330
+sleep 2
+shot ranged

@@ -7,4 +7,6 @@ T = {
 # tabs of the Create Game dialog: the long names did not fit the phone screen
 "Custom Options": "Opções",
 "Game Settings": "Ajustes",
+# "Nv" is the abbreviation used elsewhere in the Portuguese UI
+"Lvl $lvl": "Nv $lvl",
 }
