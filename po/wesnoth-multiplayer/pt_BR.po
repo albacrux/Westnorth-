@@ -3264,9 +3264,6 @@ msgstr ""
 #~ "neste mapa free for all para 4 jogadores. Funciona bem como um mapa 2 x 2 "
 #~ "também. Há 36 aldeias."
 
-#~ msgid "Random"
-#~ msgstr "Aleatório"
-
 #~ msgid "Wesnoth Benchmark: AI"
 #~ msgstr "Benchmark para Wesnoth: AI"
 
@@ -3318,3 +3315,7 @@ msgstr ""
 #~| msgid "Random map"
 #~ msgid "Random map by YAMG"
 #~ msgstr "Mapa aleatório"
+
+#. Westnorth: string added by the fork
+msgid "Random"
+msgstr "Aleatória"
