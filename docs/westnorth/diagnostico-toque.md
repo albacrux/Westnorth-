@@ -93,6 +93,20 @@ mantém a seleção, 8 toque longo abre o menu e mantém a seleção).
 Limitação da emulação: no X11 o ponteiro continua "pairando" sobre o mapa, então
 a captura 7 mostra uma prévia de caminho que não aparece no aparelho. Conferir no A06.
 
+## Coordenadas dos eventos de dedo (SDL3)
+
+`events.cpp` chama `SDL_ConvertEventToRenderCoordinates` em todo evento. No SDL3 isso
+transforma a posição dos eventos de dedo (`tfinger.x/y/dx/dy`) de fração da janela
+(0 a 1) em **pixels**. Todo o código do Wesnoth que lê esses eventos (handler da GUI2,
+rolagem por arrasto em `scrollarea.cpp`, a emulação) ainda espera a fração do SDL2 e
+multiplica pelo tamanho da tela de novo. No aparelho, isso joga os toques da GUI2 para
+fora da tela (ex.: listas que não rolam com o dedo). A emulação não mostra o problema
+porque cria os eventos de dedo já como fração.
+
+Correção do fork: logo depois da conversão, os eventos de dedo voltam a ser fração da
+tela do jogo. Não dá para testar no Xvfb (sem toque real): **conferir no A06** se as
+listas (recrutar, carregar jogo, ajuda) rolam arrastando o dedo.
+
 ## Ainda não coberto (próximos ciclos)
 
 - Marcar visualmente os inimigos atacáveis ao selecionar (UI-4, com o cartão da unidade).
