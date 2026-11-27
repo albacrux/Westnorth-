@@ -518,6 +518,7 @@ theme::menu::menu()
 	, image_()
 	, overlay_()
 	, items_()
+	, font_size_(0)
 {
 }
 
@@ -530,6 +531,7 @@ theme::menu::menu(std::size_t sw, std::size_t sh, const config& cfg)
 	, image_(cfg["image"])
 	, overlay_(cfg["overlay"])
 	, items_()
+	, font_size_(cfg["font_size"].to_int(0))
 {
 	for(const auto& item : utils::split(cfg["items"])) {
 		items_.emplace_back("id", item);
@@ -554,6 +556,7 @@ theme::action::action()
 	, overlay_()
 	, type_()
 	, items_()
+	, font_size_(0)
 {
 }
 
@@ -568,6 +571,7 @@ theme::action::action(std::size_t sw, std::size_t sh, const config& cfg)
 	, overlay_(cfg["overlay"])
 	, type_(cfg["type"])
 	, items_(utils::split(cfg["items"]))
+	, font_size_(cfg["font_size"].to_int(0))
 {
 }
 

@@ -17,7 +17,8 @@
 #   key KEYSYM       e.g. Return, Escape, ctrl+r
 #   shot NAME        save OUTDIR/NAME.png
 # Without a script it waits 25 s and saves OUTDIR/screen.png.
-# Env: WESTNORTH_GUI_THEME=celes|default (UI theme), WESTNORTH_TIPS=yes (title tips).
+# Env: WESTNORTH_GUI_THEME=celes|default (UI theme), WESTNORTH_TIPS=yes (title tips),
+#      WESTNORTH_FONT_SCALE=PERCENT (font_scale preference; unset = game default).
 #
 # Example:
 #   utils/westnorth/screenshot.sh out -- -c The_Rise_of_Wesnoth --campaign-skip-story
@@ -70,6 +71,9 @@ turbo=yes
 show_tip_of_day=${WESTNORTH_TIPS:-no}
 gui2_theme="${WESTNORTH_GUI_THEME:-}"
 EOF
+if [ -n "${WESTNORTH_FONT_SCALE:-}" ]; then
+	echo "font_scale=$WESTNORTH_FONT_SCALE" >> "$userdata/preferences"
+fi
 "$bin" --nobanner --no-log-to-file --userdata-dir "$userdata" -r 1600x720 --windowed \
 	--nosound --nomusic "$@" >"$outdir/game.log" 2>&1 &
 game_pid=$!
