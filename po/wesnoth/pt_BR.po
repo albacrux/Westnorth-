@@ -6370,6 +6370,10 @@ msgstr "O tema padrão"
 msgid "Load Turn..."
 msgstr "Carregar Turno..."
 
+# Westnorth: submenu with rarely used entries (data/themes/default.cfg)
+msgid "More..."
+msgstr "Mais..."
+
 #
 # File: data/themes/macros.cfg, line: 109
 # File: data/themes/macros.cfg, line: 109

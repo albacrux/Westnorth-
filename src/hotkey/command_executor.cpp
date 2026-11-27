@@ -512,6 +512,20 @@ void command_executor::populate_menu_controls(config& item, int index) const
 	}
 }
 
+// Westnorth: keyboard shortcuts are useless on a phone and take a third of
+// every menu row, so menus leave them out when a touch screen is present.
+static bool has_touch_screen()
+{
+#if defined(__ANDROID__) || defined(MOUSE_TOUCH_EMULATION)
+	return true;
+#else
+	int count = 0;
+	SDL_TouchID* devices = SDL_GetTouchDevices(&count);
+	SDL_free(devices);
+	return count > 0;
+#endif
+}
+
 void command_executor::populate_menu_item_info(config& item, int index) const
 {
 	const std::string& item_id = item["id"];
@@ -529,7 +543,9 @@ void command_executor::populate_menu_item_info(config& item, int index) const
 	populate_menu_controls(item, index);
 
 	if(hk.command != hotkey::HOTKEY_NULL) {
-		item["details"] = hotkey::get_names(item_id);
+		if(!has_touch_screen()) {
+			item["details"] = hotkey::get_names(item_id);
+		}
 
 		switch(hk.command) {
 		case hotkey::HOTKEY_WML:
