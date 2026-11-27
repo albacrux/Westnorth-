@@ -1,5 +1,12 @@
 # Diagnóstico: zoom e nitidez (UI-5, em aberto)
 
+> **Zoom com dois dedos (pinça): feito em 2026-11-27.** `src/touch_pinch.*` acompanha os
+> dedos a partir dos eventos de dedo do SDL (funciona em qualquer plataforma) e
+> `controller_base` aplica um nível de zoom a cada 25% de afastamento/aproximação. Com
+> dois dedos na tela o arrasto, o toque e o toque longo do primeiro dedo são
+> cancelados. O zoom é centrado no meio da tela (não no meio dos dedos). Testado com
+> eventos sintéticos no desktop e por teste unitário; falta o A06.
+
 ## O que o brief relata (A06, 1.19.29)
 
 O zoom ("Aproximar") borra os sprites e deixa faixas horizontais nas texturas

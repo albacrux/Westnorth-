@@ -127,6 +127,13 @@ regras do layout de celular). Documentos detalhados: `diagnostico-toque.md` (eve
   Um mesmo diálogo C++ pode usar outra `[window]` (construtor com id, ver
   `units_dialog`), sem quebrar o teste de diálogos registrados.
 
+- Multitoque: o SDL gera eventos de mouse só do **primeiro** dedo; os outros só chegam
+  como `SDL_EVENT_FINGER_*`. O `controller_base` juntava os `FINGER_MOTION` da fila e
+  usava só o último (de qualquer dedo); a pinça precisa de todos. Xvfb/xdotool não faz
+  multitoque: para testar, empurre eventos sintéticos com `SDL_PushEvent` (dedos com
+  x/y em fração da janela; mouse com `which = SDL_TOUCH_MOUSEID`) num ajuste local
+  temporário. Arquivos novos em `source_lists/` exigem rodar o `cmake` de novo.
+
 ## 6. Ambiente de teste na nuvem
 
 - `run_boost_tests` precisa de **`SDL_VIDEODRIVER=dummy`** (senão os 285 falham por

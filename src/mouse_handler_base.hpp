@@ -227,8 +227,11 @@ public:
 		return scroll_started_;
 	}
 
-protected:
+	// Westnorth: public so a two-finger pinch (controller_base) can drop the
+	// drag/tap the first finger started.
 	void cancel_dragging();
+
+protected:
 	void clear_dragging(const SDL_MouseButtonEvent& event, bool browse);
 	void clear_drag_from_hex();
 	void init_dragging(bool& dragging_flag);

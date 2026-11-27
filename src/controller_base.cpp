@@ -173,15 +173,31 @@ void controller_base::handle_event(const SDL_Event& event)
 		}
 		break;
 
-	case SDL_EVENT_FINGER_MOTION:
-		if(SDL_PeepEvents(&new_event, 1, SDL_GETEVENT, SDL_EVENT_FINGER_MOTION, SDL_EVENT_FINGER_MOTION) > 0) {
-			while(SDL_PeepEvents(&new_event, 1, SDL_GETEVENT, SDL_EVENT_FINGER_MOTION, SDL_EVENT_FINGER_MOTION) > 0) {
-			};
-			mh_base.touch_motion_event(new_event.tfinger, is_browsing());
+	case SDL_EVENT_FINGER_MOTION: {
+		// Westnorth: every queued motion goes to the pinch tracker (the drag
+		// only needs the last one, but a pinch needs both fingers' moves).
+		const point canvas = video::game_canvas_size();
+		const auto pinch_motion = [&](const SDL_TouchFingerEvent& f) {
+			return pinch_.finger_motion(static_cast<std::int64_t>(f.fingerID), f.x * canvas.x, f.y * canvas.y);
+		};
+		int zoom_steps = pinch_motion(event.tfinger);
+		SDL_TouchFingerEvent latest = event.tfinger;
+		while(SDL_PeepEvents(&new_event, 1, SDL_GETEVENT, SDL_EVENT_FINGER_MOTION, SDL_EVENT_FINGER_MOTION) > 0) {
+			zoom_steps += pinch_motion(new_event.tfinger);
+			latest = new_event.tfinger;
+		}
+		if(pinch_.happened()) {
+			for(; zoom_steps > 0; --zoom_steps) {
+				get_display().set_zoom(true);
+			}
+			for(; zoom_steps < 0; ++zoom_steps) {
+				get_display().set_zoom(false);
+			}
 		} else {
-			mh_base.touch_motion_event(event.tfinger, is_browsing());
+			mh_base.touch_motion_event(latest, is_browsing());
 		}
 		break;
+	}
 
 	case SDL_EVENT_MOUSE_BUTTON_DOWN:
 		if(events::is_touch(event.button)) {
@@ -204,14 +220,32 @@ void controller_base::handle_event(const SDL_Event& event)
 		}
 		break;
 
-	case SDL_EVENT_FINGER_DOWN:
-		// handled by mouse case
+	case SDL_EVENT_FINGER_DOWN: {
+		// Taps are handled by the mouse case. Westnorth: a second finger starts a
+		// pinch, which cancels the first finger's drag, tap and long press.
+		const point canvas = video::game_canvas_size();
+		pinch_.finger_down(static_cast<std::int64_t>(event.tfinger.fingerID),
+			event.tfinger.x * canvas.x, event.tfinger.y * canvas.y);
+		if(pinch_.active()) {
+			if(long_touch_timer_ != 0) {
+				gui2::remove_timer(long_touch_timer_);
+				long_touch_timer_ = 0;
+			}
+			mh_base.cancel_dragging();
+		}
 		break;
+	}
 
 	case SDL_EVENT_MOUSE_BUTTON_UP:
 		if(long_touch_timer_ != 0) {
 			gui2::remove_timer(long_touch_timer_);
 			long_touch_timer_ = 0;
+		}
+
+		// Westnorth: lifting the finger after a pinch is not a tap or a drag end.
+		if(events::is_touch(event.button) && pinch_.happened()) {
+			mh_base.cancel_dragging();
+			break;
 		}
 
 		mh_base.mouse_press(event.button, is_browsing());
@@ -222,6 +256,7 @@ void controller_base::handle_event(const SDL_Event& event)
 
 	case SDL_EVENT_FINGER_UP:
 		// handled by mouse case
+		pinch_.finger_up(static_cast<std::int64_t>(event.tfinger.fingerID)); // Westnorth
 		break;
 
 	case SDL_EVENT_MOUSE_WHEEL:
