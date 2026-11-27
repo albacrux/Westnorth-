@@ -19,6 +19,7 @@
 # Without a script it waits 25 s and saves OUTDIR/screen.png.
 # Env: WESTNORTH_GUI_THEME=celes|default (UI theme), WESTNORTH_TIPS=yes (title tips),
 #      WESTNORTH_ANDROID=1 (GUI laid out with the Android font sizes),
+#      WESTNORTH_THEME=Westnorth (in-game HUD theme; unset = game default),
 #      WESTNORTH_FONT_SCALE=PERCENT (font_scale preference; unset = game default).
 #
 # Example:
@@ -72,6 +73,9 @@ turbo=yes
 show_tip_of_day=${WESTNORTH_TIPS:-no}
 gui2_theme="${WESTNORTH_GUI_THEME:-}"
 EOF
+if [ -n "${WESTNORTH_THEME:-}" ]; then
+	echo "theme=\"$WESTNORTH_THEME\"" >> "$userdata/preferences"
+fi
 if [ -n "${WESTNORTH_FONT_SCALE:-}" ]; then
 	echo "font_scale=$WESTNORTH_FONT_SCALE" >> "$userdata/preferences"
 fi

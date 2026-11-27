@@ -2724,6 +2724,14 @@ void display::refresh_report(const std::string& report_name, const config * new_
 	// but it seems to be working so i'm not changing it.
 	tooltips::clear_tooltips(loc);
 
+	// Westnorth: the invisible "unit details" button over the phone HUD's unit
+	// card exists only while the card does, so it never blocks taps on the map.
+	if(report_name == "westnorth_unit_card") {
+		if(auto details = find_action_button("button-westnorth-details")) {
+			details->hide(report.empty());
+		}
+	}
+
 	if (report.empty()) return;
 
 	// Add prefix, postfix elements.
@@ -2757,8 +2765,15 @@ void display::draw_report(const std::string& report_name, bool tooltip_test)
 		return;
 	}
 
-	const rect& loc = reportLocations_[report_name];
+	rect loc = reportLocations_[report_name];
 	const config& report = reports_[report_name];
+
+	// Westnorth: content of a report with a background card sits inside its
+	// padding (the card itself is drawn by draw_reports).
+	if(!item->background().empty()) {
+		const int pad = item->padding();
+		loc = {loc.x + pad, loc.y + pad, std::max(0, loc.w - 2 * pad), std::max(0, loc.h - 2 * pad)};
+	}
 
 	int x = loc.x, y = loc.y;
 
@@ -2910,6 +2925,21 @@ void display::draw_report(const std::string& report_name, bool tooltip_test)
 bool display::draw_reports(const rect& region)
 {
 	bool drew = false;
+
+	// Westnorth: first the background cards of non-empty reports, so that the
+	// reports placed on a card (in any order) are drawn over it.
+	for(const auto& [name, report] : reports_) {
+		const theme::status_item* item = theme_.get_status_item(name);
+		if(!item || item->background().empty() || report.empty()) {
+			continue;
+		}
+		const rect& loc = reportLocations_[name];
+		if(loc.overlaps(region)) {
+			draw::blit(image::get_texture(item->background()), loc);
+			drew = true;
+		}
+	}
+
 	for(const auto& it : reports_) {
 		const std::string& name = it.first;
 		const rect& loc = reportLocations_[name];

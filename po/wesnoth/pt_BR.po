@@ -19962,3 +19962,16 @@ msgstr "Defesa"
 #. Westnorth: string added by the fork
 msgid "hex^Moves"
 msgstr "Mov."
+
+#. Westnorth: string added by the fork
+msgid "Westnorth (phone)"
+msgstr "Westnorth (celular)"
+
+#. Westnorth: string added by the fork
+msgid "Full-screen map with floating cards, made for phones in landscape."
+msgstr ""
+"Mapa em tela cheia com cartões flutuantes, feito para celular na horizontal."
+
+#. Westnorth: string added by the fork
+msgid "level^Lv"
+msgstr "Nv"

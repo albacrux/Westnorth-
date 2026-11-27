@@ -139,12 +139,20 @@ public:
 		color_t font_rgb() const { return font_rgb_; }
 		bool font_rgb_set() const { return font_rgb_set_; }
 
+		// Westnorth: background= image drawn (stretched) under the report only
+		// while the report is not empty, and padding= inset of the report
+		// content inside it. Gives the phone HUD cards that appear with a unit.
+		const std::string& background() const { return background_; }
+		int padding() const { return padding_; }
+
 	private:
 		std::string prefix_, postfix_;
 		label label_;
 		std::size_t font_;
 		bool font_rgb_set_;
 		color_t font_rgb_;
+		std::string background_;
+		int padding_;
 	};
 
 	class panel : public object

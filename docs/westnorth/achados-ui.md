@@ -112,6 +112,15 @@ regras do layout de celular). Documentos detalhados: `diagnostico-toque.md` (eve
   (hora do dia → página do período). É o substituto do hover no toque; os tooltips
   usam 20 px desde o UI-7i (`src/tooltips.cpp`).
 
+- Tema "Westnorth" (UI-8): o `id` de `[resolution]` precisa ter a forma `LARGURAxALTURA`
+  (o schema rejeita `id=westnorth`). Âncoras: `left`/`top` esticam, `right`/`bottom`
+  acompanham a borda, `fixed` fica parado. Relatórios em `[status]` são desenhados em
+  ordem **alfabética do nome do relatório**, por isso os fundos de cartão (`background=`)
+  são desenhados numa primeira passada em `display::draw_reports`. Imagem de relatório é
+  esticada para o retângulo (sem manter proporção): retratos pedem retângulo quadrado.
+  Captura com o tema: `WESTNORTH_THEME=Westnorth` no `screenshot.sh`; o smoke test tem
+  uma execução com ele.
+
 ## 6. Ambiente de teste na nuvem
 
 - `run_boost_tests` precisa de **`SDL_VIDEODRIVER=dummy`** (senão os 285 falham por

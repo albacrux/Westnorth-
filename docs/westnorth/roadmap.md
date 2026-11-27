@@ -186,7 +186,7 @@ Princípios: cada classe deve mudar **o que o jogador faz**, não só números. 
 | 3 | UI-3 | Menus sem coluna de atalhos, linhas maiores, submenu "Mais..." | **Feito** (#5) |
 | 4 | UI-4 | Botões Desfazer/Próxima no painel; HUD legível (painel 240 px, fontes 15–20 px) | **Partes 1 e 2 feitas** (#8, #9, UI-4b). Falta: textos dos diálogos, cartão da unidade, botão Confirmar, menu ☰ |
 | 4b | UI-7 | HUD replanejado por hierarquia (manual `manual-ui-android.md`): nível 1 grande, nível 3 fora, cartão da unidade abre detalhes | **Feito** (HUD #24, ataque #25, recrutar e lista de unidades). Próximo: ajuda e tela de fim de cenário |
-| 4c | UI-8 | **Redesenho das telas de combate** (pedido do dono): mapa em tela cheia, ataque em duelo, recrutar em cartões, evolução, toque longo — `redesenho-combate.md` e `prototipos/` | **Protótipos feitos**; implementação na ordem do documento |
+| 4c | UI-8 | **Redesenho das telas de combate** (pedido do dono): mapa em tela cheia, ataque em duelo, recrutar em cartões, evolução, toque longo — `redesenho-combate.md` e `prototipos/` | Protótipos feitos; **etapa 1 (mapa) feita** — tema "Westnorth". Próximo: ataque |
 | 5 | UI-5 | Zoom nítido | **Diagnóstico** (`diagnostico-zoom.md`), precisa de capturas do A06 |
 | 6 | UI-6 | Traduções pt-BR | **`wesnoth-lib` e `wesnoth` 100%**; ajuda: textos curtos feitos; longos: toda a ajuda de jogo feita (lotes 1–4, 133 textos); faltam 72 (editor de mapas, geografia, lore das raças); menu inicial e add-ons |
 | 7 | M2 + M4 | Conteúdo próprio: 6 classes × 2 níveis, troca de classe, era com 2 facções, mapa 2p, testes e validador | **Rodada 1 feita** (este PR) — ver `classes.md` |
