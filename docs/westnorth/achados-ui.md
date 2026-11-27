@@ -123,6 +123,9 @@ regras do layout de celular). Documentos detalhados: `diagnostico-toque.md` (eve
 - Ajuda `key F1`, carregar `key ctrl+o`, salvar `key ctrl+s`.
 - Variáveis: `WESTNORTH_ANDROID=1`, `WESTNORTH_GUI_THEME=celes`, `WESTNORTH_FONT_SCALE=125`,
   `WESTNORTH_DISPLAY=N` (rodar capturas em paralelo com displays diferentes).
+- Falas e escolhas: `-t westnorth_message` com `utils/westnorth/message-flow.txt`.
+  Tabela de Estatísticas: Menu (100,20) → item (150,132). Menu de toque longo:
+  `utils/westnorth/context-menu-flow.txt`.
 - Comparar antes/depois: `PIL.ImageChops.difference(a, b).getbbox()` (None = idêntico).
 
 ## 8. Repositório e CI
