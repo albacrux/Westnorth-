@@ -19975,3 +19975,13 @@ msgstr ""
 #. Westnorth: string added by the fork
 msgid "level^Lv"
 msgstr "Nv"
+
+#. Westnorth: string added by the fork
+msgid "button^Next unit"
+msgstr ""
+"Próxima\n"
+"unidade"
+
+#. Westnorth: string added by the fork
+msgid "Next unit that can still move or attack"
+msgstr "Próxima unidade que ainda pode mover ou atacar"
