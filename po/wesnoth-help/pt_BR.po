@@ -108,7 +108,6 @@ msgstr ""
 msgid "loyal"
 msgstr "leal"
 
-#
 # File: data/core/macros/traits.cfg, line: 10
 # File: data/core/macros/traits.cfg, line: 10
 # File: data/core/macros/traits.cfg, line: 10
@@ -116,10 +115,8 @@ msgstr "leal"
 #: data/campaigns/The_Deceivers_Gambit/scenarios/00_Graduation.cfg:189
 #: data/campaigns/The_Deceivers_Gambit/scenarios/11_Clan_Blackcrest.cfg:771
 #: data/campaigns/The_Deceivers_Gambit/utils/unified_characters.cfg:24
-#, fuzzy
-#| msgid "Zero upkeep"
 msgid "Zero upkeep."
-msgstr "Sem custo de manutenção"
+msgstr "Sem manutenção."
 
 #
 # File: data/core/macros/traits.cfg, line: 139
@@ -366,71 +363,53 @@ msgstr ""
 "Esta unidade é capaz de curar aqueles ao seu redor, previnir desidratação, e "
 "também de remover envenenamento."
 
-#
 # File: data/core/macros/traits.cfg, line: 23
 # File: data/core/macros/traits.cfg, line: 23
 # File: data/core/macros/traits.cfg, line: 23
 #. [lua]: set_status
 #: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:2133
-#, fuzzy
-#| msgid "female^stunned"
 msgid "female^poisoned"
-msgstr "atordoada"
+msgstr "envenenada"
 
-#
 # File: data/core/macros/abilities.cfg, line: 696
 # File: data/core/macros/abilities.cfg, line: 696
 # File: data/core/macros/abilities.cfg, line: 696
 #. [lua]: set_status
 #: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:2133
-#, fuzzy
-#| msgid "poison"
 msgid "poisoned"
-msgstr "veneno"
+msgstr "envenenado"
 
-#
 # File: data/core/macros/traits.cfg, line: 251
 # File: data/core/macros/traits.cfg, line: 251
 # File: data/core/macros/traits.cfg, line: 251
 #. [lua]: set_status
 #: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:2135
-#, fuzzy
-#| msgid "female^slow"
 msgid "female^slowed"
 msgstr "lenta"
 
-#
 # File: data/core/macros/traits.cfg, line: 250
 # File: data/core/macros/traits.cfg, line: 250
 # File: data/core/macros/traits.cfg, line: 250
 #. [lua]: set_status
 #: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:2135
-#, fuzzy
-#| msgid "slow"
 msgid "slowed"
 msgstr "lento"
 
-#
 # File: data/core/macros/traits.cfg, line: 153
 # File: data/core/macros/traits.cfg, line: 153
 # File: data/core/macros/traits.cfg, line: 153
 #. [lua]: set_status
 #: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:2136
-#, fuzzy
-#| msgid "female^resilient"
 msgid "female^petrified"
-msgstr "resistente"
+msgstr "petrificada"
 
-#
 # File: data/core/macros/abilities.cfg, line: 618
 # File: data/core/macros/abilities.cfg, line: 618
 # File: data/core/macros/abilities.cfg, line: 618
 #. [lua]: set_status
 #: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:2136
-#, fuzzy
-#| msgid "petrifies"
 msgid "petrified"
-msgstr "petrifa"
+msgstr "petrificado"
 
 #
 # File: data/core/macros/abilities.cfg, line: 366
@@ -1243,15 +1222,13 @@ msgstr ""
 
 #. [topic]: id=editor_terrain_elevation
 #: data/core/editor/help.cfg:166
-#, fuzzy
-#| msgid "editor^<bold>text='Direct Overlays'</bold>"
 msgid "editor^Direct Overlays"
-msgstr "<bold>text='Sobreposição Direta'</bold>"
+msgstr "Sobreposições Diretas"
 
 #. [topic]: id=editor_terrain_elevation
 #: data/core/editor/help.cfg:170
 msgid "Bluffs and Gulch"
-msgstr ""
+msgstr "Penhascos e Ravinas"
 
 # Problema de tradução da ravia aí, ô.
 # Ravina Intransponível
@@ -1282,10 +1259,8 @@ msgstr ""
 
 #. [topic]: id=editor_terrain_elevation
 #: data/core/editor/help.cfg:174
-#, fuzzy
-#| msgid "editor^<bold>text='Elevation Floodfill'</bold>"
 msgid "editor^Elevation Floodfill"
-msgstr "<bold>text='Elevação por Inundação'</bold>"
+msgstr "Preenchimento de Elevação"
 
 #. [topic]: id=editor_terrain_elevation
 #: data/core/editor/help.cfg:177
@@ -1294,10 +1269,8 @@ msgstr "Marcador de elevação aumentada no mapa"
 
 #. [topic]: id=editor_terrain_elevation
 #: data/core/editor/help.cfg:178
-#, fuzzy
-#| msgid "Raised elevation on-map marker"
 msgid "Raised elevation editor palette icon"
-msgstr "Marcador de elevação aumentada no mapa"
+msgstr "Ícone da paleta de elevação no editor"
 
 #. [topic]: id=editor_terrain_elevation
 #: data/core/editor/help.cfg:180
@@ -1349,7 +1322,7 @@ msgstr ""
 #. [topic]: id=editor_terrain_elevation
 #: data/core/editor/help.cfg:184
 msgid "editor^How to Use"
-msgstr ""
+msgstr "Como Usar"
 
 #. [topic]: id=editor_terrain_elevation
 #: data/core/editor/help.cfg:186
@@ -1410,7 +1383,7 @@ msgstr ""
 msgid ""
 "The graphics used to represent the ledge borders are determined by the base "
 "terrain."
-msgstr ""
+msgstr "Os gráficos das bordas das saliências são definidos pelo terreno base."
 
 #. [topic]: id=editor_terrain_elevation
 #: data/core/editor/help.cfg:194
@@ -2141,7 +2114,7 @@ msgstr ""
 #. [topic]: id=editor_separate_events_file
 #: data/core/editor/help.cfg:409
 msgid "Separate Event Files"
-msgstr ""
+msgstr "Arquivos de Eventos Separados"
 
 #. [topic]: id=editor_separate_events_file
 #: data/core/editor/help.cfg:410
@@ -2246,16 +2219,12 @@ msgstr "Uso das Máscaras do Editor"
 
 #. [topic]: id=editor_masks
 #: data/core/editor/help.cfg:434
-#, fuzzy
-#| msgid ""
-#| "Masks can be applied to a base map for reusal in several scenarios "
-#| "playing at the same locations."
 msgid ""
 "Masks can be applied to a base map for reuse in several scenarios playing at "
 "the same locations."
 msgstr ""
-"Máscaras podem ser aplicadas no mapa base para reusá-lo em diversos cenários "
-"que se passam nos mesmos locais."
+"Máscaras podem ser aplicadas a um mapa base para reutilizá-lo em vários "
+"cenários que se passam nos mesmos locais."
 
 #. [topic]: id=editor_time_schedule
 #. Time of Day and Schedule Editor, please use a short string as it will be used in the left-hand pane of the help browser
@@ -3541,16 +3510,13 @@ msgid ""
 "    • Barren Plains: A vast, sparsely populated snowy tundra."
 msgstr ""
 
-#
 # File: data/core/encyclopedia/geography.cfg, line: 151
 # File: data/core/encyclopedia/geography.cfg, line: 151
 # File: data/core/encyclopedia/geography.cfg, line: 151
 #. [topic]: id=far_south
 #: data/core/encyclopedia/geography.cfg:242
-#, fuzzy
-#| msgid "Far North"
 msgid "Far South"
-msgstr "Distante Norte"
+msgstr "Extremo Sul"
 
 #. [topic]: id=far_south
 #: data/core/encyclopedia/geography.cfg:243
@@ -4096,24 +4062,13 @@ msgstr ""
 "elemento. Isto é especialmente útil quando você se depara com novas "
 "<ref>dst='..abilities_section' text='habilidades'</ref> pela primeira vez."
 
-#
 # File: data/core/help.cfg, line: 141
 # File: data/core/help.cfg, line: 141
 # File: data/core/help.cfg, line: 141
 #. [topic]: id=..gameplay
 #: data/core/help.cfg:177
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "<big>Fundamentals of Gameplay</big>\n"
-#| "\n"
 msgid "Fundamentals of Gameplay"
-msgstr ""
-"\n"
-"\n"
-"<big>Fundamentos do Jogo</big>\n"
-"\n"
+msgstr "Fundamentos do Jogo"
 
 #
 # File: data/core/help.cfg, line: 161
@@ -4861,10 +4816,8 @@ msgstr ""
 
 #. [topic]: id=vision
 #: data/core/help.cfg:273
-#, fuzzy
-#| msgid "Vision:"
 msgid "Vision"
-msgstr "Visão:"
+msgstr "Visão"
 
 #. [topic]: id=vision
 #: data/core/help.cfg:274
@@ -4957,16 +4910,13 @@ msgstr ""
 "seu turno), preservando a sua habilidade de desfazer o movimento das suas "
 "unidades."
 
-#
 # File: data/core/help.cfg, line: 813
 # File: data/core/help.cfg, line: 813
 # File: data/core/help.cfg, line: 813
 #. [topic]: id=shroud_and_fog
 #: data/core/help.cfg:286
-#, fuzzy
-#| msgid "<header>text='Multiplayer and undo'</header>"
 msgid "<header>Multiplayer and undo</header>"
-msgstr "<header>text='Multiplayer e desgazer'</header>"
+msgstr "<header>Multiplayer e desfazer</header>"
 
 #. [topic]: id=shroud_and_fog
 #: data/core/help.cfg:288
@@ -5080,24 +5030,16 @@ msgstr "Aprendendo com os seus erros"
 #. [topic]: id=whylost
 #: data/core/help.cfg:313
 msgid "<i>Why did I lose that scenario?</i>"
-msgstr ""
+msgstr "<i>Por que perdi aquele cenário?</i>"
 
 #. [topic]: id=whylost
 #: data/core/help.cfg:315
-#, fuzzy
-#| msgid ""
-#| "<italic>text='Why did I lose that scenario?'</italic>\n"
-#| "\n"
-#| "One of the most difficult parts of Wesnoth is understanding why a "
-#| "scenario was lost."
 msgid ""
 "One of the most difficult parts of Wesnoth is understanding why a scenario "
 "was lost."
 msgstr ""
-"<italic>text='Por que eu perdi aquele cenário?'</italic>\n"
-"\n"
-"Uma das coisas mais difíceis em battle for Wesnoth é entender o porque de um "
-"cenário ter sido perdido."
+"Uma das partes mais difíceis de Wesnoth é entender por que um cenário foi "
+"perdido."
 
 #. [topic]: id=whylost
 #: data/core/help.cfg:317
@@ -5126,16 +5068,8 @@ msgstr ""
 
 #. [topic]: id=whylost
 #: data/core/help.cfg:319
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Some common reasons for losing a scenario are:"
 msgid "Some common reasons for losing a scenario are:"
-msgstr ""
-"\n"
-"\n"
-"Algumas dos motivos comuns que levam a perda de um cenário são:"
+msgstr "Alguns motivos comuns para perder um cenário são:"
 
 #. [topic]: id=whylost
 #: data/core/help.cfg:321
@@ -5272,7 +5206,7 @@ msgstr ""
 #. [topic]: id=whylost
 #: data/core/help.cfg:331
 msgid "Unlikely reasons"
-msgstr ""
+msgstr "Motivos improváveis"
 
 #. [topic]: id=whylost
 #: data/core/help.cfg:333
@@ -5490,22 +5424,13 @@ msgstr ""
 "distância'</italic> que geralmente envolve armas como arcos, lanças e bolas "
 "de fogo."
 
-#
 # File: data/core/help.cfg, line: 238
 # File: data/core/help.cfg, line: 238
 # File: data/core/help.cfg, line: 238
 #. [topic]: id=combat
 #: data/core/help.cfg:353
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "<header>text='Order and Number of Strikes'</header>"
 msgid "Order and Number of Strikes"
-msgstr ""
-"\n"
-"\n"
-"<header>text='Ordem e Número de Golpes'</header>"
+msgstr "Ordem e Número de Golpes"
 
 #
 # File: data/core/help.cfg, line: 240
@@ -5543,22 +5468,13 @@ msgstr ""
 "causando 5 pontos de dano. Já um orc grunt com um ataque 9x2 golpeia apenas "
 "2 vezes, mas cada acerto causa 9 pontos de dano."
 
-#
 # File: data/core/help.cfg, line: 242
 # File: data/core/help.cfg, line: 242
 # File: data/core/help.cfg, line: 242
 #. [topic]: id=combat
 #: data/core/help.cfg:357
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "<header>text='Chance to Hit'</header>"
 msgid "Chance to Hit"
-msgstr ""
-"\n"
-"\n"
-"<header>text='Chance de acertar'</header>"
+msgstr "Chance de Acerto"
 
 #
 # File: data/core/help.cfg, line: 244
@@ -5632,7 +5548,7 @@ msgstr ""
 #. [topic]: id=combat
 #: data/core/help.cfg:363
 msgid "Damage"
-msgstr ""
+msgstr "Dano"
 
 #
 # File: data/core/help.cfg, line: 250
@@ -5913,16 +5829,13 @@ msgstr ""
 "• Unidades inimigas normalmente não possuem esferas, mas elas podem ser "
 "habilitadas nas preferências avançadas “Personalizar a cor das esferas”."
 
-#
 # File: data/core/help.cfg, line: 248
 # File: data/core/help.cfg, line: 248
 # File: data/core/help.cfg, line: 248
 #. [topic]: id=orbs
 #: data/core/help.cfg:410
-#, fuzzy
-#| msgid "<header>text='Ellipses'</header>"
 msgid "<header>Ellipses</header>"
-msgstr "<header>text='Elipses'</header>"
+msgstr "<header>Elipses</header>"
 
 #. [topic]: id=orbs
 #: data/core/help.cfg:413
@@ -6065,7 +5978,7 @@ msgstr "Período do Dia"
 #. [topic]: id=time_of_day
 #: data/core/help.cfg:467
 msgid "The time of day affects the damage of certain units as follows:"
-msgstr ""
+msgstr "A hora do dia afeta o dano de certas unidades assim:"
 
 #. [topic]: id=time_of_day
 #: data/core/help.cfg:469
@@ -6080,6 +5993,8 @@ msgid ""
 "• <span weight='heavy' size='15'>CHAOTIC</span> units get +25% damage at "
 "night, and −25% in daytime."
 msgstr ""
+"• Unidades <span weight='heavy' size='15'>CAÓTICAS</span> causam +25% de dano"
+" à noite e −25% de dia."
 
 #. [topic]: id=time_of_day
 #: data/core/help.cfg:471
@@ -6087,6 +6002,8 @@ msgid ""
 "• <span weight='heavy' size='15'>NEUTRAL</span> units are unaffected by the "
 "time of day."
 msgstr ""
+"• Unidades <span weight='heavy' size='15'>NEUTRAS</span> não são afetadas "
+"pela hora do dia."
 
 #. [topic]: id=time_of_day
 #: data/core/help.cfg:472
@@ -6094,6 +6011,8 @@ msgid ""
 "• <span weight='heavy' size='15'>LIMINAL</span> units get +25% damage during "
 "twilight."
 msgstr ""
+"• Unidades <span weight='heavy' size='15'>LIMINARES</span> causam +25% de "
+"dano no crepúsculo."
 
 #
 # File: data/core/help.cfg, line: 278
@@ -6210,48 +6129,34 @@ msgstr "Noite"
 msgid "Second Watch"
 msgstr "Madrugada"
 
-#
 # File: data/core/help.cfg, line: 288
 # File: data/core/help.cfg, line: 288
 # File: data/core/help.cfg, line: 288
 #. [topic]: id=time_of_day
 #: data/core/help.cfg:495
-#, fuzzy
-#| msgid ""
-#| "Keep in mind that some scenarios take place underground, where it is "
-#| "perpetually night!\n"
 msgid ""
 "Keep in mind that some scenarios take place underground, where it is "
 "perpetually night!"
 msgstr ""
-"Lembre-se de que alguns cenários se passam no subsolo, onde a noite é "
-"perpétua!\n"
+"Lembre-se de que alguns cenários se passam no subsolo, onde é sempre noite!"
 
 #. [topic]: id=time_of_day
 #: data/core/help.cfg:497
-#, fuzzy
-#| msgid ""
-#| "Some underground locations are illuminated. They are perpetually "
-#| "intermediate between day and night.\n"
 msgid ""
-"Some underground locations are illuminated. They are perpetually "
-"intermediate between day and night."
+"Some underground locations are illuminated. They are perpetually intermediate"
+" between day and night."
 msgstr ""
-"Alguns lugares subterrâneos são iluminados. Eles são perpetuamente "
-"intermediários entre o dia e a noite.\n"
+"Alguns lugares subterrâneos são iluminados. Ficam sempre num meio-termo entre"
+" dia e noite."
 
 #. [topic]: id=time_of_day
 #: data/core/help.cfg:499
-#, fuzzy
-#| msgid ""
-#| "Some role-playing scenarios take place indoors — these regions are "
-#| "similarly intermediate.\n"
 msgid ""
 "Some role-playing scenarios take place indoors — these regions are similarly "
 "intermediate."
 msgstr ""
-"Alguns cenários em estilo RPG se passam em locais fchados. Estes locais são "
-"igualmente intermediários.\n"
+"Alguns cenários de RPG se passam em lugares fechados — essas regiões também "
+"ficam no meio-termo."
 
 #. [topic]: id=time_of_day
 #: data/core/help.cfg:501
@@ -6454,16 +6359,13 @@ msgstr ""
 "Apenas o melhor deles será utilizado. Além disso, as unidades se recuperarão "
 "completamente de um cenário para o outro."
 
-#
 # File: src/help.cpp, line: 1389
 # File: src/help.cpp, line: 1389
 # File: src/help.cpp, line: 1389
 #. [topic]: id=healing
 #: data/core/help.cfg:520
-#, fuzzy
-#| msgid "Advancement"
 msgid "Advanced"
-msgstr "Avança para"
+msgstr "Avançado"
 
 #. [topic]: id=healing
 #: data/core/help.cfg:522
@@ -6661,31 +6563,16 @@ msgstr ""
 
 #. [topic]: id=..terrains_section
 #: data/core/help.cfg:561
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Terrains come in two types: <italic>text='basic'</italic> and "
-#| "<italic>text='mixed'</italic>."
 msgid "Terrains come in two types: <i>basic</i> and <i>mixed</i>."
-msgstr ""
-"\n"
-"\n"
-"Terrenos são divididos em dois grupos: <italic>text='basico'</italic> and "
-"<italic>text='misturado'</italic>."
+msgstr "Os terrenos são de dois tipos: <i>básicos</i> e <i>mistos</i>."
 
-#
 # File: data/core/help.cfg, line: 819
 # File: data/core/help.cfg, line: 819
 # File: data/core/help.cfg, line: 819
 #. [topic]: id=..terrains_section
 #: data/core/help.cfg:563 data/core/help.cfg:596
-#, fuzzy
 msgid "Basic Terrain Types"
-msgstr ""
-"\n"
-"\n"
-"<header>text='Chance de acertar'</header>"
+msgstr "Tipos de Terreno Básicos"
 
 #. [topic]: id=..terrains_section
 #: data/core/help.cfg:565
@@ -6731,18 +6618,13 @@ msgstr ""
 "tipo de terreno básico. Essas informações são listadas na página de ajuda de "
 "cada unidade. Terrenos básicos podem ter propriedades únicas como iluminação."
 
-#
 # File: data/core/help.cfg, line: 819
 # File: data/core/help.cfg, line: 819
 # File: data/core/help.cfg, line: 819
 #. [topic]: id=..terrains_section
 #: data/core/help.cfg:570
-#, fuzzy
 msgid "Mixed Terrain Types"
-msgstr ""
-"\n"
-"\n"
-"<header>text='Chance de acertar'</header>"
+msgstr "Tipos de Terreno Mistos"
 
 #. [topic]: id=..terrains_section
 #: data/core/help.cfg:572
@@ -6895,16 +6777,13 @@ msgstr ""
 "a tecla de atalho ou clicando com o botão direito e selecionando a opção no "
 "menu contextual."
 
-#
 # File: src/help.cpp, line: 1607
 # File: src/help.cpp, line: 1607
 # File: src/help.cpp, line: 1607
 #. [topic]: id=..terrains_section
 #: data/core/help.cfg:588
-#, fuzzy
-#| msgid "Defense Cap"
 msgid "Defense Caps"
-msgstr "Limite de Defesa"
+msgstr "Limites de Defesa"
 
 #. [topic]: id=..terrains_section
 #: data/core/help.cfg:590
@@ -7001,18 +6880,13 @@ msgstr ""
 "O jogo suporta diferentes tipos de add-on, sendo que nem todos funcionam em "
 "todos os modos de jogo."
 
-#
 # File: data/core/help.cfg, line: 805
 # File: data/core/help.cfg, line: 805
 # File: data/core/help.cfg, line: 805
 #. [topic]: id=using_addons
 #: data/core/help.cfg:620
-#, fuzzy
 msgid "Campaigns and Scenarios"
-msgstr ""
-"\n"
-"\n"
-"<header>text=Danos</header>"
+msgstr "Campanhas e Cenários"
 
 #. [topic]: id=using_addons
 #: data/core/help.cfg:622
@@ -7037,22 +6911,13 @@ msgstr ""
 "jogados assim - e campanhas podem ser encontradas na seção "
 "<italic>text='Campanhas'</italic> no menu inicial."
 
-#
 # File: data/core/help.cfg, line: 809
 # File: data/core/help.cfg, line: 809
 # File: data/core/help.cfg, line: 809
 #. [topic]: id=using_addons
 #: data/core/help.cfg:624
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "<header>text='Multiplayer Campaigns, Scenarios, and Map Packs'</header>"
 msgid "Multiplayer Campaigns, Scenarios, and Map Packs"
-msgstr ""
-"\n"
-"\n"
-"<header>text='Campanhas, Cenários e Pacotes de Mapas Multiplayer'</header>"
+msgstr "Campanhas, Cenários e Pacotes de Mapas Multiplayer"
 
 #. [topic]: id=using_addons
 #: data/core/help.cfg:626
@@ -7074,22 +6939,13 @@ msgstr ""
 "totalmente customizados ou em campanhas especialmente feitas para esse modo. "
 "Há também pacotes com cenários avulsos para o modo multiplayer."
 
-#
 # File: data/core/help.cfg, line: 813
 # File: data/core/help.cfg, line: 813
 # File: data/core/help.cfg, line: 813
 #. [topic]: id=using_addons
 #: data/core/help.cfg:628
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "<header>text='Multiplayer Eras and Factions'</header>"
 msgid "Multiplayer Eras and Factions"
-msgstr ""
-"\n"
-"\n"
-"<header>text='Eras e Facções Multiplayer'</header>"
+msgstr "Eras e Facções Multiplayer"
 
 #. [topic]: id=using_addons
 #: data/core/help.cfg:630
@@ -7132,25 +6988,17 @@ msgstr ""
 
 #. [topic]: id=using_addons
 #: data/core/help.cfg:634
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "You can see what eras you have loaded in the <ref>text='eras' dst='.."
-#| "eras_section'</ref> of the help."
 msgid ""
-"You can see what eras you have loaded in the <ref dst='..eras_section'>eras</"
-"ref> of the help."
+"You can see what eras you have loaded in the <ref "
+"dst='..eras_section'>eras</ref> of the help."
 msgstr ""
-"\n"
-"\n"
-"Você pode ver quais eras você carregou na <ref>text='eras' dst='.."
-"eras_section'</ref> na seção de ajuda."
+"Você pode ver quais eras estão carregadas na seção <ref "
+"dst='..eras_section'>eras</ref> da ajuda."
 
 #. [topic]: id=using_addons
 #: data/core/help.cfg:636
 msgid "Modifications"
-msgstr ""
+msgstr "Modificações"
 
 #. [topic]: id=using_addons
 #: data/core/help.cfg:638
@@ -7172,16 +7020,13 @@ msgstr ""
 "podem alterar as regras padrões do jogo em diversas formas. Você pode "
 "escolher e configurar as modificações ao criar um jogo novo."
 
-#
 # File: data/core/help.cfg, line: 527
 # File: data/core/help.cfg, line: 527
 # File: data/core/help.cfg, line: 527
 #. [topic]: id=using_addons
 #: data/core/help.cfg:640
-#, fuzzy
-#| msgid "Forest"
 msgid "Cores"
-msgstr "Floresta"
+msgstr "Núcleos"
 
 #. [topic]: id=using_addons
 #: data/core/help.cfg:642
@@ -7239,18 +7084,13 @@ msgstr ""
 "campanha da 2ª Guerra Mundial, ou até mesmo um jogo completamente diferente, "
 "desde que o mapa seja hexágonal e hajam 'unidades'."
 
-#
 # File: data/core/help.cfg, line: 819
 # File: data/core/help.cfg, line: 819
 # File: data/core/help.cfg, line: 819
 #. [topic]: id=using_addons
 #: data/core/help.cfg:646
-#, fuzzy
 msgid "Creator Resources"
-msgstr ""
-"\n"
-"\n"
-"<header>text='Chance de acertar'</header>"
+msgstr "Recursos para Criadores"
 
 #. [topic]: id=using_addons
 #: data/core/help.cfg:648
@@ -7461,22 +7301,13 @@ msgstr ""
 "\n"
 "\n"
 
-#
 # File: data/core/help.cfg, line: 864
 # File: data/core/help.cfg, line: 864
 # File: data/core/help.cfg, line: 864
 #. [topic]: id=general_commands
 #: data/core/help.cfg:692
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Clear chat messages.\n"
-#| "\n"
 msgid "Clear chat messages."
-msgstr ""
-"\n"
-"Limpa as mensagens do chat.\n"
-"\n"
+msgstr "Limpa as mensagens do chat."
 
 #
 # File: data/core/help.cfg, line: 867
@@ -7505,7 +7336,7 @@ msgstr ""
 #. ':nodebug' is a command and should not be translated
 #: data/core/help.cfg:698
 msgid "Debug mode is turned off by quitting the game or :nodebug."
-msgstr ""
+msgstr "O modo de depuração é desligado ao sair do jogo ou com :nodebug."
 
 #. [topic]: id=general_commands
 #: data/core/help.cfg:701
@@ -7537,16 +7368,8 @@ msgstr ""
 
 #. [topic]: id=general_commands
 #: data/core/help.cfg:704
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Display the controller status of a side.\n"
-#| "\n"
 msgid "Display the controller status of a side."
-msgstr ""
-"\n"
-"Mostra os status do controlador de um lado.\n"
-"\n"
+msgstr "Mostra o estado do controlador de um lado."
 
 #
 # File: data/core/help.cfg, line: 874
@@ -7569,106 +7392,54 @@ msgstr ""
 "valores em um arquivo no diretório userdata.\n"
 "\n"
 
-#
 # File: data/core/help.cfg, line: 877
 # File: data/core/help.cfg, line: 877
 # File: data/core/help.cfg, line: 877
 #. [topic]: id=general_commands
 #: data/core/help.cfg:710
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Switch a log domain to a different log level.\n"
-#| "\n"
 msgid "Switch a log domain to a different log level."
-msgstr ""
-"\n"
-"Troca o domínio de log para um nível de log diferente.\n"
-"\n"
+msgstr "Muda um domínio de log para outro nível de log."
 
-#
 # File: data/core/help.cfg, line: 880
 # File: data/core/help.cfg, line: 880
 # File: data/core/help.cfg, line: 880
 #. [topic]: id=general_commands
 #: data/core/help.cfg:713
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Redraws the screen and reloads any image files that have been changed.\n"
-#| "\n"
 msgid "Redraws the screen and reloads any image files that have been changed."
 msgstr ""
-"\n"
-"Carrega a tela e quaisquer arquivos de imagens que tenham sido alterados.\n"
-"\n"
-"\n"
+"Redesenha a tela e recarrega os arquivos de imagem que foram alterados."
 
-#
 # File: data/core/help.cfg, line: 883
 # File: data/core/help.cfg, line: 883
 # File: data/core/help.cfg, line: 883
 #. [topic]: id=general_commands
 #: data/core/help.cfg:716
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Bring up theme selection menu.\n"
-#| "\n"
 msgid "Bring up theme selection menu."
-msgstr ""
-"\n"
-"Abre o menu de seleção de temas.\n"
-"\n"
+msgstr "Abre o menu de seleção de temas."
 
-#
 # File: data/core/help.cfg, line: 886
 # File: data/core/help.cfg, line: 886
 # File: data/core/help.cfg, line: 886
 #. [topic]: id=general_commands
 #: data/core/help.cfg:719
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Quit the scenario (without prompting).\n"
-#| "\n"
 msgid "Quit the scenario (without prompting)."
-msgstr ""
-"\n"
-"Sai do cenário (sem confirmação).\n"
-"\n"
+msgstr "Sai do cenário (sem confirmação)."
 
-#
 # File: data/core/help.cfg, line: 889
 # File: data/core/help.cfg, line: 889
 # File: data/core/help.cfg, line: 889
 #. [topic]: id=general_commands
 #: data/core/help.cfg:722
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Save the game (without prompting).\n"
-#| "\n"
 msgid "Save the game (without prompting)."
-msgstr ""
-"\n"
-"Salva o jogo (sem confirmação).\n"
-"\n"
+msgstr "Salva o jogo (sem confirmação)."
 
-#
 # File: data/core/help.cfg, line: 892
 # File: data/core/help.cfg, line: 892
 # File: data/core/help.cfg, line: 892
 #. [topic]: id=general_commands
 #: data/core/help.cfg:725
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Save the game and quit the scenario (without prompting)."
 msgid "Save the game and quit the scenario (without prompting)."
-msgstr ""
-"\n"
-"Salva o jogo e sai do cenário (sem confirmação)."
+msgstr "Salva o jogo e sai do cenário (sem confirmação)."
 
 #
 # File: data/core/help.cfg, line: 901
@@ -7739,38 +7510,21 @@ msgstr ""
 
 #. [topic]: id=mp_commands
 #: data/core/help.cfg:742
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Launch a dialog to assist the host in changing the human controllers of "
-#| "sides.\n"
-#| "\n"
 msgid ""
 "Launch a dialog to assist the host in changing the human controllers of "
 "sides."
 msgstr ""
-"\n"
-"Abre uma janela para ajudar o host a mudar quais humanos controlam quais "
-"lados.\n"
-"\n"
-"\n"
+"Abre uma janela para ajudar o anfitrião a mudar os controladores humanos dos "
+"lados."
 
 #. [topic]: id=mp_commands
 #: data/core/help.cfg:745
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Toggle the idle state for a side. The host may make a side idle after a "
-#| "network disconnection.\n"
-#| "\n"
 msgid ""
 "Toggle the idle state for a side. The host may make a side idle after a "
 "network disconnection."
 msgstr ""
-"\n"
-"Ativa o modo ocioso para um lado. O host pode tornar um lado ocioso após "
-"alguém se disconectar.\n"
-"\n"
+"Alterna o estado inativo de um lado. O anfitrião pode deixar um lado inativo "
+"depois de uma desconexão."
 
 #
 # File: data/core/help.cfg, line: 910
@@ -7823,43 +7577,24 @@ msgstr ""
 "\n"
 "\n"
 
-#
 # File: data/core/help.cfg, line: 916
 # File: data/core/help.cfg, line: 916
 # File: data/core/help.cfg, line: 916
 #. [topic]: id=mp_commands
 #: data/core/help.cfg:756
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Mute a specific observer. If no username is supplied the muted usernames "
-#| "are displayed.\n"
-#| "\n"
 msgid ""
 "Mute a specific observer. If no username is supplied the muted usernames are "
 "displayed."
 msgstr ""
-"\n"
-"Muta um observador específico. Se não for inserido nenhum nome, os nomes já "
-"mutados serão exibidos.\n"
-"\n"
+"Silencia um observador. Sem nome de usuário, mostra os nomes silenciados."
 
-#
 # File: data/core/help.cfg, line: 919
 # File: data/core/help.cfg, line: 919
 # File: data/core/help.cfg, line: 919
 #. [topic]: id=mp_commands
 #: data/core/help.cfg:759
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Toggle muting/silencing of all observers on/off.\n"
-#| "\n"
 msgid "Toggle muting/silencing of all observers on/off."
-msgstr ""
-"\n"
-"Alterna mutar/silenciar todos os observadores sim/não.\n"
-"\n"
+msgstr "Liga/desliga o silêncio de todos os observadores."
 
 #
 # File: data/core/help.cfg, line: 922
@@ -7883,24 +7618,17 @@ msgstr ""
 "servidor.\n"
 "\n"
 
-#
 # File: data/core/help.cfg, line: 925
 # File: data/core/help.cfg, line: 925
 # File: data/core/help.cfg, line: 925
 #. [topic]: id=mp_commands
 #: data/core/help.cfg:765
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Unmute a specific observer. If no username is supplied the list of muted "
-#| "observers is cleared."
 msgid ""
 "Unmute a specific observer. If no username is supplied the list of muted "
 "observers is cleared."
 msgstr ""
-"\n"
-"Tira do mudo um observador específico. Se não nenhum nome for especificado, "
-"todos os observadores mutados serão desmutados."
+"Tira um observador do silêncio. Sem nome de usuário, limpa a lista de "
+"observadores silenciados."
 
 #
 # File: data/core/help.cfg, line: 933
@@ -7911,183 +7639,95 @@ msgstr ""
 msgid "Debug Mode Commands"
 msgstr "Comandos do Modo Debug"
 
-#
 # File: data/core/help.cfg, line: 936
 # File: data/core/help.cfg, line: 936
 # File: data/core/help.cfg, line: 936
 #. [topic]: id=debug_commands
 #: data/core/help.cfg:776
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Brings up a menu for choosing a scenario to immediately advance to in a "
-#| "campaign.\n"
-#| "\n"
 msgid ""
 "Brings up a menu for choosing a scenario to immediately advance to in a "
 "campaign."
 msgstr ""
-"\n"
-"Abre um menu que permite escolher um cenário para o qual avançar "
-"imediatamente na campanha.\n"
-"\n"
+"Abre um menu para escolher um cenário para onde avançar imediatamente numa "
+"campanha."
 
-#
 # File: data/core/help.cfg, line: 939
 # File: data/core/help.cfg, line: 939
 # File: data/core/help.cfg, line: 939
 #. [topic]: id=debug_commands
 #: data/core/help.cfg:779
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Create a unit of the specified type on the selected hex.\n"
-#| "\n"
 msgid "Create a unit of the specified type on the selected hex."
-msgstr ""
-"\n"
-"Cria uma unidade do tipo especificado no hexágono selecionado.\n"
-"\n"
+msgstr "Cria uma unidade do tipo indicado no hexágono selecionado."
 
-#
 # File: data/core/help.cfg, line: 942
 # File: data/core/help.cfg, line: 942
 # File: data/core/help.cfg, line: 942
 #. [topic]: id=debug_commands
 #: data/core/help.cfg:782
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Toggle fog/shroud for the current side.\n"
-#| "\n"
 msgid "Toggle fog/shroud for the current side."
-msgstr ""
-"\n"
-"Alterna a neblina/escuridão para o lado atual.\n"
-"\n"
+msgstr "Liga/desliga neblina e escuridão para o lado atual."
 
-#
 # File: data/core/help.cfg, line: 945
 # File: data/core/help.cfg, line: 945
 # File: data/core/help.cfg, line: 945
 #. [topic]: id=debug_commands
 #: data/core/help.cfg:785
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Adds the specified amount to the current side’s gold.\n"
-#| "\n"
 msgid "Adds the specified amount to the current side’s gold."
-msgstr ""
-"\n"
-"Adiciona uma quantidade especificada de ouro para o lado atual.\n"
-"\n"
+msgstr "Adiciona a quantidade indicada ao ouro do lado atual."
 
-#
 # File: data/core/help.cfg, line: 948
 # File: data/core/help.cfg, line: 948
 # File: data/core/help.cfg, line: 948
 #. [topic]: id=debug_commands
 #: data/core/help.cfg:788
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Immediately advances to the next scenario in a campaign.\n"
-#| "\n"
 msgid "Immediately advances to the next scenario in a campaign."
-msgstr ""
-"\n"
-"Avança imediatamente para o próximo cenário numa campanha.\n"
-"\n"
+msgstr "Avança imediatamente para o próximo cenário numa campanha."
 
-#
 # File: data/core/help.cfg, line: 951
 # File: data/core/help.cfg, line: 951
 # File: data/core/help.cfg, line: 951
 #. [topic]: id=debug_commands
 #: data/core/help.cfg:791
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Manually set a gamestate variable to value.\n"
-#| "\n"
 msgid "Manually set a gamestate variable to value."
-msgstr ""
-"\n"
-"Manualmente configura uma variável do jogo para um valor escolhido.\n"
-"\n"
+msgstr "Define manualmente uma variável do estado do jogo."
 
-#
 # File: data/core/help.cfg, line: 954
 # File: data/core/help.cfg, line: 954
 # File: data/core/help.cfg, line: 954
 #. [topic]: id=debug_commands
 #: data/core/help.cfg:794
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Show a gamestate variable.\n"
-#| "\n"
 msgid "Show a gamestate variable."
-msgstr ""
-"\n"
-"Mostra uma variável do jogo.\n"
-"\n"
+msgstr "Mostra uma variável do estado do jogo."
 
-#
 # File: data/core/help.cfg, line: 957
 # File: data/core/help.cfg, line: 957
 # File: data/core/help.cfg, line: 957
 #. [topic]: id=debug_commands
 #: data/core/help.cfg:797
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Manually fire the specified event.\n"
-#| "\n"
 msgid "Manually fire the specified event."
-msgstr ""
-"\n"
-"Inicia manualmente o evento especificado.\n"
-"\n"
+msgstr "Dispara manualmente o evento indicado."
 
-#
 # File: data/core/help.cfg, line: 960
 # File: data/core/help.cfg, line: 960
 # File: data/core/help.cfg, line: 960
 #. [topic]: id=debug_commands
 #. The example text is a command and should not be translated.
 #: data/core/help.cfg:802
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Modifies the specified property of the selected unit. Example: :unit "
-#| "hitpoints=100\n"
-#| "\n"
 msgid ""
 "Modifies the specified property of the selected unit. Example: :unit "
 "hitpoints=100"
 msgstr ""
-"\n"
-"Modifica uma propriedade especificada da unidade selecionada. Exemplo: :unit "
-"hitpoints=100\n"
-"\n"
+"Modifica a propriedade indicada da unidade selecionada. Exemplo: :unit "
+"hitpoints=100"
 
-#
 # File: data/core/help.cfg, line: 963
 # File: data/core/help.cfg, line: 963
 # File: data/core/help.cfg, line: 963
 #. [topic]: id=debug_commands
 #. The example text is a command and should not be translated.
 #: data/core/help.cfg:807
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Makes the selected unit level up N times. Example: :unit advances=2"
 msgid "Makes the selected unit level up N times. Example: :unit advances=2"
-msgstr ""
-"\n"
-"Faz a unidade selecionada subir N níveis. Exemplo:: unit advances=2"
+msgstr "Faz a unidade selecionada subir N níveis. Exemplo: :unit advances=2"
 
 #
 # File: data/core/macros/abilities.cfg, line: 50
@@ -8247,7 +7887,7 @@ msgstr ""
 #. [chance_to_hit]: id=diversion
 #: data/core/macros/abilities.cfg:158
 msgid "accuracy:"
-msgstr ""
+msgstr "precisão:"
 
 #. [chance_to_hit]: id=diversion
 #: data/core/macros/abilities.cfg:159
@@ -8255,6 +7895,8 @@ msgid ""
 "A nearby enemy’s <i>diversion</i> ability is reducing this attack’s accuracy "
 "by 20%."
 msgstr ""
+"A habilidade de <i>distração</i> de um inimigo próximo reduz em 20% a "
+"precisão deste ataque."
 
 #
 # File: data/core/macros/abilities.cfg, line: 110
@@ -8565,18 +8207,15 @@ msgstr ""
 #. [hides]: id=swamp_lurk
 #: data/core/macros/abilities.cfg:398
 msgid "swamp lurk"
-msgstr ""
+msgstr "espreita no pântano"
 
-#
 # File: data/core/macros/traits.cfg, line: 233
 # File: data/core/macros/traits.cfg, line: 233
 # File: data/core/macros/traits.cfg, line: 233
 #. [hides]: id=swamp_lurk
 #: data/core/macros/abilities.cfg:399
-#, fuzzy
-#| msgid "female^weak"
 msgid "female^swamp lurk"
-msgstr "fraca"
+msgstr "espreita no pântano"
 
 #
 # File: data/core/macros/abilities.cfg, line: 408
@@ -9436,19 +9075,13 @@ msgstr "morta-viva"
 msgid "Immune to drain, poison, and plague"
 msgstr "Imune a dreno, veneno e praga"
 
-#
 # File: data/core/help.cfg, line: 424
 # File: data/core/help.cfg, line: 424
 # File: data/core/help.cfg, line: 424
 #. [trait]: id=undead
 #: data/core/macros/traits.cfg:58
-#, fuzzy
-#| msgid ""
-#| "<italic>text='Undead'</italic> units are immune to poison, drain, and "
-#| "plague."
 msgid "<i>Undead</i> units are immune to poison, drain, and plague."
-msgstr ""
-"<italic>text='Mortos-vivos'</italic> são imune a dreno, veneno e praga."
+msgstr "Unidades <i>mortas-vivas</i> são imunes a veneno, dreno e praga."
 
 #
 # File: data/core/help.cfg, line: 424
@@ -9495,18 +9128,13 @@ msgstr "mecânico"
 msgid "female^mechanical"
 msgstr "mecânica"
 
-#
 # File: data/core/help.cfg, line: 432
 # File: data/core/help.cfg, line: 432
 # File: data/core/help.cfg, line: 432
 #. [trait]: id=mechanical
 #: data/core/macros/traits.cfg:84
-#, fuzzy
-#| msgid ""
-#| "<italic>text='Mechanical'</italic> units are immune to poison, drain, and "
-#| "plague."
 msgid "<i>Mechanical</i> units are immune to poison, drain, and plague."
-msgstr "<italic>text='Mecânico'</italic> são imune a dreno, veneno e praga."
+msgstr "Unidades <i>mecânicas</i> são imunes a veneno, dreno e praga."
 
 #
 # File: data/core/help.cfg, line: 432
@@ -9550,18 +9178,13 @@ msgstr "elemental"
 msgid "female^elemental"
 msgstr "elemental"
 
-#
 # File: data/core/help.cfg, line: 440
 # File: data/core/help.cfg, line: 440
 # File: data/core/help.cfg, line: 440
 #. [trait]: id=elemental
 #: data/core/macros/traits.cfg:110
-#, fuzzy
-#| msgid ""
-#| "<italic>text='Elemental'</italic> units are immune to poison, drain, and "
-#| "plague."
 msgid "<i>Elemental</i> units are immune to poison, drain, and plague."
-msgstr "<italic>text='Elemental'</italic> são imune a dreno, veneno e praga."
+msgstr "Unidades <i>elementais</i> são imunes a veneno, dreno e praga."
 
 #
 # File: data/core/help.cfg, line: 440
@@ -9667,22 +9290,17 @@ msgstr "habilidoso"
 msgid "female^dextrous"
 msgstr "habilidosa"
 
-#
 # File: data/core/help.cfg, line: 448
 # File: data/core/help.cfg, line: 448
 # File: data/core/help.cfg, line: 448
 #. [trait]: id=dextrous
 #: data/core/macros/traits.cfg:155
-#, fuzzy
-#| msgid ""
-#| "<italic>text='Dextrous'</italic> units do 1 more damage for every "
-#| "successful strike in ranged combat."
 msgid ""
 "<i>Dextrous</i> units do 1 more damage for every successful strike in ranged "
 "combat."
 msgstr ""
-"Unidades <italic>text='habilidosas'</italic> causam 1 de dano a mais para "
-"cada acerto em ataques à distância."
+"Unidades <i>habilidosas</i> causam 1 de dano a mais em cada golpe certeiro à "
+"distância."
 
 #
 # File: data/core/help.cfg, line: 448
@@ -9730,22 +9348,17 @@ msgstr "veloz"
 msgid "female^quick"
 msgstr "veloz"
 
-#
 # File: data/core/help.cfg, line: 380
 # File: data/core/help.cfg, line: 380
 # File: data/core/help.cfg, line: 380
 #. [trait]: id=quick
 #: data/core/macros/traits.cfg:172
-#, fuzzy
-#| msgid ""
-#| "<italic>text='Quick'</italic> units have 1 extra movement point, but 5% "
-#| "less hitpoints than usual."
 msgid ""
 "<i>Quick</i> units have 1 extra movement point, but 5% less hitpoints than "
 "usual."
 msgstr ""
-"Unidades <italic>text='Velozes '</italic> tem 1 ponto de movimento extra, "
-"mas 5% de HP a menos."
+"Unidades <i>velozes</i> têm 1 ponto de movimento extra, mas 5% menos pontos "
+"de vida."
 
 #
 # File: data/core/help.cfg, line: 380
@@ -9789,19 +9402,15 @@ msgstr ""
 msgid "female^intelligent"
 msgstr "inteligente"
 
-#
 # File: data/core/help.cfg, line: 372
 # File: data/core/help.cfg, line: 372
 # File: data/core/help.cfg, line: 372
 #. [trait]: id=intelligent
 #: data/core/macros/traits.cfg:192
-#, fuzzy
-#| msgid "Intelligent units require 20% less experience than usual to advance."
 msgid ""
 "<i>Intelligent</i> units require 20% less experience than usual to advance."
 msgstr ""
-"Unidades inteligentes precisam de 20% menos pontos de experiência do que o "
-"normal para subir de nível."
+"Unidades <i>inteligentes</i> precisam de 20% menos experiência para evoluir."
 
 #
 # File: data/core/help.cfg, line: 372
@@ -9854,22 +9463,16 @@ msgstr "resistente"
 msgid "female^resilient"
 msgstr "resistente"
 
-#
 # File: data/core/help.cfg, line: 388
 # File: data/core/help.cfg, line: 388
 # File: data/core/help.cfg, line: 388
 #. [trait]: id=resilient
 #: data/core/macros/traits.cfg:208
-#, fuzzy
-#| msgid ""
-#| "<italic>text='Resilient'</italic> units have an additional 4 hitpoints, "
-#| "and gain 1 more per level."
 msgid ""
 "<i>Resilient</i> units have an additional 4 hitpoints, and gain 1 more per "
 "level."
 msgstr ""
-"Unidades com a característica <italic>text='Resistente'</italic> possuem 4 "
-"pontos de vida adicionais e recebem 1 ponto a mais cada vez que sobem de "
+"Unidades <i>resistentes</i> têm 4 pontos de vida a mais e ganham mais 1 por "
 "nível."
 
 #
@@ -10056,23 +9659,17 @@ msgstr "fraco"
 msgid "female^weak"
 msgstr "fraca"
 
-#
 # File: data/core/help.cfg, line: 480
 # File: data/core/help.cfg, line: 480
 # File: data/core/help.cfg, line: 480
 #. [trait]: id=weak
 #: data/core/macros/traits.cfg:306
-#, fuzzy
-#| msgid ""
-#| "Units with the <italic>text='weak'</italic> trait receive a 1 point "
-#| "decrease in hitpoints and melee damage."
 msgid ""
 "Units with the <i>weak</i> trait receive a 1 point decrease in hitpoints and "
 "melee damage."
 msgstr ""
-"Unidades com a característica <italic>text='fraco'</italic>recebem 1 ponto "
-"de vida e 1 ponto de dano em ataques corpo a corpo a menos do que o normal "
-"toda vez que ela sobe de nível."
+"Unidades com a característica <i>fraco</i> têm 1 ponto a menos de vida e de "
+"dano corpo a corpo."
 
 #
 # File: data/core/macros/traits.cfg, line: 250
@@ -10092,20 +9689,15 @@ msgstr "lento"
 msgid "female^slow"
 msgstr "lenta"
 
-#
 # File: data/core/help.cfg, line: 472
 # File: data/core/help.cfg, line: 472
 # File: data/core/help.cfg, line: 472
 #. [trait]: id=slow
 #: data/core/macros/traits.cfg:325
-#, fuzzy
-#| msgid ""
-#| "<italic>text='Slow'</italic> units have 1 less movement point but 5% more "
-#| "hitpoints."
 msgid "<i>Slow</i> units have 1 less movement point but 5% more hitpoints."
 msgstr ""
-"Uma unidade <italic>text='Lenta'</italic> tem 1 ponto de movimento a menos e "
-"5% mais pontos de vida."
+"Unidades <i>lentas</i> têm 1 ponto de movimento a menos, mas 5% mais pontos "
+"de vida."
 
 #
 # File: data/core/help.cfg, line: 472
@@ -10149,22 +9741,17 @@ msgstr "teimoso"
 msgid "female^dim"
 msgstr "teimosa"
 
-#
 # File: data/core/help.cfg, line: 464
 # File: data/core/help.cfg, line: 464
 # File: data/core/help.cfg, line: 464
 #. [trait]: id=dim
 #: data/core/macros/traits.cfg:345
-#, fuzzy
-#| msgid ""
-#| "Units with trait <italic>text='dim'</italic> suffer a 20% increase in "
-#| "experience required to advance."
 msgid ""
 "Units with trait <i>dim</i> suffer a 20% increase in experience required to "
 "advance."
 msgstr ""
-"Unidades com a característica <italic>text='teimoso'</italic> precisam de "
-"20% de experiência para subir de nível."
+"Unidades com a característica <i>obtuso</i> precisam de 20% mais experiência "
+"para evoluir."
 
 #
 # File: data/core/help.cfg, line: 464
@@ -10227,7 +9814,7 @@ msgstr ""
 #. [trait]: id=oceangoing
 #: data/core/macros/traits.cfg:386
 msgid "oceangoing"
-msgstr ""
+msgstr "navegante"
 
 #. [trait]: id=oceangoing
 #. this is a defense reduction - without this ability most oceangoing ships would have 30% defense on these terrains
@@ -10241,7 +9828,7 @@ msgstr ""
 #. https://en.wikipedia.org/wiki/Setting_pole
 #: data/core/macros/traits.cfg:416
 msgid "push-poles"
-msgstr ""
+msgstr "varas de impulso"
 
 #. [trait]: id=push_poles
 #: data/core/macros/traits.cfg:417
@@ -10249,21 +9836,24 @@ msgid ""
 "This unit has 30% defense while in ford, bridge, oasis, or water-based "
 "village/castle terrain."
 msgstr ""
+"Esta unidade tem 30% de defesa em vau, ponte, oásis ou vila/castelo sobre a "
+"água."
 
 #. [disable]: id=unwieldy
 #: data/core/macros/weapon_specials.cfg:10
 msgid "unwieldy"
-msgstr ""
+msgstr "desajeitado"
 
 #. [disable]: id=unwieldy
 #: data/core/macros/weapon_specials.cfg:11
 msgid "This attack can only be used offensively."
-msgstr ""
+msgstr "Este ataque só pode ser usado na ofensiva."
 
 #. [disable]: id=unwieldy
 #: data/core/macros/weapon_specials.cfg:13
 msgid "This unit has an unwieldy weapon, which cannot be used defensively."
 msgstr ""
+"Esta unidade tem uma arma desajeitada, que não pode ser usada na defesa."
 
 #
 # File: data/campaigns/Under_the_Burning_Suns/scenarios/03_Stirring_in_the_Night.cfg, line: 755
@@ -10310,7 +9900,6 @@ msgstr ""
 "atacada não estiver incapacitada (ser petrificada ou de algum outro modo ser "
 "paralizada)."
 
-#
 # File: data/core/macros/abilities.cfg, line: 586
 # File: data/core/macros/abilities.cfg, line: 597
 # File: data/core/macros/abilities.cfg, line: 586
@@ -10319,10 +9908,8 @@ msgstr ""
 # File: data/core/macros/abilities.cfg, line: 597
 #. [plague]: id=plague({TYPE}), type={TYPE}
 #: data/core/macros/weapon_specials.cfg:56
-#, fuzzy
-#| msgid "plague"
 msgid "plague ($type)"
-msgstr "praga"
+msgstr "praga ($type)"
 
 #
 # File: data/core/macros/abilities.cfg, line: 598
@@ -10427,18 +10014,18 @@ msgstr ""
 #. [chance_to_hit]: id=honed
 #: data/core/macros/weapon_specials.cfg:132
 msgid "honed"
-msgstr ""
+msgstr "afiado"
 
 #. [chance_to_hit]: id=honed
 #: data/core/macros/weapon_specials.cfg:133
 msgid "This attack is 10% more accurate than other attacks."
-msgstr ""
+msgstr "Este ataque é 10% mais preciso que os outros."
 
 #. [chance_to_hit]: id=honed
 #: data/core/macros/weapon_specials.cfg:134
 msgid ""
 "This unit’s “honed” attack is slightly more accurate than other attacks."
-msgstr ""
+msgstr "O ataque “afiado” desta unidade é um pouco mais preciso que os outros."
 
 #
 # File: data/core/macros/abilities.cfg, line: 653
@@ -10490,12 +10077,12 @@ msgstr ""
 #. [damage]: id=guard
 #: data/core/macros/weapon_specials.cfg:170
 msgid "guard"
-msgstr ""
+msgstr "guarda"
 
 #. [damage]: id=guard
 #: data/core/macros/weapon_specials.cfg:171
 msgid "This attack blocks half of the damage from its target’s strikes."
-msgstr ""
+msgstr "Este ataque bloqueia metade do dano dos golpes do alvo."
 
 #. [damage]: id=guard
 #: data/core/macros/weapon_specials.cfg:172
@@ -10503,6 +10090,8 @@ msgid ""
 "This unit’s guarding attack can halve incoming damage, but only when used in "
 "combat."
 msgstr ""
+"O ataque de guarda desta unidade pode reduzir o dano recebido pela metade, "
+"mas só durante o combate."
 
 #
 # File: data/core/macros/abilities.cfg, line: 677
@@ -10686,38 +10275,29 @@ msgstr ""
 "mantidos e, ocasionalmente, domesticados por aqueles que partilham do seu "
 "amor pela noite."
 
-#
 # File: data/core/units.cfg, line: 42
 # File: data/core/units.cfg, line: 42
 # File: data/core/units.cfg, line: 42
 #. [race]: id=cats
 #: data/core/units.cfg:49
-#, fuzzy
-#| msgid "race^Bat"
 msgid "race^Cat"
-msgstr "Morcego"
+msgstr "Felino"
 
-#
 # File: data/core/units.cfg, line: 43
 # File: data/core/units.cfg, line: 43
 # File: data/core/units.cfg, line: 43
 #. [race]: id=cats
 #: data/core/units.cfg:50
-#, fuzzy
-#| msgid "race+female^Bat"
 msgid "race+female^Cat"
-msgstr "Morcego"
+msgstr "Felina"
 
-#
 # File: data/core/units.cfg, line: 44
 # File: data/core/units.cfg, line: 44
 # File: data/core/units.cfg, line: 44
 #. [race]: id=cats
 #: data/core/units.cfg:51
-#, fuzzy
-#| msgid "race^Bats"
 msgid "race^Cats"
-msgstr "Morcegos"
+msgstr "Felinos"
 
 #. [race]: id=cats
 #: data/core/units.cfg:52
@@ -11319,9 +10899,11 @@ msgstr "Goblins"
 #. [race]: id=goblin
 #: data/core/units.cfg:142
 msgid ""
-"Goblins are puny and quite frail, rarely growing past the size and stature "
-"of a human child."
+"Goblins are puny and quite frail, rarely growing past the size and stature of"
+" a human child."
 msgstr ""
+"Goblins são franzinos e bem frágeis; raramente passam do tamanho de uma "
+"criança humana."
 
 #
 # File: data/core/units.cfg, line: 135
@@ -11988,27 +11570,21 @@ msgstr ""
 "inteligente. Muitas coisas mecânicas não se movem nem possuem inteligência "
 "própria, mas alguns o fazem por meio de encantamentos mágicos."
 
-#
 # File: data/core/units.cfg, line: 185
 # File: data/core/units.cfg, line: 185
 # File: data/core/units.cfg, line: 185
 #. [race]: id=ship
 #: data/core/units.cfg:261
-#, fuzzy
-#| msgid "race^Saurian"
 msgid "race^Ship"
-msgstr "Lagarto"
+msgstr "Navio"
 
-#
 # File: data/core/units.cfg, line: 198
 # File: data/core/units.cfg, line: 198
 # File: data/core/units.cfg, line: 198
 #. [race]: id=ship
 #: data/core/units.cfg:262
-#, fuzzy
-#| msgid "race+plural^Mechanical"
 msgid "race+plural^Ships"
-msgstr "Construtos"
+msgstr "Navios"
 
 #
 # File: data/core/units.cfg, line: 199
@@ -12296,7 +11872,7 @@ msgstr ""
 #. [race]: id=orc
 #: data/core/units.cfg:319
 msgid "Society"
-msgstr ""
+msgstr "Sociedade"
 
 #. [race]: id=orc
 #: data/core/units.cfg:320
@@ -12831,16 +12407,14 @@ msgstr "Melhor de"
 msgid "Worst of"
 msgstr "Pior de"
 
-#
 # File: src/help.cpp, line: 1606
 # File: src/help.cpp, line: 1606
 # File: src/help.cpp, line: 1606
-#. TRANSLATORS: in a description of an overlay terrain, the terrain that it's placed on
+#. TRANSLATORS: in a description of an overlay terrain, the terrain that it's
+#. placed on
 #: src/help/help_topic_generators.cpp:132
-#, fuzzy
-#| msgid "Base Terrain: "
 msgid "base terrain"
-msgstr "Terreno Base: "
+msgstr "terreno base"
 
 #: src/help/help_topic_generators.cpp:177
 msgid ""
@@ -12892,16 +12466,13 @@ msgstr ""
 "estiver nela, mas não permite que um líder em uma torre de menagem conectada "
 "recrute neste espaço."
 
-#
 # File: data/core/macros/special-notes.cfg, line: 3
 # File: data/core/macros/special-notes.cfg, line: 3
 # File: data/core/macros/special-notes.cfg, line: 3
 #: src/help/help_topic_generators.cpp:245
 #: src/help/help_topic_generators.cpp:653
-#, fuzzy
-#| msgid "Special Notes:"
 msgid "Special Notes"
-msgstr "Notas Especiais:"
+msgstr "Notas Especiais"
 
 #
 # File: src/help.cpp, line: 1606
@@ -12918,10 +12489,11 @@ msgid_plural "Basic terrain types: $types"
 msgstr[0] "Terreno Base: "
 msgstr[1] "Terreno Base: "
 
-#. TRANSLATORS: In the help for a terrain type, for example Dwarven Village is often placed on Cave Floor
+#. TRANSLATORS: In the help for a terrain type, for example Dwarven Village is
+#. often placed on Cave Floor
 #: src/help/help_topic_generators.cpp:275
 msgid "Typical base terrain: $type"
-msgstr ""
+msgstr "Terreno base típico: $type"
 
 #
 # File: src/help.cpp, line: 1608
@@ -12943,55 +12515,40 @@ msgstr "Propriedades de defesa: "
 msgid "Level"
 msgstr "Nível"
 
-#
 # File: src/help.cpp, line: 1387
 # File: src/help.cpp, line: 1387
 # File: src/help.cpp, line: 1387
 #: src/help/help_topic_generators.cpp:415
-#, fuzzy
-#| msgid "Advances from: "
 msgid "Advances from:"
-msgstr "Avança de: "
+msgstr "Evolui de:"
 
-#
 # File: src/help.cpp, line: 1387
 # File: src/help.cpp, line: 1387
 # File: src/help.cpp, line: 1387
 #: src/help/help_topic_generators.cpp:417
-#, fuzzy
-#| msgid "Advances to: "
 msgid "Advances to:"
-msgstr "Avança para: "
+msgstr "Evolui para:"
 
-#
 # File: src/help.cpp, line: 1606
 # File: src/help.cpp, line: 1606
 # File: src/help.cpp, line: 1606
 #: src/help/help_topic_generators.cpp:447
-#, fuzzy
-#| msgid "Base unit: "
 msgid "Base unit:"
-msgstr "Unidade Base: "
+msgstr "Unidade base:"
 
-#
 # File: src/help.cpp, line: 1606
 # File: src/help.cpp, line: 1606
 # File: src/help.cpp, line: 1606
 #: src/help/help_topic_generators.cpp:452
-#, fuzzy
-#| msgid "Base units: "
 msgid "Base units:"
-msgstr "Unidades Base: "
+msgstr "Unidades base:"
 
-#
 # File: src/help.cpp, line: 1422
 # File: src/help.cpp, line: 1422
 # File: src/help.cpp, line: 1422
 #: src/help/help_topic_generators.cpp:470
-#, fuzzy
-#| msgid "Variations: "
 msgid "Variations:"
-msgstr "Variações: "
+msgstr "Variações:"
 
 #
 # File: src/help.cpp, line: 1446
@@ -13007,15 +12564,12 @@ msgstr "Variações: "
 msgid "race^Miscellaneous"
 msgstr "Miscelânea"
 
-#
 # File: src/help.cpp, line: 1448
 # File: src/help.cpp, line: 1448
 # File: src/help.cpp, line: 1448
 #: src/help/help_topic_generators.cpp:499
-#, fuzzy
-#| msgid "Race: "
 msgid "Race:"
-msgstr "Raça: "
+msgstr "Raça:"
 
 #: src/help/help_topic_generators.cpp:536
 #: src/help/help_topic_generators.cpp:546
@@ -13024,25 +12578,19 @@ msgid_plural "(random $number of):"
 msgstr[0] ""
 msgstr[1] ""
 
-#
 # File: src/help.cpp, line: 1455
 # File: src/help.cpp, line: 1455
 # File: src/help.cpp, line: 1455
 #: src/help/help_topic_generators.cpp:559
-#, fuzzy
-#| msgid "Abilities: "
 msgid "Abilities:"
-msgstr "Habilidades: "
+msgstr "Habilidades:"
 
-#
 # File: src/help.cpp, line: 1472
 # File: src/help.cpp, line: 1472
 # File: src/help.cpp, line: 1472
 #: src/help/help_topic_generators.cpp:585
-#, fuzzy
-#| msgid "Ability Upgrades: "
 msgid "Ability Upgrades:"
-msgstr "Habilidades Melhoradas: "
+msgstr "Melhorias de Habilidade:"
 
 #
 # File: src/help.cpp, line: 1488
@@ -13117,29 +12665,23 @@ msgstr "Alinhamento:"
 msgid "Required XP:"
 msgstr "XP Necessária:"
 
-#
 # File: src/help.cpp, line: 1571
 # File: src/help.cpp, line: 1571
 # File: src/help.cpp, line: 1571
 #: src/help/help_topic_generators.cpp:664
-#, fuzzy
-#| msgid "Attack Type"
 msgid "Attacks"
-msgstr "Tipo de ataque"
+msgstr "Ataques"
 
-#
 # File: src/help.cpp, line: 1571
 # File: src/help.cpp, line: 1571
 # File: src/help.cpp, line: 1571
 #: src/help/help_topic_generators.cpp:667
-#, fuzzy
-#| msgid "Attack Type"
 msgid "Attacks per turn: "
-msgstr "Tipo de ataque"
+msgstr "Ataques por turno: "
 
 #: src/help/help_topic_generators.cpp:686
 msgid "Name"
-msgstr ""
+msgstr "Nome"
 
 #
 # File: src/help.cpp, line: 1519
