@@ -113,7 +113,13 @@ regras do layout de celular). Documentos detalhados: `diagnostico-toque.md` (eve
   lanceiro em (626,425); meliante distante em (788,389); roteiro completo em
   `utils/westnorth/touch-flow.txt`.
 - Cenário `-t westnorth_classes_demo`: `key n` percorre as unidades (bom para ver o
-  painel); recrutar = `click 490 345` (castelo) e depois `key ctrl+r`.
+  painel). Recrutar e Lista de Unidades: `utils/westnorth/dialogs-flow.txt` (cliques:
+  castelo 490,345; Ações 300,20 → Recrutar 300,132; Menu 100,20 → Lista 150,192).
+- **Atalhos com modificador (`key ctrl+r`, `ctrl+u`) falham de forma intermitente no
+  Xvfb/xdotool**: o diálogo simplesmente não abre, sem nada no log. Isso já foi
+  confundido com bug de WML (reordenação de colunas da lista, 2026-11-27). Prefira
+  abrir diálogos pelos menus com `click`, e espere ≥ 30 s antes do primeiro passo (o
+  carregamento varia de 12 a 25 s).
 - Ajuda `key F1`, carregar `key ctrl+o`, salvar `key ctrl+s`.
 - Variáveis: `WESTNORTH_ANDROID=1`, `WESTNORTH_GUI_THEME=celes`, `WESTNORTH_FONT_SCALE=125`,
   `WESTNORTH_DISPLAY=N` (rodar capturas em paralelo com displays diferentes).

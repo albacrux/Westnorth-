@@ -364,19 +364,21 @@ void unit_preview_pane::set_display_data(const unit_type& type)
 	if(tree_details_) {
 
 		tree_details_->clear();
+		// Westnorth: HP/XP/MP at the normal size instead of small: they decide
+		// what to recruit and which unit to use.
 		tree_details_->add_node("hp_xp_mp", {
 			{ "hp",{
-				{ "label", markup::tag("small", markup::span_color(unit::hp_color_max(), markup::bold(_("HP: ")), type.hitpoints()), " | ") },
+				{ "label", markup::span_color(unit::hp_color_max(), markup::bold(_("HP: ")), type.hitpoints()) + " | " },
 				{ "use_markup", "true" },
 				{ "tooltip", get_hp_tooltip(type.movement_type().get_resistances().damage_table(), [&type](const std::string& dt, bool is_attacker) { return type.resistance_against(dt, is_attacker); }) }
 			} },
 			{ "xp",{
-				{ "label",  markup::tag("small", markup::span_color(unit::xp_color(100, type.can_advance(), true), markup::bold(_("XP: ")), type.experience_needed()), " | ") },
+				{ "label",  markup::span_color(unit::xp_color(100, type.can_advance(), true), markup::bold(_("XP: ")), type.experience_needed()) + " | " },
 				{ "use_markup", "true" },
 				{ "tooltip", (formatter() << _("Experience Modifier: ") << unit_experience_accelerator::get_acceleration() << '%').str() }
 			} },
 			{ "mp",{
-				{ "label", markup::tag("small", markup::bold(_("MP: ")) + std::to_string(type.movement())) },
+				{ "label", markup::bold(_("MP: ")) + std::to_string(type.movement()) },
 				{ "use_markup", "true" },
 				{ "tooltip", get_mp_tooltip(type.movement(), [&type](t_translation::terrain_code terrain) { return type.movement_type().movement_cost(terrain); }) }
 			} },
@@ -445,7 +447,9 @@ void unit_preview_pane::set_display_data(const unit& u)
 	if(label_name_) {
 		std::string name;
 		if(!u.name().empty()) {
-			name = markup::span_size("large", u.name() + "\n") + markup::tag("small", markup::span_color(font::unit_type_color, u.type_name()));
+			// Westnorth: the type (what the unit does) leads; the unit's own name
+			// is a small second line (docs/westnorth/manual-ui-android.md).
+			name = markup::span_size("large", markup::span_color(font::unit_type_color, u.type_name()) + "\n") + markup::tag("small", u.name());
 		} else {
 			name = markup::span_size("large", u.type_name()) + "\n";
 		}
@@ -507,19 +511,21 @@ void unit_preview_pane::set_display_data(const unit& u)
 	if(tree_details_) {
 		tree_details_->clear();
 		const std::string unit_xp = u.can_advance() ? (formatter() << u.experience() << "/" << u.max_experience()).str() : font::unicode_en_dash;
+		// Westnorth: HP/XP/MP at the normal size instead of small: they decide
+		// what to recruit and which unit to use.
 		tree_details_->add_node("hp_xp_mp", {
 			{ "hp",{
-				{ "label", markup::tag("small", markup::span_color(u.hp_color(), markup::bold(_("HP: ")), u.hitpoints(), "/", u.max_hitpoints(), " | ")) },
+				{ "label", markup::span_color(u.hp_color(), markup::bold(_("HP: ")), u.hitpoints(), "/", u.max_hitpoints(), " | ") },
 				{ "use_markup", "true" },
 				{ "tooltip", get_hp_tooltip(u.get_base_resistances(), [&u](const std::string& dt, bool is_attacker) { return u.resistance_against(dt, is_attacker, u.get_location()); }) }
 			} },
 			{ "xp",{
-				{ "label",  markup::tag("small", markup::span_color(u.xp_color(), markup::bold(_("XP: ")), unit_xp, " | ")) },
+				{ "label",  markup::span_color(u.xp_color(), markup::bold(_("XP: ")), unit_xp, " | ") },
 				{ "use_markup", "true" },
 				{ "tooltip", (formatter() << _("Experience Modifier: ") << unit_experience_accelerator::get_acceleration() << '%').str() }
 			} },
 			{ "mp",{
-				{ "label", markup::tag("small", markup::bold(_("MP: ")), u.movement_left(), "/", u.total_movement()) },
+				{ "label", markup::bold(_("MP: ")) + std::to_string(u.movement_left()) + "/" + std::to_string(u.total_movement()) },
 				{ "use_markup", "true" },
 				{ "tooltip", get_mp_tooltip(u.total_movement(), [&u](t_translation::terrain_code terrain) { return u.movement_cost(terrain); }) }
 			} },

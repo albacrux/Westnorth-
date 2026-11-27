@@ -97,6 +97,7 @@ entradas antigas (se mudar, criar nova entrada que substitui a anterior).
 |---|---|---|---|
 | D37 | O layout de celular passa a seguir `manual-ui-android.md`: nível 1 (HP, MP, defesa no hex, tipo, ouro, turno, renda) grande; nível 2 (XP, alinhamento, habilidades, armas) a 18 px; nível 3 (nome próprio, raça, traços, lado, coordenadas, visão, contador 1/6, unidades/manutenção, botões do minimapa) sai da tela. O cartão da unidade vira botão e abre a descrição (`describeunit`) | Pedido do dono: o HUD do upstream dá destaque ao que não decide jogadas (ex.: o nome do personagem) e é preciso replanejar para o fluxo do celular, não só aumentar fontes | Agente |
 | D38 | Diálogo de ataque pela mesma hierarquia: cada lado mostra tipo (grande), "Nv · alinhamento" numa linha, HP grande em negrito e XP; o nome próprio e os traços ficam no botão Perfil. Cada arma começa por **dano×golpes e chance de acerto** (grandes, negrito), depois "arma · tipo de dano" e os especiais pequenos | No upstream o nome do personagem era a maior linha e os números decisivos vinham na 3ª e 4ª linhas da arma | Agente |
+| D39 | Recrutar/Lista de Unidades: o painel da esquerda mostra o tipo grande e o nome pequeno embaixo; HP/XP/MP em tamanho normal (não "small"); colunas da lista na ordem Tipo, Nv, HP, Movimentos, XP, Nome, Características | Mesma hierarquia (D37). Efeito colateral aceito: no diálogo de depuração "criar unidade" a coluna de raça aparece antes do tipo | Agente |
 
 ## Pendências do dono
 

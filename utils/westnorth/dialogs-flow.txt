@@ -1,0 +1,20 @@
+# Westnorth: opens Recruit and the Unit List with clicks (more reliable than
+# hotkeys under xdotool) on: wesnoth -t westnorth_classes_demo
+# utils/westnorth/screenshot.sh -b BUILD/wesnoth -s utils/westnorth/dialogs-flow.txt OUTDIR -- -t westnorth_classes_demo
+sleep 30
+tap 1200 650
+sleep 1
+click 490 345
+sleep 1
+click 300 20
+sleep 1
+click 300 132
+sleep 3
+shot recruit
+key Escape
+sleep 2
+click 100 20
+sleep 1
+click 150 192
+sleep 3
+shot unitlist
