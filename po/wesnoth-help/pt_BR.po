@@ -314,7 +314,6 @@ msgstr "medicar +12"
 msgid "female^heals +12"
 msgstr "medicar +12"
 
-#
 # File: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg, line: 46
 # File: data/core/macros/abilities.cfg, line: 31
 # File: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg, line: 46
@@ -324,31 +323,16 @@ msgstr "medicar +12"
 #. [heals]: id=healing
 #. only exists in UtBS, but is the same wording as heals+8 with a bigger number
 #: data/campaigns/Under_the_Burning_Suns/utils/abilities.cfg:784
-#, fuzzy
-#| msgid ""
-#| "This unit combines herbal remedies with magic to heal units more quickly "
-#| "than is normally possible on the battlefield.\n"
-#| "\n"
-#| "A unit cared for by this healer may heal up to 8 HP per turn, or stop "
-#| "poison from taking effect for that turn.\n"
-#| "This ability will not cure an affected unit of poison, however, only "
-#| "delay its effect."
 msgid ""
-"This unit combines herbal remedies with magic to heal units more quickly "
-"than is normally possible on the battlefield.\n"
+"This unit combines herbal remedies with magic to heal units more quickly than is normally possible on the battlefield.\n"
 "\n"
-"A unit cared for by this healer may heal up to 12 HP per turn, or stop "
-"poison from taking effect for that turn.\n"
-"This ability will not cure an affected unit of poison, however, only delay "
-"its effect."
+"A unit cared for by this healer may heal up to 12 HP per turn, or stop poison from taking effect for that turn.\n"
+"This ability will not cure an affected unit of poison, however, only delay its effect."
 msgstr ""
-"Esta unidade combina remédios a base de ervas com magia para curar unidades "
-"mais rapidamente do que é normalmente possível no campo de batalha.\n"
+"Esta unidade combina remédios de ervas com magia para curar unidades mais depressa do que normalmente é possível no campo de batalha.\n"
 "\n"
-"Uma unidade sob o tratamento deste curandeiro recuperará 8 de HP por turno "
-"ou não leva dano de veneno naquele turno.\n"
-"Esta habilidade não cura a condição de envenenamento de uma unidade, mas "
-"atrasa o seu efeito."
+"Uma unidade tratada por este curandeiro recupera até 12 HP por turno, ou fica livre do efeito do veneno naquele turno.\n"
+"Esta habilidade não cura o veneno, porém; só adia seu efeito."
 
 #
 # File: data/core/macros/special-notes.cfg, line: 20
@@ -2560,8 +2544,7 @@ msgstr "Calendário"
 #. [topic]: id=..calendar
 #: data/core/encyclopedia/calendar.cfg:13
 msgid ""
-"Each year in the Wesnothian calendar is composed of 12 months. These are, in "
-"order:\n"
+"Each year in the Wesnothian calendar is composed of 12 months. These are, in order:\n"
 "\n"
 "Whitefire\n"
 "Bleeding Moon\n"
@@ -2576,13 +2559,28 @@ msgid ""
 "Verglas Bloom\n"
 "Blackfire\n"
 "\n"
-"The Wesnothian calendar begins with the founding of Wesnoth in the year 1 YW "
-"(Year of Wesnoth). Years before that are counted based on the number of "
-"years before the founding of Wesnoth using BW (Before Wesnoth).\n"
+"The Wesnothian calendar begins with the founding of Wesnoth in the year 1 YW (Year of Wesnoth). Years before that are counted based on the number of years before the founding of Wesnoth using BW (Before Wesnoth).\n"
 "\n"
-"After the fall of Wesnoth many switched to using AF (After the Fall) and BF "
-"(Before the Fall)."
+"After the fall of Wesnoth many switched to using AF (After the Fall) and BF (Before the Fall)."
 msgstr ""
+"Cada ano do calendário de Wesnoth tem 12 meses. São eles, em ordem:\n"
+"\n"
+"Fogo Branco\n"
+"Lua Sangrenta\n"
+"Semeadura\n"
+"Raiz Funda\n"
+"Flor do Vidente\n"
+"Espinheira\n"
+"Estrela do Cume\n"
+"Acendalha\n"
+"Semente Quieta\n"
+"Lua do Ceifeiro\n"
+"Flor da Geada\n"
+"Fogo Negro\n"
+"\n"
+"O calendário de Wesnoth começa com a fundação do reino, no ano 1 YW (Year of Wesnoth, “Ano de Wesnoth”). Os anos anteriores são contados a partir da fundação, com BW (Before Wesnoth, “Antes de Wesnoth”).\n"
+"\n"
+"Depois da queda de Wesnoth, muitos passaram a usar AF (After the Fall, “Depois da Queda”) e BF (Before the Fall, “Antes da Queda”)."
 
 #
 # File: data/core/encyclopedia/geography.cfg, line: 11
@@ -5465,40 +5463,24 @@ msgstr ""
 "dst='traits_quick'>veloz</ref>, <ref dst='traits_resilient'>resistente</ref> "
 "e <ref dst='traits_strong'>forte</ref>."
 
-#
 # File: data/core/help.cfg, line: 361
 # File: data/core/help.cfg, line: 361
 # File: data/core/help.cfg, line: 361
 #. [topic]: id=..traits_section
 #: data/core/help.cfg:551
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Elves may also receive <ref>dst='traits_dextrous' text='dextrous'</ref>, "
-#| "and dwarves may receive <ref>dst='traits_healthy' text='healthy'</ref>. "
-#| "Trolls and certain humans may receive <ref>dst='traits_fearless' "
-#| "text='fearless'</ref>. Other traits which may be assigned include "
-#| "<ref>dst='traits_loyal' text='loyal'</ref>, <ref>dst='traits_feral' "
-#| "text='feral'</ref> and <ref>dst='traits_undead' text='undead'</ref>.\n"
-#| "\n"
 msgid ""
-"Elves may also receive <ref dst='traits_dextrous'>dextrous</ref>, and "
-"dwarves may receive <ref dst='traits_healthy'>healthy</ref>. Trolls and "
-"certain humans may receive <ref dst='traits_fearless'>fearless</ref>. Other "
-"traits which may be assigned include <ref dst='traits_loyal'>loyal</ref>, "
-"<ref dst='traits_feral'>feral</ref> and <ref dst='traits_undead'>undead</"
-"ref>."
+"Elves may also receive <ref dst='traits_dextrous'>dextrous</ref>, and dwarves"
+" may receive <ref dst='traits_healthy'>healthy</ref>. Trolls and certain "
+"humans may receive <ref dst='traits_fearless'>fearless</ref>. Other traits "
+"which may be assigned include <ref dst='traits_loyal'>loyal</ref>, <ref "
+"dst='traits_feral'>feral</ref> and <ref dst='traits_undead'>undead</ref>."
 msgstr ""
-"\n"
-"\n"
-"Elfos também podem ser <ref>dst='traits_dextrous' text='habilidosos'</ref>, "
-"e anões podem ser <ref>dst='traits_healthy' text='Vigorosos'</ref>. Trolls e "
-"alguns humanos podem ser <ref>dst='traits_fearless' text='destemidos'</ref>. "
-"Outras características específicas são <ref>dst='traits_loyal' text='leal'</"
-"ref>, <ref>dst='traits_feral' text='selvagem'</ref> e "
-"<ref>dst='traits_undead' text='morto-vivo'</ref>.\n"
-"\n"
+"Elfos também podem receber <ref dst='traits_dextrous'>habilidoso</ref>, e "
+"anões podem receber <ref dst='traits_healthy'>vigoroso</ref>. Trolls e alguns"
+" humanos podem receber <ref dst='traits_fearless'>destemido</ref>. Outras "
+"características possíveis são <ref dst='traits_loyal'>leal</ref>, <ref "
+"dst='traits_feral'>selvagem</ref> e <ref dst='traits_undead'>morto-"
+"vivo</ref>."
 
 #
 # File: data/core/help.cfg, line: 492
@@ -5528,47 +5510,25 @@ msgstr "Tipos de Terreno Básicos"
 
 #. [topic]: id=..terrains_section
 #: data/core/help.cfg:565
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Basic terrain types include Flat, Hills, Mountains, Sands, Water and "
-#| "Swamps. There are many more besides these — a list of the terrain types "
-#| "you have discovered can be found at the end of this page.\n"
-#| "\n"
 msgid ""
 "Basic terrain types include Flat, Hills, Mountains, Sands, Water and Swamps. "
 "There are many more besides these — a list of the terrain types you have "
 "discovered can be found at the end of this page."
 msgstr ""
-"\n"
-"\n"
-"Tipos de terrenos básicos incluem Plano, Colinas, Montanhas, Areia, Água e "
-"Pântano. Há outros tipos de terrenos básicos além desses. Uma lista dos "
-"tipos de terrenos que você já encontrou podem ser vistos no final dessa "
-"página.\n"
-"\n"
+"Os tipos de terreno básicos incluem Planície, Colinas, Montanhas, Areias, "
+"Água e Pântano, entre muitos outros — a lista dos que você já encontrou fica "
+"no fim desta página."
 
 #. [topic]: id=..terrains_section
 #: data/core/help.cfg:568
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Every unit has a defense rating and a movement cost for each of the basic "
-#| "terrain types, and these values are listed in the unit’s help page. Basic "
-#| "terrain types may have unique properties like illumination effects as "
-#| "well."
 msgid ""
 "Every unit has a defense rating and a movement cost for each of the basic "
 "terrain types, and these values are listed in the unit’s help page. Basic "
 "terrain types may have unique properties like illumination effects as well."
 msgstr ""
-"\n"
-"\n"
-"Cada unidade possui um nível de defesa e um custo de movimento para cada "
-"tipo de terreno básico. Essas informações são listadas na página de ajuda de "
-"cada unidade. Terrenos básicos podem ter propriedades únicas como iluminação."
+"Cada unidade tem uma defesa e um custo de movimento para cada tipo de terreno"
+" básico, listados na página de ajuda da unidade. Terrenos básicos também "
+"podem ter propriedades próprias, como efeitos de iluminação."
 
 # File: data/core/help.cfg, line: 819
 # File: data/core/help.cfg, line: 819
@@ -5580,17 +5540,6 @@ msgstr "Tipos de Terreno Mistos"
 
 #. [topic]: id=..terrains_section
 #: data/core/help.cfg:572
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Mixed terrain types share the properties of multiple basic terrain types "
-#| "— units generally receive the <italic>text='best defense'</italic> and "
-#| "<italic>text='worst movement'</italic> of the underlying basic types when "
-#| "they move onto a mixed type. For example, this is the case with "
-#| "<italic>text='forested hills'</italic>, <italic>text='sand hills'</"
-#| "italic>, and <italic>text='cave hills'</italic>.\n"
-#| "\n"
 msgid ""
 "Mixed terrain types share the properties of multiple basic terrain types — "
 "units generally receive the <i>best defense</i> and <i>worst movement</i> of "
@@ -5598,136 +5547,71 @@ msgid ""
 "this is the case with <i>forested hills</i>, <i>sand hills</i>, and <i>cave "
 "hills</i>."
 msgstr ""
-"\n"
-"\n"
-"Terrenos mistos possuem as propriedades de múltiplos tipos de terrenos "
-"básicos. As unidades normalmenterecebem a <italic>text='melhor defesa'</"
-"italic> e o <italic>text='pior custo de movimento'</italic> dos tipos de "
-"terrenos básicos que constituem o terreno misto em que elas se encontram. "
-"Por exemplo, este é o caso em <italic>text='colinas com florestas'</italic>, "
-"<italic>text='colinas desérticas'</italic> e <italic>text='colinas "
-"cavernosas'</italic>.\n"
-"\n"
+"Terrenos mistos combinam as propriedades de vários terrenos básicos — em "
+"geral a unidade recebe a <i>melhor defesa</i> e o <i>pior movimento</i> entre"
+" os terrenos que o compõem. É o caso, por exemplo, de <i>colinas "
+"florestadas</i>, <i>colinas de areia</i> e <i>colinas de caverna</i>."
 
 #. [topic]: id=..terrains_section
 #: data/core/help.cfg:575
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "One notable exception is bridge terrains, such as <italic>text='bridges "
-#| "over shallow water'</italic>, <italic>text='fords'</italic>, and "
-#| "<italic>text='bridges over chasms'</italic>. Fords are easily passable to "
-#| "both merfolk and humans — all units moving on a ford enjoy the best "
-#| "defense and best movement out of flat and shallow water, rather than the "
-#| "worse movement of the two. Similarly, bridges over chasms are passable to "
-#| "nonfliers (unsurprisingly).\n"
-#| "\n"
 msgid ""
 "One notable exception is bridge terrains, such as <i>bridges over shallow "
 "water</i>, <i>fords</i>, and <i>bridges over chasms</i>. Fords are easily "
 "passable to both merfolk and humans — all units moving on a ford enjoy the "
-"best defense and best movement out of flat and shallow water, rather than "
-"the worse movement of the two. Similarly, bridges over chasms are passable "
-"to nonfliers (unsurprisingly)."
+"best defense and best movement out of flat and shallow water, rather than the"
+" worse movement of the two. Similarly, bridges over chasms are passable to "
+"nonfliers (unsurprisingly)."
 msgstr ""
-"\n"
-"\n"
-"Uma excessão digna de menção são pontes tais quais: <italic>text='ponte "
-"sobre água rasa'</italic>, <italic>text='vaus'</italic> e "
-"<italic>text='Ponte sobre Abismo'</italic>. Vaus são de fácil travesia tanto "
-"para humanos quanto para tritões — todas as unidades que atravessam uma vau "
-"desfrutam de sua melhor defesa e custo do movimento dentre terreno plano e "
-"águas rasas, ao invés de sofrer com o pior custo de movimento. Da mesma "
-"forma, pontes sobre abismos podem ser atravessadas por criaturas que não "
-"voam (como é de se esperar).\n"
+"Uma exceção notável são as travessias, como <i>pontes sobre água rasa</i>, "
+"<i>vaus</i> e <i>pontes sobre abismos</i>. Vaus são fáceis de atravessar "
+"tanto para tritões quanto para humanos — toda unidade num vau recebe a melhor"
+" defesa e o melhor movimento entre planície e água rasa, e não o pior "
+"movimento dos dois. Do mesmo jeito, pontes sobre abismos podem ser cruzadas "
+"por quem não voa (sem surpresa)."
 
 #. [topic]: id=..terrains_section
 #: data/core/help.cfg:578
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Land-based villages generally give the best defense and movement as well. "
-#| "These villages are mixed terrains, based on the village terrain type, "
-#| "together with hill, swamp, and cave, respectively.\n"
-#| "\n"
 msgid ""
 "Land-based villages generally give the best defense and movement as well. "
 "These villages are mixed terrains, based on the village terrain type, "
 "together with hill, swamp, and cave, respectively."
 msgstr ""
-"\n"
-"\n"
-"Aldeias terrestres normalmente dão a melhor defesa e custam poucos pontos de "
-"movimento. Estas aldeias são terrenos misturados, com base no tipo de "
-"terreno em que a aldeia se encontra, quando está em colinas, pântanos ou "
-"cavernas, respectivamente.\n"
-"\n"
+"Aldeias em terra geralmente também dão a melhor defesa e o melhor movimento. "
+"Essas aldeias são terrenos mistos, que combinam aldeia com colina, pântano ou"
+" caverna, conforme o caso."
 
 #. [topic]: id=..terrains_section
 #: data/core/help.cfg:581
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Finally, water villages are generally inhospitable to land units, and do "
-#| "not give defense or movement benefits associated with the village terrain "
-#| "type. Instead, they count only as water tiles.\n"
-#| "\n"
 msgid ""
 "Finally, water villages are generally inhospitable to land units, and do not "
 "give defense or movement benefits associated with the village terrain type. "
 "Instead, they count only as water tiles."
 msgstr ""
-"\n"
-"\n"
-"Por fim, aldeias aquáticas são geralmente inóspitas para unidades "
-"terrestres, não dando os beneficios de defesa e movimento associados com o "
-"tipo de terreno aldeia. Ao invés disso, elas contam como terreno aquático.\n"
-"\n"
+"Por fim, aldeias na água costumam ser inóspitas para unidades terrestres e "
+"não dão os benefícios de defesa e movimento de uma aldeia. Contam apenas como"
+" água."
 
 #. [topic]: id=..terrains_section
 #: data/core/help.cfg:584
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "You can see what basic types a mixed terrain is comprised of by mousing "
-#| "over its hex and checking the terrain type icons displayed in the upper "
-#| "right (under the default theme)."
 msgid ""
 "You can see what basic types a mixed terrain is comprised of by mousing over "
 "its hex and checking the terrain type icons displayed in the upper right "
 "(under the default theme)."
 msgstr ""
-"\n"
-"\n"
-"Você pode ver quais terrenos básicos compõem um terreno misturado passando o "
-"mouse em cima dele e observando os ícones de terreno que aparecem no canto "
-"superior direito da interface (na interface padrão)"
+"Para saber de quais terrenos básicos um terreno misto é feito, toque no "
+"hexágono (ou passe o ponteiro) e veja a descrição do terreno no painel "
+"lateral."
 
 #. [topic]: id=..terrains_section
 #: data/core/help.cfg:586
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "You can see what type of behavior the mixed terrain gives by mousing over "
-#| "its hex and viewing the <italic>text='terrain description'</italic> by "
-#| "either pressing the hotkey, or right clicking and selecting from the "
-#| "context menu."
 msgid ""
-"You can see what type of behavior the mixed terrain gives by mousing over "
-"its hex and viewing the <i>terrain description</i> by either pressing the "
+"You can see what type of behavior the mixed terrain gives by mousing over its"
+" hex and viewing the <i>terrain description</i> by either pressing the "
 "hotkey, or right clicking and selecting from the context menu."
 msgstr ""
-"\n"
-"\n"
-"Você pode ver quais as características do terreno misto passando o mouse por "
-"sobre ele e vendo a <italic>text='descrição de terreno'</italic> precionando "
-"a tecla de atalho ou clicando com o botão direito e selecionando a opção no "
-"menu contextual."
+"Para ver como um terreno misto se comporta, abra a <i>descrição do "
+"terreno</i>: toque e segure o hexágono e escolha a opção no menu (no "
+"computador, clique com o botão direito ou use o atalho)."
 
 # File: src/help.cpp, line: 1607
 # File: src/help.cpp, line: 1607
@@ -5739,66 +5623,36 @@ msgstr "Limites de Defesa"
 
 #. [topic]: id=..terrains_section
 #: data/core/help.cfg:590
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Some units have <italic>text='defense caps'</italic> for a particular "
-#| "basic terrain type. These units suffer a penalty on mixed terrains with "
-#| "that type — their defense cannot exceed the cap."
 msgid ""
 "Some units have <i>defense caps</i> for a particular basic terrain type. "
-"These units suffer a penalty on mixed terrains with that type — their "
-"defense cannot exceed the cap."
+"These units suffer a penalty on mixed terrains with that type — their defense"
+" cannot exceed the cap."
 msgstr ""
-"\n"
-"\n"
-"Algumas unidades possuem um <italic>text='Limite de Defesa'</italic> em "
-"certos terrenos básicos. Essas unidades sofrem penalidade de defesa em "
-"terrenos mistos, visto que a sua defesa não pode exceder o terreno com o "
-"menor valor máximo."
+"Algumas unidades têm <i>limite de defesa</i> num terreno básico. Elas sofrem "
+"uma penalidade nos terrenos mistos que incluem esse tipo — a defesa não passa"
+" do limite."
 
 #. [topic]: id=..terrains_section
 #: data/core/help.cfg:592
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "For example, the <ref>text='Loyalist Cavalryman' dst='unit_Cavalryman'</"
-#| "ref> has a defense rating of 30% on forests, and a defense cap for "
-#| "forests. Thus, on forested hills, he has a defense rating of 30% rather "
-#| "than 40%, because the mixed rating cannot exceed the cap."
 msgid ""
 "For example, the <ref dst='unit_Cavalryman'>Loyalist Cavalryman</ref> has a "
 "defense rating of 30% on forests, and a defense cap for forests. Thus, on "
 "forested hills, he has a defense rating of 30% rather than 40%, because the "
 "mixed rating cannot exceed the cap."
 msgstr ""
-"\n"
-"\n"
-"Por exemplo, uma unidade de <ref>text='Cavalaria Lealista' "
-"dst='unit_Cavalryman'</ref> possui 30% de defesa em florestas e um limite de "
-"defesa em florestas. Sendo assim, em colinas com florestas essa unidade "
-"possui um limite de defesa igual a 30% ao invés de 40%, pois o limite de "
-"defesa não pode ser excedido."
+"Por exemplo, o <ref dst='unit_Cavalryman'>Equestre</ref> tem 30% de defesa na"
+" floresta e um limite de defesa para florestas. Assim, em colinas "
+"florestadas, ele tem 30% de defesa em vez de 40%, porque o valor do terreno "
+"misto não pode passar do limite."
 
 #. [topic]: id=..terrains_section
 #: data/core/help.cfg:594
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "If a unit has a defense cap for some terrain, it is always the same as "
-#| "its defense rating on that terrain (it cannot be larger)."
 msgid ""
 "If a unit has a defense cap for some terrain, it is always the same as its "
 "defense rating on that terrain (it cannot be larger)."
 msgstr ""
-"\n"
-"\n"
-"Se uma unidade possui um limite de defesa em certos terrenos, sua defesa "
-"nunca será maior do que o menor limite de defesa que ela possui para um dado "
-"terreno."
+"Se uma unidade tem limite de defesa num terreno, ele é sempre igual à defesa "
+"dela nesse terreno (não pode ser maior)."
 
 #. [topic]: id=..addons
 #: data/core/help.cfg:607
@@ -5842,26 +5696,15 @@ msgstr "Campanhas e Cenários"
 
 #. [topic]: id=using_addons
 #: data/core/help.cfg:622
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Single-player campaigns are collections of scenarios that fit together to "
-#| "tell a story. Both stand-alone scenarios—if intended to be played as such—"
-#| "and regular campaigns are available from the <italic>text='Campaigns'</"
-#| "italic> menu at the title screen."
 msgid ""
 "Single-player campaigns are collections of scenarios that fit together to "
-"tell a story. Both stand-alone scenarios—if intended to be played as such—"
-"and regular campaigns are available from the <i>Campaigns</i> menu at the "
-"title screen."
+"tell a story. Both stand-alone scenarios—if intended to be played as such—and"
+" regular campaigns are available from the <i>Campaigns</i> menu at the title "
+"screen."
 msgstr ""
-"\n"
-"\n"
-"Campanhas Singleplayer são grupos de cenários intercalados que contam uma "
-"história. Tanto cenários avulsos - que tenham sido pensados para serem "
-"jogados assim - e campanhas podem ser encontradas na seção "
-"<italic>text='Campanhas'</italic> no menu inicial."
+"Campanhas para um jogador são conjuntos de cenários que, juntos, contam uma "
+"história. Tanto cenários avulsos — quando feitos para serem jogados assim — "
+"quanto campanhas normais ficam no menu <i>Campanhas</i> da tela inicial."
 
 # File: data/core/help.cfg, line: 809
 # File: data/core/help.cfg, line: 809
@@ -5873,23 +5716,14 @@ msgstr "Campanhas, Cenários e Pacotes de Mapas Multiplayer"
 
 #. [topic]: id=using_addons
 #: data/core/help.cfg:626
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "<italic>text='Multiplayer'</italic> games can be played in fully "
-#| "customized, scripted scenarios or even specially designed campaigns. "
-#| "There are also packs providing sets of individual multiplayer scenarios."
 msgid ""
 "<i>Multiplayer</i> games can be played in fully customized, scripted "
 "scenarios or even specially designed campaigns. There are also packs "
 "providing sets of individual multiplayer scenarios."
 msgstr ""
-"\n"
-"\n"
-"Partidas <italic>text='Multiplayer'</italic> podem ser jogados em cenários "
-"totalmente customizados ou em campanhas especialmente feitas para esse modo. "
-"Há também pacotes com cenários avulsos para o modo multiplayer."
+"Partidas <i>multijogador</i> podem ser jogadas em cenários totalmente "
+"personalizados e programados, ou até em campanhas feitas para isso. Há também"
+" pacotes com conjuntos de cenários multijogador avulsos."
 
 # File: data/core/help.cfg, line: 813
 # File: data/core/help.cfg, line: 813
@@ -5901,42 +5735,26 @@ msgstr "Eras e Facções Multiplayer"
 
 #. [topic]: id=using_addons
 #: data/core/help.cfg:630
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "For gameplay purposes, various races of creatures in the world cooperate "
-#| "with each other in factions. Factions are grouped in balanced sets with a "
-#| "common theme; for example, the main factions of Wesnoth can be found in "
-#| "the included Default Era.\n"
-#| "\n"
-#| "In <italic>text='Multiplayer'</italic> mode, you can choose an era when "
-#| "creating a new game, and players can pick from the available factions for "
-#| "that era when setting up their sides and teams."
 msgid ""
-"For gameplay purposes, various races of creatures in the world cooperate "
-"with each other in factions. Factions are grouped in balanced sets with a "
-"common theme; for example, the main factions of Wesnoth can be found in the "
-"included Default Era."
+"For gameplay purposes, various races of creatures in the world cooperate with"
+" each other in factions. Factions are grouped in balanced sets with a common "
+"theme; for example, the main factions of Wesnoth can be found in the included"
+" Default Era."
 msgstr ""
-"\n"
-"\n"
-"Por propósitos de gameplay, diversas raças do mundo cooperam entre si em "
-"facções. Facções são agrupadas em grupos balanceados, cada uma possuindo um "
-"tema. Por exemplo, as principais facções de Wesnoth podem ser encontradas na "
-"Era Padrão.\n"
-"\n"
-"No modo <italic>text='Multiplayer'</italic>, você pode escolher uma era ao "
-"criar um novo jogo e jos jogadores podem escolher dentre as facções daquela "
-"era quando estiverem determinando os lados e times da partida."
+"No jogo, várias raças do mundo se unem em facções. As facções são agrupadas "
+"em conjuntos equilibrados com um tema comum; as principais facções de "
+"Wesnoth, por exemplo, estão na Era Padrão que vem com o jogo."
 
 #. [topic]: id=using_addons
 #: data/core/help.cfg:632
 msgid ""
 "In <i>Multiplayer</i> mode, you can choose an era when creating a new game, "
-"and players can pick from the available factions for that era when setting "
-"up their sides and teams."
+"and players can pick from the available factions for that era when setting up"
+" their sides and teams."
 msgstr ""
+"No modo <i>Multijogador</i>, você escolhe uma era ao criar uma partida, e "
+"cada jogador escolhe entre as facções dessa era ao configurar seu lado e "
+"time."
 
 #. [topic]: id=using_addons
 #: data/core/help.cfg:634
@@ -5954,23 +5772,14 @@ msgstr "Modificações"
 
 #. [topic]: id=using_addons
 #: data/core/help.cfg:638
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Modifications are optional scenario- and era-independent scripts that can "
-#| "alter the default ruleset in various ways. You can choose and configure "
-#| "modifications when creating a new game."
 msgid ""
 "Modifications are optional scenario- and era-independent scripts that can "
 "alter the default ruleset in various ways. You can choose and configure "
 "modifications when creating a new game."
 msgstr ""
-"\n"
-"\n"
-"Modificações são cenário opcionais -e eras- scriptados independentemente que "
-"podem alterar as regras padrões do jogo em diversas formas. Você pode "
-"escolher e configurar as modificações ao criar um jogo novo."
+"Modificações são scripts opcionais, independentes de cenário e era, que podem"
+" alterar as regras padrão de várias formas. Você as escolhe e configura ao "
+"criar uma partida."
 
 # File: data/core/help.cfg, line: 527
 # File: data/core/help.cfg, line: 527
@@ -5982,59 +5791,25 @@ msgstr "Núcleos"
 
 #. [topic]: id=using_addons
 #: data/core/help.cfg:642
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Cores enable total conversion of The Battle for Wesnoth. A core can "
-#| "replace all the content in Wesnoth: when a different core is loaded, the "
-#| "regular units, terrains and the like do not exist.\n"
-#| "\n"
-#| "Cores allow a significantly different game experience: for example, a "
-#| "World War II campaign, or even a different game altogether, as long as it "
-#| "can be represented as a hexagonal map with ’units’ in some way."
 msgid ""
 "Cores enable total conversion of The Battle for Wesnoth. A core can replace "
 "all the content in Wesnoth: when a different core is loaded, the regular "
 "units, terrains and the like do not exist."
 msgstr ""
-"\n"
-"\n"
-"Cores permitem a conversão total do Battle for Wesnoth. Um core pode "
-"substituir todo o conteúdo do jogo: quando um core diferente é carregado, as "
-"unidades padrões, terrenos e afins não existem mais.\n"
-"\n"
-"Cores possibilitam uma experiência de jogo bem diferente: por exemplo, uma "
-"campanha da 2ª Guerra Mundial, ou até mesmo um jogo completamente diferente, "
-"desde que o mapa seja hexágonal e hajam 'unidades'."
+"Núcleos permitem uma conversão total de Batalha por Wesnoth. Um núcleo pode "
+"substituir todo o conteúdo do jogo: quando outro núcleo está carregado, as "
+"unidades, terrenos e afins normais deixam de existir."
 
 #. [topic]: id=using_addons
 #: data/core/help.cfg:644
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Cores enable total conversion of The Battle for Wesnoth. A core can "
-#| "replace all the content in Wesnoth: when a different core is loaded, the "
-#| "regular units, terrains and the like do not exist.\n"
-#| "\n"
-#| "Cores allow a significantly different game experience: for example, a "
-#| "World War II campaign, or even a different game altogether, as long as it "
-#| "can be represented as a hexagonal map with ’units’ in some way."
 msgid ""
 "Cores allow a significantly different game experience: for example, a World "
 "War II campaign, or even a different game altogether, as long as it can be "
 "represented as a hexagonal map with ‘units’ in some way."
 msgstr ""
-"\n"
-"\n"
-"Cores permitem a conversão total do Battle for Wesnoth. Um core pode "
-"substituir todo o conteúdo do jogo: quando um core diferente é carregado, as "
-"unidades padrões, terrenos e afins não existem mais.\n"
-"\n"
-"Cores possibilitam uma experiência de jogo bem diferente: por exemplo, uma "
-"campanha da 2ª Guerra Mundial, ou até mesmo um jogo completamente diferente, "
-"desde que o mapa seja hexágonal e hajam 'unidades'."
+"Núcleos permitem uma experiência bem diferente: por exemplo, uma campanha da "
+"Segunda Guerra Mundial, ou até outro jogo, desde que caiba num mapa hexagonal"
+" com ‘unidades’ de algum tipo."
 
 # File: data/core/help.cfg, line: 819
 # File: data/core/help.cfg, line: 819
@@ -6046,30 +5821,17 @@ msgstr "Recursos para Criadores"
 
 #. [topic]: id=using_addons
 #: data/core/help.cfg:648
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Content authors can use resource packs available on the add-ons server to "
-#| "enrich their own content with existing assets such as images, music, and "
-#| "code. These are not generally intended for direct use in-game; however, "
-#| "other playable add-ons may depend on them and suggest or require their "
-#| "installation during download."
 msgid ""
 "Content authors can use resource packs available on the add-ons server to "
 "enrich their own content with existing assets such as images, music, and "
-"code. These are not generally intended for direct use in-game; however, "
-"other playable add-ons may depend on them and suggest or require their "
+"code. These are not generally intended for direct use in-game; however, other"
+" playable add-ons may depend on them and suggest or require their "
 "installation during download."
 msgstr ""
-"\n"
-"\n"
-"Autores podem usar pacotes de recursos disponíveis no servidor de add-ons "
-"para enriquecer suas criações com a adição de coisas como imagens, músicas e "
-"código. Esses pacotes geralmente não foram feitos para serem usados "
-"diretamente dentro de jogos. Entretanto, outros add-ons talvez dependam "
-"deles, sugerindo que você faça download deles ou que eles são necessáriosn "
-"quando vc está baixando o add-on."
+"Autores de conteúdo podem usar pacotes de recursos do servidor de add-ons "
+"para enriquecer seu trabalho com imagens, músicas e código já prontos. Esses "
+"pacotes geralmente não são para uso direto no jogo; mas outros add-ons "
+"jogáveis podem depender deles e sugerir ou exigir sua instalação no download."
 
 #
 # File: data/core/help.cfg, line: 830
@@ -6082,77 +5844,22 @@ msgstr "Instalando Add-ons"
 
 #. [topic]: id=installing_addons
 #: data/core/help.cfg:656
-#, fuzzy
-#| msgid ""
-#| "User-made add-ons can be obtained and updated through the "
-#| "<italic>text='Add-ons'</italic> option in the main menu. After connecting "
-#| "to the add-ons server (by default <italic>text='add-ons.wesnoth.org'</"
-#| "italic>), you will be presented with a list of add-ons available on the "
-#| "server for downloading.\n"
-#| "\n"
-#| "The installation status for each add-on is shown below each entry. For "
-#| "add-ons that are <italic>text='upgradable'</italic> or "
-#| "<italic>text='outdated'</italic> on the server, their installed and "
-#| "published versions will be shown in the <italic>text='Version'</italic> "
-#| "column.\n"
-#| "\n"
-#| "To search for add-ons by keywords, type any relevant terms in any order "
-#| "in the search box, separated by spaces. You can also sort the add-on list "
-#| "by clicking the column headers. It is also possible to choose to only "
-#| "display add-ons of specific categories by clicking on the "
-#| "<bold>text='Type'</bold> dropdown.\n"
-#| "\n"
-#| "To install an add-on, select it from the list and click the "
-#| "<bold>text='+'</bold> icon, or simply double-click on the add-on’s title. "
-#| "If the window is too small to show them inline, the <bold>text='Add-on "
-#| "Details'</bold> button provides you with additional details about the add-"
-#| "on, such as its full description, installation status, and available "
-#| "translations."
 msgid ""
-"User-made add-ons can be obtained and updated through the <i>Add-ons</i> "
-"option in the main menu. After connecting to the add-ons server (by default "
-"<i>add-ons.wesnoth.org</i>), you will be presented with a list of add-ons "
-"available on the server for downloading.\n"
+"User-made add-ons can be obtained and updated through the <i>Add-ons</i> option in the main menu. After connecting to the add-ons server (by default <i>add-ons.wesnoth.org</i>), you will be presented with a list of add-ons available on the server for downloading.\n"
 "\n"
-"The installation status for each add-on is shown below each entry. For add-"
-"ons that are <i>upgradable</i> or <i>outdated</i> on the server, their "
-"installed and published versions will be shown in the <i>Version</i> "
-"column.\n"
+"The installation status for each add-on is shown below each entry. For add-ons that are <i>upgradable</i> or <i>outdated</i> on the server, their installed and published versions will be shown in the <i>Version</i> column.\n"
 "\n"
-"To search for add-ons by keywords, type any relevant terms in any order in "
-"the search box, separated by spaces. You can also sort the add-on list by "
-"clicking the column headers. It is also possible to choose to only display "
-"add-ons of specific categories by clicking on the <b>Type</b> dropdown.\n"
+"To search for add-ons by keywords, type any relevant terms in any order in the search box, separated by spaces. You can also sort the add-on list by clicking the column headers. It is also possible to choose to only display add-ons of specific categories by clicking on the <b>Type</b> dropdown.\n"
 "\n"
-"To install an add-on, select it from the list and click the <b>+</b> icon, "
-"or simply double-click on the add-on’s title. If the window is too small to "
-"show them inline, the <b>Add-on Details</b> button provides you with "
-"additional details about the add-on, such as its full description, "
-"installation status, and available translations."
+"To install an add-on, select it from the list and click the <b>+</b> icon, or simply double-click on the add-on’s title. If the window is too small to show them inline, the <b>Add-on Details</b> button provides you with additional details about the add-on, such as its full description, installation status, and available translations."
 msgstr ""
-"Add-ons podem ser obtidos e atualizados através da opção <italic>text='Add-"
-"ons'</italic> no menu principal. Após se conectar ao servidor dos add-ons "
-"(<italic>text='add-ons.wesnoth.org'</italic> é o server padrão), você verá "
-"uma lista com todos os add-ons do servidor que podem ser baixados.\n"
+"Add-ons feitos por usuários podem ser baixados e atualizados pela opção <i>Add-ons</i> do menu principal. Ao conectar ao servidor de add-ons (por padrão <i>add-ons.wesnoth.org</i>), aparece a lista do que está disponível para baixar.\n"
 "\n"
-"a situação atual dos add-ons instalados é mostrada abaixo de cada add-on. "
-"Para add-ons que são <italic>text='atualizáveis'</italic> ou "
-"<italic>text='desatualizados'</italic> no servidor, a versão publicada e a "
-"versão instalada aparecerão na coluna <italic>text='Versão'</italic>.\n"
+"A situação de instalação de cada add-on aparece abaixo dele. Para add-ons <i>atualizáveis</i> ou <i>desatualizados</i> no servidor, as versões instalada e publicada aparecem na coluna <i>Versão</i>.\n"
 "\n"
-"Para procurar um add-on por meio de palavras-chave, digite qualquer termo "
-"relevante em qualquer ordem na caixa de pesquisa, separados uns dos outros "
-"por espaço. Você também pode classificar a lista de add-ons clicando no topo "
-"da coluna. Há também a possibilidade de fazer com que apenas categorias "
-"específicas de add-ons sejam exibidos clicando na opção <bold>text='Tipo'</"
-"bold>.\n"
+"Para buscar por palavras-chave, digite os termos na caixa de busca, em qualquer ordem, separados por espaços. Também dá para ordenar a lista tocando nos cabeçalhos das colunas, ou mostrar só algumas categorias pelo menu <b>Tipo</b>.\n"
 "\n"
-"Para instalar um add-on, selecione-o na lista e clice no ícone "
-"<bold>text='+'</bold>, ou clique duas vezes no título do add-on. Se a janela "
-"for pequena demais para mostra-los na linha, clique no botão "
-"<bold>text='Detalhes do Add-on'</bold> para ver mais informações sobre o add-"
-"on, tal como a sua descrição completa, status da instalação e traduções "
-"disponíveis."
+"Para instalar um add-on, selecione-o na lista e toque no ícone <b>+</b>, ou toque duas vezes no título. Se a janela for pequena demais para mostrar tudo, o botão <b>Detalhes do Add-on</b> mostra mais informações, como a descrição completa, a situação de instalação e as traduções disponíveis."
 
 #
 # File: data/core/help.cfg, line: 844
@@ -6165,36 +5872,14 @@ msgstr "Removendo Add-ons"
 
 #. [topic]: id=removing_addons
 #: data/core/help.cfg:670
-#, fuzzy
-#| msgid ""
-#| "To remove add-ons, choose <bold>text='Remove Add-ons'</bold> in the add-"
-#| "ons server connection dialog. You will be presented with options to "
-#| "remove any number of add-ons you currently have installed.\n"
-#| "\n"
-#| "It is not possible to remove add-ons for which there is publishing "
-#| "information (<italic>text='.pbl'</italic> files) attached, in order to "
-#| "prevent its accidental loss. If necessary, you must manually delete the "
-#| "information files or the add-ons themselves using a file manager provided "
-#| "by your platform."
 msgid ""
-"To remove add-ons, choose <b>Remove Add-ons</b> in the add-ons server "
-"connection dialog. You will be presented with options to remove any number "
-"of add-ons you currently have installed.\n"
+"To remove add-ons, choose <b>Remove Add-ons</b> in the add-ons server connection dialog. You will be presented with options to remove any number of add-ons you currently have installed.\n"
 "\n"
-"It is not possible to remove add-ons for which there is publishing "
-"information (<i>.pbl</i> files) attached, in order to prevent its accidental "
-"loss. If necessary, you must manually delete the information files or the "
-"add-ons themselves using a file manager provided by your platform."
+"It is not possible to remove add-ons for which there is publishing information (<i>.pbl</i> files) attached, in order to prevent its accidental loss. If necessary, you must manually delete the information files or the add-ons themselves using a file manager provided by your platform."
 msgstr ""
-"Para remover add-ons, escolha <bold>text='Remover Add-ons'</bold> na janela "
-"do servidor. Lá se encontra a opção para remover qualquer um dos add-ons que "
-"você tenha instalado.\n"
+"Para remover add-ons, escolha <b>Remover Add-ons</b> na janela de conexão com o servidor. Você poderá remover quantos add-ons instalados quiser.\n"
 "\n"
-"Não é possível remover add-ons que possuam informações de publicação "
-"(arquivos <italic>text='.pbl'</italic>) anexadas, com o intuíto de prevenir "
-"a sua perda acidental. Se necessário, você deve deletar manualmente os "
-"arquivos de informações ou os add-ons usando um gerenciador de arquivos "
-"fornecido pela sua plataforma."
+"Não é possível remover add-ons que têm informações de publicação (arquivos <i>.pbl</i>), para evitar perdê-los por acidente. Se precisar, apague manualmente esses arquivos ou os próprios add-ons com o gerenciador de arquivos do seu sistema."
 
 #
 # File: data/core/help.cfg, line: 860
@@ -6205,7 +5890,6 @@ msgstr ""
 msgid "General Commands"
 msgstr "Comandos Gerais"
 
-#
 # File: data/core/help.cfg, line: 862
 # File: data/core/help.cfg, line: 902
 # File: data/core/help.cfg, line: 934
@@ -6219,39 +5903,23 @@ msgstr "Comandos Gerais"
 #. [topic]: id=mp_commands
 #. [topic]: id=debug_commands
 #: data/core/help.cfg:686 data/core/help.cfg:733 data/core/help.cfg:773
-#, fuzzy
-#| msgid ""
-#| "These commands can either be issued via the command line by prefixing "
-#| "them with ‘:’ (as shown here) or via the chat by prefixing them with "
-#| "‘/’ (press ‘m’ first to open the chat line).\n"
-#| "\n"
 msgid ""
 "These commands can either be issued via the command line by prefixing them "
 "with ‘:’ (as shown here) or via the chat by prefixing them with ‘/’ (press "
 "‘m’ first to open the chat line)."
 msgstr ""
-"Estes comandos podem ser dados pela linha de comando adicionando o prefixo "
-"\":\" (como mostrado aqui) ou pela janela de chat adicionando o prefixo "
-"'/' (a tecla 'm' abre a janela de chat).\n"
-"\n"
+"Estes comandos podem ser dados pela linha de comando, começando com ‘:’ (como"
+" mostrado aqui), ou pelo chat, começando com ‘/’ (aperte ‘m’ antes para abrir"
+" a linha do chat)."
 
 #. [topic]: id=general_commands
 #: data/core/help.cfg:689
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Similar to the ‘fps’ command, but also forces everything to redraw "
-#| "instead of only things that have changed.\n"
-#| "\n"
 msgid ""
-"Similar to the ‘fps’ command, but also forces everything to redraw instead "
-"of only things that have changed."
+"Similar to the ‘fps’ command, but also forces everything to redraw instead of"
+" only things that have changed."
 msgstr ""
-"\n"
-"Similar ao comando \"fps\", mas também força tudo a recarregar ao invés de "
-"apenas as coisas que foram mudadas.\n"
-"\n"
-"\n"
+"Parecido com o comando ‘fps’, mas também força redesenhar tudo, e não só o "
+"que mudou."
 
 # File: data/core/help.cfg, line: 864
 # File: data/core/help.cfg, line: 864
@@ -6261,28 +5929,17 @@ msgstr ""
 msgid "Clear chat messages."
 msgstr "Limpa as mensagens do chat."
 
-#
 # File: data/core/help.cfg, line: 867
 # File: data/core/help.cfg, line: 867
 # File: data/core/help.cfg, line: 867
 #. [topic]: id=general_commands
 #: data/core/help.cfg:695
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Switch debug mode on (does not work in multiplayer). See "
-#| "<ref>dst='debug_commands' text='debug mode commands'</ref>.\n"
-#| "Debug mode is turned off by quitting the game or :nodebug.\n"
-#| "\n"
 msgid ""
 "Switch debug mode on (does not work in multiplayer). See <ref "
 "dst='debug_commands'>debug mode commands</ref>."
 msgstr ""
-"\n"
-"Ativa o modo de debug (não funciona em multiplayer). Veja "
-"<ref>dst='debug_commands' text='Comandos do Modo Debug'</ref>.\n"
-"O modo de debug é desativado ao sair do jogo ou pelo comando :nodebug.\n"
-"\n"
+"Liga o modo de depuração (não funciona no multijogador). Veja os <ref "
+"dst='debug_commands'>comandos do modo de depuração</ref>."
 
 #. [topic]: id=general_commands
 #. ':nodebug' is a command and should not be translated
@@ -6292,57 +5949,34 @@ msgstr "O modo de depuração é desligado ao sair do jogo ou com :nodebug."
 
 #. [topic]: id=general_commands
 #: data/core/help.cfg:701
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Switch a side between human and AI control. The second parameter can be "
-#| "‘off’ to bring the side under human control, ‘on’ to watch the AI make "
-#| "its moves, or ‘full’ to make the AI’s turn behave similarly to another "
-#| "player‘s turn. If no second parameter is supplied, it toggles between "
-#| "‘on’ and ‘off’. Defaults to toggling the currently active side if no "
-#| "parameters are supplied.\n"
-#| "\n"
 msgid ""
-"Switch a side between human and AI control. The second parameter can be "
-"‘off’ to bring the side under human control, ‘on’ to watch the AI make its "
-"moves, or ‘full’ to make the AI’s turn behave similarly to another player’s "
-"turn. If no second parameter is supplied, it toggles between ‘on’ and ‘off’. "
-"Defaults to toggling the currently active side if no parameters are supplied."
+"Switch a side between human and AI control. The second parameter can be ‘off’"
+" to bring the side under human control, ‘on’ to watch the AI make its moves, "
+"or ‘full’ to make the AI’s turn behave similarly to another player’s turn. If"
+" no second parameter is supplied, it toggles between ‘on’ and ‘off’. Defaults"
+" to toggling the currently active side if no parameters are supplied."
 msgstr ""
-"\n"
-"Muda o controle de um lado entre humano e AI. O segundo parâmetro pode ser "
-"\"off\" para botar o humano como controlador do lado, ou \"on\" para "
-"observar a AI agindo, ou \"full\" para fazer com que o turno da AI se "
-"assemelhe ao turno de outro jogador. Se não um segundo parãmetro não for "
-"fornecido, alterna entre \"on\" e \"off\". Por padrão alterna o lado do "
-"turno atual se não for fornecido um segundo parâmetro.\n"
-"\n"
+"Alterna um lado entre controle humano e da IA. O segundo parâmetro pode ser "
+"‘off’ para passar o lado ao humano, ‘on’ para ver a IA jogar, ou ‘full’ para "
+"que o turno da IA se comporte como o de outro jogador. Sem segundo parâmetro,"
+" alterna entre ‘on’ e ‘off’. Sem nenhum parâmetro, alterna o lado ativo."
 
 #. [topic]: id=general_commands
 #: data/core/help.cfg:704
 msgid "Display the controller status of a side."
 msgstr "Mostra o estado do controlador de um lado."
 
-#
 # File: data/core/help.cfg, line: 874
 # File: data/core/help.cfg, line: 874
 # File: data/core/help.cfg, line: 874
 #. [topic]: id=general_commands
 #: data/core/help.cfg:707
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Toggle the display of the current frames per second. Also writes these "
-#| "values to a file in the userdata directory.\n"
-#| "\n"
 msgid ""
-"Toggle the display of the current frames per second. Also writes these "
-"values to a file in the userdata directory."
+"Toggle the display of the current frames per second. Also writes these values"
+" to a file in the userdata directory."
 msgstr ""
-"\n"
-"Alterna o mostrador do número de frames por segundo. Também salva esses "
-"valores em um arquivo no diretório userdata.\n"
-"\n"
+"Liga ou desliga a exibição dos quadros por segundo. Também grava esses "
+"valores num arquivo na pasta de dados do usuário."
 
 # File: data/core/help.cfg, line: 877
 # File: data/core/help.cfg, line: 877
@@ -6402,48 +6036,25 @@ msgstr "Salva o jogo e sai do cenário (sem confirmação)."
 msgid "Multiplayer Commands"
 msgstr "Comandos para Multiplayer"
 
-#
 # File: data/core/help.cfg, line: 904
 # File: data/core/help.cfg, line: 904
 # File: data/core/help.cfg, line: 904
 #. [topic]: id=mp_commands
 #: data/core/help.cfg:736
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Ban a user in a multiplayer game by the IP address used by that username "
-#| "and kick him. Can be used on users not in the game but on the server. (Of "
-#| "course they won’t be kicked then.)\n"
-#| "\n"
 msgid ""
 "Ban a user in a multiplayer game by the IP address used by that username and "
 "kick him. Can be used on users not in the game but on the server. (Of course "
 "they won’t be kicked then.)"
 msgstr ""
-"\n"
-"Bane um usuário num jogo multiplayer pelo endereço de IP usado por aquele "
-"nome de usuário e também expulsa-o da sala. Pode ser usado em usuários que "
-"estão no servidor mas não dentro de um jogo. (Nesse caso eles não serão "
-"expulsos de uma partida).\n"
-"\n"
-"\n"
+"Bane um usuário de uma partida multijogador pelo endereço IP usado por esse "
+"nome e o expulsa. Pode ser usado em usuários que não estão na partida mas "
+"estão no servidor. (Nesse caso, claro, ele não é expulso.)"
 
-#
 # File: data/core/help.cfg, line: 907
 # File: data/core/help.cfg, line: 907
 # File: data/core/help.cfg, line: 907
 #. [topic]: id=mp_commands
 #: data/core/help.cfg:739
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Change the controller for side (write here the number of the side) to "
-#| "username (write here the nickname of the player or observer). You can "
-#| "check what side belongs to which player in the <bold>text='Scenario "
-#| "Settings'</bold> dialog (Press the <bold>text='More'</bold> button in the "
-#| "<bold>text='Status Table'</bold> (alt+s by default) to get there.). The "
-#| "host can change control of any side.\n"
-#| "\n"
 msgid ""
 "Change the controller for side (write here the number of the side) to "
 "username (write here the nickname of the player or observer). You can check "
@@ -6451,14 +6062,11 @@ msgid ""
 "(Press the <b>More</b> button in the <b>Status Table</b> (alt+s by default) "
 "to get there.). The host can change control of any side."
 msgstr ""
-"\n"
-"Dá o controle de um lado (digite o número do lado) para um jogador (digite o "
-"nome do jogador ou observador). Você pode ver qual lado pertence a qual "
-"jogador na janela<bold>text='Configurações do Cenário'</bold> (Clique no "
-"botão <bold>text='Mais'</bold> na <bold>text='Tabela de Estatísticas'</bold> "
-"(alt+s é o atalho padrão) para ver a informação.). O host pode mudar o "
-"controle de qualquer lado.\n"
-"\n"
+"Passa o controle do lado (escreva aqui o número do lado) para o usuário "
+"(escreva aqui o apelido do jogador ou observador). Para ver qual lado é de "
+"qual jogador, abra a aba <b>Configurações do Cenário</b> na <b>Tabela de "
+"Estatísticas</b> (alt+s por padrão). O anfitrião pode mudar o controle de "
+"qualquer lado."
 
 #. [topic]: id=mp_commands
 #: data/core/help.cfg:742
@@ -6478,56 +6086,31 @@ msgstr ""
 "Alterna o estado inativo de um lado. O anfitrião pode deixar um lado inativo "
 "depois de uma desconexão."
 
-#
 # File: data/core/help.cfg, line: 910
 # File: data/core/help.cfg, line: 910
 # File: data/core/help.cfg, line: 910
 #. [topic]: id=mp_commands
 #. ':control' is a command and should not be translated
 #: data/core/help.cfg:750
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Kick a user in multiplayer. They will be able to rejoin the game. If you "
-#| "just want to change control of their side(s) use the :control command "
-#| "instead.\n"
-#| "\n"
 msgid ""
-"Kick a user in multiplayer. They will be able to rejoin the game. If you "
-"just want to change control of their side(s) use the :control command "
-"instead."
+"Kick a user in multiplayer. They will be able to rejoin the game. If you just"
+" want to change control of their side(s) use the :control command instead."
 msgstr ""
-"\n"
-"Expulsa um jogador no modo multiplayer. Eles podem entrar de novo na "
-"partida. Se você simplesmente deseja mudar quem controla o lado deles, use o "
-"comando :control ao invés desse comando.\n"
-"\n"
-"\n"
+"Expulsa um usuário no multijogador. Ele poderá voltar à partida. Se você só "
+"quer mudar o controle dos lados dele, use o comando :control."
 
-#
 # File: data/core/help.cfg, line: 913
 # File: data/core/help.cfg, line: 913
 # File: data/core/help.cfg, line: 913
 #. [topic]: id=mp_commands
 #: data/core/help.cfg:753
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Send a private message to a user. When in a game, it is not possible to "
-#| "send private messages to players who are currently controlling a side in "
-#| "the same game.\n"
-#| "\n"
 msgid ""
 "Send a private message to a user. When in a game, it is not possible to send "
 "private messages to players who are currently controlling a side in the same "
 "game."
 msgstr ""
-"\n"
-"Envia uma mensagem privada para um usuário. Não é possível enviar uma "
-"mensagem privada dentro de uma partida para um jogador que está controlando "
-"um lado dentro do mesmo jogo.\n"
-"\n"
-"\n"
+"Envia uma mensagem privada a um usuário. Durante uma partida, não é possível "
+"enviar mensagem privada a jogadores que controlam um lado na mesma partida."
 
 # File: data/core/help.cfg, line: 916
 # File: data/core/help.cfg, line: 916
@@ -6548,27 +6131,18 @@ msgstr ""
 msgid "Toggle muting/silencing of all observers on/off."
 msgstr "Liga/desliga o silêncio de todos os observadores."
 
-#
 # File: data/core/help.cfg, line: 922
 # File: data/core/help.cfg, line: 922
 # File: data/core/help.cfg, line: 922
 #. [topic]: id=mp_commands
 #: data/core/help.cfg:762
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "Unban a user in a multiplayer game by the IP address used by that "
-#| "username. Can be used on users not in the game but on the server.\n"
-#| "\n"
 msgid ""
 "Unban a user in a multiplayer game by the IP address used by that username. "
 "Can be used on users not in the game but on the server."
 msgstr ""
-"\n"
-"Remove o banimento de um jogador em um jogo multiplayer pelo seu endereco de "
-"IP. Pode ser usado em usuários que não estão dentro de um jogo mas no "
-"servidor.\n"
-"\n"
+"Retira o banimento de um usuário de uma partida multijogador pelo endereço IP"
+" usado por esse nome. Pode ser usado em usuários que não estão na partida mas"
+" estão no servidor."
 
 # File: data/core/help.cfg, line: 925
 # File: data/core/help.cfg, line: 925
@@ -7039,6 +6613,8 @@ msgid ""
 "This unit can burrow under loose dirt, sand, or leaves, concealing itself if "
 "it does not change location."
 msgstr ""
+"Esta unidade pode se enterrar em terra solta, areia ou folhas e fica "
+"escondida enquanto não muda de lugar."
 
 #
 # File: data/core/macros/abilities.cfg, line: 434
@@ -7169,7 +6745,6 @@ msgstr "espreita no pântano"
 msgid "female^swamp lurk"
 msgstr "espreita no pântano"
 
-#
 # File: data/core/macros/abilities.cfg, line: 408
 # File: data/core/macros/abilities.cfg, line: 411
 # File: data/core/macros/abilities.cfg, line: 408
@@ -7178,27 +6753,14 @@ msgstr "espreita no pântano"
 # File: data/core/macros/abilities.cfg, line: 411
 #. [hides]: id=swamp_lurk
 #: data/core/macros/abilities.cfg:400
-#, fuzzy
-#| msgid ""
-#| "This unit can hide in forest, and remain undetected by its enemies.\n"
-#| "\n"
-#| "Enemy units cannot see this unit while it is in forest, except if they "
-#| "have units next to it. Any enemy unit that first discovers this unit "
-#| "immediately loses all its remaining movement."
 msgid ""
 "This unit can hide in swamp, and remain undetected by its enemies.\n"
 "\n"
-"Enemy units cannot see this unit while it is in swamp, except if they have "
-"units next to it. Any enemy unit that first discovers this unit immediately "
-"loses all its remaining movement."
+"Enemy units cannot see this unit while it is in swamp, except if they have units next to it. Any enemy unit that first discovers this unit immediately loses all its remaining movement."
 msgstr ""
-"Essa unidade pode se esconder em florestas, ficando indetectável pelos "
-"inimigos.\n"
+"Esta unidade pode se esconder no pântano e passar despercebida pelos inimigos.\n"
 "\n"
-"Unidades inimigas não conseguem ver essa unidade enquanto ela estiver numa "
-"floresta, exceto se eles tiverem unidades próximas à ela. A primeira unidade "
-"inimiga que descobrir essa unidade imediatamente perde todos os seus pontos "
-"de movimento restantes."
+"Unidades inimigas não a veem enquanto ela está no pântano, a não ser que tenham unidades ao lado dela. A unidade inimiga que a descobrir perde na hora todo o movimento que ainda tinha."
 
 #
 # File: data/core/macros/abilities.cfg, line: 504
@@ -8701,26 +8263,19 @@ msgstr ""
 msgid "plague ($type)"
 msgstr "praga ($type)"
 
-#
 # File: data/core/macros/abilities.cfg, line: 598
 # File: data/core/macros/abilities.cfg, line: 598
 # File: data/core/macros/abilities.cfg, line: 598
 #. [plague]: id=plague({TYPE}), type={TYPE}
 #: data/core/macros/weapon_specials.cfg:57
-#, fuzzy
-#| msgid ""
-#| "When a unit is killed by a Plague attack, that unit is replaced with a "
-#| "unit on the same side as the unit with the Plague attack. This doesn’t "
-#| "work on Undead or units in villages."
 msgid ""
 "When a unit is killed by a Plague attack, that unit is replaced with a $type "
 "on the same side as the unit with the Plague attack. This doesn’t work on "
 "Undead or units in villages."
 msgstr ""
-"Quando uma unidade é morta por um ataque com a habilidade praga, a unidade "
-"morta é substituída por uma unidade pertencente ao lado da unidade que "
-"desferiu o golpe final. Essa habilidade não funciona contra mortos-vivos ou "
-"contra unidades em aldeias."
+"Quando uma unidade é morta por um ataque com Praga, ela é substituída por um "
+"$type do mesmo lado da unidade que tem a Praga. Não funciona em mortos-vivos "
+"nem em unidades que estão em aldeias."
 
 #
 # File: data/core/macros/abilities.cfg, line: 609
