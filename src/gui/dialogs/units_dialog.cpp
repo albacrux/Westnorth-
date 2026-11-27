@@ -72,7 +72,12 @@ std::string star(bool starred)
 REGISTER_DIALOG(units_dialog)
 
 units_dialog::units_dialog()
-	: modal_dialog(window_id())
+	: units_dialog(window_id())
+{
+}
+
+units_dialog::units_dialog(const std::string& window_id_override)
+	: modal_dialog(window_id_override)
 	, selected_index_(-1)
 	, num_rows_(0)
 	, ok_label_(_("OK"))
@@ -87,7 +92,9 @@ units_dialog::units_dialog()
 	, filter_options_()
 	, gender_toggle_()
 {
-	for(widget* sort_toggle : find_widget<grid>("_header_grid")) {
+	// Westnorth: a grid of cards (westnorth_recruit) has no header.
+	grid* header = find_widget<grid>("_header_grid", false, false);
+	if(header) for(widget* sort_toggle : *header) {
 		// FIXME: only proper (non-spacer) header options are currently given an ID.
 		// We want the spacers to remain for sizing, but this is pretty fragile.
 		if(!sort_toggle->id().empty()) {
@@ -519,7 +526,8 @@ std::unique_ptr<units_dialog> units_dialog::build_recruit_dialog(
 	const team& team
 )
 {
-	auto dlg = std::make_unique<units_dialog>();
+	// Westnorth: recruiting uses a grid of unit cards (redesenho-combate.md, 3.3).
+	auto dlg = std::make_unique<units_dialog>("westnorth_recruit");
 	auto set_column = dlg->make_column_builder(recruit_list);
 
 	set_column("unit_image", [&](const auto& recruit) {
@@ -528,7 +536,7 @@ std::unique_ptr<units_dialog> units_dialog::build_recruit_dialog(
 			image_string = recruit->image();
 		}
 		image_string += "~RC(" + recruit->flag_rgb() + ">" + team.color() + ")";
-		image_string += "~SCALE_INTO(72,72)";
+		image_string += "~SCALE_INTO_SHARP(144,144)"; // Westnorth: card art (was 72x72)
 		// Does the unit have error message? If so, grey out image.
 		if (!err_msgs_map[recruit].empty()) {
 			image_string += "~GS()";

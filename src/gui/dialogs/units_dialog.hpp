@@ -36,6 +36,10 @@ class units_dialog : public modal_dialog
 public:
 	units_dialog();
 
+	// Westnorth: same dialog laid out by another [window] (the recruit cards,
+	// data/gui/themes/default/dialogs/westnorth_recruit.cfg).
+	explicit units_dialog(const std::string& window_id_override);
+
 	int get_selected_index() const
 	{
 		return selected_index_;
