@@ -87,6 +87,8 @@ entradas antigas (se mudar, criar nova entrada que substitui a anterior).
 | D33 | Não ampliar a interface inteira por escala fracionária (desenhar em 1200x540 e esticar para 1600x720) | Este upstream exige tela lógica mínima de **1280x720**; o A06 já tem exatamente 720 de altura, então qualquer ampliação global faria diálogos deixarem de caber. A escala de fonte global (preferência avançada "Font size scale") a 125% também corta texto no painel e põe barra de rolagem no diálogo de ataque | Agente |
 | D34 | Em vez disso, refazer o HUD do layout de celular: painel lateral de 181 → 240 px, textos de 11–13 → 15–17 px, HP/XP/MP em uma linha cada, raça na linha do alinhamento; barra superior com números de 20 px e ícones de 24 px; botões com texto maior (`font_size=` em `[menu]`/`[action]` do tema, suportado no C++ do fork) | O mapa perde só 58 px de largura e o painel ganha leitura no celular. Diálogos GUI2 (ataque, recrutar) ficam para o próximo passo | Agente |
 
+| D35 | `WESTNORTH_ANDROID=1` faz o desktop montar a GUI com o define `ANDROID` (fontes 22 px), e o smoke test roda nos dois modos | As capturas e o smoke test até aqui usavam as fontes de desktop (17 px); o A06 usa as de Android. Com elas, o diálogo de ataque escondia a segunda arma, por isso os botões dele foram para uma linha só | Agente |
+
 ## Pendências do dono
 
 - [x] D3: repo público (feito pelo dono em 2026-11-27).

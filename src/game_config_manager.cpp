@@ -15,6 +15,8 @@
 
 #include "game_config_manager.hpp"
 
+#include <cstdlib>
+
 #include "about.hpp"
 #include "addon/manager.hpp"
 #include "ai/configuration.hpp"
@@ -108,6 +110,11 @@ bool game_config_manager::init_game_config(FORCE_RELOAD_CONFIG force_reload)
 	game_config::scoped_preproc_define editor("EDITOR", cmdline_opts_.editor.has_value());
 #ifdef __ANDROID__
 	game_config::scoped_preproc_define android("ANDROID", true);
+#else
+	// Westnorth: see WESTNORTH_ANDROID in gui/gui.cpp.
+	const char* emulate_android = std::getenv("WESTNORTH_ANDROID");
+	game_config::scoped_preproc_define android("ANDROID",
+		emulate_android && *emulate_android && *emulate_android != '0');
 #endif
 	game_config::scoped_preproc_define title_screen("TITLE_SCREEN",
 		!cmdline_opts_.multiplayer && !cmdline_opts_.test && !cmdline_opts_.editor);

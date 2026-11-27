@@ -62,9 +62,12 @@ ninja -C ../build-desktop wesnoth boost_unit_tests
 ./run_wml_tests -g -c -t 20  # testes WML
 ```
 
-Capturas em 1600x720: `utils/westnorth/screenshot.sh` (Xvfb).
+Capturas em 1600x720: `utils/westnorth/screenshot.sh` (Xvfb). **No Android a GUI2 usa
+fontes maiores** (`#ifdef ANDROID` em `data/gui/macros/_initial.cfg`: 22 px em vez de 17);
+para ver o que o A06 mostra, capture com `WESTNORTH_ANDROID=1`.
 **Antes de mergear mudança de UI**, rode `utils/westnorth/smoke_1600x720.sh` (abre a tela
-inicial e um cenário nos temas default e celes; falha se um diálogo não couber em 720 px).
+inicial e um cenário nos temas default e celes, com fontes de desktop e de Android;
+falha se um diálogo não couber em 720 px).
 Testar só dentro de uma campanha não basta: a tela inicial já quebrou assim.
 **`run_boost_tests` vale também para mudanças só de WML**: vários testes unitários
 pré-processam `data/` (e `data/test` sozinho). Por isso nada em `data/test` pode usar

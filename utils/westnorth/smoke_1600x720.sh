@@ -1,6 +1,7 @@
 #!/bin/bash
 # Westnorth: smoke test at the Galaxy A06 screen size (1600x720 landscape).
-# Opens the title screen and a test scenario in both UI themes and fails if
+# Opens the title screen and a test scenario in both UI themes, with the
+# desktop and the Android GUI sizes (WESTNORTH_ANDROID=1), and fails if
 # the log shows a dialog that does not fit or a WML error. Catches layout
 # regressions that the headless unit/WML tests cannot see (e.g. buttons made
 # so tall that the title screen no longer fits 720 px and the game quits).
@@ -16,7 +17,7 @@ fail=0
 run() {
 	local name=$1 theme=$2
 	shift 2
-	WESTNORTH_TIPS=yes WESTNORTH_GUI_THEME=$theme WESTNORTH_DISPLAY=${WESTNORTH_DISPLAY:-79} \
+	WESTNORTH_ANDROID=${android:-} WESTNORTH_TIPS=yes WESTNORTH_GUI_THEME=$theme WESTNORTH_DISPLAY=${WESTNORTH_DISPLAY:-79} \
 		timeout 120 "$here/screenshot.sh" -b "$bin" "$out/$name" -- "$@" >/dev/null 2>&1
 	if grep -E "Failed to size window|WML exception|doesn’t fit on the screen|não cabe na tela" "$out/$name/game.log"; then
 		echo "FAIL $name (theme=$theme)"
@@ -30,9 +31,12 @@ run() {
 	fi
 }
 
-for theme in default celes; do
-	run "title-$theme" "$theme"
-	run "scenario-$theme" "$theme" -t westnorth_touch
+for android in "" 1; do
+	suffix=${android:+-android}
+	for theme in default celes; do
+		run "title-$theme$suffix" "$theme"
+		run "scenario-$theme$suffix" "$theme" -t westnorth_touch
+	done
 done
 
 echo "screenshots and logs: $out"

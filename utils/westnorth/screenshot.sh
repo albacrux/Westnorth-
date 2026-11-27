@@ -18,6 +18,7 @@
 #   shot NAME        save OUTDIR/NAME.png
 # Without a script it waits 25 s and saves OUTDIR/screen.png.
 # Env: WESTNORTH_GUI_THEME=celes|default (UI theme), WESTNORTH_TIPS=yes (title tips),
+#      WESTNORTH_ANDROID=1 (GUI laid out with the Android font sizes),
 #      WESTNORTH_FONT_SCALE=PERCENT (font_scale preference; unset = game default).
 #
 # Example:
