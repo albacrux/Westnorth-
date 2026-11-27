@@ -9,6 +9,7 @@
 # SCRIPT is a text file, one command per line:
 #   sleep SECONDS
 #   click X Y        left mouse click
+#   rclick X Y       right mouse click (context menu on a normal build)
 #   tap X Y          finger tap (needs a build with -DMOUSE_TOUCH_EMULATION,
 #                    where the right mouse button acts as a finger)
 #   longpress X Y    finger held for 1.2 s
@@ -96,6 +97,7 @@ while read -r cmd a b c d; do
 		""|\#*) ;;
 		sleep) sleep "$a" ;;
 		click) xdotool mousemove "$a" "$b" click 1 ;;
+		rclick) xdotool mousemove "$a" "$b" click 3 ;;
 		tap) xdotool mousemove "$a" "$b" mousedown 3; sleep 0.08; xdotool mouseup 3 ;;
 		longpress) xdotool mousemove "$a" "$b" mousedown 3; sleep 1.2; xdotool mouseup 3 ;;
 		drag)
