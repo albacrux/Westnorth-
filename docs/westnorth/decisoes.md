@@ -74,6 +74,12 @@ entradas antigas (se mudar, criar nova entrada que substitui a anterior).
 |---|---|---|---|
 | D31 | 10 conquistas no grupo `content_for=westnorth`, só para o humano local, disparadas pelos eventos do sistema de classes | Conquistas ficam nas preferências do aparelho: dar ao AI ou ao adversário de rede não faria sentido | Agente |
 
+## 2026-11-27 — UI-6: traduções
+
+| # | Decisão | Motivo | Quem |
+|---|---|---|---|
+| D32 | Domínio `wesnoth` pt-BR 100% (171 textos: tempo de jogo, APNM, dicas, ajuda de unidades, comandos de depuração). Listas de nomes e geradores de nome ficam iguais ao original | Textos do jogo em si apareciam em inglês ou com tradução errada (ex.: "Morning" → "Atenção") | Agente |
+
 ## Pendências do dono
 
 - [x] D3: repo público (feito pelo dono em 2026-11-27).

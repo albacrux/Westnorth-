@@ -42,6 +42,10 @@ def main():
     for path in sorted(glob.glob(os.path.join(ROOT, "utils/westnorth/translations/*.py"))):
         domain = os.path.basename(path).rsplit("-", 1)[0]
         po_path = os.path.join(ROOT, "po", domain, "pt_BR.po")
+        if not os.path.isfile(po_path):
+            print(f"{os.path.basename(path)}: no {po_path}; name files <domain>-<anything>.py")
+            missing += 1
+            continue
         table = runpy.run_path(path)["T"]
         po = polib.pofile(po_path, wrapwidth=79)
         by_id = {e.msgid: e for e in po if not e.obsolete}
