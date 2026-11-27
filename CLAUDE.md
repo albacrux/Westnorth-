@@ -1,0 +1,77 @@
+# Westnorth — regras para o agente
+
+Fork do Battle for Wesnoth (snapshot do `master` upstream, 1.21.0-dev) focado em
+jogar no celular (Samsung Galaxy A06, 1600x720 em paisagem) e, depois, em um sistema
+de classes estilo tática. Documentos de projeto em `docs/westnorth/`:
+
+- `roadmap.md` — milestones e ciclos (fonte de verdade do que vem a seguir)
+- `ui-mobile-brief.md` — problemas de UI observados no A06 e metas de toque
+- `decisoes.md` — registro de decisões (data, decisão, motivo). Acrescente, não reescreva.
+- `diagnostico-toque.md` — como o toque vira clique hoje no código
+
+## Fluxo de trabalho (vale para toda sessão)
+
+1. **O dono não revisa PRs.** Cada ciclo termina com PR aberto e **mergeado na `main`
+   pelo próprio agente**, assim que o critério de merge abaixo for cumprido.
+   Squash merge, título no formato `UI-1: ...`.
+2. Critério de merge: build desktop local passa, `run_boost_tests` passa e os testes
+   WML afetados passam. Se o CI desktop (`.github/workflows/ci.yml`) já tiver terminado,
+   ele precisa estar verde; se ainda estiver rodando, pode mergear e conferir depois.
+   Se o CI quebrar na `main`, o próximo ciclo começa consertando isso.
+3. Um objetivo por PR. Descrição do PR em português: o que mudou, como foi testado,
+   capturas 1600x720 antes/depois quando mexer em UI, o que o dono deve testar no A06.
+4. O APK (arm64) e os dados do jogo são publicados automaticamente no release
+   `nightly` a cada push na `main` (`.github/workflows/android.yml`). O dono instala
+   pelo celular a partir de lá.
+5. Decisões que o dono precisa tomar: registrar em `decisoes.md` como "pendente",
+   seguir com a opção recomendada quando ela for reversível, e avisar no fim do ciclo.
+
+## Regras de código
+
+- **Preferir WML/Lua; C++ só quando inevitável** (entrada por toque, render).
+- Mudanças de C++ do fork ficam marcadas com um comentário `// Westnorth:` explicando
+  o porquê, para facilitar cherry-pick do upstream.
+- Conteúdo novo (eras, facções, classes, conquistas) vai em diretório próprio
+  (add-on/era), não em `data/core`, sem justificativa registrada.
+- Código e comentários em inglês; documentação do projeto e PRs em português.
+- Upstream: o snapshot é congelado (commit `Import upstream Wesnoth master snapshot`).
+  Correções do upstream entram só por `git cherry-pick` a partir de
+  `https://github.com/wesnoth/wesnoth`. Não fazer merge do upstream inteiro.
+- Sprites: gerados e validados no desktop do dono (fora da nuvem). O agente só integra
+  sprites que já passaram pelo validador.
+
+## Chaves e segredos
+
+- Nunca commitar chaves reais, tokens ou senhas.
+- **Exceção aprovada pelo dono (2026-11-27):** `packaging/android/app/westnorth-debug.keystore`
+  é uma chave só de desenvolvimento (senha `android`), sem valor, usada para que cada APK
+  de debug instale por cima do anterior e preserve saves. Não serve para loja.
+
+## Build e testes locais (ambiente cloud)
+
+Dependências: pacotes apt listados no CI + SDL3 3.4.2 / SDL3_image 3.4.0 /
+SDL3_mixer 3.2.0 compilados de `github.com/libsdl-org` em `/usr/local`
+(ver `utils/dockerbuilds/CI/Dockerfile-base-2404-sdl3`).
+
+```sh
+git submodule update --init --recursive
+cmake -S . -B ../build-desktop -G Ninja -DCMAKE_BUILD_TYPE=Release \
+  -DENABLE_SERVER=OFF -DENABLE_TESTS=ON -DCMAKE_CXX_COMPILER_LAUNCHER=ccache
+ninja -C ../build-desktop wesnoth boost_unit_tests
+./run_boost_tests            # a partir da raiz, com os binários linkados aqui
+./run_wml_tests -g -c -t 20  # testes WML
+```
+
+Capturas em 1600x720: `utils/westnorth/screenshot.sh` (Xvfb).
+Lint de WML: `data/tools/wmllint`, `data/tools/wmlscope`, `luacheck .`.
+
+## Android
+
+- Pacote `io.github.albacrux.westnorth`, nome "Westnorth", convive com o Wesnoth oficial.
+- Só `arm64-v8a`. Imagem de build: `wesnoth/wesnoth:android` (Docker Hub).
+- O APK não carrega dados: `InitActivity` baixa `manifest.txt` do release `nightly`.
+  Pacotes gerados por `packaging/android/westnorth/make-data-packages.sh`:
+  `core` (snapshot upstream, release `core-data-<N>`), `patch` (cumulativo, o que o
+  fork mudou) e `music` (upstream, SourceForge). Mudança só em WML/imagens
+  **não exige APK novo**: basta o `patch` novo; o app baixa ao abrir.
+- Se o snapshot do upstream mudar, incrementar `CORE_GEN` no workflow.

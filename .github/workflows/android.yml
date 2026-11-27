@@ -1,98 +1,120 @@
-name: Android CI
+name: Android
+
+# Westnorth: builds the arm64 debug APK and the game-data packages, and publishes
+# both to the "nightly" GitHub release so they can be installed from the phone.
+# See CLAUDE.md ("Android") and packaging/android/westnorth/make-data-packages.sh.
 
 on:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    branches: [ main ]
   workflow_dispatch:
 
-jobs:
-  build:
+concurrency:
+  group: android-nightly
+  cancel-in-progress: false
 
+permissions:
+  contents: write
+
+env:
+  # Upstream snapshot the "core" data package is built from. Bump CORE_GEN
+  # whenever the snapshot is replaced, so phones download the new core.
+  CORE_REF: c3a225dd5eba42277008dd7c2b87d287efb801ed
+  CORE_GEN: 1
+  GH_REPO: ${{ github.repository }}
+
+jobs:
+  data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with: { fetch-depth: 0 }
+      - name: Install gettext and zip
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq gettext zip
+      - name: Core data package (only when missing)
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          if gh release view "core-data-$CORE_GEN" >/dev/null 2>&1; then
+            echo "core-data-$CORE_GEN already published"
+          else
+            packaging/android/westnorth/make-data-packages.sh core out
+            gh release create "core-data-$CORE_GEN" out/core.zip --prerelease \
+              --target "$CORE_REF" --title "Core data $CORE_GEN" \
+              --notes "Upstream Wesnoth data at $CORE_REF, used by the Android app. Do not delete."
+          fi
+      - name: Patch package and manifest
+        env: { BUILD: "${{ github.run_number }}" }
+        run: |
+          packaging/android/westnorth/make-data-packages.sh patch out
+          packaging/android/westnorth/make-data-packages.sh manifest out
+      - uses: actions/upload-artifact@v7
+        with:
+          name: data-packages
+          path: |
+            out/patch.zip
+            out/manifest.txt
+
+  apk:
     runs-on: ubuntu-latest
     container: wesnoth/wesnoth:android
     env:
       API: 23
-      BUILDTYPE: ${{ vars.SIGNING_KEY_ALIAS == '' && 'debug' || 'release' }}
-      BUILDBASEDIR: ${{ github.WORKSPACE }}/packaging/android
-      PREFIXDIR: ${{ github.WORKSPACE }}/packaging/android/prefix
-
+      ARCHS: arm64-v8a
+      WESTNORTH_BUILD: ${{ github.run_number }}
+      BUILDBASEDIR: ${{ github.workspace }}/packaging/android
+      PREFIXDIR: ${{ github.workspace }}/packaging/android/prefix
     steps:
       - { uses: actions/checkout@v6, with: { submodules: "recursive" } }
-
-      - name: Verify fastlane metadata
-        uses: ashutoshgngwr/validate-fastlane-supply-metadata@v2
-
-      - name: Restore Wesnoth dependencies cache
+      - name: Set git safe directory
+        run: git config --global --add safe.directory '*'
+      - name: Restore dependencies cache
         id: restore-deps-cache
         uses: actions/cache/restore@v5
         with:
-          key: wesnoth-android-deps-${{ hashFiles('packaging/android/build-android-dependencies/*') }}
+          key: westnorth-android-deps-arm64-${{ hashFiles('packaging/android/build-android-dependencies/*') }}
           path: ${{ env.PREFIXDIR }}
-
-      - name: Download and build Wesnoth dependencies
-        if: ${{ steps.restore-deps-cache.outputs.cache-hit  != 'true' }}
+      - name: Build dependencies
+        if: steps.restore-deps-cache.outputs.cache-hit != 'true'
         env:
           DOWNLOADDIR: ${{ env.BUILDBASEDIR }}/download
           BUILDDIR: ${{ env.BUILDBASEDIR }}/build
-        run: cd packaging/android; chmod +x ./gradlew; ./gradlew buildCppDepends;
-
-      - name: Save Wesnoth dependencies cache
-        if: ${{ steps.restore-deps-cache.outputs.cache-hit  != 'true' }}
+        run: cd packaging/android && chmod +x ./gradlew && ./gradlew buildCppDepends
+      - name: Save dependencies cache
+        if: steps.restore-deps-cache.outputs.cache-hit != 'true'
         uses: actions/cache/save@v5
         with:
           key: ${{ steps.restore-deps-cache.outputs.cache-primary-key }}
           path: ${{ env.PREFIXDIR }}
-
-      - name: Tar dependencies
-        run: cd packaging/android; tar -cvzf dependencies.tar.gz prefix
-
-      - name: Upload Dependencies archive
-        uses: actions/upload-artifact@v7
+      - name: Build Wesnoth and debug APK
+        run: cd packaging/android && chmod +x ./gradlew && ./gradlew buildCppSource assembleDebug
+      - name: Rename APK
+        run: cp packaging/android/app/build/outputs/apk/debug/app-arm64-v8a-debug.apk westnorth-arm64-v8a.apk
+      - uses: actions/upload-artifact@v7
         with:
-          name: dependencies.tar.gz
-          path: ./packaging/android/dependencies.tar.gz
+          name: westnorth-arm64-v8a.apk
+          path: westnorth-arm64-v8a.apk
 
-      - name: Build Wesnoth and create APK/AAB (Release)
-        if: env.BUILDTYPE == 'release'
-        env:
-          SIGNING_KEY_ALIAS: ${{ vars.SIGNING_KEY_ALIAS }}
-          SIGNING_KEY_PASSWORD: ${{ secrets.SIGNING_KEY_PASSWORD }}
-          SIGNING_STORE_PASSWORD: ${{ secrets.SIGNING_STORE_PASSWORD }}
-          SIGNING_KEYSTORE: ${{ secrets.SIGNING_KEYSTORE }}
-        run: cd packaging/android && printf %s "$SIGNING_KEYSTORE" | base64 -d > app/wesnoth.keystore && ./gradlew buildCppSource assembleRelease bundleRelease
+  publish:
+    needs: [ data, apk ]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/download-artifact@v7
+        with: { path: dl, merge-multiple: true }
+      - name: Publish to the nightly release
+        env: { GH_TOKEN: "${{ github.token }}" }
+        run: |
+          ls -la dl
+          notes="Build ${{ github.run_number }} from ${{ github.sha }}.
 
-      - name: Build Wesnoth and create APK/AAB (Debug)
-        if: env.BUILDTYPE == 'debug'
-        run: cd packaging/android && ./gradlew buildCppSource assembleDebug bundleDebug;
-
-      - name: Upload APK (armeabi-v7a)
-        uses: actions/upload-artifact@v7
-        with:
-          name: "wesnoth-armeabi-v7a.apk"
-          path: "packaging/android/app/build/outputs/apk/${{ env.BUILDTYPE }}/app-armeabi-v7a-${{ env.BUILDTYPE }}.apk"
-
-      - name: Upload APK (arm64-v8a)
-        uses: actions/upload-artifact@v7
-        with:
-          name: "wesnoth-arm64-v8a.apk"
-          path: "packaging/android/app/build/outputs/apk/${{ env.BUILDTYPE }}/app-arm64-v8a-${{ env.BUILDTYPE }}.apk"
-
-      - name: Upload APK (x86)
-        uses: actions/upload-artifact@v7
-        with:
-          name: "wesnoth-x86.apk"
-          path: "packaging/android/app/build/outputs/apk/${{ env.BUILDTYPE }}/app-x86-${{ env.BUILDTYPE }}.apk"
-
-      - name: Upload APK (x86_64)
-        uses: actions/upload-artifact@v7
-        with:
-          name: "wesnoth-x86_64.apk"
-          path: "packaging/android/app/build/outputs/apk/${{ env.BUILDTYPE }}/app-x86_64-${{ env.BUILDTYPE }}.apk"
-
-      - name: Upload AAB
-        uses: actions/upload-artifact@v7
-        with:
-          name: "wesnoth.aab"
-          path: "packaging/android/app/build/outputs/bundle/${{ env.BUILDTYPE }}/app-${{ env.BUILDTYPE }}.aab"
+          Instalar no celular: baixe westnorth-arm64-v8a.apk e abra.
+          Os dados do jogo (core + patch) são baixados pelo próprio app ao abrir."
+          if ! gh release view nightly >/dev/null 2>&1; then
+            gh release create nightly --prerelease --title "Westnorth nightly" --notes "$notes" --target "${{ github.sha }}"
+          else
+            gh release edit nightly --notes "$notes" --target "${{ github.sha }}"
+          fi
+          # Upload the data first, the manifest last, so a phone never sees a
+          # manifest that points at a patch that is not there yet.
+          gh release upload nightly dl/westnorth-arm64-v8a.apk dl/patch.zip --clobber
+          gh release upload nightly dl/manifest.txt --clobber

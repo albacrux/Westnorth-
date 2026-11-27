@@ -1,0 +1,102 @@
+name: CI
+
+# Desktop build + automated checks for every PR and every push to main.
+# Lean version of upstream's ci-main.yml: one cmake/clang release build,
+# unit tests, WML tests and the WML/Lua linters.
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    container:
+      image: wesnoth/wesnoth:2404-sdl3
+    steps:
+      - uses: actions/checkout@v6
+      - name: Set git safe directory
+        run: git config --global --add safe.directory '*'
+      - name: Check for invalid characters
+        if: success() || failure()
+        run: |
+          ./utils/CI/check_utf8.sh
+          ./utils/CI/utf8_bom_dog.sh
+      - name: Run wmllint
+        if: success() || failure()
+        shell: bash
+        run: |
+          excludes=(data/lan_server.cfg data/test/scenarios/cve_tests/test_cve_2018_1999023_2.cfg data/schema data/languages data/test/test/filesystem/enum)
+          data/tools/wmllint "${excludes[@]/*/--exclude=^&$}" data/ > ./wmllint.log 2>&1
+          if [ "$(wc -l < wmllint.log)" != "0" ]; then cat wmllint.log; exit 1; fi
+      - name: Whitespace and WML indentation check
+        if: success() || failure()
+        run: ./utils/CI/fix_whitespace.sh && git status && git diff --exit-code
+      - name: WML missing images check
+        if: success() || failure()
+        run: utils/CI/check_wml_images.sh
+      - name: Run luacheck
+        if: success() || failure()
+        run: luacheck .
+
+  build-and-test:
+    runs-on: ubuntu-latest
+    container:
+      image: wesnoth/wesnoth:2404-sdl3
+    steps:
+      - { uses: actions/checkout@v6, with: { submodules: "recursive" } }
+      - name: Set git safe directory
+        run: git config --global --add safe.directory '*'
+      - name: ccache
+        uses: actions/cache@v5
+        with:
+          path: .ccache
+          key: ccache-clang-${{ github.sha }}
+          restore-keys: ccache-clang-
+      - name: Build wesnoth and unit tests
+        id: build
+        env:
+          CCACHE_DIR: ${{ github.workspace }}/.ccache
+          CCACHE_MAXSIZE: 2G
+        run: |
+          ldconfig
+          # same workaround as upstream: use the apt boost, not the debug one in /usr/local
+          rm -R /usr/local/lib/cmake/boost* /usr/local/lib/cmake/Boost* || true
+          rm /usr/local/lib/libboost* || true
+          rm -R /usr/local/include/boost || true
+          cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ \
+            -DCMAKE_C_COMPILER_LAUNCHER=ccache -DCMAKE_CXX_COMPILER_LAUNCHER=ccache \
+            -DENABLE_GAME=true -DENABLE_SERVER=false -DENABLE_CAMPAIGN_SERVER=false -DENABLE_TESTS=true \
+            -DENABLE_NLS=false -DENABLE_STRICT_COMPILATION=true -DFORCE_COLOR_OUTPUT=true \
+            -DCMAKE_PREFIX_PATH="/usr/local/lib/cmake/SDL3;/usr/local/lib/cmake/SDL3_image;/usr/local/lib/cmake/SDL3_mixer" -S . -B .
+          make -j"$(nproc)"
+          ccache -s
+      - name: Check path options
+        run: |
+          ./wesnoth --version
+          for opt in data userdata usercache; do
+            output=$(./wesnoth --nobanner --"$opt"-path)
+            [ -n "$output" ] || { echo "--$opt-path prints nothing" >&2; exit 1; }
+          done
+      - name: Run unit tests
+        if: success() || steps.build.outcome == 'success'
+        run: ./run_boost_tests
+      - name: WML validation
+        if: success() || steps.build.outcome == 'success'
+        run: ./utils/CI/schema_validation.sh
+      - name: Run WML tests
+        if: success() || steps.build.outcome == 'success'
+        run: ./run_wml_tests -v -v -g -c -t 20 -bt 1000 -a=--userdata-dir=ud
+      - name: Upload WML test userdata
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: WMLTest-userdata-Linux
+          path: ud

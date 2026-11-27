@@ -8,11 +8,13 @@ android {
     ndkVersion '26.3.11579264'
 
     defaultConfig {
-        applicationId "org.wesnoth.Wesnoth"
+        // Westnorth: own package id so the fork installs next to the official app.
+        applicationId "io.github.albacrux.westnorth"
         minSdk 23
         targetSdk 35
-        versionCode 1210000 // version 1.xx.yy, patch zz
-        versionName "1.21.0-dev"
+        // Westnorth: CI passes the run number so every APK upgrades the previous one.
+        versionCode((System.getenv("WESTNORTH_BUILD") ?: "1").toInteger())
+        versionName "1.21.0-dev+westnorth." + (System.getenv("WESTNORTH_BUILD") ?: "local")
     }
 
     buildFeatures {
@@ -20,6 +22,14 @@ android {
     }
     
     signingConfigs {
+        // Westnorth: fixed dev-only key (committed on purpose, see CLAUDE.md) so that
+        // a new debug APK installs over the old one and keeps saves/add-ons.
+        westnorthDebug {
+            storeFile = file("westnorth-debug.keystore")
+            storePassword "android"
+            keyAlias "westnorthdebug"
+            keyPassword "android"
+        }
         release {
             storeFile = file("wesnoth.keystore")
             storePassword System.getenv("SIGNING_STORE_PASSWORD")
@@ -30,6 +40,7 @@ android {
 
     buildTypes {
         debug {
+            signingConfig signingConfigs.westnorthDebug
             ndk {
                 debugSymbolLevel 'FULL'
             }
@@ -56,7 +67,7 @@ android {
         abi {
             enable true
             reset()
-            include "x86_64", "armeabi-v7a", "arm64-v8a", "x86"
+            include "arm64-v8a" // Westnorth: target is the Galaxy A06 (arm64 only)
             universalApk false
         }
     }
@@ -66,7 +77,8 @@ android {
     applicationVariants.all { variant ->
         variant.outputs.each { output ->
             def abiCode = abiCodes.get(output.getFilter(com.android.build.OutputFile.ABI), 0)
-            output.versionCodeOverride = defaultConfig.versionCode * 1000 + abiCode
+            // Westnorth: single ABI, keep the plain run-number versionCode.
+            output.versionCodeOverride = defaultConfig.versionCode
         }
     }
 

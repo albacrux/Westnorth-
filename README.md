@@ -1,3 +1,9 @@
+> **Westnorth** — fork pessoal e não comercial do Battle for Wesnoth, focado em jogar no
+> celular (toque, telas pequenas) e, depois, num sistema de classes estilo tática.
+> Baseado no `master` upstream (1.21.0-dev). Planejamento em [`docs/westnorth/`](docs/westnorth/),
+> regras de trabalho em [`CLAUDE.md`](CLAUDE.md). APK de teste: release `nightly`.
+> Licença: GPL v2+ (igual ao upstream).
+
 [![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 
 |Branch|CI status|
