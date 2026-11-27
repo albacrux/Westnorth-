@@ -1,0 +1,17 @@
+# Westnorth: menu > Recruit with the phone HUD theme (WESTNORTH_THEME=Westnorth), pick Escudeiro, recruit; on: wesnoth -t westnorth_classes_demo
+sleep 30
+tap 1200 650
+sleep 1
+click 660 280
+sleep 1
+click 46 38
+sleep 2
+shot menu
+click 110 98
+sleep 3
+shot recruit
+click 1230 180
+sleep 1
+click 1315 665
+sleep 3
+shot after

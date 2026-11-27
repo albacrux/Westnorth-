@@ -121,6 +121,12 @@ regras do layout de celular). Documentos detalhados: `diagnostico-toque.md` (eve
   Captura com o tema: `WESTNORTH_THEME=Westnorth` no `screenshot.sh`; o smoke test tem
   uma execução com ele.
 
+- `[grid_listbox]` (lista em grade, já no schema) quebra os itens por largura; não cria
+  `_header_grid`. Para cartões de largura uniforme, um `[spacer] width=` dentro do item.
+  Texto com `<img>` (ex.: custo com ícone de ouro) precisa de `[rich_label]`.
+  Um mesmo diálogo C++ pode usar outra `[window]` (construtor com id, ver
+  `units_dialog`), sem quebrar o teste de diálogos registrados.
+
 ## 6. Ambiente de teste na nuvem
 
 - `run_boost_tests` precisa de **`SDL_VIDEODRIVER=dummy`** (senão os 285 falham por
