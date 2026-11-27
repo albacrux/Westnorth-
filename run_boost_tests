@@ -1,0 +1,128 @@
+#!/usr/bin/env python3
+# encoding: utf-8
+"""
+This script runs a sequence of unit tests by calling a boost unit test binary repeatedly. This is done so there is no need for a proper reset between tests.
+"""
+
+import argparse, os, subprocess, sys
+
+def get_tests(filename):
+    test_list = []
+    for line in open(filename, mode="rt"):
+        line = line.strip()
+        if line == "" or line.startswith("#"):
+            continue
+
+        test_list.append(line)
+    return test_list
+
+def get_tests_from_list_content(output):
+    tests = []
+    suite = None
+    case_indent = None
+    suite_has_cases = False
+
+    for line in output.splitlines():
+        if not line.strip():
+            continue
+
+        indent = len(line) - len(line.lstrip())
+
+        if indent == 0:
+            if suite is not None and not suite_has_cases:
+                tests.append(suite)
+
+            suite = line.rstrip().removesuffix("*")
+            case_indent = None
+            suite_has_cases = False
+            continue
+
+        # The first indented level contains cases; deeper levels are test data.
+        if case_indent is None:
+            case_indent = indent
+        if indent != case_indent:
+            continue # Ignore test-data entries; each test runs with all its data.
+
+        case = line.strip().removesuffix("*")
+        tests.append(f"{suite}/{case}")
+        suite_has_cases = True
+
+    if suite is not None and not suite_has_cases:
+        tests.append(suite)
+
+    return tests
+
+def run_with_rerun_for_sdl_video(executable, test_name):
+    """A wrapper for subprocess.run with a workaround for the issue on CI  of intermittently failing to initialise SDL.
+    """
+    # Sanity check on the number of retries.
+    # It's a rare failure, a single retry would probably be enough.
+    sdl_retries = 0
+    timeout_retries = 0
+    while sdl_retries < 10 and timeout_retries < 5:
+        try:
+            result = subprocess.run([executable, "--run_test="+test_name, "--color_output"], timeout=20, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+        except subprocess.TimeoutExpired as t:
+            timeout_retries += 1
+            print("Test timed out, attempt", timeout_retries)
+            continue
+        else:
+            if b"Could not initialize SDL_video" in result.stdout:
+                sdl_retries += 1
+                print("Could not initialise SDL_video error, attempt", sdl_retries)
+                continue
+        return result
+    return None
+
+if __name__ == '__main__':
+    ap = argparse.ArgumentParser()
+    ap.add_argument("-e", "--executable", help="The name of the boost unit test executable. Default is boost_unit_tests.", default="boost_unit_tests")
+    ap.add_argument("-p", "--path", metavar="dir", help="Path to boost unit test binary. By default assume it is the current directory.", default=".")
+    ap.add_argument("-l", "--test_list", metavar="filename", help="Load the list of tests from this file instead of using --list_content.")
+
+    options = ap.parse_args()
+
+    executable = options.executable
+    executable_path = os.path.join(options.path, executable)
+
+    if options.test_list:
+        tests = get_tests(options.test_list)
+    else:
+        try:
+            result = subprocess.run([executable_path, "--list_content"], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, check=False)
+        except OSError as e:
+            print(f"Could not run {executable_path}: {e}", file=sys.stderr)
+            sys.exit(1)
+
+        if result.returncode != 0:
+            print(f"Listing tests failed with return code {result.returncode}:", file=sys.stderr)
+            if result.stdout:
+                print(result.stdout, file=sys.stderr)
+            sys.exit(1)
+
+        tests = get_tests_from_list_content(result.stdout)
+        if not tests:
+            print(f"No tests found in the output from {executable_path} --list_content.", file=sys.stderr)
+            sys.exit(1)
+
+    success=0
+    failure=0
+
+    for test in tests:
+        result = run_with_rerun_for_sdl_video(executable_path, test)
+        if result is None:
+            failure+=1
+            print("Test "+test+" failed with timeout")
+        else:
+            if result.returncode == 0:
+                success+=1
+                print("Test "+test+" passed")
+            else:
+                failure+=1
+                print("Test "+test+" failed with return code "+str(result.returncode)+":")
+                print(result.stdout.decode('utf-8'))
+
+    print("Tests passed: "+str(success))
+    print("Tests failed: "+str(failure))
+    if failure != 0:
+        exit(1)

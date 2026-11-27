@@ -1,0 +1,688 @@
+# #-#-#-#-#  wesnoth-editor.cpp1.po (Battle for Wesnoth VERSION)  #-#-#-#-#
+# Romanian translations for Battle for Wesnoth package.
+# Copyright (C) 2005 Wesnoth development team
+# This file is distributed under the same license as the Battle for Wesnoth package.
+# Automatically generated, 2005.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Battle for Wesnoth 1.1-dev\n"
+"Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
+"POT-Creation-Date: 2026-06-22 22:15-0500\n"
+"PO-Revision-Date: 2026-10-16 22:13+0300\n"
+"Last-Translator: Dex Stewart\n"
+"Language-Team: none\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
+
+#. [brush]: id=brush-1
+#: data/core/editor/brushes.cfg:6
+msgid "Single Hex"
+msgstr "Hex Singur"
+
+#. [brush]: id=brush-2
+#: data/core/editor/brushes.cfg:16
+msgid "Radius 1 Hex"
+msgstr "Hex rază 1"
+
+#. [brush]: id=brush-3
+#: data/core/editor/brushes.cfg:26
+msgid "Radius 2 Hex"
+msgstr "Hex rază 2"
+
+#. [brush]: id=brush-nw-se
+#: data/core/editor/brushes.cfg:47
+msgid "Hex Line NW-SE"
+msgstr "Linie Hex NV-SE"
+
+#. [brush]: id=brush-sw-ne
+#: data/core/editor/brushes.cfg:63
+msgid "Hex Line SW-NE"
+msgstr "Linie Hex SV-NE"
+
+#. [editor_group]: id=all
+#: data/core/editor/terrain-groups.cfg:11
+msgid "all"
+msgstr "toate"
+
+#. [editor_group]: id=water
+#: data/core/editor/terrain-groups.cfg:17
+msgid "water"
+msgstr "apă"
+
+#. [editor_group]: id=flat
+#: data/core/editor/terrain-groups.cfg:24
+msgid "flat"
+msgstr "plat"
+
+#. [editor_group]: id=desert
+#: data/core/editor/terrain-groups.cfg:31
+msgid "desert"
+msgstr "deșert"
+
+# picked the word that was close(in meaning) to the original, i am not aware of a direct translation of the word.
+#. [editor_group]: id=embellishments
+#: data/core/editor/terrain-groups.cfg:38
+#, fuzzy
+msgid "embellishments"
+msgstr "înfrumusețare"
+
+#. [editor_group]: id=forest
+#: data/core/editor/terrain-groups.cfg:45
+msgid "forest"
+msgstr "pădure"
+
+#. [editor_group]: id=fall
+#: data/core/editor/terrain-groups.cfg:52
+msgid "fall"
+msgstr "cădere"
+
+#. [editor_group]: id=frozen
+#: data/core/editor/terrain-groups.cfg:59
+msgid "frozen"
+msgstr "înghețat"
+
+#. [editor_group]: id=rough
+#: data/core/editor/terrain-groups.cfg:66
+msgid "rough"
+msgstr "dur"
+
+#. [editor_group]: id=cave
+#: data/core/editor/terrain-groups.cfg:73
+msgid "cave"
+msgstr "peșteră"
+
+#. [editor_group]: id=obstacle
+#: data/core/editor/terrain-groups.cfg:80
+msgid "obstacle"
+msgstr "obstacol"
+
+#. [editor_group]: id=village
+#: data/core/editor/terrain-groups.cfg:87
+msgid "village"
+msgstr "sat"
+
+#. [editor_group]: id=castle
+#: data/core/editor/terrain-groups.cfg:94
+msgid "castle"
+msgstr "castel"
+
+#. [editor_group]: id=bridge
+#: data/core/editor/terrain-groups.cfg:101
+msgid "bridge"
+msgstr "pod"
+
+#. [editor_group]: id=special
+#: data/core/editor/terrain-groups.cfg:108
+msgid "special"
+msgstr "special"
+
+#. [editor_group]: id=elevation
+#: data/core/editor/terrain-groups.cfg:115
+msgid "elevation"
+msgstr "elevare"
+
+#. [editor_times]: id=empty
+#. Describes a scenario in the editor that has not set a time of day schedule
+#: data/core/editor/time-of-day.cfg:6
+msgid "time of day^None"
+msgstr "timpul din zi^None"
+
+#. [editor_times]: id=test
+#: data/core/editor/time-of-day.cfg:11
+msgid "Test"
+msgstr "Test"
+
+#. [editor_times]: id=default
+#: data/core/editor/time-of-day.cfg:22
+msgid "Default"
+msgstr "Implicit"
+
+#. [editor_times]: id=summer
+#: data/core/editor/time-of-day.cfg:28
+msgid "Summer"
+msgstr "Vară"
+
+#. [editor_times]: id=winter
+#: data/core/editor/time-of-day.cfg:34
+msgid "Winter"
+msgstr "Iarnă"
+
+#. [editor_times]: id=24
+#: data/core/editor/time-of-day.cfg:60
+msgid "24 Hour Schedule"
+msgstr "Program de 24 ore"
+
+#. [editor_times]: id=after_the_fall
+#: data/core/editor/time-of-day.cfg:66
+msgid "After the Fall"
+msgstr "După Cădere"
+
+#. [editor_group]: id=urban_jungle
+#: data/internal/Urban_Jungle/terrain-groups.cfg:5
+msgid "Urban Jungle (Internal)"
+msgstr "Junglă Urbană"
+
+#. [theme]: id=editor
+#: data/themes/editor.cfg:11
+msgid "theme^Editor"
+msgstr "temă^Editor"
+
+#. [menu]: id=menu-editor-file, type=turbo
+#: data/themes/editor.cfg:61
+msgid "File"
+msgstr "Fișier"
+
+#. [menu]: id=menu-editor-recent
+#: data/themes/editor.cfg:72
+msgid "Load Recent"
+msgstr "Încarcă Recent"
+
+#. [menu]: id=menu-editor-map
+#: data/themes/editor.cfg:80
+msgid "Map"
+msgstr "Hartă"
+
+#. [menu]: id=menu-unit-facing
+#: data/themes/editor.cfg:88
+msgid "Unit Facing"
+msgstr "Orientare Unitate"
+
+#. [menu]: id=menu-editor-transitions
+#: data/themes/editor.cfg:94
+msgid "Transition Update"
+msgstr "Actualizare Tranziție"
+
+#. [menu]: id=menu-editor-window
+#: data/themes/editor.cfg:101
+msgid "Window"
+msgstr "Fereastră"
+
+#. [menu]: id=menu-editor-addon
+#: data/themes/editor.cfg:110
+msgid "Add-on"
+msgstr "Adăugari"
+
+#. [menu]: id=menu-editor-areas
+#: data/themes/editor.cfg:119
+msgid "Areas"
+msgstr "Zone"
+
+#. [menu]: id=menu-editor-local-time
+#: data/themes/editor.cfg:127
+msgid "Assign Local Time"
+msgstr "Atribuie Timp Local"
+
+#. [menu]: id=menu-editor-local-schedule
+#: data/themes/editor.cfg:133
+msgid "Assign Local Time Schedule"
+msgstr "Atribuie Program Timp Local"
+
+#. [menu]: id=menu-editor-unit
+#: data/themes/editor.cfg:141
+msgid "Unit"
+msgstr "Unitate"
+
+#. [menu]: id=menu-editor-side
+#: data/themes/editor.cfg:151
+msgid "Side"
+msgstr "Parte"
+
+#. [label]: id=villages-icon
+#: data/themes/editor.cfg:168
+msgid "villages"
+msgstr "săteni"
+
+#. [label]: id=units-icon
+#: data/themes/editor.cfg:184
+msgid "units"
+msgstr "unitați"
+
+#. [menu]: id=switch_time
+#: data/themes/editor.cfg:479
+msgid "Time Schedule Menu"
+msgstr "Meniu Program Timp"
+
+#. [menu]: id=menu-playlist
+#: data/themes/editor.cfg:489
+msgid "Playlist"
+msgstr "Lista de redare"
+
+#. [menu]: id=menu-editor-schedule
+#: data/themes/editor.cfg:495
+msgid "Assign Time Schedule"
+msgstr "Atribuie Program Timp"
+
+#: src/editor/action/mouse/mouse_action_unit.cpp:58
+msgid "Identifier: "
+msgstr "Identificator: "
+
+#: src/editor/action/mouse/mouse_action_unit.cpp:60
+msgid "Name: "
+msgstr "Nume: "
+
+#: src/editor/action/mouse/mouse_action_unit.cpp:62
+msgid "Type: "
+msgstr "Tip: "
+
+#: src/editor/action/mouse/mouse_action_unit.cpp:63
+msgid "Level: "
+msgstr "Nivel: "
+
+#: src/editor/action/mouse/mouse_action_unit.cpp:64
+msgid "Cost: "
+msgstr "Cost: "
+
+#: src/editor/controller/editor_controller.cpp:204
+msgid "Fatal error"
+msgstr "Eroare fatală"
+
+#: src/editor/controller/editor_controller.cpp:234
+msgid "Do you really want to quit?"
+msgstr "Chiar iți dorești să ieși?"
+
+#: src/editor/controller/editor_controller.cpp:236
+msgid ""
+"Do you really want to quit? Changes to this map since the last save will be "
+"lost."
+msgstr ""
+"Chiar iți dorești să ieși? Schimbările la această hartă de la ultima salvare "
+"vor fii pierdute."
+
+#: src/editor/controller/editor_controller.cpp:238
+msgid ""
+"Do you really want to quit? The following maps were modified and all changes "
+"since the last save will be lost:"
+msgstr ""
+"Chiar iți dorești să ieși? Hărțile urmatoare au fost modificate și toate "
+"schimbările de la ultima salvare vor fii pierdute:"
+
+#: src/editor/controller/editor_controller.cpp:255
+msgid "No editor time-of-day found."
+msgstr "Editor timpul-zilei nu este gasit."
+
+#: src/editor/controller/editor_controller.cpp:886
+msgid "Add-on Files"
+msgstr "Fișiere Adăugate"
+
+#: src/editor/controller/editor_controller.cpp:899
+msgid "Opening files is not supported, contact your packager"
+msgstr "Deschizănd filele nu este suportat, contacteazăți împachetorul"
+
+#: src/editor/controller/editor_controller.cpp:1343
+msgid "Change Unit ID"
+msgstr "Schimbă ID Unitate"
+
+#: src/editor/controller/editor_controller.cpp:1344
+msgid "ID:"
+msgstr "ID:"
+
+#: src/editor/controller/editor_controller.cpp:1360
+msgid "Rename Unit"
+msgstr "Redenumește Unitate"
+
+#: src/editor/controller/editor_controller.cpp:1361
+msgid "Name:"
+msgstr "Nume:"
+
+#: src/editor/editor_display.cpp:170
+msgid "<span color='#66ff00'><span face='DejaVuSans'>✔</span> $msg</span>"
+msgstr "<span color='#66ff00'><span face='DejaVuSans'>✔</span> $msg</span>"
+
+#: src/editor/editor_display.cpp:172
+msgid "<span color='red'><span face='DejaVuSans'>✘</span> $msg</span>"
+msgstr "<span color='red'><span face='DejaVuSans'>✘</span> $msg</span>"
+
+#: src/editor/map/context_manager.cpp:217
+msgid "Load Map or Scenario"
+msgstr "Încarcă Hartă sau Scenariu"
+
+#: src/editor/map/context_manager.cpp:313 src/editor/map/map_context.cpp:1141
+msgid "New Map"
+msgstr "Hartă Nouă"
+
+#: src/editor/map/context_manager.cpp:326 src/editor/map/map_context.cpp:1141
+msgid "New Scenario"
+msgstr "Scenariu Nou"
+
+#: src/editor/map/context_manager.cpp:371
+msgid "No Recent Files"
+msgstr "Fară file Recente"
+
+#: src/editor/map/context_manager.cpp:399
+msgid "Unnamed Area"
+msgstr "Zonă nedenumită"
+
+#: src/editor/map/context_manager.cpp:422
+msgid "New Side"
+msgstr "Nouă Parte"
+
+#: src/editor/map/context_manager.cpp:461
+msgid "Apply Mask"
+msgstr "Aplică Mască"
+
+#: src/editor/map/context_manager.cpp:470
+msgid "Error loading mask"
+msgstr "Erroare incărcând masca"
+
+#: src/editor/map/context_manager.cpp:490
+msgid "Identifier:"
+msgstr "Identificator:"
+
+#: src/editor/map/context_manager.cpp:490
+msgid "Rename Area"
+msgstr "Redenumește Zona"
+
+#: src/editor/map/context_manager.cpp:504
+msgid "Choose Target Map"
+msgstr "Alegeți harta țintă"
+
+#: src/editor/map/context_manager.cpp:513
+#: src/editor/map/context_manager.cpp:964
+msgid "Error loading map"
+msgstr "Eroare incărcând harta"
+
+#: src/editor/map/context_manager.cpp:687
+msgid "Save Map As"
+msgstr "Salvează harta ca"
+
+#: src/editor/map/context_manager.cpp:704
+#: src/editor/map/context_manager.cpp:753 src/editor/map/map_context.cpp:228
+#: src/editor/palette/location_palette.cpp:263
+msgid "Error"
+msgstr "Eroare"
+
+#: src/editor/map/context_manager.cpp:705
+msgid "Do you really want to save a map in the scenarios folder?"
+msgstr "Chiar iți dorești să salvezi o hartă in folderul cu scenari?"
+
+#: src/editor/map/context_manager.cpp:713
+#: src/editor/map/context_manager.cpp:905
+msgid "This map is already open."
+msgstr "Harta aceasta este deja deschisă."
+
+#: src/editor/map/context_manager.cpp:736
+msgid "Save Scenario As"
+msgstr "Salvează Scenariul Ca"
+
+#: src/editor/map/context_manager.cpp:754
+msgid "Do you really want to save a scenario in the maps folder?"
+msgstr "Chiar iți dorești să salvezi o hartă in folderul cu scenari?"
+
+#: src/editor/map/context_manager.cpp:762
+msgid "This scenario is already open."
+msgstr "Scenariul aceasta este deja deschis."
+
+#: src/editor/map/context_manager.cpp:779
+msgid "No random map generators found."
+msgstr "Nu au fost gasite generatoare aleatori de hartă."
+
+#: src/editor/map/context_manager.cpp:792
+#: src/editor/map/context_manager.cpp:797
+msgid "Map creation failed."
+msgstr "Crearea harți a eșuat."
+
+#: src/editor/map/context_manager.cpp:812
+msgid "Unsaved Changes"
+msgstr "Schimbari Nesalvate"
+
+#: src/editor/map/context_manager.cpp:813
+msgid "Do you want to discard all changes made to the map since the last save?"
+msgstr ""
+"Dorești să renunți la toate schimbările făcute hărți de la ultima salvare?"
+
+#: src/editor/map/context_manager.cpp:866
+msgid "Scenario saved."
+msgstr "Scenariu salvat."
+
+#: src/editor/map/context_manager.cpp:881
+msgid "Map saved"
+msgstr "Hartă salvată"
+
+#: src/editor/map/context_manager.cpp:956
+msgid "Loaded embedded map data"
+msgstr "S-au încărcat datele harți încorporate"
+
+#: src/editor/map/context_manager.cpp:957
+#: src/editor/map/context_manager.cpp:960
+msgid "Map loaded from scenario"
+msgstr "Hartă încărcată din scenariu"
+
+#: src/editor/map/context_manager.cpp:960
+msgid "Loaded referenced map file:"
+msgstr "S-a încărcat fila harți referință:"
+
+#: src/editor/map/editor_map.cpp:110
+#: src/editor/palette/location_palette.cpp:118
+msgid "Player $side_num"
+msgstr "Jucator $side_num"
+
+#: src/editor/map/editor_map.cpp:266
+msgid "The size of the target map is different from the current map"
+msgstr "Marimea țintă a harți este differită de harta curentă"
+
+#: src/editor/map/map_context.cpp:188
+msgid "File not found"
+msgstr "Filă negăsită"
+
+#: src/editor/map/map_context.cpp:195
+msgid "Empty file"
+msgstr "Filă goală"
+
+#: src/editor/map/map_context.cpp:204
+msgid "File does not have .map, .cfg, or .mask extension"
+msgstr "Fila nu conține extensile .map, .cfg sau .mask"
+
+#: src/editor/map/map_context.cpp:227
+msgid ""
+"Failed to load the scenario: $error\n"
+"\n"
+"Attempting to load only the map."
+msgstr ""
+"A eșuat să se incarce: $error\n"
+"\n"
+"Se încearcă să se încarce doar harta."
+
+#: src/editor/map/map_context.cpp:253
+msgid ""
+"The file looks like a scenario, but the map_data attribute does not point to "
+"an existing file"
+msgstr ""
+"FIla arată ca un scenariu, dar atributul map_data nu arată către o filă "
+"existentă"
+
+#: src/editor/map/map_context.cpp:268
+msgid ""
+"The file looks like a scenario, but the map_file attribute does not point to "
+"an existing file"
+msgstr ""
+"FIla arată ca un scenariu, dar atributul map_file nu arată către o filă "
+"existentă"
+
+#: src/editor/map/map_context.cpp:448
+msgid "Confirm"
+msgstr "Confirmă"
+
+#: src/editor/map/map_context.cpp:835 src/editor/map/map_context.cpp:875
+msgid "Could not save time schedule: $msg"
+msgstr "Nu s-a putut salva programul de timp: $msg"
+
+#: src/editor/map/map_context.cpp:869
+msgid "Time schedule saved."
+msgstr "Program timp salvat."
+
+#: src/editor/map/map_context.cpp:915
+msgid "Could not save the scenario: $msg"
+msgstr "Nu s-a putut salva scenariul: $msg"
+
+#: src/editor/map/map_context.cpp:946
+msgid "Could not save into scenario"
+msgstr "Nu s-a putut salva în scenariu: $msg"
+
+#: src/editor/map/map_context.cpp:956
+msgid "Could not save the map: $msg"
+msgstr "Nu s-a putut salva harta: $msg"
+
+#: src/editor/palette/editor_palettes.cpp:47
+msgid "(Unknown Group)"
+msgstr "(Grup Necunoscut)"
+
+#: src/editor/palette/editor_palettes.cpp:300
+msgid "(non-core)"
+msgstr "(non-bază)"
+
+#: src/editor/palette/editor_palettes.cpp:301
+msgid "Will not work in game without extra care."
+msgstr "Nu va lucra în joc fară îngrijire extra."
+
+#: src/editor/palette/item_palette.cpp:33
+msgid "Left-click: Place item $item | Right-click to remove"
+msgstr "Click-stânga: Plasează obiectul $item | Click-Dreapta sa scoți"
+
+#: src/editor/palette/location_palette.cpp:247
+msgid "Go To"
+msgstr "Dute La"
+
+#: src/editor/palette/location_palette.cpp:254
+msgid "Add"
+msgstr "Adaugă"
+
+#: src/editor/palette/location_palette.cpp:256
+msgid "New Location Identifier"
+msgstr "Identificator locație nouă"
+
+#: src/editor/palette/location_palette.cpp:264
+msgid "Invalid location id"
+msgstr "ID locație invalid"
+
+#: src/editor/palette/location_palette.cpp:271
+msgid "Delete"
+msgstr "Șterge"
+
+#: src/editor/palette/terrain_palettes.cpp:224
+msgid "Left-click: "
+msgstr "Click-stânga: "
+
+#: src/editor/palette/terrain_palettes.cpp:225
+msgid "Right-click: "
+msgstr "Click-dreapta: "
+
+#. TRANSLATORS: Similar behavior applies to shift + right-click. This message specifies left-click
+#. because the logic of whether to show the "overlay only" or "base only" version depends on the
+#. terrain currently selected for the left button.
+#: src/editor/palette/terrain_palettes.cpp:230
+#, fuzzy
+msgid "Shift + left-click: paint overlay layer only"
+msgstr "Shift + click-stânga: vopește doar stratul de deasupra"
+
+#: src/editor/palette/terrain_palettes.cpp:232
+msgid "Shift + left-click: paint base layer only"
+msgstr "Shift + click-stânga: vopsește doar stratul bază"
+
+#: src/editor/palette/terrain_palettes.cpp:235
+msgid "Cmd + click: copy terrain"
+msgstr "Cmd + click: copiază terenul"
+
+#: src/editor/palette/terrain_palettes.cpp:237
+msgid "Ctrl + click: copy terrain"
+msgstr "Ctrl + click: copiază terenul"
+
+#, fuzzy
+#~ msgid "player^None"
+#~ msgstr "Jucator"
+
+#, fuzzy
+#~ msgid "Choose a File to Open"
+#~ msgstr "Alegeti o harta de incarcat"
+
+#, fuzzy
+#~ msgid "Choose a Mask to Apply"
+#~ msgstr "Alegeti o harta de incarcat"
+
+#, fuzzy
+#~ msgid "The file already exists. Do you want to overwrite it?"
+#~ msgstr "Aceasta harta exista deja. Doriti sa suprascrieti?"
+
+#~ msgid "Player"
+#~ msgstr "Jucator"
+
+#, fuzzy
+#~| msgid "Battle for Wesnoth Map Editor"
+#~ msgid "The Battle for Wesnoth"
+#~ msgstr "Editor de harti pentru Battle for Wesnoth"
+
+#~ msgid "Edit"
+#~ msgstr "Edit"
+
+#~ msgid "Undo"
+#~ msgstr "Undo"
+
+#~ msgid "Redo"
+#~ msgstr "Repeta"
+
+#, fuzzy
+#~ msgid "FG"
+#~ msgstr "FG"
+
+#, fuzzy
+#~ msgid "BG"
+#~ msgstr "BG"
+
+#~ msgid "Settings"
+#~ msgstr "Optiuni"
+
+#, fuzzy
+#~ msgid "Draw tiles"
+#~ msgstr "Deseneaza hexagoane"
+
+#~ msgid "Fill"
+#~ msgstr "Umple"
+
+#~ msgid "Set player's starting position"
+#~ msgstr "Alege pozitia de inceput a jucatorului"
+
+#~ msgid "Zoom in"
+#~ msgstr "Lupa - mai aproape"
+
+#~ msgid "Zoom out"
+#~ msgstr "Lupa - mai departe"
+
+#~ msgid "Zoom to default view"
+#~ msgstr "Lupa - setare standard"
+
+#~ msgid "Toggle grid"
+#~ msgstr "(Dez)Activeaza marginile hexagoanelor"
+
+#~ msgid "Resize the map"
+#~ msgstr "Modifica marimea hartii"
+
+#~ msgid "Flip map"
+#~ msgstr "Intoarce harta"
+
+#~ msgid "Language"
+#~ msgstr "Limba"
+
+#~ msgid "Choose your preferred language:"
+#~ msgstr "Alegeti limba preferata"
+
+#~ msgid "Which Player?"
+#~ msgstr "Care jucator?"
+
+#~ msgid "Which player should start here?"
+#~ msgstr "Care jucator incepe aici?"
+
+#~ msgid ""
+#~ "Warning: Illegal characters found in the map name. Please save under a "
+#~ "different name."
+#~ msgstr ""
+#~ "Atnetie: Am gasit caractere in numele hartii pe care nu le pot folosi. "
+#~ "Salvati sub alt nume."
+
+#~ msgid "The file does not contain a valid map."
+#~ msgstr "Acest fisier nu este o harta valida."
+
+#~ msgid "Error: Illegal character in filename."
+#~ msgstr "Eroare: Caracter nevalabil in numele fisierului."

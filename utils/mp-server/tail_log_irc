@@ -1,0 +1,52 @@
+#!/bin/bash
+die() { printf '%s\n' "$*" >&2; exit 1; }
+
+color=
+logged=
+mod=
+old=
+file=current.log
+
+args=$(getopt --options cdmlo --longoptions color,colour,dry-run,debug,logged,mod,old --name "$(basename "$0")" -- "$@") || die "Syntax: $0 [-c|--color|colour] [-l|--logged] [-m|--mod] [-o|--old] <server version>"
+eval set -- "$args"
+
+while true
+do
+        case "$1" in
+        -c|--color|--colour)
+                color=_color;;
+        -l|--logged)
+                logged=_logged;;
+        -m|--mod)
+                mod=_mod;;
+        -o|--old)
+                old=OLD: file=old.log;;
+        --) shift; break;;
+        *) printf 'Unhandled option "%s"!\n' "$1" >&2;;
+        esac
+        shift
+done
+
+[ $# -ge 1 ] || die "No server version specified!"
+version=$1
+
+params=(-n 0 -F)
+[ "$old" ] && params=(-n 0 --pid="$(cat "$HOME/servers/$version/old.pid")" -f)
+
+log="$HOME/servers/$version/$file"
+#[ -r "$log" ] || die "Server log file '$log' is not readable!"
+
+filter=logfilter_irc$logged$color
+
+prev=
+case $version in *prev) prev=PREV: ;; esac
+
+prefix=
+[ "$mod" ] && prefix="$version:" && filter=logfilter_irc$mod
+prefix="$prefix$prev$old"
+
+[ "$prefix" ] && fparams=(-e "s/^/$prefix /")
+
+# keep only the pipeline around
+shopt -s lastpipe
+tail "${params[@]}" "$log" | exec "$filter" --unbuffered "${fparams[@]}"

@@ -1,0 +1,3848 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Battle for Wesnoth 1.3.12+dev\n"
+"Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
+"POT-Creation-Date: 2026-08-18 15:19 UTC\n"
+"PO-Revision-Date: 2011-09-13 13:54+0100\n"
+"Last-Translator: Andreas Tyrberg <tyrberg.andreas@gmail.com>\n"
+"Language-Team: none\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Basepath: /home/tigge/Source/wesnoth1.4/trans\n"
+
+#. [campaign]: id=The_Hammer_of_Thursagan
+#. [achievement_group]
+#: data/campaigns/The_Hammer_of_Thursagan/_main.cfg:32
+#: data/campaigns/The_Hammer_of_Thursagan/achievements.cfg:4
+msgid "The Hammer of Thursagan"
+msgstr "Thursagans hammare"
+
+#. [campaign]: id=The_Hammer_of_Thursagan
+#: data/campaigns/The_Hammer_of_Thursagan/_main.cfg:34
+msgid "THoT"
+msgstr "THoT"
+
+#. [campaign]: id=The_Hammer_of_Thursagan
+#: data/campaigns/The_Hammer_of_Thursagan/_main.cfg:42
+msgid "1x enemies"
+msgstr ""
+
+#. [campaign]: id=The_Hammer_of_Thursagan
+#: data/campaigns/The_Hammer_of_Thursagan/_main.cfg:42
+#, fuzzy
+#| msgid "(Easy)"
+msgid "Easy"
+msgstr "(Enkel)"
+
+#. [campaign]: id=The_Hammer_of_Thursagan
+#: data/campaigns/The_Hammer_of_Thursagan/_main.cfg:43
+msgid "2x enemies"
+msgstr ""
+
+#. [campaign]: id=The_Hammer_of_Thursagan
+#: data/campaigns/The_Hammer_of_Thursagan/_main.cfg:43
+#, fuzzy
+#| msgid "(Normal)"
+msgid "Normal"
+msgstr "(medelsvår)"
+
+#. [campaign]: id=The_Hammer_of_Thursagan
+#: data/campaigns/The_Hammer_of_Thursagan/_main.cfg:44
+msgid "3x enemies"
+msgstr ""
+
+#. [campaign]: id=The_Hammer_of_Thursagan
+#: data/campaigns/The_Hammer_of_Thursagan/_main.cfg:44
+msgid "Hard"
+msgstr ""
+
+#. [campaign]: id=The_Hammer_of_Thursagan
+#: data/campaigns/The_Hammer_of_Thursagan/_main.cfg:45
+msgid "4x enemies"
+msgstr ""
+
+#. [campaign]: id=The_Hammer_of_Thursagan
+#: data/campaigns/The_Hammer_of_Thursagan/_main.cfg:45
+msgid "Deadly"
+msgstr ""
+
+#. [campaign]: id=The_Hammer_of_Thursagan
+#: data/campaigns/The_Hammer_of_Thursagan/_main.cfg:47
+#, fuzzy
+#| msgid ""
+#| "In the first years of the Northern Alliance, an expedition from Knalga "
+#| "seeks out their kin at Kal Kartha and to learn the fate of the legendary "
+#| "Hammer of Thursagan. The perils of their journey through the wild "
+#| "Northern Lands, though great, pale beside the evil they will face at its "
+#| "end.\n"
+#| "\n"
+msgid ""
+"In the first years of the Northern Alliance, an expedition from Knalga seeks "
+"out their kin at Kal Kartha and to learn the fate of the legendary Hammer of "
+"Thursagan. The perils of their journey through the wild Northlands, though "
+"great, pale beside the evil they will face at its end.\n"
+"\n"
+msgstr ""
+"Ett par år efter att Norra alliansen bildats så skickas en expedition från "
+"Knalga till Kal Kartha för att söka efter deras fränder och ta reda på vad "
+"som hänt med Thursagans legendariska hammare. Även om deras farofyllda resa "
+"genom de vilda nordlandet är farlig så bleknar den jämfört med den ondska de "
+"kommer möta vid dess slut.\n"
+"\n"
+
+#. [campaign]: id=The_Hammer_of_Thursagan
+#: data/campaigns/The_Hammer_of_Thursagan/_main.cfg:49
+#, fuzzy
+#| msgid "(Intermediate level, 11 scenarios.)"
+msgid "(Intermediate level, 9 scenarios.)"
+msgstr "(Medelsvår, 11 scenarier)"
+
+#. [about]
+#: data/campaigns/The_Hammer_of_Thursagan/_main.cfg:52
+msgid "Author"
+msgstr "Upphovsman"
+
+#. [about]
+#: data/campaigns/The_Hammer_of_Thursagan/_main.cfg:58
+msgid "Special Guest Designer"
+msgstr "Speciell gästdesigner"
+
+#. [about]
+#: data/campaigns/The_Hammer_of_Thursagan/_main.cfg:64
+msgid "Art"
+msgstr "Grafik"
+
+#. [about]
+#: data/campaigns/The_Hammer_of_Thursagan/_main.cfg:77
+msgid "Brainstorming, playtesting, and spousal support"
+msgstr "Idéer, speltestning och stöd som maka"
+
+#. [about]
+#: data/campaigns/The_Hammer_of_Thursagan/_main.cfg:83
+msgid "Campaign Maintenance"
+msgstr ""
+
+#. [event]
+#. [unit]: type={TYPE}
+#. [side]: type=Dwarvish Masked Lord, id=Dufon
+#. [side]: type=Dwarvish Masked Lord, id=Aragoth
+#. [side]: type=Dwarvish Masked Lord, id=Dranath
+#: data/campaigns/The_Hammer_of_Thursagan/_main.cfg:103
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:33
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:92
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:127
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:150
+msgid "Masked Dwarf"
+msgstr "Maskerad dvärg"
+
+#. [achievement]: id=gryphon_hunter
+#: data/campaigns/The_Hammer_of_Thursagan/achievements.cfg:8
+msgid "Gryphon Hunter"
+msgstr ""
+
+#. [achievement]: id=gryphon_hunter
+#: data/campaigns/The_Hammer_of_Thursagan/achievements.cfg:9
+msgid "Capture every gryphon in <i>High Pass</i>."
+msgstr ""
+
+#. [achievement]: id=conqueror_of_the_forest
+#: data/campaigns/The_Hammer_of_Thursagan/achievements.cfg:16
+msgid "Conqueror of the Forest"
+msgstr ""
+
+#. [achievement]: id=conqueror_of_the_forest
+#: data/campaigns/The_Hammer_of_Thursagan/achievements.cfg:17
+msgid "Defeat an enemy leader in <i>Forbidden Forest</i>."
+msgstr ""
+
+#. [achievement]: id=new_thursagan
+#: data/campaigns/The_Hammer_of_Thursagan/achievements.cfg:23
+#, fuzzy
+#| msgid "The Hammer of Thursagan"
+msgid "New Thursagan"
+msgstr "Thursagans hammare"
+
+#. [achievement]: id=new_thursagan
+#: data/campaigns/The_Hammer_of_Thursagan/achievements.cfg:24
+msgid "Complete <i>The Underlevels</i> on the hardest difficulty."
+msgstr ""
+
+#. [scenario]: id=01_At_the_East_Gate
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/01_At_the_East_Gate.cfg:5
+msgid "At the East Gate"
+msgstr "Vid östra porten"
+
+#. [part]
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/01_At_the_East_Gate.cfg:24
+#, fuzzy
+#| msgid ""
+#| "In the first few years after the founding of the Northern Alliance, the "
+#| "dwarves of Knalga and the human population of Dwarven Doors were fully "
+#| "preoccupied with rebuilding what had been broken by the long orcish "
+#| "occupation. But soon enough they prospered once again. The dwarves begin "
+#| "mining their past for inspiration in ways to rebuild Knalga so it would "
+#| "be even greater than before, and began also reaching out for contact with "
+#| "their scattered kinfolk."
+msgid ""
+"In the first few years after the founding of the Northern Alliance, the "
+"dwarves of Knalga and the human population of Dwarven Doors were fully "
+"preoccupied with rebuilding what had been broken by the long orcish "
+"occupation. But soon enough they prospered once again. The dwarves began "
+"mining their past for inspiration to rebuild Knalga even greater than "
+"before, and began also reaching out for contact with their scattered kinfolk."
+msgstr ""
+"De första åren efter Norra alliansens grundande var Knalgas dvärgar och de "
+"människor som också bodde i Dvärgdörrarna helt upptagna med att återbygga "
+"vad som hade blivit förstört av orchernas långa ockupation. Tids nog så "
+"blomstrade staden igen. Dvärgarna började gräva i sitt förflutna efter "
+"inspiration så Knalga kunde återuppbyggas och bli ännu mer framstående än "
+"förut. Samtidigt så gjorde dvärgarna de första försöken att få kontakt med "
+"sina spridda släktingar."
+
+#. [part]
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/01_At_the_East_Gate.cfg:28
+msgid ""
+"But the threat from hostile orcs, wild men, and remnant undead was not yet "
+"ended. The dwarves kept strong guards on the approaches to Knalga. In the "
+"year 550 after the founding of Wesnoth, the captain of the East Gate "
+"received a warning that a small band of rogue orcs had been sighted."
+msgstr ""
+"Men hotet från fientliga orcher, vilda människor och kvarlevande vandöda var "
+"inte över. Dvärgarna behöll starka vakter i Knalgas omgivningar. År 550 "
+"efter Wesnoths grundande så får kaptenen vid östra porten en varning om att "
+"ett litet rövarband med orcher har skymtats."
+
+#. [side]: type=Orcish Warrior, id=Bashnark
+#. [side]: id=leader{SIDE}, type={TYPE}
+#. this is the same clan name as the orcs who show up in S08, helping to explain how the cloak-pin made it all the way to Knalga. "Withervein" refers to poison.
+#. this is the same clan name as the orcs who you fought in S01, helping to explain how the cloak-pin made it all the way to Knalga. "Withervein" refers to poison.
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/01_At_the_East_Gate.cfg:52
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/08_The_Siege_of_Kal_Kartha.cfg:41
+msgid "Clan Withervein"
+msgstr ""
+
+#. [side]: type=Orcish Warrior, id=Bashnark
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/01_At_the_East_Gate.cfg:57
+msgid "Bashnark"
+msgstr "Bashnark"
+
+#. [event]
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/01_At_the_East_Gate.cfg:77
+msgid "East Gate"
+msgstr "Östra porten"
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/01_At_the_East_Gate.cfg:102
+msgid ""
+"<i>Up axes!</i> We will be the Northern Alliance’s arm today, and kill or "
+"scatter these invaders."
+msgstr ""
+"<i>Yxor upp!</> Vi kommer vara Norra alliansens arm idag och döda eller jaga "
+"bort dessa inkräktare."
+
+#. [message]: speaker=Bashnark
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/01_At_the_East_Gate.cfg:106
+#, fuzzy
+#| msgid ""
+#| "We are the true orcs, not the weaklings who ally with human-worms and "
+#| "stinky-midgets like you. You will be meat for our wolves."
+msgid ""
+"We are the true orcs, not the weaklings who ally with human-worms and stinky-"
+"midgets like you. Come out of your hole and fight us or we will burn your "
+"fields to ash!"
+msgstr ""
+"Vi är riktiga orcher, inte sånna veklingar som allierar sig med ynkliga "
+"människor eller stinkande småbarn som er. Ni kommer att bli vargföda."
+
+#. [objective]: condition=win
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/01_At_the_East_Gate.cfg:115
+msgid "Defeat Bashnark"
+msgstr "Besegra Bashnark"
+
+#. [objective]: condition=lose
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/01_At_the_East_Gate.cfg:119
+msgid "Death of Aiglondur"
+msgstr "Aiglondurs död"
+
+#. [message]: speaker=unit
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/01_At_the_East_Gate.cfg:143
+msgid "Rarrrggh..."
+msgstr ""
+
+#. [message]: speaker=second_unit
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/01_At_the_East_Gate.cfg:150
+#, fuzzy
+#| msgid ""
+#| "What is this? Their vanquished leader wears a cloak-pin of dwarvish make. "
+#| "And it bears a loremaster’s emblem."
+msgid ""
+"What is this? Their vanquished leader wears a cloak-pin of dwarvish make. "
+"And it bears a loremaster’s emblem."
+msgstr ""
+"Vad är det här? Deras besegrade ledare bär ett mantelspänne tillverkat av "
+"dvärgar, och den har en skriftmästers symbol."
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/01_At_the_East_Gate.cfg:154
+msgid "The maker’s mark is strange to me. We had best consult the lord Hamel."
+msgstr "Skaparens symbol är okänd för mig. Vi bör nog rådfråga furst Hamel."
+
+#. [scenario]: id=02_Reclaiming_the_Past
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/02_Reclaiming_the_Past.cfg:9
+msgid "Reclaiming the Past"
+msgstr "Återta det förflutna"
+
+#. [part]
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/02_Reclaiming_the_Past.cfg:27
+#, fuzzy
+#| msgid ""
+#| "Following the victory against the orcs, Aiglondur was summoned to the "
+#| "audience hall of Hamel, lord of Knalga and Lord Companion of the Northern "
+#| "Alliance. Beside the dais stood a stranger in the robes of the Order of "
+#| "Loremasters..."
+msgid ""
+"Following the victory against the orcs, Aiglondur was summoned to the "
+"audience hall of Hamel, Lord of Knalga and Lord Companion of the Northern "
+"Alliance. Beside the dais stood a stranger in the robes of the Order of "
+"Loremasters..."
+msgstr ""
+"Efter segern mot orcherna kallades Aiglondur till Hamels, härskaren av "
+"Knalgas och en ståthållare i den norra alliansens, audienshall. Brevid "
+"podiet stod en främling i skriftmästargillets ämbetsdräkt..."
+
+#. [side]: type=Dwarvish Lord, id=Hamel
+#. [side]: type=Orcish Warrior, id=Marth-Tak
+#. [side]
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/02_Reclaiming_the_Past.cfg:40
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/03_Strange_Allies.cfg:76
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/11_Epilogue.cfg:58
+#: data/campaigns/The_Hammer_of_Thursagan/utils/characters.cfg:24
+msgid "Alliance"
+msgstr "Alliansen"
+
+#. [side]: type=Dwarvish Lord, id=Hamel
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/02_Reclaiming_the_Past.cfg:45
+msgid "Hamel"
+msgstr "Hamel"
+
+#. [message]: speaker=Hamel
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/02_Reclaiming_the_Past.cfg:96
+#, fuzzy
+#| msgid ""
+#| "Aiglondur, what ye ha’ found is disturbing, for all it seems a small "
+#| "thing. I make known to ye Angarthing, loremaster in training, who "
+#| "recognized the mark on it."
+msgid ""
+"Aiglondur, what ye ha’ found is disturbing, for all it seems a small thing. "
+"I make known to ye Angarthing, loremaster in training, who recognized the "
+"mark on it."
+msgstr ""
+"Vad du har funnit, Aiglondur, är oroande även om det verkar obetydligt. Låt "
+"mig presentera Angarthing, skriftmäster under träning, för er. Det var han "
+"som kände igen symbolen på nålen."
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/02_Reclaiming_the_Past.cfg:101
+#, fuzzy
+#| msgid ""
+#| "The mark on this cloak-pin is that of our kin at Kal Kartha in the "
+#| "eastern hills, from whom we’ve heard nothing since before Tallin broke "
+#| "the orcish occupation of Knalga. It troubles us that an orc should have "
+#| "come to possess it; no orc should know even that loremasters exist, let "
+#| "alone come near enough one to get this."
+msgid ""
+"The mark on this cloak-pin is that of our kin at Kal Kartha in the eastern "
+"hills, from whom we’ve heard nothing since before Tallin broke the orcish "
+"occupation of Knalga. It troubles us that an orc should have come to possess "
+"it; no outsider should know even that loremasters exist, let alone come near "
+"enough one to get this."
+msgstr ""
+"Symbolen på den här mantelnålen kommer från våra fränder i Kal Kartha, i de "
+"östra kullarna. Vi har inte har hört någonting från dem sedan Tallin avbröt "
+"den orchiska ockupationen av Knalga. Det är väldigt oroande att en orch har "
+"fått den i sin ägo. Ingen orch borde veta att skriftmästare existerar och än "
+"mindre komma nära nog att få tag i dess mantelnål."
+
+#. [message]: speaker=Hamel
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/02_Reclaiming_the_Past.cfg:106
+#, fuzzy
+#| msgid "I fear some grave ill may have become Kal Kartha."
+msgid "I fear some grave ill may have become Kal Kartha."
+msgstr "Jag är rädd att något riktigt hemskt har drabbat Kal Kartha."
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/02_Reclaiming_the_Past.cfg:111
+msgid ""
+"And I fear for the Hammer of Thursagan. Our kin at Kal Kartha have been its "
+"keepers since a hero of their line recovered it from the Caverns of Flame, "
+"centuries ago."
+msgstr ""
+"Jag fruktar också för Thursagans hammare. Våra fränder i Kal Kartha har "
+"varit dess väktare sedan en hjälte av deras ätt hämtade den från eldens "
+"grottor för hundratals år sedan."
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/02_Reclaiming_the_Past.cfg:116
+msgid "The Hammer of Thursagan?"
+msgstr "Thursagans hammare?"
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/02_Reclaiming_the_Past.cfg:121
+#, fuzzy
+#| msgid ""
+#| "Aye. The very tool with which our greatest runesmith made the Sceptre of "
+#| "Fire. But it is ancient, far older than Thursagan; he was but the last to "
+#| "wield it, and our oldest histories hint that this very hammer was used to "
+#| "forge the dwarves themselves in the heart of the earth."
+msgid ""
+"Aye. The very tool with which our greatest runesmith made the Sceptre of "
+"Fire. But it is ancient, far older than Thursagan; he was but the last to "
+"wield it, and our oldest histories hint that this very hammer was used to "
+"forge the dwarves themselves in the heart of the earth."
+msgstr ""
+"Ja. Själva hammaren med vilken vår mest framstående runsmed skapade "
+"eldspiran. Den är uråldig, mycket äldre än Thursagan själv. Han var blott "
+"den sista att nyttja den. Våra äldsta historier antyder att just denna "
+"hammare använts för att, vid jordens hjärta, smida och hamra ut de första "
+"dvärgarna."
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/02_Reclaiming_the_Past.cfg:126
+msgid ""
+"But if the dwarves of Kal Kartha have held it all this time, why has none "
+"wielded it since Thursagan?"
+msgstr ""
+"Men om Kal Karthas dvärgar har haft den hela tiden, varför har ingen använt "
+"den efter Thursagan?"
+
+#. [message]: speaker=Hamel
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/02_Reclaiming_the_Past.cfg:131
+#, fuzzy
+#| msgid ""
+#| "Because when Thursagan burned to death with his hand on the Hammer, all "
+#| "the runemasters and arcanisters then living — all those who had sworn to "
+#| "the craft and bound themselves to the power o’ the Hammer — dropped dead "
+#| "without a mark on them, all struck down at the same moment. Their craft "
+#| "secrets died with them. That is why there are nae runesmiths among the "
+#| "Dwarves today, and sorely we miss them."
+msgid ""
+"Because when Thursagan burned to death with his hand on the Hammer, all the "
+"runemasters and arcanisters then living — all those who had sworn to the "
+"craft and bound themselves to the power o’ the Hammer — dropped dead without "
+"a mark on them, all struck down at the same moment. Their craft secrets died "
+"with them. That is why there are nae runesmiths among the Dwarves today, and "
+"sorely we miss them."
+msgstr ""
+"Eftersom Thursagan brann ihjäl med sin hand på hammaren så föll alla som "
+"svurit sig till hantverket och bundit sig vid hammarens kraft ner döda. Alla "
+"runmästare och runbesvärjare som levde då hade bundit sig till hammarens "
+"kraft - alla föll ner döda, i samma stund, utan ett märke på deras kroppar. "
+"Deras hantverkshemligheter dog med dem.  Det är därför det inte finns några "
+"runsmeder bland dvärgarna i denna dag, vilket är en stor förlust."
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/02_Reclaiming_the_Past.cfg:136
+msgid ""
+"That is what is said, my lord Hamel, and it is true. Except this; the Order "
+"of Loremasters has given me leave to reveal that the craft secrets were not, "
+"actually, quite as lost as we believed."
+msgstr ""
+"Det är vad som sagts ers nåd Hamel, och det är sant. Förutom detta: "
+"skriftmästarnas gille har tillåtit mig att berätta att "
+"hantverkshemligheterna faktiskt inte är så förlorade som vi först trodde."
+
+#. [message]: speaker=Hamel
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/02_Reclaiming_the_Past.cfg:141
+msgid "What is this ye say? Nae lost?"
+msgstr "Vad är det du säger? Inte förlorad?"
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/02_Reclaiming_the_Past.cfg:146
+msgid ""
+"Aye. Ye’ll recall that in repairing the western galleries we cleared a small "
+"cave-in hard by where Thursagan himself once had a workshop here, before he "
+"left to study in solitude in the further North."
+msgstr ""
+"Ja. Du minns att när vi reparerade de västra gallerierna så rensade vi ut "
+"ett litet ras just där Thursagan själv en gång hade sin verkstad, innan han "
+"lämnade staden för att studera ensam längre norrut."
+
+#. [message]: speaker=Hamel
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/02_Reclaiming_the_Past.cfg:151
+msgid "And ye found something?"
+msgstr "Och ni hittade något?"
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/02_Reclaiming_the_Past.cfg:156
+msgid ""
+"A book. Thursagan’s book, in a secret and locked compartment he must have "
+"dug from the living rock himself by unaided runecraft. The cave-in breached "
+"it. It has taken us great effort to puzzle out his code. But it might be "
+"that, with the book and the Hammer to hand, we could train and initiate "
+"runesmiths once more."
+msgstr ""
+"En bok. Thursgans bok. I ett hemligt och låst fack han ensam, med hjälp av "
+"sitt runhantverk, måste ha grävt ut från den levande stenen. Facket öppnades "
+"i raset. Det har varit ett mödosamt arbete att tyda hans pussellika koder. "
+"Men det kan vara så att med boken och hammaren till hands så skulle vi kunna "
+"träna och åter viga in runsmeder."
+
+#. [message]: speaker=Hamel
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/02_Reclaiming_the_Past.cfg:161
+msgid "And for what cause ha’ I heard naught o’ this?"
+msgstr "Av vilken andledning har jag inte hört talas om detta?"
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/02_Reclaiming_the_Past.cfg:166
+msgid ""
+"My lord, the find was very recent. We are still deciphering the book. And "
+"there is this: with the Hammer at Kal Kartha and the book here, the question "
+"of which holding shall have the training of the new runesmiths in its hands "
+"would be... delicate."
+msgstr ""
+"Ers nåd, det här fyndet är väldigt nytt. Vi håller fortfarande på att tyda "
+"boken. Dessutom finns ett litet problem: om hammaren är i Kal Kartha och "
+"boken är här så är frågan om vilken bosättning som ska hålla i träningen av "
+"de nya runsmederna... känslig."
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/02_Reclaiming_the_Past.cfg:171
+msgid ""
+"We feared stirring up a controversy before the book was even properly "
+"understood."
+msgstr ""
+"Vi fruktade för att orsaka en kontrovers redan innan boken var ordentligt "
+"förstådd."
+
+#. [message]: speaker=Hamel
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/02_Reclaiming_the_Past.cfg:176
+msgid ""
+"I’ll grant that was well thought, even if I am nae entirely pleased to have "
+"been kept in the dark. But ye came to me with a request, and I think I ken "
+"what it will be."
+msgstr ""
+"Jag kan hålla med om att det var väl tänkt, även om jag inte är helt nöjd "
+"med att ha blivit underhållen detta. Men ni kom till mig med anhållan, och "
+"jag tror jag vet hur den lyder."
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/02_Reclaiming_the_Past.cfg:181
+#, fuzzy
+#| msgid ""
+#| "That is obvious; the Order of Loremasters wants to send an expedition to "
+#| "Kal Kartha to find what has become of our kindred and the Hammer."
+msgid ""
+"That is obvious; the Order of Loremasters wants to send an expedition to Kal "
+"Kartha to find what has become of our kindred and the Hammer."
+msgstr ""
+"Den är självklar: Skriftmästargillet vill skicka en expedition till Kal "
+"Kartha för att ta reda på vad som hänt både hammaren och våra fränder."
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/02_Reclaiming_the_Past.cfg:186
+msgid "Indeed, Lord Hamel, that is what we came to ask."
+msgstr "Ja furst Hamel, det är vad vi kom för att fråga."
+
+#. [message]: speaker=Hamel
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/02_Reclaiming_the_Past.cfg:191
+msgid "And you spoke my guess, Aiglondur. Are you nae kin of mine?"
+msgstr "Och Aiglondur gissade som jag. Är du av min ätt?"
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/02_Reclaiming_the_Past.cfg:196
+msgid "Your great-nephew, my lord."
+msgstr "Jag är din brorsons son, ers nåd."
+
+#. [message]: speaker=Hamel
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/02_Reclaiming_the_Past.cfg:201
+#, fuzzy
+#| msgid ""
+#| "Ye’re young and not tested... but ye have the rank, and ye’ve shown the "
+#| "wits to use it well. I have decided. You and Angarthing will fare to Kal "
+#| "Kartha together, as soon as may be, with the best men of your guard."
+msgid ""
+"Ye’re young and not tested... but ye have the rank, and ye’ve shown the wits "
+"to use it well. I have decided. You and Angarthing will fare to Kal Kartha "
+"together, as soon as may be, with the best men of your guard."
+msgstr ""
+"Du är ung och oprövad... men du har graden och du har visat förstånd nog att "
+"använda den väl. Jag har bestämt mig. Du och Angarthing får tillsammans med "
+"era bästa män, så snart som möjligt, resa till Kal Kartha."
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/02_Reclaiming_the_Past.cfg:218
+msgid "Aye, my Lord Hamel."
+msgstr "Ja, ers nåd Hamel."
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/02_Reclaiming_the_Past.cfg:223
+#, fuzzy
+#| msgid "The Order thanks you, Lord Hamel"
+msgid "The Order thanks you, Lord Hamel."
+msgstr "Vår order tackar er, furst Hamel."
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/02_Reclaiming_the_Past.cfg:228
+msgid ""
+"We must make haste; winter approaches, and travel over the mountains will "
+"soon grow dangerous."
+msgstr ""
+"Vi måste skynda; vintern är i antågandem, och att färdas över bergen blir "
+"snart farligt."
+
+#. [scenario]: id=03_Strange_Allies
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/03_Strange_Allies.cfg:5
+msgid "Strange Allies"
+msgstr "Egendomliga allierade"
+
+#. [part]
+#. 'march' is *not* a typo for 'marsh' here. In archaic English, 'march' means 'border'.
+#. The same word, as '-mark', is in the name of 'the Estmarks': the hills of the eastern border.
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/03_Strange_Allies.cfg:23
+#, fuzzy
+#| msgid ""
+#| "Angarthing and Aiglondur and the dwarvish troop traveled swiftly to the "
+#| "east through the settled lands of the Northern Alliance. Soon enough they "
+#| "came to the wilder march country, where raids by large bands of hostile "
+#| "orcs and men were all too common."
+msgid ""
+"Angarthing, Aiglondur, and the dwarvish troop traveled swiftly to the east "
+"through the settled lands of the Northern Alliance. Soon enough they came to "
+"the wilder march country, where raids by large bands of hostile orcs and men "
+"were all too common."
+msgstr ""
+"Angarthing, Aiglondur och deras dvärgtrupper förflyttade sig snabbt åt öster "
+"genom Norra alliansen bebodda trakter. Snart kom de fram till de vilda "
+"gränsländerna där band av fientliga orcher och människor var alldeles för "
+"vanliga."
+
+#. [side]: type={ON_DIFFICULTY4 Outlaw Outlaw Fugitive Fugitive}, id=Gorthas
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/03_Strange_Allies.cfg:46
+msgid "Gorthas’s Gang"
+msgstr ""
+
+#. [side]: type={ON_DIFFICULTY4 Outlaw Outlaw Fugitive Fugitive}, id=Gorthas
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/03_Strange_Allies.cfg:51
+msgid "Gorthas"
+msgstr ""
+
+#. [side]: type=Orcish Warrior, id=Marth-Tak
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/03_Strange_Allies.cfg:81
+msgid "Marth-Tak"
+msgstr "Marth-Tak"
+
+#. [message]: speaker=Marth-Tak
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/03_Strange_Allies.cfg:124
+msgid "In the name of the Alliance, quit these lands now!"
+msgstr "I alliansens namn, lämna detta land nu!"
+
+#. [message]: speaker=Gorthas
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/03_Strange_Allies.cfg:128
+#, fuzzy
+#| msgid ""
+#| "We will fare where we will and take what we will, dog of an orc. To the "
+#| "Dark Gods with you and your precious ‘Alliance’."
+msgid ""
+"We will fare where we will and take what we will, dog of an orc. To the dark "
+"gods with you and your precious ‘Alliance’. Even your own kind are fed up "
+"with your peacemaking!"
+msgstr ""
+"Vi reser vart vi vill och tar vid vi vill, orchhund. Till de mörka gudarna "
+"med dig och eran älskade \"allians\"."
+
+#. [message]
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/03_Strange_Allies.cfg:132
+msgid ""
+"Stinkin’ weakling! No true orc would fight for somethin’ as stupid as the "
+"Alliance."
+msgstr ""
+
+#. [message]: speaker=Marth-Tak
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/03_Strange_Allies.cfg:136
+msgid ""
+"You underestimate our strength. We shall see who the true orc is after this "
+"battle is over!"
+msgstr ""
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/03_Strange_Allies.cfg:141
+msgid ""
+"Now that is a sight still strange to my eyes — an orc fighting for the "
+"Northern Alliance."
+msgstr "Det var mig en konstig syn! En orch som slåss för Norra alliansen."
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/03_Strange_Allies.cfg:145
+#, fuzzy
+#| msgid ""
+#| "I’m surprised myself that so many of the orcish tribes came over to the "
+#| "Alliance. Not so strange to see humans raiding us, worse luck."
+msgid ""
+"I’m surprised myself that so many of the orcish tribes came over to the "
+"Alliance. Not so strange to see humans raiding us, worse luck."
+msgstr ""
+"Jag är förvånad själv att så många orchstammar gick med på alliansens sida. "
+"Inte lika förvånande, men olyckligt, att människor anfaller oss."
+
+#. [message]: speaker=Marth-Tak
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/03_Strange_Allies.cfg:150
+msgid "You, on the road! Are you of the Northern Alliance or not?"
+msgstr "Ni där på vägen! Är ni med i Norra alliansen eller ej?"
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/03_Strange_Allies.cfg:154
+msgid "We are."
+msgstr "Det är vi."
+
+#. [message]: speaker=Marth-Tak
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/03_Strange_Allies.cfg:158
+#, fuzzy
+#| msgid "Well, then, honor the treaty as I have."
+msgid "Well, then, honor the treaty as I have. Fight to repel these invaders."
+msgstr "Nå, hedra då fördraget så som jag har gjort."
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/03_Strange_Allies.cfg:162
+msgid "That is our duty."
+msgstr "Det är vår plikt."
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/03_Strange_Allies.cfg:166
+msgid "For the Alliance! Axes up!"
+msgstr "För alliansen! Yxor upp!"
+
+#. [objective]: condition=win
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/03_Strange_Allies.cfg:174
+#, fuzzy
+#| msgid "Help Marth-Tak defeat Gothras"
+msgid "Help Marth-Tak defeat Gorthas"
+msgstr "Hjälp Marth-Tak besegra Gothras"
+
+#. [objective]: condition=lose
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/03_Strange_Allies.cfg:178
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/05_Mages_and_Drakes.cfg:175
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:151
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/07_Forbidden_Forest.cfg:273
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/08_The_Siege_of_Kal_Kartha.cfg:212
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:361
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:216
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:908
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:1159
+#, fuzzy
+#| msgid "Death of Angarthing"
+msgid "Death of Aiglondur or Angarthing"
+msgstr "Angarthings död"
+
+#. [objective]: condition=lose
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/03_Strange_Allies.cfg:182
+msgid "Death of Marth-Tak"
+msgstr "Marth-Taks död"
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/03_Strange_Allies.cfg:206
+msgid "We have failed our duty to the Alliance."
+msgstr "Vi har misslyckas att utföra vår plikt till alliansen."
+
+#. [message]: speaker=Marth-Tak
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/03_Strange_Allies.cfg:224
+msgid ""
+"My thanks, dwarves. These bandits might have hacked a bloody swathe through "
+"the Alliance’s tribes if we had not killed them here."
+msgstr ""
+"Mitt tack till er dvärgar. De här banditerna kunde ha slagit en blodig väg "
+"genom alliansens stammar om vi inte hade dödat dem här."
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/03_Strange_Allies.cfg:228
+#, fuzzy
+#| msgid ""
+#| "My thanks to you, for proving there are orcs I can fight alongside rather "
+#| "than against. But we cannot linger here to celebrate; we are journeying "
+#| "east."
+msgid ""
+"My thanks to you, for proving there are orcs I can fight alongside rather "
+"than against. But we cannot linger here to celebrate; we are journeying east."
+msgstr ""
+"Och mitt tack till dig. Du visade mig att det finns orcher jag kan slåss "
+"tillsammans med istället för mot. Men vi kan tyvärr itne dröja oss kvar här "
+"och fira, vi måste fortsätta vår färd österut."
+
+#. [message]: speaker=Marth-Tak
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/03_Strange_Allies.cfg:232
+#, fuzzy
+#| msgid ""
+#| "East, eh? You won’t find many friends in that direction. Travel safely."
+msgid ""
+"East, eh? You won’t find many friends in that direction. There’s talk of "
+"wolves, and worse. Travel safely."
+msgstr ""
+"Öst, hm? Ni kommer inte att hitta många vänner åt det hållet. Res försiktigt."
+
+#. [scenario]: id=04_High_Pass
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/04_High_Pass.cfg:5
+msgid "High Pass"
+msgstr "Höga passet"
+
+#. [part]
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/04_High_Pass.cfg:21
+#, fuzzy
+#| msgid ""
+#| "Aiglondur and his troop, some still shaking their heads dubiously at the "
+#| "very notion of fighting alongside orcs rather than against them, "
+#| "continued east to the easternmost edge of the Northern Alliance’s lands."
+msgid ""
+"Aiglondur and his troop, some still shaking their heads dubiously at the "
+"very notion of fighting alongside orcs rather than against them, continued "
+"north into the snow-covered peaks of the Heart Mountains."
+msgstr ""
+"Aiglondur och hans trupper, vissa fortfarande tveksamma till själva "
+"konceptet att slåss tillsammans med orcher istället för mot dem, fortsatte "
+"mot öst till Norra alliansens östligaste kant."
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/04_High_Pass.cfg:118
+#, fuzzy
+#| msgid ""
+#| "Behold, the High Pass. By the old maps, we are halfway to Kal Kartha here."
+msgid ""
+"Behold, the High Pass. By the old maps, we are two months’ journey from Kal "
+"Kartha here."
+msgstr ""
+"Skåda, det höga passet. Enligt de gamla kartorna är vi nu halvägs till Kal "
+"Kartha."
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/04_High_Pass.cfg:122
+msgid ""
+"I hear the howling of wolves, and the shrill cries of gryphons. Traveling "
+"here may prove dangerous."
+msgstr ""
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/04_High_Pass.cfg:126
+msgid ""
+"It may also prove useful. The dwarves of yesteryear rode armies of gryphons "
+"into battle, but few remain in Knalga today."
+msgstr ""
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/04_High_Pass.cfg:130
+msgid ""
+"Gryphons here will be wild; unaccustomed to our kind. But perhaps we can "
+"train them to accept riders, if we capture them first."
+msgstr ""
+
+#. [objective]: condition=win
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/04_High_Pass.cfg:139
+msgid "Capture as many gryphons as you can"
+msgstr ""
+
+#. [objective]: condition=lose
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/04_High_Pass.cfg:144
+#, fuzzy
+#| msgid "Death of Angarthing"
+msgid "Death of Aiglondur, Angarthing"
+msgstr "Angarthings död"
+
+#. [note]
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/04_High_Pass.cfg:152
+msgid "To capture a gryphon, injure it below 10 hitpoints without killing it."
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/04_High_Pass.cfg:164
+msgid ""
+"It is an honor to travel alongside a loremaster, Angarthing. One cannot "
+"begin to fathom the secrets of your order."
+msgstr ""
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/04_High_Pass.cfg:168
+msgid "I keep the Law. I witness the Deeds. Act with honor, Aiglondur."
+msgstr ""
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/04_High_Pass.cfg:312
+msgid "Well done! We have captured one gryphon."
+msgstr ""
+
+#. [message]: speaker=second_unit
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/04_High_Pass.cfg:326
+msgid ""
+"This gryphon has perished! I did not mean to draw blood, only to exhaust and "
+"stun it, but I missed my mark."
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/04_High_Pass.cfg:377
+msgid "Do you hear that, Angarthing? There is shouting from the north."
+msgstr ""
+
+#. [message]: speaker=Ratheln
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/04_High_Pass.cfg:395
+msgid "Hail!"
+msgstr ""
+
+#. [message]: speaker=Ratheln
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/04_High_Pass.cfg:399
+msgid "Hail, dwarves! I am Ratheln. Are you friends or foes?"
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/04_High_Pass.cfg:403
+msgid ""
+"I do not know you, and you have done my kin no harm. I wish no ill upon you."
+msgstr ""
+
+#. [message]: speaker=Ratheln
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/04_High_Pass.cfg:407
+msgid ""
+"Then please, help us! My colleagues and I are assailed by a flight of drakes!"
+msgstr ""
+
+#. [message]: speaker=Ratheln
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/04_High_Pass.cfg:411
+msgid ""
+"Our fire magic is useless against those fire-breathing monsters. Our camp is "
+"not far from here, to the northeast."
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/04_High_Pass.cfg:415
+msgid ""
+"Northeast is the way we are traveling. And I’d not leave anyone who needs "
+"our help stranded to burn. Lead the way."
+msgstr ""
+
+#. [scenario]: id=05_Mages_and_Drakes
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/05_Mages_and_Drakes.cfg:5
+msgid "Mages and Drakes"
+msgstr "Magiker och drakfolk"
+
+#. [side]: type=Drake Flameheart, id=Glashal
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/05_Mages_and_Drakes.cfg:35
+msgid "Drakes"
+msgstr "Drakfolket"
+
+#. [side]: type=Drake Flameheart, id=Glashal
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/05_Mages_and_Drakes.cfg:39
+msgid "Glashal"
+msgstr "Glashal"
+
+#. [side]: type=Arch Mage, id=Master Perrin
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/05_Mages_and_Drakes.cfg:61
+msgid "Isle of Alduin"
+msgstr ""
+
+#. [side]: type=Arch Mage, id=Master Perrin
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/05_Mages_and_Drakes.cfg:65
+msgid "Master Perrin"
+msgstr "Stormästare Perrin"
+
+#. [event]
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/05_Mages_and_Drakes.cfg:89
+msgid "Preceptor"
+msgstr "Seneschalk"
+
+#. [message]: speaker=Preceptor
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/05_Mages_and_Drakes.cfg:123
+#, fuzzy
+#| msgid ""
+#| "Master Perrin! A mage comes down from the High Pass, with a company of "
+#| "dwarves. They are well-armed, but not in battle array."
+msgid ""
+"Master Perrin! Ratheln returns from the High Pass, with a company of "
+"dwarves. They look well-armed, and march in battle array."
+msgstr ""
+"Stormästare Perrin! En magiker har kommit ner från det höga passet "
+"tillsammans med ett sällskap dvärgar. De är välbeväpnande men inte i "
+"stridsgruppering."
+
+#. [message]: speaker=Master Perrin
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/05_Mages_and_Drakes.cfg:127
+#, fuzzy
+#| msgid ""
+#| "That will be Ratheln, I expect. Hail! You on the road! Who comes bearing "
+#| "arms into our valley?"
+msgid ""
+"Help, if we are fortunate. Hail! You on the road! Who comes bearing arms "
+"into our valley?"
+msgstr ""
+"Jag förmodar att der är Ratheln. Var hälsade! Ni på vägen! Vem kommer "
+"bärandes vapen till i vår dal?"
+
+#. [message]: speaker=Glashal
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/05_Mages_and_Drakes.cfg:131
+#, fuzzy
+#| msgid ""
+#| "‘Our’ valley, says Master Perrin. The arrogance of these mages is "
+#| "intolerable!"
+msgid ""
+"‘Our’ valley, says Master Perrin.\n"
+"The arrogance of these mages is intolerable."
+msgstr ""
+"\"Vår\" dal, säger stormästare Perrin. Det här magiskerna arrogans är "
+"oacceptabel!"
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/05_Mages_and_Drakes.cfg:136
+msgid ""
+"A delegation of the Northern Alliance, traveling east. I believe we’ve found "
+"a friend of yours in the High Pass."
+msgstr ""
+"En delegation från Norra alliansen, färdandes åt öst. Jag tror vi har hittat "
+"en av era vänner i det höga passet."
+
+#. [message]: speaker=Ratheln
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/05_Mages_and_Drakes.cfg:140
+msgid "They can help us, Master Perrin."
+msgstr ""
+
+#. [message]: speaker=Master Perrin
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/05_Mages_and_Drakes.cfg:144
+msgid ""
+"Well met, then. My students and I journeyed here to study the nest of drakes "
+"in the cliffs near the valley’s end."
+msgstr ""
+
+#. [message]: speaker=Master Perrin
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/05_Mages_and_Drakes.cfg:148
+msgid ""
+"Unfortunately, they’ve proven uncooperative. The brutes attacked us several "
+"times, and show no sign of stopping. I fear that they mean to kill us all!"
+msgstr ""
+
+#. [message]: speaker=Glashal
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/05_Mages_and_Drakes.cfg:152
+msgid ""
+"No more shall I suffer your cuts and needles.\n"
+"Long have you Prey harried us.\n"
+"I call a Hunt upon your kind, men and dwarves alike.\n"
+"None will leave this valley alive."
+msgstr ""
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/05_Mages_and_Drakes.cfg:159
+msgid "Harrumph. I wonder who is truly at fault here."
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/05_Mages_and_Drakes.cfg:163
+msgid "We must fight or we will all be slain. Axes up!"
+msgstr ""
+
+#. [objective]: condition=win
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/05_Mages_and_Drakes.cfg:171
+msgid "Defeat Glashal"
+msgstr "Besegra Glashal"
+
+#. [objective]: condition=lose
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/05_Mages_and_Drakes.cfg:179
+#, fuzzy
+#| msgid "Death of Angarthing"
+msgid "Death of Master Perrin or Ratheln"
+msgstr "Angarthings död"
+
+#. [message]: speaker=Master Perrin
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/05_Mages_and_Drakes.cfg:213
+msgid "Aaarrgh! This expedition was a terrible idea..."
+msgstr ""
+
+#. [message]: speaker=Master Perrin
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/05_Mages_and_Drakes.cfg:234
+msgid ""
+"We’re grateful for your assistance, dwarves. Although I am sorry things came "
+"to blows — there is little left for us to study. The drakes are dead, and "
+"their castle is even more decrepit than it was before."
+msgstr ""
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/05_Mages_and_Drakes.cfg:239
+msgid ""
+"Hmm. This stonework is of dwarvish make. But long-abandoned and fallen into "
+"disrepair... by the decay, since even before the drakes came. There are orc-"
+"arrows embedded in the walls..."
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/05_Mages_and_Drakes.cfg:243
+msgid ""
+"I’ve a grim feeling about this. Knalga once suffered greatly at the hands of "
+"orcs. Kal Kartha is smaller by half, and not nigh as war-like."
+msgstr ""
+
+#. [message]: speaker=Master Perrin
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/05_Mages_and_Drakes.cfg:248
+msgid ""
+"You have helped us; it is our duty to help you. Ratheln, it was your quick-"
+"thinking that brought Aiglondur here. If the dwarves allow it, will you "
+"accompany them in their journey east?"
+msgstr ""
+
+#. [message]: speaker=Ratheln
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/05_Mages_and_Drakes.cfg:252
+msgid "I will."
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/05_Mages_and_Drakes.cfg:257
+msgid "I am grateful."
+msgstr ""
+
+#. [message]: speaker=Master Perrin
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/05_Mages_and_Drakes.cfg:261
+msgid ""
+"Then go safely and return swiftly. The rest of us shall make our retreat "
+"back to Alduin."
+msgstr ""
+
+#. [scenario]: id=06_Fear
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:5
+msgid "Fear"
+msgstr "Rädsla"
+
+#. [side]
+#. [side]: type=Dwarvish Masked Lord, id=Dufon
+#. [side]: type=Dwarvish Masked Lord, id=Aragoth
+#. [side]: type=Dwarvish Masked Lord, id=Dranath
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:32
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:47
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:87
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:122
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:145
+#, fuzzy
+#| msgid "Masked Dwarf"
+msgid "Masked Dwarves"
+msgstr "Maskerad dvärg"
+
+#. [side]
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:54
+msgid "Peasants"
+msgstr ""
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:131
+#, fuzzy
+#| msgid ""
+#| "We should be on the outskirts of the settled country around Kal Kartha, "
+#| "but something doesn’t feel right here."
+msgid ""
+"The maps show a village nearby. Their keep should be just ahead, but "
+"something doesn’t feel right."
+msgstr ""
+"Vi borde vara i utkanten av det bebodda landet runt Kal Kartha, men "
+"någonting känns inte rätt här."
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:135
+#, fuzzy
+#| msgid "It’s too quiet... and I think I smell traces of smoke on the wind."
+msgid ""
+"It’s too quiet... and I think I smell traces of smoke on the wind. There has "
+"been fire near here recently, and not a clean one."
+msgstr "Det är för tyst... och jag tror jag känner spår av rök i vinden."
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:139
+msgid ""
+"Look sharp for the inhabitants here. They might have something to tell us."
+msgstr "Sök noga efter traktens invånare. De kanske kan berätta något för oss."
+
+#. [objective]: condition=win
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:147
+#, fuzzy
+#| msgid "Defeat the Masked Dwarf"
+msgid "Defeat the enemy leader"
+msgstr "Besegra den maskerade dvärgen"
+
+#. [event]
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:218
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:380
+msgid "Ollin"
+msgstr "Ollin"
+
+#. [message]: speaker=Ollin
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:221
+msgid "Don’t kill me, masters! Please don’t kill me!"
+msgstr "Döda mig inte, mäster! Snälla, döda mig inte!"
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:225
+msgid "You’re in no danger from us. What lies to the east of here?"
+msgstr ""
+"Du behöver inte frukta något från oss. Vad väntar oss österut härifrån?"
+
+#. [message]: speaker=Ollin
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:229
+msgid "You wear no mask. You... you’re not with them?"
+msgstr "Ni bär ingen mask. Är... är ni inte en av dem?"
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:233
+msgid "What are you talking about?"
+msgstr "Vad pratar du om?"
+
+#. [message]: speaker=Ollin
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:237
+msgid "The masked dwarves. Killing, burning, kidnapping. Look..."
+msgstr "Maskerade dvärgar som dödar, bränner och kidnappar. Titta..."
+
+#. [message]: role=masked_speaker
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:249
+#, fuzzy
+#| msgid ""
+#| "Fellow dwarves, hail! We’re looking for a human refugee, one named Ollin. "
+#| "Have you seen him? Our master demands his life."
+msgid ""
+"Fellow dwarves, hail! We’re looking for a human refugee, a male with a "
+"broken arm. Have you seen him? Our master demands his life."
+msgstr ""
+"Var hälsade dvärgbröder! Vi letar efter en människoflykting vid namn Ollin. "
+"Har ni sett honom? Vår mästare kräver hans liv."
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:253
+msgid "He is here. How has he wronged your master, that you seek his death?"
+msgstr "Han är här. Hur har han förorättat er herre? Varför krävs hans död?"
+
+#. [message]: role=masked_speaker
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:257
+msgid ""
+"Does it matter? He is only a dirtgrubbing human, not fit to polish the boots "
+"of the true people."
+msgstr ""
+"Spelar det någon roll? Han är bara en jordbökande människa, inte ens är värd "
+"att polera det sanna folkets kängor."
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:261
+msgid ""
+"What is your name, masked one? Will you stand behind your deed? I am a "
+"witness."
+msgstr ""
+"Vad är ditt namn, du maskerade? Kommer du att stå för ditt dåd? Jag är ett "
+"vittne."
+
+#. [message]: role=masked_speaker
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:265
+msgid ""
+"A witness? My name is... my name is not important. My deed will speak its "
+"own truth."
+msgstr ""
+"Ett vittne? Mitt namn är... mitt namn är inte viktigt. Mina dåd talar för "
+"sig själv."
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:269
+msgid ""
+"You speak without honor. Mine is the power of our ancient Law; speak your "
+"name and give up your murder, or the Law will cast you forth. I am a witness!"
+msgstr ""
+"Du talar utan ära. Mina krafter kommer från den uråldriga lagen. Säg ditt "
+"namn och avsäg dig ditt blodsdåd annars kommer lagen att förvisa dig. Jag är "
+"ett vittne!"
+
+#. [message]: role=masked_speaker
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:277
+msgid ""
+"If you were a witness of the true people, you would not let a dirtgrubber "
+"hide behind your robes. I deny you!"
+msgstr ""
+"Om du var det sanna folkets vittne så skulle du inte låta en jordbökare "
+"gömma sig under din rock. Jag förnekar dig!"
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:281
+msgid "The Law speaks: you are cast out. You are un-dwarf. I AM A WITNESS!"
+msgstr "Lagen talar: du är förvisad. Du är en icke-dvärg. JAG ÄR ETT VITTNE!"
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:285
+msgid "Up axes!"
+msgstr "Till vapen!"
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:305
+msgid ""
+"I have never seen the formal banishment before. One reads of it in the old "
+"tales, of course, but to hear it with one’s own ears? It was... unsettling."
+msgstr ""
+"Jag har aldrig sett en formell bannlysning förut. Man läser om det i de "
+"gamla sagorna så klart, men att höra det med sina egna öron? Det var... "
+"oroande."
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:309
+#, fuzzy
+#| msgid ""
+#| "It is not something we do often. The last such was in my grandsire’s "
+#| "time. But look at what these filth were carrying if you have any doubt it "
+#| "was merited."
+msgid ""
+"It is not something we do often. The last such was in my grandsire’s time. "
+"But look upon the human’s wrists if you have any doubt it was merited."
+msgstr ""
+"Det är ingenting vi gör ofta. Senaste gången var på min morfars tid. Men "
+"titta vad dessa avskum bar med sig om du hyser tvivel på om vi handlat rätt."
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:313
+#, fuzzy
+#| msgid ""
+#| "Whips. Shackles. No, Angarthing, I would not doubt you, even if it were "
+#| "my place to doubt a loremaster."
+msgid ""
+"Shackles. Scars. No, Angarthing, I would not doubt you, even if it were my "
+"place to doubt a loremaster."
+msgstr ""
+"Piskor. Bojor. Nej Angarthing, jag misstror dig inte. Även om det skulle "
+"vara min uppgift att misstro en skriftmäster så skulle jag inte misstro dig."
+
+#. [message]: speaker=unit
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:334
+msgid "Argh!"
+msgstr ""
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:340
+msgid ""
+"Our castle is small, and these masked dwarves are many. This will be a "
+"bloody fight."
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:344
+msgid ""
+"The masked ones must have raided this place before. Damaging the castle "
+"would have made it harder for the peasants to rally a defense."
+msgstr ""
+
+#. [message]: role=masked_speaker
+#. [message]: speaker=Karrag
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:362
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:252
+msgid "..."
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:369
+#, fuzzy
+#| msgid "They are defeated"
+msgid "They are defeated!"
+msgstr "De är besegrade."
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:373
+msgid "You have acted in honor. I am a witness."
+msgstr "Du har handlat med heder. Jag är ett vittne."
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:377
+msgid ""
+"I do not wish to imagine what could drive dwarves to such depravity. These "
+"outlaws must have been desperate; consumed by fear or madness."
+msgstr ""
+
+#. [message]: speaker=Ollin
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:385
+msgid "Thank you for your help, and for saving us!"
+msgstr ""
+
+#. [message]: speaker=Ollin
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:389
+msgid ""
+"I do not mean to sound ungrateful, but — the masked ones... they always come "
+"back..."
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:393
+msgid ""
+"There is a camp of mages not far upriver. If they have not yet departed, "
+"they can help you. Travel westways, to lands of the Northern Alliance. There "
+"you will be safe, and welcomed."
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/06_Fear.cfg:397
+msgid ""
+"We dwarves travel east. We must reach Kal Kartha, more urgently now than "
+"ever. Before anything terrible happens, if we are lucky..."
+msgstr ""
+
+#. [scenario]: id=07_Forbidden_Forest
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/07_Forbidden_Forest.cfg:5
+msgid "Forbidden Forest"
+msgstr "Förbjudna skogen"
+
+#. [side]: type=Elvish High Lord, id=Telcherion
+#. [side]: type=Elvish Enchantress, id=Iluvarda
+#. [side]: type=Ancient Wose, id=Burumardir-Athelorand
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/07_Forbidden_Forest.cfg:43
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/07_Forbidden_Forest.cfg:76
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/07_Forbidden_Forest.cfg:109
+msgid "Forest"
+msgstr "Skog"
+
+#. [side]: type=Elvish High Lord, id=Telcherion
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/07_Forbidden_Forest.cfg:48
+msgid "Telcherion"
+msgstr "Telcherion"
+
+#. [side]: type=Elvish Enchantress, id=Iluvarda
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/07_Forbidden_Forest.cfg:81
+msgid "Iluvarda"
+msgstr "Iluvarda"
+
+#. [side]: type=Ancient Wose, id=Burumardir-Athelorand
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/07_Forbidden_Forest.cfg:113
+msgid "Burumardir-Athelorand"
+msgstr "Burumardir-Athelorand"
+
+#. [unit]: type=Elvish Scout, id=Elurin
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/07_Forbidden_Forest.cfg:194
+msgid "Elurin"
+msgstr "Elurin"
+
+#. [message]: speaker=Elurin
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/07_Forbidden_Forest.cfg:206
+msgid "Who disturbs our forest?"
+msgstr "Vem beträder vår skog?"
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/07_Forbidden_Forest.cfg:211
+#, fuzzy
+#| msgid ""
+#| "A delegation of the Northern Alliance, seeking the road through to Kal "
+#| "Kartha."
+msgid ""
+"A delegation of the Northern Alliance, urgently seeking the road through to "
+"Kal Kartha."
+msgstr "En delegation från Norra alliansen sökandes en väg till Kal Kartha."
+
+#. [message]: speaker=Elurin
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/07_Forbidden_Forest.cfg:216
+#, fuzzy
+#| msgid ""
+#| "We allow few outsiders in our forest paths, and no dwarves since the "
+#| "masked ones began to trouble our eastern margins. No axe-bearers shall "
+#| "come near our trees. Return whence you came!"
+msgid ""
+"We allow few outsiders in our forest paths, and no dwarves since the war in "
+"the east. No axe-bearers shall come near our trees. Return whence you came!"
+msgstr ""
+"Vi tillåter få utomstående på våra skogsstigar, och inga dvärgar alls sedan "
+"de maskerade började besvära vår östra skogskant. Inga yxbärare skall komma "
+"nära våra träd. Vänd tillbaka till platsen ni kom ifrån!"
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/07_Forbidden_Forest.cfg:221
+msgid ""
+"Winter comes on our heels, and your forest straddles the only gap between "
+"the snow-choked mountains and the river. If there is war in Kal Kartha, as "
+"you say, then that is all the more reason for us to make haste. Please tell "
+"me what you know of our kin, elf."
+msgstr ""
+
+#. [message]: speaker=Elurin
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/07_Forbidden_Forest.cfg:226
+msgid ""
+"I will say no more. I have already given our answer. Return whence you came."
+msgstr ""
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/07_Forbidden_Forest.cfg:231
+msgid "No. We have our duty. We must pass."
+msgstr "Nej. Vi måste utföra vår plikt. Vi måste passera."
+
+#. [message]: speaker=Elurin
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/07_Forbidden_Forest.cfg:236
+msgid "You shall not pass here."
+msgstr "Ni får inte passera här."
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/07_Forbidden_Forest.cfg:241
+#, fuzzy
+#| msgid ""
+#| "Winter comes on our heels, and your forest straddles the only gap in "
+#| "these mountains. You leave us no choice but to fight you."
+msgid ""
+"We must aid our kin. If you will not let us through peacefully, you leave us "
+"no choice but to fight."
+msgstr ""
+"Vi har vintern i hälarna och er skog omger det enda passet över de här "
+"bergen. Du ger oss inget annat val än att slåss mot er."
+
+#. [message]: speaker=Elurin
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/07_Forbidden_Forest.cfg:246
+msgid ""
+"So be it, then. Yours will not be the first bones to nourish the earth of "
+"our forest."
+msgstr ""
+"Så blir det. Era ben kommer inte vara de första att ge näring till vår skogs "
+"jord."
+
+#. [objective]: condition=win
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/07_Forbidden_Forest.cfg:269
+#, fuzzy
+#| msgid "Move both Aiglondur and Angarthing to the eastern signpost"
+msgid "Move both Aiglondur and Angarthing to the eastern edge of the map"
+msgstr "Flytta både Aiglondur och Angarthing till den östra skylten"
+
+#. [message]: speaker=second_unit
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/07_Forbidden_Forest.cfg:300
+msgid "We shall pass!"
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/07_Forbidden_Forest.cfg:340
+msgid ""
+"Rally on me, everyone. We have better things to do than brawl with elves."
+msgstr ""
+"Dra er samman runt mig. Vi har bättre saker att göra än att bråka med alver."
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/07_Forbidden_Forest.cfg:350
+#, fuzzy
+#| msgid "Kal Kartha should be only another day’s march east of here."
+msgid "Kal Kartha should be only another week’s march east of here."
+msgstr "Kal Kartha borde bara ligga en dagsmarsch till åt öster."
+
+#. [scenario]: id=08_The_Siege_of_Kal_Kartha
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/08_The_Siege_of_Kal_Kartha.cfg:5
+msgid "The Siege of Kal Kartha"
+msgstr "Belägringen av Kal Kartha"
+
+#. [side]
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/08_The_Siege_of_Kal_Kartha.cfg:103
+#, fuzzy
+#| msgid "Kal Karthans"
+msgid "Kal Kartha"
+msgstr "Kal Karthaner"
+
+#. [event]
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/08_The_Siege_of_Kal_Kartha.cfg:126
+#, fuzzy
+#| msgid "East Gate"
+msgid "West Gate"
+msgstr "Östra porten"
+
+#. [message]: speaker=Angarthing
+#. Angarthing specifies that Kal Kartha has many entrances. This helps explain how the Fear dwarves managed to leave while the West Gate was under siege.
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/08_The_Siege_of_Kal_Kartha.cfg:187
+#, fuzzy
+#| msgid "Behold! The West Gate of Kal Kartha!"
+msgid "Behold! The West Gate of Kal Kartha! The largest of their many doors."
+msgstr "Skåda! Kal Karthas västra port!"
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/08_The_Siege_of_Kal_Kartha.cfg:193
+msgid ""
+"And under siege, as we feared — by orcs. But we are not too late! The "
+"defenders yet hold."
+msgstr ""
+
+#. [message]: speaker=leader3
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/08_The_Siege_of_Kal_Kartha.cfg:197
+msgid ""
+"Ahhh... more stinky-midgets, come to get killed just like these cowards in "
+"their den."
+msgstr ""
+"Ahhh... fler stinkande miniatyrer har kommit för att dö. Precis de här "
+"ynkryggarna i deras håla."
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/08_The_Siege_of_Kal_Kartha.cfg:201
+#, fuzzy
+#| msgid "Let us bring our kin that orc’s head as a guesting-gift."
+msgid ""
+"There is a mighty host between us and our kin. Let us bring them that orc’s "
+"head as a guesting-gift!"
+msgstr "Låt oss ge våra bröder den där orchens huvud som gåbort-present."
+
+#. [objective]: condition=win
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/08_The_Siege_of_Kal_Kartha.cfg:208
+#, fuzzy
+#| msgid "Defeat the Masked Dwarf"
+msgid "Defeat any three orcish leaders"
+msgstr "Besegra den maskerade dvärgen"
+
+#. [objective]: condition=lose
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/08_The_Siege_of_Kal_Kartha.cfg:216
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:365
+msgid "Death of Dulcatulos"
+msgstr "Dulcatulos död"
+
+#. [message]: speaker=Dulcatulos
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/08_The_Siege_of_Kal_Kartha.cfg:256
+msgid "Kal Kartha shall not fall!"
+msgstr "Kal Kartha får inte falla!"
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/08_The_Siege_of_Kal_Kartha.cfg:274
+msgid "Kal Kartha is taken. Our mission has failed."
+msgstr "Kal Kartha har fallit. Vårt uppdrag är förlorat."
+
+#. [message]
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/08_The_Siege_of_Kal_Kartha.cfg:295
+msgid "Useless grunts! We should have taken the gate weeks ago! Fight harder!"
+msgstr ""
+
+#. [message]: speaker=Ratheln
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/08_The_Siege_of_Kal_Kartha.cfg:307
+msgid "I think they’ve been reinforced. I really don’t like orcs."
+msgstr ""
+
+#. [message]
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/08_The_Siege_of_Kal_Kartha.cfg:337
+msgid ""
+"Grr... nasty stinky-midgets. We know what you’re up to in there. We’ll be "
+"back."
+msgstr ""
+
+#. [message]: speaker=Dulcatulos
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/08_The_Siege_of_Kal_Kartha.cfg:351
+#, fuzzy
+#| msgid ""
+#| "Hail, fellow dwarves. All Kal Kartha thanks you for your timely rescue."
+msgid ""
+"Hail, fellow dwarves! Well fought, and our thanks; we were sorely pressed."
+msgstr ""
+"Var hälsade dvärgbröder. Hela Kal Kartha tackar er för att ha räddat oss i "
+"rättan tid."
+
+#. [message]: speaker=Dulcatulos
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/08_The_Siege_of_Kal_Kartha.cfg:355
+msgid ""
+"I had not expected to find allies so far from peopled lands. From whence do "
+"you hail?"
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/08_The_Siege_of_Kal_Kartha.cfg:359
+msgid ""
+"We come at the behest of Hamel, Lord of Knalga and Lord Companion of the "
+"Northern Alliance. We seek audience with your lord."
+msgstr ""
+
+#. [message]: speaker=Dulcatulos
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/08_The_Siege_of_Kal_Kartha.cfg:363
+#, fuzzy
+#| msgid ""
+#| "Well fought, and our thanks; we were sore pressed. You are our honored "
+#| "guests, and I will show you to the best quarters we have myself. Our "
+#| "lord, the runemaster Karrag, will want to have speech with you on the "
+#| "morrow."
+msgid ""
+"You are our honored guests, and I will show you to the best quarters we have "
+"myself. Then I must see to my troop’s care. Lord Karrag will have speech "
+"with you on the morrow."
+msgstr ""
+"Väl kämpat, och stort tack. Vi var hårt pressade. Ni är våra ärade gäster "
+"och jag ska själv visa er till våra bästa inkommoderingar. Vår furst, "
+"runmästaren Kragar, kommer att vilja tala med er under morgondagen."
+
+#. [scenario]: id=09_The_Court_of_Karrag
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:5
+msgid "The Court of Karrag"
+msgstr "Karrags hov"
+
+#. [side]
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:33
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/11_Epilogue.cfg:26
+msgid "Kal Karthans"
+msgstr "Kal Karthaner"
+
+#. [message]: speaker=Dulcatulos
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:131
+msgid ""
+"This way, Knalgans. Long has it been since any of your kind found your way "
+"to our humble hold. Our throne room lies just ahead — the runemaster Karrag "
+"will surely be eager to see you."
+msgstr ""
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:135
+#, fuzzy
+#| msgid ""
+#| "A runemaster? There had been none such since Thursagan’s day. And for one "
+#| "to lead a holding was unheard-of; they tended towards the solitary life."
+msgid ""
+"A runemaster? There have been none such since Thursagan’s day. And for one "
+"to lead a holding was unheard-of; they tended towards the solitary life."
+msgstr ""
+"En runmästare? Det har inte funnits några sedan Thursagans dagar. Och att en "
+"runmästare skulle leda en bosättning har ingen hört talas om någonsin. De "
+"brukde vara enstöringar och leva ensamma, avskilda med sitt arbete."
+
+# Aye bör inte översättas jaså
+#. [message]: speaker=Dulcatulos
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:139
+#, fuzzy
+#| msgid ""
+#| "Aye? Well, you’d know such things better than I, loremaster. Our Karrag "
+#| "toiled for long years to recover the craft lore. He was elevated when our "
+#| "old lord fell in battle against the besieging orcs. Karrag himself was "
+#| "wounded near to death; none thought he would recover. But he leads us "
+#| "today, and his runelore has oft been the only shield between us and the "
+#| "orcs."
+msgid ""
+"Aye? Well, you’d know such things better than I, loremaster. Our Karrag "
+"toiled for long years to recover the craft lore. He was elevated when our "
+"old lord fell in battle against the besieging orcs. Karrag himself was "
+"wounded near to death; none thought he would recover. But he leads us today, "
+"and his runelore has oft been the only shield between us and the orcs."
+msgstr ""
+"På det viset? Du, skriftmäste, borde veta sådana saker bättre än jag. Vår "
+"Karrag slet i många långa år för att återuppliva hantverkets kunskaper. Han "
+"upphöjdes när vår gamla furste föll i striden mot de belägrande orcherna. "
+"Karrag själv var dödligt sårad och ingen trodde att han skulle bli "
+"återställd. Men idag leder han oss och hans runkunskap har ofta varit den "
+"enda skölden mellan oss och orcherna."
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:143
+#, fuzzy
+#| msgid "The Hammer of Thursagan?"
+msgid "He has grasped the Hammer of Thursagan, then?"
+msgstr "Thursagans hammare?"
+
+#. [message]: speaker=Dulcatulos
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:147
+#, fuzzy
+msgid ""
+"Aye. Toils over it in a workshop in the underlevels with his personal "
+"followers. He has promised all of us that the Hammer’s power will smash and "
+"scatter all our enemies."
+msgstr ""
+"Ja. Slitit över den, med sina personliga följeslagare, i sin verkstad djupt "
+"nere i berget. Han har lovat oss alla att hammarens kraft ska krossa och "
+"splittra alla våra fiender."
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:151
+#, fuzzy
+#| msgid ""
+#| "That is strange. The Hammer is a tool of crafting and making, not a "
+#| "weapon. What can he mean to do with it?"
+msgid ""
+"That is strange. The Hammer is a tool of crafting and making, not a weapon. "
+"What can he mean to do with it?"
+msgstr ""
+"Det är konstigt. Hammaren är ett redskap för tillverkning och skapande, och "
+"inte ett vapen. Vad tänker han göra med den?"
+
+#. [message]: speaker=Dulcatulos
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:171
+#, fuzzy
+#| msgid "We are."
+msgid "We are here."
+msgstr "Det är vi."
+
+#. [message]: speaker=Karrag
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:188
+msgid "Greetings, Knalgans!"
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:192
+msgid ""
+"Psst, Angarthing... Karrag and those dwarves on the dais, they’re all "
+"<i>masked</i>."
+msgstr ""
+"Psst, Angarthing... Karrag och de där dvärgarna på estraden, alla är "
+"<i>maskerade</i>."
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:196
+#, fuzzy
+#| msgid "I see it. There is something very wrong here."
+msgid "I see it. There is something very wrong here."
+msgstr "Jag förstår. Någonting är väldigt fel här."
+
+#. [message]: speaker=Karrag
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:200
+#, fuzzy
+#| msgid ""
+#| "Hail, fellow dwarves. All Kal Kartha thanks you for your timely rescue."
+msgid ""
+"It is good to once more host Knalgans in these halls. All Kal Kartha thanks "
+"you for your timely rescue."
+msgstr ""
+"Var hälsade dvärgbröder. Hela Kal Kartha tackar er för att ha räddat oss i "
+"rättan tid."
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:204
+msgid ""
+"We are from Knalga; your clans are kin to ours of old. We but did our duty "
+"to kin."
+msgstr ""
+"Vi är från Knalga. Er klan är fränder till vår sedan lång tillbaka. Vi "
+"gjorde bara vår plikt mot våra bröder."
+
+#. [message]: speaker=Karrag
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:208
+#, fuzzy
+#| msgid ""
+#| "All dwarves are kin, and must prevail against orcs and humans and other "
+#| "dirtgrubbers. You can be part of the fist that smites them."
+msgid ""
+"All dwarves are kin, and must prevail against orcs and humans and other "
+"dirtgrubbers. You can be part of the fist that smites them."
+msgstr ""
+"Alla dvärgar är fränder och vi måste resa oss mot orcher, människor och "
+"andra jordbökare. Ni kan alla vara en del i kraften som förgör dem."
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:212
+msgid "We did not come to smite anyone, but to re-open contact and trade."
+msgstr ""
+"Vi kom inte för att förgöra någon, utan för att för att handla och återfå "
+"kontakt."
+
+#. [message]: speaker=Karrag
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:216
+msgid ""
+"Trade? Your destruction of the besieging orcs was a far nobler act than "
+"trade. There can be more such victories. And there will be by the power of "
+"our ancient heirloom, the Hammer of Thursagan."
+msgstr ""
+"Handla? Er förstörelse av orchernas belägring var mycket mer ädel än handel. "
+"Det kan komma fler sådana segrar. Med hjälp av vår släktklenod, Thursagans "
+"hammare, så kommer fler segrar också ske."
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:220
+msgid "It is remembered in Knalga that Kal Kartha holds the Hammer."
+msgstr "Det är ihågkommet i Knalga att Kal Kartha förfogar över hammaren."
+
+#. [message]: speaker=Karrag
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:224
+msgid ""
+"Yes! And the Hammer holds the soul of the dwarves, the true people. "
+"Together, we can march to greater victories! Will you of Knalga join me?"
+msgstr ""
+"Ja! Hammaren håller dvärgarnas, det sanna folkets, själ. Tillsammans kan vi "
+"marschera till större segrar!  Vill ni från Knalga förena er med mig?"
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:232
+msgid ""
+"On one condition. You must take off that mask and show your true face. I am "
+"a witness."
+msgstr ""
+"På ett vilkor. Du måste ta av dig masken och visa ditt rätta anlete. Jag är "
+"ett vittne."
+
+#. [message]: speaker=Karrag
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:236
+#, fuzzy
+#| msgid ""
+#| "You... do not wish to see what is beneath this mask. I was terribly "
+#| "wounded in an orcish attack. Disfigured."
+msgid ""
+"You... do not wish to see what is beneath this mask. I was terribly wounded "
+"in an orcish attack. Disfigured."
+msgstr ""
+"Du... du vill inte se vad som finns under denna mask. Jag blev förskräckligt "
+"skadad i en orchanfall. Vanställd."
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:240
+msgid ""
+"But the Law must see. A dwarf must put his name and his face behind his "
+"deeds. I am a witness."
+msgstr ""
+"Men lagen måste se. En dvärg måste sätta sitt namn och sitt ansikte före "
+"sina dåd. Jag är ett vittne."
+
+#. [message]: speaker=Karrag
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:244
+#, fuzzy
+#| msgid ""
+#| "Impertinent fool! It is not for you to dictate to a lord in his own "
+#| "holding, much less one who holds the very soul of the dwarves in his hand."
+msgid ""
+"Impertinent fool! It is not for you to dictate to a lord in his own holding, "
+"much less one who holds the very soul of the dwarves in his hand."
+msgstr ""
+"Oförskämda idiot! Det är inte din plats att befalla en furst i hans eget "
+"fäste, ännu mindre en som håller själva dvärgarna själ i sin hand."
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:248
+msgid ""
+"The Law speaks. Against him with the eyes to see, no deception can hold. I "
+"AM A WITNESS!"
+msgstr ""
+"Lagen talar mot honom, och med dess seende ögon kan inget bländverk "
+"upprätthållas. JAG ÄR ETT VITTNE!"
+
+#. [message]: speaker=Karrag
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:256
+msgid "As you wish."
+msgstr ""
+
+#. [message]: speaker=Dulcatulos
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:287
+#, fuzzy
+#| msgid "No... no... it is horrible! My lord, how did you come to this?"
+msgid ""
+"An empty skull?! A lich?! No... no... it is horrible! My lord, how did you "
+"come to this?"
+msgstr "Nej... nej.. det är hemskt! Ers nåd, hur blev du såhär?"
+
+#. [message]: speaker=Karrag
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:291
+msgid ""
+"I lingered for weeks in agony. Only my hatred and the runelore of old "
+"sustained me, until I became as I am. I will have revenge; I will destroy "
+"the orcs, and the humans, and the elves, and all but the true people!"
+msgstr ""
+"Jag levde kvar och plågades i veckor. Endast mitt hat och den gamla "
+"runkraften höll mig  vid liv, tills jag blev vad jag är nu. Jag vill hämnas. "
+"Jag vill hämnas på orcherna, människorna och alverna. Jag vill hämnas på "
+"alla utom det sanna folket!"
+
+#. [message]: speaker=Karrag
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:300
+#, fuzzy
+#| msgid ""
+#| "And you have sealed your doom. Hundreds of dirtgrubbers have already died "
+#| "to weave a web of blood around the Hammer and the soul of the dwarves. "
+#| "You and your new friends will be the last sacrifices I require to bind "
+#| "the entire dwarvish race to my purpose. TAKE THEM!"
+msgid ""
+"And you have sealed your doom. Hundreds of dirtgrubbers have already died to "
+"weave a web of blood around the Hammer and the soul of the dwarves. You and "
+"your new friends will be the last sacrifices I require to bind the entire "
+"dwarvish race to my purpose. Take the Knalgans, and Dulcatulos too! TAKE "
+"THEM!"
+msgstr ""
+"Nu har du förseglat er undergång. Hundratals jordbökare har redan dött för "
+"att väva ett nät av blod runt hammaren och dvärgarnas själ. Du och dina nya "
+"vänner blir de sista offren jag behöver för att binda hela den dvärgrasen "
+"till mitt syfte. TA DEM!"
+
+#. [message]: speaker=narrator
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:346
+msgid ""
+"Neither side can recruit or recall. You must win with the troops you have."
+msgstr ""
+"Ingen sida kan rekrytera eller återkalla. Du måste vinna med de trupper du "
+"har."
+
+#. [objective]: condition=win
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:357
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:904
+msgid "Defeat Karrag"
+msgstr "Besegra Karrag"
+
+#. [message]: speaker=Dulcatulos
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:386
+msgid "A lich is no lord of mine!"
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:438
+msgid ""
+"Wait... something is not right. Karrag is not fighting back. He is nothing "
+"but an illusion!"
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:472
+msgid "What is this? Karrag did not fight back. He is nothing but an illusion!"
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:483
+msgid ""
+"Look — there is a stairway behind the throne! I hear receding footsteps."
+msgstr ""
+
+#. [message]: speaker=Dulcatulos
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:487
+#, fuzzy
+#| msgid ""
+#| "Then Karrag has fled to the underlevels. None but his masked ones go "
+#| "there any more."
+msgid ""
+"Then Karrag has fled to the underlevels. None but the masked ones — his "
+"inner circle — go there any more."
+msgstr ""
+"Karrag har flytt till de undre nivåerna. Inga förutom hans maskerade går dit "
+"nuförtiden."
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/09_The_Court_of_Karrag.cfg:491
+#, fuzzy
+#| msgid ""
+#| "We must follow. Quickly! It may be his talk of perverting the Hammer was "
+#| "merely mad raving, but we cannot allow the risk that his foul spell might "
+#| "succeed."
+msgid ""
+"We must follow. Quickly, and seal the entrance behind us! It may be his talk "
+"of perverting the Hammer was merely mad raving, but we cannot allow the risk "
+"that his foul spell might succeed."
+msgstr ""
+"Vi måste följa efter, fort! Det kan vara så att hans prat om att fördärva "
+"hammaren bara är galet osammanhängande prat, men vi kan inte ta risken att "
+"hans hemska trollformler lyckas."
+
+#. [scenario]: id=10_The_Underlevels
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:5
+msgid "The Underlevels"
+msgstr "De undre nivåerna"
+
+#. [objective]: condition=win
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:212
+#, fuzzy
+#| msgid "Karrag"
+msgid "Find Karrag"
+msgstr "Karrag"
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:262
+#, fuzzy
+#| msgid "This place smells of death."
+msgid "This place reeks of death."
+msgstr "Den här platsen luktar död."
+
+#. [message]: speaker=Dulcatulos
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:266
+#, fuzzy
+#| msgid ""
+#| "It’s been... it’s been years since I’ve been down here. Only Karrag and "
+#| "his personal followers used this level. Why did I never wonder about that "
+#| "before?"
+msgid ""
+"It has been... so many years since I’ve been down here. Only Karrag and his "
+"personal followers — the masked ones — used this level. I can't believe I "
+"never wondered about that before."
+msgstr ""
+"Det var... det var många år sedan jag var här nere sist. Bara Karrag och "
+"hans personliga anhängare använde den nivån av vårt fäste. Varför har jag "
+"inte ifrågasatt det tidigare?"
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:270
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:280
+#, fuzzy
+#| msgid ""
+#| "Karrag’s will, and his dark magic. I think he has been casting glamours "
+#| "on all of you ever since he passed over."
+msgid ""
+"It is Karrag’s doing—his will, and his dark magic. I think he has been "
+"casting glamours on all of you ever since he passed over."
+msgstr ""
+"Karrags vilja och hans mörka magi. Jag tror han har kastat en förtrollning "
+"över er, allt sedan han vandrade över till den andra sidan."
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:276
+msgid ""
+"Dulcatulos fought with us to the death. How did he not wonder about Karrag "
+"before?"
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:287
+msgid ""
+"Where <i>is</i> Karrag? We can’t have been more than seconds behind him."
+msgstr ""
+"Var <i>är</i> Karrag? Vi kan inte vara mer än ett par sekunder bakom honom."
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:292
+#, fuzzy
+#| msgid ""
+#| "More likely he has cloaked himself, thinking to run ahead to gather his "
+#| "followers. He could be within a spear-cast of us now and we wouldn’t know "
+#| "it in this gloom."
+msgid ""
+"Most likely he has cloaked himself, thinking to run ahead to gather his "
+"followers. He could be within a spear-cast of us now and we wouldn’t know it "
+"in this gloom."
+msgstr ""
+"Mest troligt har han dolt sig för att kunna springa i förväg för att samla "
+"sin anhängare. Han skulle kunna vara inom ett yxkasts längd utan att vi "
+"skulle kunna se honom i det här mörkret."
+
+#. [message]: speaker=Dulcatulos
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:301
+msgid "Those are war-drums!"
+msgstr "Det där är krigstrummor!"
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:306
+msgid ""
+"Aye. Karrag, calling his troops to battle. Only the Dark Gods know what "
+"hellspawn the lich will summon. AXES UP!"
+msgstr ""
+"Ja. Karrag kallar hans trupper till strid. Bara det mörka gudarna vet vilken "
+"djävulsbestar häxmästaren kommer att kalla på. Yxor upp!"
+
+#. [message]: speaker=unit
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:329
+msgid "Someone died here."
+msgstr ""
+
+#. [message]: speaker=unit
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:358
+msgid "Poor guy didn’t make it."
+msgstr ""
+
+#. [scenario]: id=10_The_Underlevels
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:404
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:405
+msgid "This chest contains 50 gold pieces."
+msgstr ""
+
+#. [scenario]: id=10_The_Underlevels
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:406
+msgid "There’s 150 gold in this chest!"
+msgstr ""
+
+#. [scenario]: id=10_The_Underlevels
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:407
+msgid "There’s 200 gold in this chest!"
+msgstr ""
+
+#. [message]: speaker=unit
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:434
+msgid "The gates are locked. I will have to break them open by force!"
+msgstr ""
+
+#. [message]: speaker=unit
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:440
+msgid "The gates are locked!"
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:445
+msgid "Force them open!"
+msgstr ""
+
+#. [message]: speaker=unit
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:450
+msgid "Yes, sir!"
+msgstr ""
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:483
+msgid "Let us proceed onward."
+msgstr ""
+
+#. [message]: speaker=unit
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:510
+msgid "There’s something behind this door. I shall break it down!"
+msgstr ""
+
+#. [message]: speaker=unit
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:516
+msgid "There’s something behind this door."
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:521
+msgid "Break it down!"
+msgstr ""
+
+#. [message]: speaker=unit
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:559
+msgid "It looks like there is a rune behind this gate!"
+msgstr ""
+
+#. [message]: id=$unit.id
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:601
+msgid "The dirtgrubber-friends have come! Slay them all!"
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:606
+msgid "You could not stop us before and you won’t be stopping us now!"
+msgstr ""
+
+#. [message]: speaker=Aragoth
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:622
+msgid ""
+"Your path forward ends here! Once the lord’s spell is complete, your souls "
+"will soon be chained to his will!"
+msgstr ""
+
+#. [message]: speaker=Dranath
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:643
+msgid "The dirtgrubbers have come! Stop their advance!"
+msgstr ""
+
+#. [message]: speaker=unit
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:658
+msgid ""
+"This must be a transport rune. Now that it is active, we can use to it to "
+"travel back and forth between here and the central gate."
+msgstr ""
+
+#. [message]: speaker=unit
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:674
+msgid "We have activated another transport rune."
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:761
+msgid ""
+"Dark magic swirls in the air. Karrag grows stronger with each passing minute."
+msgstr ""
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:874
+msgid "It is done."
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:879
+msgid "The lich surely awaits us within. We must be on guard."
+msgstr ""
+
+#. [message]: speaker=unit
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:928
+msgid "My lord, the dirtgrubbers have entered our sanctuary!"
+msgstr ""
+
+#. [message]: speaker=Karrag
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:933
+msgid "Excellent! Their blood will provide plenty of fuel for my ritual!"
+msgstr ""
+
+#. [message]: speaker=Karrag
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:948
+msgid "So, the usurpers have arrived at last."
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:953
+msgid ""
+"We are not the usurpers but the liberators of Kal Kartha! We are here to "
+"free our kin from your dark sorcery!"
+msgstr ""
+
+#. [message]: speaker=Karrag
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:958
+msgid ""
+"You insolent fool! It is I who have led Kal Kartha to glory and I who have "
+"cleansed the lands of the true people from all unworthy scum! Kal Kartha "
+"owes me everything!"
+msgstr ""
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:963
+msgid ""
+"No! You are the one who owes our brethren their freedom! You have ensnared "
+"their minds with your foul magic and now we are here to put an end to your "
+"tyrannical rule!"
+msgstr ""
+
+#. [message]: speaker=Karrag
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:968
+msgid ""
+"Any enemy of my rule is no better than the filthiest of dirtgrubbers. You no "
+"longer belong to the true people. You will become my slaves!"
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:973
+msgid "Not if we stop you here. AXES UP!"
+msgstr ""
+
+#. [message]: speaker=Karrag
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:992
+msgid "No! No! No! Dirtgrubbers must die! The true people must rule all!"
+msgstr ""
+"Nej! Nej! Nej! Jordbökarna måste dö! Det sanna folket måste härska över alla!"
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:997
+msgid "The ‘true people’ speak through our axes. Die, foul lich."
+msgstr ""
+"Det \"sanna folket\" har talat genom våra yxor. Dö du orena häxmästare."
+
+#. [message]: speaker=Karrag
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:1002
+msgid "Nooo! My power... it wanes..."
+msgstr ""
+
+#. [message]: speaker=Dulcatulos
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:1020
+msgid "And your rule is at an end, Karrag, once the brave lord of Kal Kartha."
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:1024
+msgid ""
+"Do not mourn his passing, Dulcatulos. The Karrag you knew died many years "
+"ago when his lust for power consumed him. It is now time to put the past "
+"behind and right the wrongs that have been wrought here."
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:1030
+msgid ""
+"And your rule is at an end, Karrag, once the brave lord of Kal Kartha. It is "
+"now time to put the past behind and right the wrongs that have been wrought "
+"here."
+msgstr ""
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:1037
+msgid ""
+"Aiglondur speaks the truth. The deed is done. Though the heart of the "
+"darkness is gone, there is still much to do. Much will have to be done to "
+"amend the desecration of the Hammer and the evil that has been done here."
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:1042
+msgid ""
+"But first, we must bring this news to the rest of Kal Kartha. A new Lord "
+"must be chosen."
+msgstr ""
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:1047
+msgid "Aye, let us go."
+msgstr ""
+
+#. [message]: speaker=Dufon
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:1072
+#, fuzzy
+#| msgid ""
+#| "You cannot pass, fools. The doors I guard are sealed by the power of the "
+#| "Hammer itself."
+msgid ""
+"You shall never pass through here! The doors I guard are sealed by the power "
+"of the Hammer itself."
+msgstr ""
+"Dårar, ni kan inte passera. Dörrarna jag vaktar är förseglade med själva "
+"hammarens kraft."
+
+#. [message]: speaker=unit
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:1077
+msgid "You won’t stop us!"
+msgstr ""
+
+#. [message]: speaker=Dufon
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:1082
+msgid ""
+"Fools! Even should you defeat me, the master’s ritual will soon be complete "
+"and you shall all become his slaves!"
+msgstr ""
+
+#. [message]: speaker=Dufon
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:1093
+#, fuzzy
+#| msgid "Our master’s ritual must not be interrupted. Stop them!"
+msgid "The master’s ritual... must not be... interrupted..."
+msgstr "Vår härskares ritual får inte avbrytas. Stoppa dem!"
+
+#. [message]: speaker=second_unit
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:1107
+#, fuzzy
+#| msgid ""
+#| "It seems that guard spoke truth. These doors cannot be forced open by any "
+#| "means we have!"
+msgid ""
+"It seems that the guard spoke the truth. The eastern way is shut fast! There "
+"are two curious runes on the ground."
+msgstr ""
+"Det verkar som om vakten hade rätt. De här dörrarna kan inte forceras med de "
+"resurser vi har!"
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:1112
+msgid ""
+"The way is sealed by the ancient runelore of the Hammer. No amount of force "
+"can open these doors."
+msgstr ""
+
+#. [message]: speaker=Ratheln
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:1117
+msgid "Most curious. I’ve never encountered magic of this sort before."
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:1122
+msgid ""
+"You know something of runes, Angarthing. You have read Thursagan’s notebook."
+msgstr ""
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:1127
+msgid "Aye."
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:1132
+msgid "Can you open the doors?"
+msgstr ""
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:1137
+msgid "Perhaps. We must be prepared for what lies beyond."
+msgstr ""
+
+#. [message]: speaker=narrator
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:1145
+msgid ""
+"Karrag is not recruiting yet, so the longer it takes you to reach and "
+"confront him, the more gold he’ll have had time to stockpile. Open the "
+"Status Table (<i>Alt+S</i>) to check your opponents’ gold and income."
+msgstr ""
+
+#. [message]: speaker=narrator
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:1147
+msgid ""
+"Of course, the longer you wait to confront Karrag, the more gold you’ll have "
+"time to stockpile too."
+msgstr ""
+
+#. [objective]: condition=win
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:1151
+msgid "Prepare to face Karrag"
+msgstr ""
+
+#. [objective]: condition=win
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:1155
+msgid "When you are ready, move Angarthing to the marked hex"
+msgstr ""
+
+#. [message]: speaker=Dranath
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:1176
+msgid ""
+"Imbeciles! Once the master’s dark rite is complete, I will return to slay "
+"you myself!"
+msgstr ""
+
+#. [message]: speaker=Aragoth
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:1188
+msgid "The heathens... have slain me-"
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:1200
+msgid "The air is cold with the stench of death."
+msgstr ""
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:1205
+msgid ""
+"No doubt it is this ritual that the masked ones spoke of. We must hurry and "
+"stop Karrag!"
+msgstr ""
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:1224
+msgid "I feel as if the life is being sapped out of my body!"
+msgstr ""
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:1229
+msgid ""
+"Karrag’s spell grows more powerful with every passing moment. If we do not "
+"defeat him now, we will all turn into his thralls!"
+msgstr ""
+
+#. [message]: speaker=Karrag
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/10_The_Underlevels.cfg:1238
+msgid ""
+"HAHAHAHA! Yes, yes, YES! The rite of death is complete at last! Die, you "
+"filthy dirtgrubbers, die so that I may raise you again as my mindless slaves!"
+msgstr ""
+
+#. [scenario]: id=11_Epilogue
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/11_Epilogue.cfg:5
+msgid "Epilogue"
+msgstr "Epilog"
+
+#. [side]
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/11_Epilogue.cfg:39
+msgid "Glamcatsil"
+msgstr "Glamcatsil"
+
+#. [side]
+#. [then]
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/11_Epilogue.cfg:40
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/11_Epilogue.cfg:127
+msgid "Trithdurus"
+msgstr "Trithdurus"
+
+#. [side]
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/11_Epilogue.cfg:41
+msgid "Althasol"
+msgstr "Althasol"
+
+#. [side]
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/11_Epilogue.cfg:42
+msgid "Dulalas"
+msgstr "Dulalas"
+
+#. [side]
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/11_Epilogue.cfg:43
+msgid "Pelalsol"
+msgstr "Pelalsol"
+
+#. [side]
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/11_Epilogue.cfg:44
+msgid "Aigthaing"
+msgstr "Aigthaing"
+
+#. [side]
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/11_Epilogue.cfg:45
+msgid "Pelcatol"
+msgstr "Pelcatol"
+
+#. [side]
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/11_Epilogue.cfg:46
+msgid "Narithil"
+msgstr "Narithil"
+
+#. [side]
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/11_Epilogue.cfg:47
+msgid "Glamdrsol"
+msgstr "Glamdrsol"
+
+#. [side]
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/11_Epilogue.cfg:48
+msgid "Pelaithil"
+msgstr "Pelaithil"
+
+#. [side]
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/11_Epilogue.cfg:49
+msgid "Alaithus"
+msgstr "Alaithus"
+
+#. [unit]: type=Lancer, id=Pelias
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/11_Epilogue.cfg:64
+msgid "Pelias"
+msgstr "Pelias"
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/11_Epilogue.cfg:145
+msgid ""
+"Dwarves of Kal Kartha, I speak the Law. Your house is cast down; you have "
+"harbored a great evil. Who now will take the burden of cleansing this "
+"holding of its taint?"
+msgstr ""
+"Kal Karthas dvärgar, jag talar för lagen. Ert hus har utstött eftersom det "
+"har hyst en stor ondska. Vem vill ta på sig bördan att rensa denna enklav av "
+"dvärgarnas släkt ifrån gift?"
+
+#. [message]: speaker=narrator
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/11_Epilogue.cfg:150
+msgid ""
+"The dwarves of Kal Kartha muttered among themselves and looked at one "
+"another uneasily. None stepped forward."
+msgstr ""
+"Kal Karthas dvärgar muttrade sinsemellan och tittade ängsligt på varandra. "
+"Ingen klev fram."
+
+#. [message]: speaker=Dulcatulos
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/11_Epilogue.cfg:157
+msgid ""
+"Loremaster... None of us is fit to take up the lordship. Karrag fooled us "
+"all, made us the tools of his foul scheme."
+msgstr ""
+"Skriftmäster... ingen av oss passar att härska här. Karrag lurade oss alla "
+"och gjorde oss till verktyg i hans hemska plan."
+
+#. [message]: speaker=Pelias
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/11_Epilogue.cfg:183
+msgid ""
+"I was told I’d find Aiglondur of Knalga here. I bear a message from Tallin, "
+"the Lord Protector of the Alliance."
+msgstr ""
+"Jag fått veta att Aiglondur av Knalga kan bli funnen här. Jag bär med mig "
+"ett meddelande från Tallin, alliansens riksföreståndare."
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/11_Epilogue.cfg:188
+msgid "I am he. Speak your message."
+msgstr "Jag den du söker. Läs upp ditt meddelande."
+
+#. [message]: speaker=Pelias
+#. these are the peasants Aiglondur helped in "Fear"
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/11_Epilogue.cfg:194
+msgid ""
+"I have been on your track for weeks. Some time ago the Alliance received a "
+"ragged band of refugees, hailing from a small village west of here."
+msgstr ""
+
+#. [message]: speaker=Pelias
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/11_Epilogue.cfg:196
+msgid ""
+"They told a tale of terror and torment; of masked dwarves and axes in the "
+"night. As Lord Protector of the Alliance and an ally to all free men, Tallin "
+"bids you vanquish this evil."
+msgstr ""
+
+#. [message]: speaker=Pelias
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/11_Epilogue.cfg:201
+msgid ""
+"To emphasize the grave importance of the matter, the Protector would dub you "
+"a Lord Companion of the Alliance should you succeed. ...although by the "
+"scene now before me, perhaps you have already?"
+msgstr ""
+
+#. [message]: speaker=Dulcatulos
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/11_Epilogue.cfg:211
+msgid "(<i>Wonderingly</i>) A Lord Companion? And kin of ours..."
+msgstr "(<i>undrande</i>) En ståthållare? Och av vår släkt..."
+
+#. [message]: speaker=Narithil
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/11_Epilogue.cfg:216
+msgid ""
+"It would be no shame for a Lord Companion to rule this holding, as Hamel "
+"does at Knalga."
+msgstr ""
+"Det vore inte skam för en ståthållare att styra över den här bosättningen, "
+"som Hamel gör över Knalga."
+
+#. [message]: speaker=narrator
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/11_Epilogue.cfg:221
+msgid ""
+"The Kal Karthans looked at each other, and Aiglondur, with dawning hope."
+msgstr ""
+"Dvärgarna i Kal Kartha tittade på varandra, och på Aiglondur, med nytt hopp."
+
+#. [message]: speaker=Angarthing
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/11_Epilogue.cfg:227
+msgid "It would be fitting. The Loremasters will approve."
+msgstr "Det vore passande. Skriftmästarna stödjer detta."
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/scenarios/11_Epilogue.cfg:232
+msgid ""
+"Pelias, my thanks to the Lord Protector; I will attend him in the spring. "
+"But it seems that I have some work to do here first."
+msgstr ""
+"Framför mitt tack till riksföreståndaren, Pelias. Jag möter honom i vår. Men "
+"det ser ut som jag har en del arbete att uträtta här först."
+
+#. [dummy]: id=smoke
+#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Grenadier.cfg:274
+msgid "smoke"
+msgstr ""
+
+#. [dummy]: id=smoke
+#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Grenadier.cfg:275
+msgid ""
+"Hit or miss, this attack creates a cloud of cloying, caustic smoke on the "
+"targeted hex. Any unit inside suffers halved chance-to-hit and can no longer "
+"enforce a zone of control. The cloud lasts until the start of this unit’s "
+"next turn."
+msgstr ""
+
+#. [dummy]: id=smoke
+#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Grenadier.cfg:277
+msgid "<i>Magical</i> attacks are unaffected by smoke."
+msgstr ""
+
+#. [dummy]: id=smoke
+#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Grenadier.cfg:278
+msgid ""
+"This unit’s attacks create clouds of caustic smoke, halving chance-to-hit "
+"and nullifying zone of control for any unit caught inside."
+msgstr ""
+
+#. [unit_type]: id=Dwarvish Grenadier, race=dwarf
+#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Grenadier.cfg:284
+#, fuzzy
+#| msgid "Dwarvish Loremaster"
+msgid "Dwarvish Grenadier"
+msgstr "Skriftmäster"
+
+#. [unit_type]: id=Dwarvish Grenadier, race=dwarf
+#. The "fine black dust" is a pouch of gunpowder, which a dead Dwarvish Thunderer (or Grenadier) has used for his weapon.
+#. When Ravan mutters his "arcane word of opening", magic causes sparks to leap from his fingers, which detonates the pouch.
+#. The actual detonation is cut off, letting the reader imagine exactly what might or might not have happened.
+#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Grenadier.cfg:301
+msgid ""
+"Upon the person of a fallen dwarf, the arch-mage Ravan (before his fall to "
+"evil) once espied a pouch, carefully sealed and filled — unbeknownst to him "
+"— of a fine black dust."
+msgstr ""
+
+#. [unit_type]: id=Dwarvish Grenadier, race=dwarf
+#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Grenadier.cfg:303
+msgid ""
+"Arthritic fingers unable to loose the knot that held tight its mouth, Ravan "
+"leaned forward, muttering under his breath an arcane word of opening. Sparks "
+"leapt from his fingers—"
+msgstr ""
+
+#. [attack]: type=blade
+#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Grenadier.cfg:309
+msgid "dagger"
+msgstr ""
+
+#. [attack]: type=fire
+#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Grenadier.cfg:318
+msgid "torch"
+msgstr ""
+
+#. [attack]: type=fire
+#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Grenadier.cfg:327
+msgid "flashpowder"
+msgstr ""
+
+#. [unit_type]: id=Dwarvish Masked Berserker, race=dwarf
+#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Berserker.cfg:4
+#, fuzzy
+#| msgid "Dwarvish Masked Thunderer"
+msgid "Dwarvish Masked Berserker"
+msgstr "maskerad Tordönskrigare"
+
+#. [unit_type]: id=Dwarvish Masked Dragonguard, race=dwarf
+#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Dragonguard.cfg:4
+msgid "Dwarvish Masked Dragonguard"
+msgstr "maskerad Drakvakt"
+
+#. [unit_type]: id=Dwarvish Masked Fighter, race=dwarf
+#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Fighter.cfg:4
+msgid "Dwarvish Masked Fighter"
+msgstr "maskerad Dvärgkrigare"
+
+#. [unit_type]: id=Dwarvish Masked Guardsman, race=dwarf
+#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Guardsman.cfg:4
+msgid "Dwarvish Masked Guardsman"
+msgstr "maskerad Dvärgvakt"
+
+#. [unit_type]: id=Dwarvish Masked Lord, race=dwarf
+#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Lord.cfg:4
+msgid "Dwarvish Masked Lord"
+msgstr "maskerad Bergakung"
+
+#. [unit_type]: id=Dwarvish Masked Lord, race=dwarf
+#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Lord.cfg:18
+#, fuzzy
+#| msgid ""
+#| "Feared in dwarven legend is the Dwarf Lord who masks his face, using the "
+#| "formidable fighting powers of his kind without accounting to his peers "
+#| "and the loremasters of Dwarven-kind for the dark and bloody uses to which "
+#| "he puts his weapons. Like his barefaced kin, the Dwarf Lord wields axe "
+#| "and hammer with masterful skill, and can hit a target with a thrown hand "
+#| "axe at several paces. Though slow on their feet, these dwarves are a "
+#| "testament to the prowess of their kind."
+msgid ""
+"Feared in dwarven legend is the Dwarf Lord who masks his face, using the "
+"formidable fighting powers of his kind without accounting to his peers and "
+"to the loremasters of dwarven-kind for the dark and bloody uses to which he "
+"puts his weapons. Like his barefaced kin, the Dwarf Lord wields axe and "
+"hammer with masterful skill, and can hit a target with a thrown hand axe at "
+"several paces. Though slow on their feet, these dwarves are a testament to "
+"the prowess of their kind."
+msgstr ""
+"I dvärgarnas legender talas med fruktan om den bergakung som maskerar sitt "
+"anskite och använder sina oerhörda stridskrafter utan att visa sig för andra "
+"dvärgar, kamrater och skriftmästare. Den maskerade döljer sin identitet "
+"under tiden denne gör mörka och blodiga dåd med sina vapen. Liksom sin "
+"omaskerade släkting hantera bergakungen på yxa och hammare med en mästares "
+"skicklighet. Samma skicklighet i hanterandet av kastyxor besitter också den "
+"maskerade bergakungen. Även om de är lite långsamma så är dessa dvärgar ett "
+"bevis på kraften i dvärgsläktet."
+
+#. [unit_type]: id=Dwarvish Masked Sentinel, race=dwarf
+#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Sentinel.cfg:4
+msgid "Dwarvish Masked Sentinel"
+msgstr "maskerad Dvärghedersvakr"
+
+#. [unit_type]: id=Dwarvish Masked Stalwart, race=dwarf
+#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Stalwart.cfg:4
+msgid "Dwarvish Masked Stalwart"
+msgstr "maskerad Pansarvakt"
+
+#. [unit_type]: id=Dwarvish Masked Steelclad, race=dwarf
+#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Steelclad.cfg:4
+msgid "Dwarvish Masked Steelclad"
+msgstr "maskerad Järnnäve"
+
+#. [unit_type]: id=Dwarvish Masked Steelclad, race=dwarf
+#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Steelclad.cfg:17
+msgid ""
+"Outfitted in the strongest plate and mail of Knalgan forges, the Steelclads "
+"are the vanguard of dwarvish armies. They are renowned for their resilience "
+"in the heat of battle, and their mastery of both battleaxe and warhammer "
+"make them imposing foes indeed. In the dark dreams of dwarvenkind, some "
+"conceal their faces behind riveted masks."
+msgstr ""
+
+#. [unit_type]: id=Dwarvish Masked Thunderer, race=dwarf
+#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Thunderer.cfg:4
+msgid "Dwarvish Masked Thunderer"
+msgstr "maskerad Tordönskrigare"
+
+#. [unit_type]: id=Dwarvish Masked Thunderguard, race=dwarf
+#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Thunderguard.cfg:4
+msgid "Dwarvish Masked Thunderguard"
+msgstr "maskerad Tordönsvakt"
+
+#. [unit_type]: id=Dwarvish Masked Ulfserker, race=dwarf
+#: data/campaigns/The_Hammer_of_Thursagan/units/Dwarvish_Masked_Ulfserker.cfg:4
+#, fuzzy
+#| msgid "Dwarvish Masked Thunderer"
+msgid "Dwarvish Masked Ulfserker"
+msgstr "maskerad Tordönskrigare"
+
+#. [unit_type]: id=Grounded Gryphon, race=gryphon
+#: data/campaigns/The_Hammer_of_Thursagan/units/Sleeping_Gryphon.cfg:4
+msgid "Grounded Gryphon"
+msgstr ""
+
+#: data/campaigns/The_Hammer_of_Thursagan/utils/characters.cfg:33
+msgid "Aiglondur"
+msgstr "Aiglondur"
+
+#: data/campaigns/The_Hammer_of_Thursagan/utils/characters.cfg:46
+msgid "Angarthing"
+msgstr "Angarthing"
+
+#: data/campaigns/The_Hammer_of_Thursagan/utils/characters.cfg:59
+msgid "Ratheln"
+msgstr "Ratheln"
+
+#: data/campaigns/The_Hammer_of_Thursagan/utils/characters.cfg:70
+#: data/campaigns/The_Hammer_of_Thursagan/utils/characters.cfg:83
+msgid "Dulcatulos"
+msgstr "Dulcatulos"
+
+#: data/campaigns/The_Hammer_of_Thursagan/utils/characters.cfg:96
+#: data/campaigns/The_Hammer_of_Thursagan/utils/characters.cfg:105
+msgid "Karrag"
+msgstr "Karrag"
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/utils/herodeaths.cfg:12
+msgid "I fall!"
+msgstr "Jag stupar!"
+
+#. [message]: speaker=Aiglondur
+#: data/campaigns/The_Hammer_of_Thursagan/utils/herodeaths.cfg:30
+msgid "Oh no! Without a loremaster we cannot complete our mission!"
+msgstr "Åh nej! Utan en skriftmäster kan vi inte slutföra vårt uppdrag!"
+
+#. [message]: speaker=Ratheln
+#: data/campaigns/The_Hammer_of_Thursagan/utils/herodeaths.cfg:47
+#, fuzzy
+#| msgid "Aaarrgh! My students... What will become of them?"
+msgid "Aaarrgh! What will become of my students back home..."
+msgstr "Åh! Mina studenter... Vad kommer det bli av dem?"
+
+#. [message]: speaker=Dulcatulos
+#: data/campaigns/The_Hammer_of_Thursagan/utils/herodeaths.cfg:60
+msgid "At least I die with my axe in my hand..."
+msgstr ""
+
+#. [unit_type]: id=Dwarvish Annalist, race=dwarf
+#: data/internal/Dwarvish_Witness/units/Dwarvish_Annalist.cfg:4
+msgid "Dwarvish Annalist"
+msgstr "Dvärgkrönikör"
+
+#. [unit_type]: id=Dwarvish Annalist, race=dwarf
+#: data/internal/Dwarvish_Witness/units/Dwarvish_Annalist.cfg:22
+#, fuzzy
+#| msgid ""
+#| "Dwarvish Annalists are the historians of this ancient and proud race. "
+#| "They are few in number, and their very existence is not generally known "
+#| "to the other peoples of the Great Continent. To the abilities of the "
+#| "Witness they add, through the study of herb and mineral lore, the ability "
+#| "to cure poison."
+msgid ""
+"Dwarvish Annalists are the historians of this ancient and proud race. They "
+"are few in number, and their very existence is not generally known to the "
+"other peoples of the Great Continent. They learn a fighting style "
+"deliberately unlike that of their fellows, one designed to turn the vaunted "
+"strength of the dwarves against itself."
+msgstr ""
+"Dvärgkrönikörer är historikerna av detta uråldriga och stolta släkte. De är "
+"fåtaliga och deras existens är generellt sett inte allmänt känd för andra "
+"folk på Stora kontinenten. Förutom Vittnets egenskaper har de, genom att "
+"studera gamla kunskaper och traditioner gällade örter och mineraler, "
+"förmågan att bota gift."
+
+#. [attack]: type=impact
+#: data/internal/Dwarvish_Witness/units/Dwarvish_Annalist.cfg:57
+#: data/internal/Dwarvish_Witness/units/Dwarvish_Loremaster.cfg:58
+msgid "bolas"
+msgstr "bola"
+
+#. [unit_type]: id=Dwarvish Loremaster, race=dwarf
+#: data/internal/Dwarvish_Witness/units/Dwarvish_Loremaster.cfg:4
+msgid "Dwarvish Loremaster"
+msgstr "Skriftmäster"
+
+#. [unit_type]: id=Dwarvish Loremaster, race=dwarf
+#: data/internal/Dwarvish_Witness/units/Dwarvish_Loremaster.cfg:23
+#, fuzzy
+#| msgid ""
+#| "Loremasters are the sages of the dwarvish race. Their counsel is greatly "
+#| "valued by war-leaders and chieftains, and they are viewed with awe by "
+#| "ordinary dwarves, for they alone have plumbed the deepest and most "
+#| "closely-held secrets of dwarven knowledge. It is said that where a "
+#| "loremaster stands, there is the soul of the dwarves. To the abilities of "
+#| "the Annalist they add a limited ability to heal."
+msgid ""
+"Loremasters are the sages of the dwarvish race. Their counsel is greatly "
+"valued by war-leaders and chieftains, and they are viewed with awe by "
+"ordinary dwarves, for they alone have plumbed the deepest and most closely-"
+"held secrets of dwarven knowledge. It is said that where a Loremaster "
+"stands, there is the soul of the dwarves."
+msgstr ""
+"Skriftmästarna är dvärgarnas visa män. Deras råd värderas högt av "
+"krigsledare och hövdingar och de ses på med respekt av vanliga dvärgar "
+"eftersom enbart de har utforskat de djupaste och de bäst bevarade "
+"hemligheterna i dvärgarnas kunskaper och historia. Det sägs ofta att där en "
+"skriftmäster står där finns dvärgarnas själ. Förutom krönikörens egenskaper "
+"har skriftmästare dessutom en begränsad förmåga att läka."
+
+#. [unit_type]: id=Dwarvish Witness, race=dwarf
+#: data/internal/Dwarvish_Witness/units/Dwarvish_Witness.cfg:5
+msgid "Dwarvish Witness"
+msgstr "Dvärgvittne"
+
+#. [unit_type]: id=Dwarvish Witness, race=dwarf
+#: data/internal/Dwarvish_Witness/units/Dwarvish_Witness.cfg:18
+#, fuzzy
+#| msgid ""
+#| "A Witness functions as the eyes of the dwarves’ history, a deep lore that "
+#| "they never share with outsiders. The presence of a Witness inspires "
+#| "dwarvish warriors with the knowledge that their deeds (and their deaths) "
+#| "will not go unrecorded. They learn a fighting style deliberately unlike "
+#| "that of their fellows, one designed to turn the vaunted strength of the "
+#| "dwarves against itself. The person of a Witness is considered sacred, and "
+#| "Witnesses are often used as envoys between dwarvish clans."
+msgid ""
+"A Witness functions as the eyes of the dwarves’ history, a deep lore that "
+"they never share with outsiders. The presence of a Witness instils dwarvish "
+"warriors with the knowledge that their deeds (and their deaths) will not go "
+"unrecorded, inspiring them to daunting deeds and great heroics. The person "
+"of a Witness is considered sacred, and Witnesses are often used as envoys "
+"between dwarvish clans."
+msgstr ""
+"Ett vittne fungerar som dvärgarnas historias ögon, en gammal "
+"kunskapstradition de aldrig delar med någon utomstående. Närvaron av ett "
+"vittne inspirerar dvärgkrigarna med insikten om att deras dåd (och deras "
+"död) inte förblir oupptecknad eller går omärkt förbi. De lär sig med avsikt "
+"en stridsstil olik den andra dvärgar brukar. En stil som är avsedd att vända "
+"den prisade styrkan hos dvärgarna mot mot sig själv. Vittnespersonen anses "
+"vara helig och vittnen används ofta som sändebud mellan dvärgklaner."
+
+#. [leadership]: id=witness
+#: data/internal/Dwarvish_Witness/utils/abilities.cfg:10
+#, fuzzy
+#| msgid "Dwarvish Witness"
+msgid "witness"
+msgstr "Dvärgvittne"
+
+#. [leadership]: id=witness
+#: data/internal/Dwarvish_Witness/utils/abilities.cfg:11
+#, fuzzy
+#| msgid "inspire"
+msgid "female^witness"
+msgstr "inspiration"
+
+#. [leadership]: id=witness
+#: data/internal/Dwarvish_Witness/utils/abilities.cfg:12
+msgid ""
+"Adjacent allied dwarves gain +25% damage, or +100% damage when they fight "
+"higher-level opponents."
+msgstr ""
+
+#. [leadership]: id=witness
+#: data/internal/Dwarvish_Witness/utils/abilities.cfg:13
+msgid ""
+"This unit inspires adjacent allied dwarves, increasing their damage — "
+"particularly when they fight higher-level opponents."
+msgstr ""
+
+#, fuzzy
+#~| msgid "The key has been uttered, these doors should open..."
+#~ msgid "The keys have been found. The door should open..."
+#~ msgstr "Nyckeln har uttalats, dörrarna borde öppnas..."
+
+#, fuzzy
+#~| msgid ""
+#~| "Karrag’s will, and his dark magic. I think he has been casting glamours "
+#~| "on all of you ever since he passed over."
+#~ msgid ""
+#~ "It is Karrag’s doing—his will, and his dark magic. I think Karrag has "
+#~ "been casting glamours on all of you ever since he passed over."
+#~ msgstr ""
+#~ "Karrags vilja och hans mörka magi. Jag tror han har kastat en "
+#~ "förtrollning över er, allt sedan han vandrade över till den andra sidan."
+
+#~ msgid "Fighter"
+#~ msgstr "Dvärgkrigare"
+
+#~ msgid "Steelclad"
+#~ msgstr "Järnnäve"
+
+#, fuzzy
+#~| msgid "(Challenging)"
+#~ msgid "Challenging"
+#~ msgstr "(Utmanande)"
+
+#~ msgid "Lord"
+#~ msgstr "Bergakung"
+
+#~ msgid "Pelmathidrol"
+#~ msgstr "Pelmathidrol"
+
+#~ msgid "Orcs"
+#~ msgstr "Orcher"
+
+#, fuzzy
+#~| msgid ""
+#~| "Ye’re young and not tested... but ye have the rank, and ye’ve shown the "
+#~| "wits to use it well. I have decided. You and Angarthing will fare to Kal "
+#~| "Kartha together, as soon as may be, with the best men of your guard."
+#~ msgid ""
+#~ "Ye’re young and not tested... but ye have the rank, and ye’ve shown the "
+#~ "wits to use it well. Movrur? What think ye?"
+#~ msgstr ""
+#~ "Du är ung och oprövad... men du har graden och du har visat förstånd nog "
+#~ "att använda den väl. Jag har bestämt mig. Du och Angarthing får "
+#~ "tillsammans med era bästa män, så snart som möjligt, resa till Kal Kartha."
+
+#~ msgid "Invaders"
+#~ msgstr "Inkräktare"
+
+#, fuzzy
+#~| msgid "Death of Aiglondur"
+#~ msgid "Death of Movrur"
+#~ msgstr "Aiglondurs död"
+
+#, fuzzy
+#~| msgid "We have failed our duty to the Alliance."
+#~ msgid "That is our duty. For the Alliance!"
+#~ msgstr "Vi har misslyckas att utföra vår plikt till alliansen."
+
+#~ msgid "Monsters"
+#~ msgstr "Monster"
+
+#~ msgid "Kaara"
+#~ msgstr "Kaara"
+
+#~ msgid "Move Aiglondur to the signpost at the east end of the pass"
+#~ msgstr "Flytta Aiglondur till skylten vid passets östra ände."
+
+#~ msgid ""
+#~ "We must push through quickly; there is a vicious storm coming in behind "
+#~ "us. Being caught in a blizzard on those heights would be no laughing "
+#~ "matter."
+#~ msgstr ""
+#~ "Vi måste skynda oss igenom så fort som möjligt. En hemsk storm är i "
+#~ "antågande. Att vara fast i en snöstorm på de där höjderna vore inte "
+#~ "trevligt alls."
+
+#~ msgid ""
+#~ "It has begun to snow. Move, everyone! To be trapped here would be death."
+#~ msgstr ""
+#~ "Det har börjat att snöa. Rör på er! Att bli fångad här skulle betyda "
+#~ "döden."
+
+#~ msgid ""
+#~ "We’re snowed in. Our mission has failed, even if we live until the spring."
+#~ msgstr ""
+#~ "Vi har blivit insnöade. Vårt uppdrag har misslyckats, även om vi skulle "
+#~ "överleva till våren."
+
+#~ msgid "We’re through the pass!"
+#~ msgstr "Vi har kommit igenom passet!"
+
+#, fuzzy
+#~| msgid ""
+#~| "That may not be a blessing. Something frightened those orcs we fought "
+#~| "among the bandit villages, enough to make them push west into Alliance "
+#~| "territory. Don’t you wonder what it was?"
+#~ msgid ""
+#~ "That may not be a blessing. Something has been driving these orcish "
+#~ "raiders to push into Alliance territory. Don’t you wonder what it is?"
+#~ msgstr ""
+#~ "Det kanske inte är en välsignelse. Något skrämde orcherna vi slogs mot "
+#~ "tillräckligt för att driva dem västerut in på alliansmark. Undrar du inte "
+#~ "vad det var?"
+
+#, fuzzy
+#~| msgid "Invaders"
+#~ msgid "Raiders"
+#~ msgstr "Inkräktare"
+
+#~ msgid "Find the inhabitants"
+#~ msgstr "Finn invånarna"
+
+#, fuzzy
+#~| msgid ""
+#~| "I do not sense hostile magic in the vicinity. But there has been fire "
+#~| "near here recently, and not a clean one."
+#~ msgid "There has been fire near here recently, and not a clean one."
+#~ msgstr ""
+#~ "Jag känner ingen fientlig magi i närheten. Men det har varit en brasa här "
+#~ "nyligen  och det var inte en ren eld."
+
+#, fuzzy
+#~| msgid "Defeat the Masked Dwarf"
+#~ msgid "Find and defeat the orcish intruders"
+#~ msgstr "Besegra den maskerade dvärgen"
+
+#~ msgid "Tan-Morgh"
+#~ msgstr "Tan-Morgh"
+
+#~ msgid "Tan-Garukh"
+#~ msgstr "Tan-Garukh"
+
+#~ msgid "Tan-Wagran"
+#~ msgstr "Tan-Wagran"
+
+#~ msgid ""
+#~ "And under siege, I see. There is a mighty host of orcs between us and "
+#~ "that gate."
+#~ msgstr ""
+#~ "Och under belägring, ser jag. Det är en väldig orchhär mellan oss och "
+#~ "porten."
+
+#, fuzzy
+#~| msgid "He has grasped the Hammer of Thursagan, then?"
+#~ msgid ""
+#~ "He has grasped the Hammer of Thursagan, then? Else I know not how he "
+#~ "recovered the runelore of old."
+#~ msgstr "Han har alltså fattat Thursagans hammare?"
+
+#, fuzzy
+#~| msgid ""
+#~| "That’s for lords and loremasters to worry about, not the likes of me. I "
+#~| "must see to my troop’s care. Food will be brought to you; rest well, we "
+#~| "will speak again."
+#~ msgid ""
+#~ "As you say. These things are for lords and loremasters to worry about, "
+#~ "not the likes of me. I must see to my troop’s care. Food will be brought "
+#~ "to you; rest well. We will speak again."
+#~ msgstr ""
+#~ "Detbehöver bara furstar och skriftmästare att bry sig om, inte sådana som "
+#~ "mig. Jag måste se till mina trupper. Mat kommer att ordnas till er. Sov "
+#~ "ordentligt, vi kommer talas vid igen."
+
+#~ msgid ""
+#~ "Wait... the lich’s apparent death was another illusion. In truth he ran "
+#~ "through that doorway behind the throne."
+#~ msgstr ""
+#~ "Vänta... häxmästare död var tydligen bara ytterligare ett bländverk. "
+#~ "Egentligen sprang han genom den där öppningen bakom tronen."
+
+#, fuzzy
+#~| msgid "Defeat Karrag"
+#~ msgid "Find and defeat Karrag"
+#~ msgstr "Besegra Karrag"
+
+#, fuzzy
+#~| msgid ""
+#~| "I have been on your track for weeks. Word of your rout of Tan-Malgar and "
+#~| "his allies spread, and reached Tallin. You did the Alliance better "
+#~| "service than you knew that day; Tan-Malgar had exchanged messages with "
+#~| "certain orcish chieftains within the Alliance, and your victory "
+#~| "prevented a dangerous revolt."
+#~ msgid ""
+#~ "I have been on your track for weeks. Word of your rout of Tan-Morgh and "
+#~ "his allies spread, and reached Tallin. You did the Alliance better "
+#~ "service than you knew that day; Tan-Morgh had exchanged messages with "
+#~ "certain orcish chieftains within the Alliance, and your victory prevented "
+#~ "a dangerous revolt."
+#~ msgstr ""
+#~ "Jag har följt i ditt spår i veckor. Rykten om Tan-Malgar och hans "
+#~ "allierades nederlag spriddes, och nådde Tallin. Du gjorde alliansen en "
+#~ "större tjänst än du visste den dagen. Tan-Malgar hade utbytt meddelanden "
+#~ "med vissa orchhövdingar i alliansen och din seger förhindrade en farlig "
+#~ "revolt."
+
+#~ msgid ""
+#~ "Aiglondur, the Protector dubs you a Lord Companion of the Alliance. He "
+#~ "bids you return to Knalga as soon as convenient, for your investiture."
+#~ msgstr ""
+#~ "Aiglondur, riksföreståndare dubbar dig, i alliansen namn, till "
+#~ "ståthållare. Han välkomnar dig tillbaka till Knalga när det är möjligt, "
+#~ "för att tilldelas din nya ordenstitel."
+
+#~ msgid "inspire"
+#~ msgstr "inspiration"
+
+#, fuzzy
+#~| msgid ""
+#~| "Inspire:\n"
+#~| "This unit can inspire own L0 or L1 units that are next to it, making "
+#~| "them fight better. Adjacent own units of L1 will do 25% more damage; L0 "
+#~| "units will do 50% more."
+#~ msgid ""
+#~ "This unit can inspire own units that are next to it, making them fight "
+#~ "better. Adjacent own units of lower or equal level will deal 25% more "
+#~ "damage plus 25% for each level they are below the inspiring unit."
+#~ msgstr ""
+#~ "Inspire: \n"
+#~ " Den här enheten inspirerar egna L0 och L1 trupper som står bredvid till "
+#~ "att slåss bättre. L1-trupper som står intill gör 25% mer skada och L0-"
+#~ "truppernas slagkraft ökar med 50%."
+
+#, fuzzy
+#~| msgid ""
+#~| "The presence of this unit inspires own units next to it to deal more "
+#~| "damage in combat, though this only applies to units of lower or equal "
+#~| "level."
+#~ msgid ""
+#~ "The presence of this unit inspires own units next to it to deal more "
+#~ "damage in combat, though this only applies to units of lower or equal "
+#~ "level."
+#~ msgstr ""
+#~ "Närvaron av denna enhet inspirerar trupperna intill så att de gör mer "
+#~ "skada i strid. Inspiriationen påverkar dock endast enheter med lägre "
+#~ "eller samma rang. "
+
+#~ msgid ""
+#~ "Without Dulcatulos to explain our actions to the Kal Karthans we’ll have "
+#~ "to fight them, too. Our mission has failed."
+#~ msgstr ""
+#~ "Utan Dulcatulos att förklara våra handlingar till Kal Karthas dvärgar så "
+#~ "måste vi slåss mot dem också. Vårt uppdrag har misslyckats."
+
+#, fuzzy
+#~| msgid ""
+#~| "More experienced Dwarvish fighters wear heavy chain mail and plate "
+#~| "armor, for which they are rightly famous. In the dark dreams of "
+#~| "dwarvenkind, some conceal their faces behind riveted masks."
+#~ msgid ""
+#~ "More experienced dwarvish fighters wear heavy chain mail and plate armor, "
+#~ "for which they are rightly famous. In the dark dreams of dwarvenkind, "
+#~ "some conceal their faces behind riveted masks."
+#~ msgstr ""
+#~ "Mer erfarna dvärgkrigare bär en tung ringbrynja och harnesk, en rustning "
+#~ "de med rätta är kända för. I dvärgfolkets mardrömmar döljer några sina "
+#~ "ansikten bakom nitade masker."
+
+#~ msgid "Bandits"
+#~ msgstr "Banditer"
+
+#~ msgid "Gothras"
+#~ msgstr "Gothras"
+
+#~ msgid "Troll Bridge"
+#~ msgstr "Trollbron"
+
+#~ msgid "Trolls"
+#~ msgstr "Troll"
+
+#~ msgid "Gronk"
+#~ msgstr "Gronk"
+
+#~ msgid "Defeat Gronk"
+#~ msgstr "Besegra Gronk"
+
+#~ msgid "Dis a troll bridge. You pay toll. Er..."
+#~ msgstr "Här trollbro. Betala tull. Eh... "
+
+#~ msgid "Dat not right. Dis a toll bridge. You pay troll. Er..."
+#~ msgstr "Det inte rätt. Här tullbro. Betala troll. Eh... "
+
+#~ msgid ""
+#~ "Dat not right either. Big words confuse Gronk. You pay now or we smash "
+#~ "you."
+#~ msgstr ""
+#~ "Det inte rätt heller. Stora ord förvirrar Gronk. Betala nu eller krossas."
+
+#~ msgid ""
+#~ "The stonework of yon bridge is not good enough to be dwarf-made, but it "
+#~ "is nowhere near crude enough to be troll-work."
+#~ msgstr ""
+#~ "Stenarbetet på din bro är inte gott nog för att vara skapad av dvärgars "
+#~ "händer, men är inte alls klumpigt nog för att vara ett troll-arbete."
+
+#~ msgid ""
+#~ "Then it will be of the Alliance’s making, right enough, like this road "
+#~ "that leads to it. It won’t do to have wild trolls squatting on it. Axes "
+#~ "up!"
+#~ msgstr ""
+#~ "Då blir det alliansens sak att med rätta, liksom denna väg leder till "
+#~ "den, fördriva och stoppa detta vilda trolls ockupation. Till vapen!"
+
+#~ msgid "Hey! That troll was sitting on some treasure!"
+#~ msgstr "Oj! Det där trollet hade en del skatter!"
+
+#~ msgid ""
+#~ "The Alliance’s road ended at the troll bridge. East of it lay only the "
+#~ "wildlands."
+#~ msgstr ""
+#~ "Alliansens väg slutade vid trollbron. Till öster om den låg bara "
+#~ "vildlanden."
+
+#~ msgid "Tan-Malgar"
+#~ msgstr "Tan-Malgar"
+
+#~ msgid "Tan-Grolak"
+#~ msgstr "Tan-Grolak"
+
+#~ msgid "Tan-Uthkar"
+#~ msgstr "Tan-Uthkar"
+
+#~ msgid "Ruined Castle"
+#~ msgstr "Slottsruin"
+
+#~ msgid "Defeat all enemies"
+#~ msgstr "Besegra alla fiender."
+
+#~ msgid ""
+#~ "Stay alert, everyone, and keep together. This is bandit country — more "
+#~ "than likely where Gothras and his gang came from."
+#~ msgstr ""
+#~ "Var beredda och håll ihop. Det här är rövarbygder... det var antaligen "
+#~ "härifrån Gothras och hans gäng kom ifrån."
+
+#~ msgid ""
+#~ "Nae sign o’ bandits I can see, captain — but there are three muckle hosts "
+#~ "of orcs off to our east."
+#~ msgstr ""
+#~ "Inga banditer i syne kapten.Däremot tre större orchhärar öster om oss."
+
+#~ msgid ""
+#~ "What’s this? Large orcish war-bands so close to the Alliance’s border? "
+#~ "That can only mean trouble."
+#~ msgstr ""
+#~ "Vad är detta? Stora orchiska krigshärdar så här nära alliansen gräns? Det "
+#~ "kan bara betyda problem."
+
+#~ msgid ""
+#~ "Well, boys, we were planning to invade the Northern Alliance anyway... "
+#~ "These dwarves should make a tasty appetizer."
+#~ msgstr ""
+#~ "Nå pojkar. Vi planerade ändå att invadera Norra alliansen... De här "
+#~ "dvärgarna blir fina aptitretare."
+
+#~ msgid "Yeah, boss. Anything to get away from those masked ones..."
+#~ msgstr "Ja boss. Allt för att komma iväg från de maskerade..."
+
+#~ msgid "Be silent. We are orc warriors; we do not flee foes."
+#~ msgstr "Tyst. Vi är orchkrigare. Vi flyr inte från våra fiender."
+
+#~ msgid "But, given a choice, we fight the weaker foe first."
+#~ msgstr "Men, givet ett val, slåss vi mot den svagare fienden först."
+
+#~ msgid "The villagers are attacking us!"
+#~ msgstr "Byborna anfaller oss!"
+
+#~ msgid "Aye, it’s still bandit country, right enough."
+#~ msgstr "Ah, det är fortfarande banditer i dessa trakter ser jag."
+
+#~ msgid ""
+#~ "That hut near the top of the pass... Something is glowing inside it. We "
+#~ "should investigate."
+#~ msgstr ""
+#~ "Hyddan nära passets topp... Något lyser inne i den. Vi borde undersöka "
+#~ "saken."
+
+#~ msgid ""
+#~ "Hail, I am Ratheln. If you’re traveling down the pass, please take me "
+#~ "with you. I am near freezing and starving to death up here."
+#~ msgstr ""
+#~ "Var hälsad. Jag är Ratheln. Om ni tänker färdas ned för passet, låt mig "
+#~ "följa med er. Jag är nära att både frysa och svälta ihjäl här uppe."
+
+#~ msgid ""
+#~ "Pardon my curiosity, but what is a fire-mage doing freezing to death?"
+#~ msgstr ""
+#~ "Förlåt min nyfikenhet, men hur kan en eldmagiker vara på väg att frysa "
+#~ "ihjäl?"
+
+#~ msgid ""
+#~ "In case you haven’t noticed, there is a serious shortage of both firewood "
+#~ "and food in this gods-forsaken slot. And the damned gryphons descend on "
+#~ "me whenever I stir out of this shack. I’ve had nothing to eat but flash-"
+#~ "roasted gryphon for the last three weeks."
+#~ msgstr ""
+#~ "Ifall du inte har märkt det så är det stor brist på både ved och mat på "
+#~ "den här gudsförgätna platsen. De förbannade griparna anfaller mig när jag "
+#~ "försöker ta mig ut ur det här skjulet. Jag har inte haft något att äta "
+#~ "förutom blixtrostad grip de senaste tre veckorna."
+
+#~ msgid "Where were you bound when you got stuck here?"
+#~ msgstr "Vart var du på väg innan du fastnade här?"
+
+#~ msgid ""
+#~ "There is a school of mages near the east end of the pass. They’ve an "
+#~ "opening for an instructor, and they’re expecting me."
+#~ msgstr ""
+#~ "Det finns en magikerskola nära östra slutet av passet. De har ett ledigt "
+#~ "jobb som instruktör, och de väntar på mig. "
+
+#~ msgid ""
+#~ "Let’s take him with us, Aiglondur. We know little about the country "
+#~ "beyond to the east; we’ve had few reports on it since before the orcs "
+#~ "took Knalga. Those mages should know at least rumors."
+#~ msgstr ""
+#~ "Låt oss ta med honom Aiglondur. Vi vet nästan inget om landet borta i "
+#~ "öst. Vi har fått få rapporter om det sedan orcherna intog Knalga. "
+#~ "Magikerna bör i alla fall ha hört rykten."
+
+#~ msgid ""
+#~ "Aye. And I’d not leave anyone who had done my kin no harm stranded to "
+#~ "starve."
+#~ msgstr ""
+#~ "Ja, och jag skulle aldrig lämna någon som inte gjort något ont mot mitt "
+#~ "släkte för att dö av hunger."
+
+#~ msgid "This is no fit death for a mage of fire!"
+#~ msgstr "Det här är ingen passande död för en eldmagiker!"
+
+#~ msgid ""
+#~ "The snow has redoubled its fury, as if his presence had been holding it "
+#~ "back. I do not see a way forward for us."
+#~ msgstr ""
+#~ "Snöovädret har dubblerats i styrka. Det är som om hans närvaro har "
+#~ "hindrat snön. Jag kan inte se någon väg framåt för oss."
+
+#~ msgid ""
+#~ "Aye. But I’ve a grim feeling we might be going to discover that in person."
+#~ msgstr ""
+#~ "Ja, men jag har en hemsk känsla av att vi snart kommer att få se det "
+#~ "själva."
+
+#~ msgid "Warder"
+#~ msgstr "Föreståndare"
+
+#~ msgid ""
+#~ "Well met, then. But if you intend to travel east of here, beware of the "
+#~ "nest of drakes in the cliffs near the valley’s end. They were here before "
+#~ "us, and have become more hostile to travelers of late."
+#~ msgstr ""
+#~ "Väl mött då. Men om ni tänker resa mot öst, akta er för drakfolket i "
+#~ "klipporna nära dalens slut. De var här före oss och har blivit mer "
+#~ "aggressiva mot resande på sistone."
+
+#~ msgid "The axe-bearers must not be let near our nestlings. Attack!"
+#~ msgstr "Yxbärarna får inte komma nära våra nykläckta. Anfall!"
+
+#, fuzzy
+#~| msgid ""
+#~| "We’re grateful for your assistance. And I’d like to send at least one of "
+#~| "our senior apprentices with you to the east. It has come time for them "
+#~| "to be journeymen... and I sense something being born to the east that I "
+#~| "do not like the feel of."
+#~ msgid ""
+#~ "We’re grateful for your assistance. And I’d like to send a couple of our "
+#~ "senior apprentices with you to the east. It has come time for them to be "
+#~ "journeymen... and I sense something being born to the east that I do not "
+#~ "like the feel of."
+#~ msgstr ""
+#~ "Vi är tacksamma för er hjälp. Jag skulle vilja skicka med er minst en av "
+#~ "våra äldre lärlingar. Det har blivit dags för dem att bli gesäller... och "
+#~ "jag uppfattar som att att något föds i öster, något som jag ger "
+#~ "efterlämnar en känsla jag inte tycker om."
+
+#, fuzzy
+#~| msgid ""
+#~| "We’re grateful for your assistance. And I’d like to send at least one of "
+#~| "our senior apprentices with you to the east. It has come time for them "
+#~| "to be journeymen... and I sense something being born to the east that I "
+#~| "do not like the feel of."
+#~ msgid ""
+#~ "We’re grateful for your assistance. And I’d like to send one of our "
+#~ "senior apprentices with you to the east. It has come time for him to be a "
+#~ "journeyman... and I sense something being born to the east that I do not "
+#~ "like the feel of."
+#~ msgstr ""
+#~ "Vi är tacksamma för er hjälp. Jag skulle vilja skicka med er minst en av "
+#~ "våra äldre lärlingar. Det har blivit dags för dem att bli gesäller... och "
+#~ "jag uppfattar som att att något föds i öster, något som jag ger "
+#~ "efterlämnar en känsla jag inte tycker om."
+
+#~ msgid "Lorinne"
+#~ msgstr "Lorinne"
+
+#~ msgid "Darchas"
+#~ msgstr "Darchas"
+
+#, fuzzy
+#~| msgid ""
+#~| "The presence of Master Perrin’s journeymen gives you the ability to "
+#~| "recruit mages."
+#~ msgid ""
+#~ "The presence of Lorinne and Darchas gives you the ability to recruit "
+#~ "mages."
+#~ msgstr ""
+#~ "Närvaron av stormästare Perrins gesäller ger dig möjlighet att rekrytera "
+#~ "magiker."
+
+#, fuzzy
+#~| msgid ""
+#~| "The presence of Master Perrin’s journeymen gives you the ability to "
+#~| "recruit mages."
+#~ msgid "The presence of Darchas gives you the ability to recruit mages."
+#~ msgstr ""
+#~ "Närvaron av stormästare Perrins gesäller ger dig möjlighet att rekrytera "
+#~ "magiker."
+
+#~ msgid "What sort of thing?"
+#~ msgstr "Vad för något?"
+
+#~ msgid ""
+#~ "There is some great magic brewing. Something... evil. I feel its traces "
+#~ "in the currents of the earth and air."
+#~ msgstr ""
+#~ "Någon större magi sjuder och kokar. Något... ondskefullt. Jag känner dess "
+#~ "spår i jorden och vindens flöden."
+
+#~ msgid ""
+#~ "I would travel east with you if I could, but I have duties I must take up "
+#~ "here."
+#~ msgstr ""
+#~ "Jag skulle resa österut med er om jag kunde, men jag har plikter jag "
+#~ "måste uppfylla här."
+
+#~ msgid "You have your duty, as we have ours. Fare well."
+#~ msgstr "Du har dina uppgifter att utföra precis som vi har våra. Farväl."
+
+#~ msgid ""
+#~ "Perrin, I owe these dwarves a debt; I think it is my duty to aid them in "
+#~ "their journey. I’ll return with your apprentices as soon as I may."
+#~ msgstr ""
+#~ "Perrin, jag står i skuld till dessa dvärgar och det är min plikt att "
+#~ "hjälpa dem på deras resa. Jag återvänder med mina lärlingar så fort jag "
+#~ "bara kan."
+
+#~ msgid "As you will. Go safely and return swiftly."
+#~ msgstr "Som du vill. Res i frid och återvänd fort."
+
+#~ msgid ""
+#~ "I would travel east with you if I could, but the school will need me all "
+#~ "the more with Master Perrin gone."
+#~ msgstr ""
+#~ "Jag skulle gärna resa österut med er men skolan behöver mig ännu mer nu "
+#~ "när stormästare Perrin är borta."
+
+#~ msgid ""
+#~ "I think we will regret Perrin’s passing. There is much he might have told "
+#~ "us."
+#~ msgstr ""
+#~ "Jag tror vi kommer att ångra Perrins död. Det är mycket han skulle kunna "
+#~ "berättat för oss."
+
+#~ msgid "Take that for my family’s memory, you murderer!"
+#~ msgstr "Här är för min familj, din mördare!"
+
+#, fuzzy
+#~| msgid ""
+#~| "They were seeking captives. To what purpose, I cannot say. But I doubt "
+#~| "it was any good one."
+#~ msgid ""
+#~ "They were seeking captives. To what purpose, I cannot say. But I doubt it "
+#~ "was any good one."
+#~ msgstr ""
+#~ "Dom letade efter fångar. För vilket syfte kan jag inte säga, men jag tror "
+#~ "inte det var med gott uppsåt."
+
+#~ msgid "Fleleen"
+#~ msgstr "Fleleen"
+
+#~ msgid "Lannex"
+#~ msgstr "Lannex"
+
+#~ msgid ""
+#~ "This is the Grand Gallery. There are rows of small chambers along its "
+#~ "sides; he could have slipped into any of them."
+#~ msgstr ""
+#~ "Det här är Stora galleriet. Det finns rader av små kammare längs dess "
+#~ "sidor. Han kan ha slunkit in i vilken som helst av dem."
+
+#~ msgid "We’ll see about that!"
+#~ msgstr "Vi får väl se!"
+
+#~ msgid "I sense wrongness. Some greater evil awakens before us."
+#~ msgstr ""
+#~ "Någonting är fel. Det känns som att en större ond kraft vaknar framför "
+#~ "oss."
+
+#, fuzzy
+#~| msgid ""
+#~| "I sense these bindings to be the work of common sorcery, not the power "
+#~| "of the Hammer. Usually to each such locking spell there is some sort of "
+#~| "key. If we can but find the key, we will able to open these doors."
+#~ msgid ""
+#~ "I sense these bindings to be the work of common sorcery, not the power of "
+#~ "the Hammer. Usually to each such locking spell there is some sort of key. "
+#~ "If we can but find the key, we will be able to open these doors."
+#~ msgstr ""
+#~ "Jag anar att de här bindningarna inte är gjorda med hammarens kraft utan "
+#~ "med vanlig magi. Vanligtvis så, för varje sådan låstrollformel, finns det "
+#~ "någon slags nyckel. Om vi hittar nyckeln så bör vi kunna öppna dessa "
+#~ "portar."
+
+#~ msgid "There we go... faugh, what is that smell!"
+#~ msgstr "Sådär ja... fy, vad är det för lukt!"
+
+#~ msgid "I think I hear noises, ahead of us..."
+#~ msgstr "Jag tror jag hör ljud, framför oss..."
+
+#~ msgid "Fresh blood! Exactly what I need to complete the rite."
+#~ msgstr "Färskt blod! Precis vad jag behöver för att fullborda ritualen."
+
+#~ msgid "It’s locked, but nothing that our hammers can’t manage."
+#~ msgstr "Det är låst, men det är inget som inte våra hammare kan klara av."
+
+#~ msgid "A scroll with some strange writing on it..."
+#~ msgstr "En skriftrulle med något konstigt skriven på den..."
+
+#~ msgid "I believe that will be the key-spell for that sealed door."
+#~ msgstr ""
+#~ "Jag tror att det är nyckel-trollformeln för den de där stängda portarna."
+
+#~ msgid "(<i>Reads</i>) <i>Kannin a’kana du’masi a’forigln de’amp.</i>"
+#~ msgstr "(<i>läser högt</i>) <i>Kannin a'kana du'masi a'forigln de'amp.</i>"
+
+#~ msgid "Now try the door again. It should open."
+#~ msgstr "Försök öppna porten igen. Den borde öppna sig nu."
+
+#~ msgid "A door. Perhaps Karrag is hiding in here..."
+#~ msgstr "En dörr. Kanske Karrag gömmer sig här..."
+
+#~ msgid "150 gold pieces. This should help."
+#~ msgstr "150 guldstycken. Det kan behövas."
+
+#~ msgid ""
+#~ "150 gold pieces. I wonder why Karrag would choose to store his gold here."
+#~ msgstr ""
+#~ "150 guldstycken. Jag undrar varför Karrag valt att förvara sitt guld här."
+
+#~ msgid ""
+#~ "An old caved-in passageway. Perhaps if we clear away some of this rubble "
+#~ "we may be able to get through..."
+#~ msgstr ""
+#~ "En gammal gång som rasat in. Kanske vi kan komma förbi om vi rensar bort "
+#~ "delar av allt bråte som täcker gången."
+
+#~ msgid "Another old caved-in passageway..."
+#~ msgstr "En till gammal gång som rasat in..."
+
+#~ msgid ""
+#~ "Finally! I see someone managed to see through the web of deception thrown "
+#~ "up by that vile Karrag!"
+#~ msgstr ""
+#~ "Äntligen! Jag ser att någon tillslut lyckats se genom den där uslingen "
+#~ "Karrags nät av lögner och bedrägeri!"
+
+#~ msgid ""
+#~ "I thought Karrag’s fight was against the so called ‘dirtgrubbers’. Why "
+#~ "would he keep you, a dwarf captive?"
+#~ msgstr ""
+#~ "Jag trodde att Karrags strid var mot de så kallade \"jordbökarna\". "
+#~ "Varför skulle han hålla dig, en dvärg, som fånge?"
+
+#~ msgid ""
+#~ "I guess Karrag thought I knew too much. When his masked henchmen started "
+#~ "raiding, plundering and taking all sorts of prisoners — which were sent "
+#~ "to these underlevels and never seen again — I began to inquire. I "
+#~ "discovered many unsettling things indeed, but before I could act on them "
+#~ "I was arrested and thrown down here."
+#~ msgstr ""
+#~ "Jag antar att Krarrag trodde att jag visste för mycket. När hans "
+#~ "maskerade följeslagare började plundra och ta alla möjliga sorters "
+#~ "fångar. Fångar som sen skickades till de undre nivåerna för att aldrig "
+#~ "synas till igen, så började jag mina efterforskningar. Jag fann "
+#~ "sannerligen mycket oroande saker, men innan jag kunde träda fram med dem "
+#~ "så blev jag arresterad och kastades ner här."
+
+#~ msgid ""
+#~ "I gather that he is involved in some sick ritual which requires the blood "
+#~ "of living creatures. These cells seem to be the holding place where he "
+#~ "keeps his victims. The ‘dirtgrubbers’ he seems to prefer sacrificing have "
+#~ "long since been taken away. Now it is just us few dwarves that remain..."
+#~ msgstr ""
+#~ "Jag antar att han är involverad i någon sjuk ritual som kräver blod från "
+#~ "levande varelser. De här cellerna verkar ha varit en förvaringsplats där "
+#~ "han satt sina offer. De här \"jordbökarna\" han vekar föredra att offra "
+#~ "har sedan länge tagits härifrån. Nu är det bara oss dvärgar som är kvar..."
+
+#, fuzzy
+#~| msgid ""
+#~| "Freeing these prisoners is more of a blow to Karrag then we thought, for "
+#~| "now he is unable to continue his foul sorcery."
+#~ msgid ""
+#~ "Freeing these prisoners is more of a blow to Karrag than we thought, for "
+#~ "now he is unable to continue his foul sorcery."
+#~ msgstr ""
+#~ "Att frige de här fångarna är ett större slag mot Karrag än vi först "
+#~ "trodde. Nu kan han inte fortsätta med sin smutsiga svartkonst."
+
+#~ msgid "Trisi"
+#~ msgstr "Trisi"
+
+#~ msgid "Malifen"
+#~ msgstr "Malifen"
+
+#~ msgid "Borras"
+#~ msgstr "Borras"
+
+#~ msgid "Zamak"
+#~ msgstr "Zamak"
+
+#~ msgid ""
+#~ "When I step on this rune, I feel strange indeed. I feel like I am being "
+#~ "pulled somewhere else, but at the same time being held back by an equally "
+#~ "powerful force."
+#~ msgstr ""
+#~ "När jag kliver på den här runan så känner jag mig sannerligen konstig. "
+#~ "Det känns som om jag dras till något annat ställe samtidigt som jag hålls "
+#~ "tillbaka av en lika stark kraft."
+
+#~ msgid ""
+#~ "It seems to be some sort of a teleportation device. What’s more, the "
+#~ "bindings that are preventing it from working seem to be the same ones "
+#~ "that bar those sealed gates."
+#~ msgstr ""
+#~ "Det verkar vara någon sorts teleporterings-anordning. Dessutom verkar de "
+#~ "här bindningarna som hindrar den från att fungera, vara samma som "
+#~ "förseglar de där stängda portarna."
+
+#~ msgid ""
+#~ "Yon doors are big, tightly locked — and, I would imagine, well "
+#~ "barricaded. This may take a while."
+#~ msgstr ""
+#~ "Dessa dörrar är stora, väl låsta och antagligen väl barrikaderade. Det "
+#~ "här kan ta ett tag."
+
+#~ msgid ""
+#~ "Go through that rubble yonder; see if you can dig up some sort of "
+#~ "battering ram."
+#~ msgstr ""
+#~ "Gå igenom spillrorna därborta. Se om du kan hitta något att använda som "
+#~ "murbräcka."
+
+#~ msgid "One hour later"
+#~ msgstr "En timme senare."
+
+#~ msgid "The door is about to give. Brace yourselves, everyone."
+#~ msgstr "Dörren är på väg att ge vika. Samla ihop er."
+
+#~ msgid ""
+#~ "Without magic users from Master Perrin’s academy in your party, you can "
+#~ "no longer recruit new ones."
+#~ msgstr ""
+#~ "Utan magianvändare från stormästare Perrins akademi i din grupp, så kan "
+#~ "du inte längre rekrytera nya magiker."
+
+#~ msgid "Staff of Righteous Flame"
+#~ msgstr "Rättfärdiga flammans stav"
+
+#~ msgid ""
+#~ "This staff gives a dying mage a final strike that will destroy all nearby "
+#~ "enemies."
+#~ msgstr ""
+#~ "Den här staven ger en döende magiker en sista attack som kommer att "
+#~ "tillintetgöra alla närbelägna fiender."
+
+#, fuzzy
+#~| msgid "Only mages can wield the Staff."
+#~ msgid "Only a mage may wield this Staff."
+#~ msgstr "Bara en magiker kan använda staven."
+
+#~ msgid ""
+#~ "Aaarrgh! Though I die, the flame of righteousness shall send you down to "
+#~ "darkness!"
+#~ msgstr ""
+#~ "Även om jag dör så tar jag med er i döden. Den rättfärdiga flamman sänder "
+#~ "er till det djupa mörkret!"
+
+#~ msgid "morningstar"
+#~ msgstr "morgonstjärna"
+
+#~ msgid "No bandits in this village."
+#~ msgstr "Inga banditer i den här byn."
+
+#~ msgid "Death of West Gate commander"
+#~ msgstr "Västportens befälhavares död"
+
+#~ msgid "Evil"
+#~ msgstr "ondska"
+
+#, fuzzy
+#~| msgid ""
+#~| "Inspire:\n"
+#~| "This unit can inspire own L0, L1, or L2 units that are next to it, "
+#~| "making them fight better. Adjacent own units of L2 will do more 25% more "
+#~| "damage; L1 units will do 50% more, and L0 will do 75% more."
+#~ msgid ""
+#~ "This unit can inspire own L0, L1, or L2 units that are next to it, making "
+#~ "them fight better. Adjacent own units of L2 will do more 25% more damage; "
+#~ "L1 units will do 50% more, and L0 will do 75% more."
+#~ msgstr ""
+#~ "Inspire: \n"
+#~ " Den här enheten inspirerar egna L0, L1 och L2 trupper som står bredvid "
+#~ "till att slåss bättre. L2-trupper som står intill gör 25% mer skada,  L1-"
+#~ "truppernas slagkraft ökar med 50% och L0-trupper gör 75% mer skada."
+
+#, fuzzy
+#~| msgid ""
+#~| "Inspire:\n"
+#~| "This unit can inspire own L0, L1, L2, or L3 units that are next to it, "
+#~| "making them fight better. Adjacent own units of L3 will do more 25% more "
+#~| "damage; L2 units will do 50% more, L1 will do 75% more, and L0 units "
+#~| "will do 100% more."
+#~ msgid ""
+#~ "This unit can inspire own L0, L1, L2, or L3 units that are next to it, "
+#~ "making them fight better. Adjacent own units of L3 will do more 25% more "
+#~ "damage; L2 units will do 50% more, L1 will do 75% more, and L0 units will "
+#~ "do 100% more."
+#~ msgstr ""
+#~ "Inspire: \n"
+#~ " Den här enheten inspirerar egna L0, L1,  L2 och L3 trupper som står "
+#~ "bredvid till att slåss bättre. L3-trupper som står intill gör 25% mer "
+#~ "skada,  L2-truppernas slagkraft ökar med 50%, L1-trupper gör 75% mer "
+#~ "skada och L0 fördubblar sin slagkraft, alltså en ökning med 100%."
+
+#~ msgid "You retrieve $amount_gold pieces of gold."
+#~ msgstr "Du får $amount_gold guldstycken."
+
+#~ msgid "Dwarvish Runemaster"
+#~ msgstr "Runmästare"
+
+#~ msgid ""
+#~ "Except for those with almost supernatural skill, the highest rank a "
+#~ "runecrafter can rise to is that of the Dwarvish Runemaster. Striking "
+#~ "blows nearly as powerful as those of the best warriors, they would be "
+#~ "fearsome without their craft, but with it they are also nigh on "
+#~ "invincible, since their runes cause the physical blows of their enemies "
+#~ "to deal less damage than would be expected."
+#~ msgstr ""
+#~ "Förutom de med nästan övernaturliga krafter så är den högsta rang en "
+#~ "runtillverkare kan nå är runmästare. Med  slag nästan lika kraftfulla som "
+#~ "de bästa krigarna så skulle de var skräckinjagande även utan sitt "
+#~ "hantverk. Men med hantverkskunskapen så blir de nästan oövervinnerliga "
+#~ "eftersom deras runor får fiendens slag att ge berydligt mindre skada än "
+#~ "dessa förväntade sig."
+
+#~ msgid "hammer"
+#~ msgstr "hammare"
+
+#~ msgid "chill tempest"
+#~ msgstr "kyllig storm"
+
+#~ msgid "Time runs out"
+#~ msgstr "Tiden tar slut"
+
+#~ msgid "chainmace"
+#~ msgstr "stridsgissel"
+
+#~ msgid ""
+#~ "SPECIAL_NOTES^ This unit can exert leadership on units of his own level."
+#~ msgstr ""
+#~ "Den här truppen kan utöva ledarskap över trupper på samma erfarenhetsnivå "
+#~ "som den själv."
+
+#~ msgid "Defeat the Masked Dwarf"
+#~ msgstr "Besegra den maskerade dvärgen"

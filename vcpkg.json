@@ -1,0 +1,70 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "name": "wesnoth-dependencies",
+  "version": "0.0.1",
+  "builtin-baseline": "04a9d8e5212d01ee1dd9478eadd9caade4f8b0d4",
+  "dependencies": [
+    "sdl3",
+    {
+      "name": "sdl3-image",
+      "features": [ "jpeg", "png", "webp" ]
+    },
+    "libwebp",
+    "sdl3-mixer",
+    "bzip2",
+    "zlib",
+    "pango",
+    "cairo",
+    "fontconfig",
+    "libvorbis",
+    "libogg",
+    "openssl",
+    {
+      "name": "gettext-libintl",
+      "platform": "osx"
+    },
+    {
+      "name": "readline",
+      "platform": "osx"
+    },
+    {
+      "name": "wavpack",
+      "platform": "osx"
+    },
+    "boost-filesystem",
+    "boost-graph",
+    "boost-iostreams",
+    {
+      "name": "boost-locale",
+      "features": [ "icu" ]
+    },
+    "boost-random",
+    {
+      "name": "boost-regex",
+      "features": [ "icu" ]
+    },
+    "boost-asio",
+    "boost-program-options",
+    "boost-system",
+    "boost-bimap",
+    "boost-math",
+    "boost-logic",
+    "boost-format",
+    "boost-scope-exit",
+    "boost-circular-buffer",
+    "boost-ptr-container",
+    "boost-spirit",
+    "boost-test",
+    "boost-process",
+    "boost-multi-array",
+    "boost-coroutine",
+    {
+      "name": "curl",
+      "features": [ "openssl" ]
+    },
+    {
+      "name": "pkgconf",
+      "platform": "windows"
+    }
+  ]
+}

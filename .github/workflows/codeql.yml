@@ -1,0 +1,73 @@
+name: "CodeQL"
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    # The branches below must be a subset of the branches above
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  analyze:
+    name: Analyze
+    # Runner size impacts CodeQL analysis time. To learn more, please see:
+    #   - https://gh.io/recommended-hardware-resources-for-running-codeql
+    #   - https://gh.io/supported-runners-and-hardware-resources
+    #   - https://gh.io/using-larger-runners
+    # Consider using larger runners for possible analysis time improvements.
+    # `runs-on` accepts runner labels, not Docker image names. Run every CodeQL step
+    # in the SDL3 container so initialization, compilation, and analysis share an environment.
+    runs-on: ubuntu-latest
+    container:
+      image: wesnoth/wesnoth:2404-sdl3
+      env:
+        # boost is built with _GLIBCXX_DEBUG so enable it here as well
+        CXXFLAGS: -D_GLIBCXX_DEBUG -D_GLIBCXX_DEBUG_PEDANTIC -D_GLIBCXX_ASSERTIONS
+    timeout-minutes: 360
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [ 'cpp', 'python', 'javascript' ]
+        # CodeQL supports [ 'cpp', 'csharp', 'go', 'java', 'javascript', 'python', 'ruby', 'swift' ]
+        # Use only 'java' to analyze code written in Java, Kotlin or both
+        # Use only 'javascript' to analyze code written in JavaScript, TypeScript or both
+        # Learn more about CodeQL language support at https://aka.ms/codeql-docs/language-support
+
+    steps:
+    - { name: Checkout repository, uses: actions/checkout@v6, with: { submodules: "recursive" } }
+
+    - name: Install node for analyzing javascript
+      uses: actions/setup-node@HEAD
+      with:
+        node-version: 'latest'
+
+    # Initializes the CodeQL tools for scanning.
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@HEAD
+      with:
+        languages: ${{ matrix.language }}
+        # If you wish to specify custom queries, you can do so here or in a config file.
+        # By default, queries listed here will override any specified in a config file.
+        # Prefix the list here with "+" to use these queries and those in the config file.
+
+        # For more details on CodeQL's query packs, refer to: https://docs.github.com/en/code-security/code-scanning/automatically-scanning-your-code-for-vulnerabilities-and-errors/configuring-code-scanning#using-queries-in-ql-packs
+        queries: +./.github/codeql/queries/wesnoth-lua/wesnoth-lua.qls, security-extended
+        config: |
+          query-filters:
+            - exclude:
+                id: cpp/unterminated-variadic-call
+
+    # Autobuild attempts to build any compiled languages (C/C++, C#, Go, Java, or Swift).
+    - name: Autobuild
+      uses: github/codeql-action/autobuild@HEAD
+
+    - name: Perform CodeQL Analysis
+      uses: github/codeql-action/analyze@HEAD
+      with:
+        category: "/language:${{matrix.language}}"

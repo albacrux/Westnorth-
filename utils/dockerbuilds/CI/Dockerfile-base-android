@@ -1,0 +1,35 @@
+FROM ubuntu:24.04
+
+RUN apt update
+
+RUN apt install -y -qq apt-utils
+
+# make tzdata not prompt for a timezone
+ENV DEBIAN_FRONTEND=noninteractive
+
+# translations
+RUN apt install -y -qq asciidoc dos2unix xsltproc po4a docbook-xsl language-pack-en
+RUN locale-gen en_US.UTF-8
+
+# programs
+RUN apt install -y -qq openssl gdb xvfb bzip2 git scons cmake make ccache gcc g++ clang clang-tidy lld doxygen graphviz lua-check curl meson gperf
+
+# SDL build dependencies
+RUN apt -y -qq install build-essential git make pkg-config cmake ninja-build gnome-desktop-testing libasound2-dev libpulse-dev libaudio-dev libfribidi-dev libjack-dev libsndio-dev libx11-dev libxext-dev libxrandr-dev libxcursor-dev libxfixes-dev libxi-dev libxss-dev libxtst-dev libxkbcommon-dev libdrm-dev libgbm-dev libgl1-mesa-dev libgles2-mesa-dev libegl1-mesa-dev libdbus-1-dev libibus-1.0-dev libudev-dev libthai-dev libpipewire-0.3-dev libwayland-dev libdecor-0-dev liburing-dev
+
+# android stuff
+WORKDIR /home/wesnoth-android/.android/sdk
+
+RUN apt install -y -qq meson gperf openjdk-17-jdk-headless wget autoconf pkg-config
+RUN wget -nc "https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip" -P .
+RUN unzip ./commandlinetools-linux-11076708_latest.zip -d .
+RUN mkdir cmdline-tools/latest
+RUN mv ./cmdline-tools/bin cmdline-tools/latest/bin
+RUN mv ./cmdline-tools/lib cmdline-tools/latest/lib
+
+RUN yes | ./cmdline-tools/latest/bin/sdkmanager "tools" "platform-tools" "platforms;android-34" "build-tools;34.0.0" "ndk;26.3.11579264"
+
+ENV JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+ENV ANDROID_HOME=/home/wesnoth-android/.android/sdk
+ENV ANDROID_SDK_ROOT=/home/wesnoth-android/.android/sdk
+ENV ANDROID_NDK_ROOT=/home/wesnoth-android/.android/sdk/ndk/26.3.11579264
