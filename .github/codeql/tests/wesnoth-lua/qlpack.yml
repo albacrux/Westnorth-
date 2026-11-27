@@ -1,5 +1,0 @@
-name: local/wesnoth-lua-tests
-dependencies:
-  local/wesnoth-lua: "*"
-extractor: cpp
-tests: queries

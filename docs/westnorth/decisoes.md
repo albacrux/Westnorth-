@@ -1,0 +1,25 @@
+# Registro de decisões
+
+Formato: data — decisão — motivo — quem decidiu. Acrescentar no fim; não reescrever
+entradas antigas (se mudar, criar nova entrada que substitui a anterior).
+
+## 2026-11-27 — sessão de abertura
+
+| # | Decisão | Motivo | Quem |
+|---|---|---|---|
+| D1 | Base do fork = `master` upstream em `260ce914` (1.21.0-dev, 2026-11-26), importado **sem histórico** num único commit | "Ponto mais avançado" pedido pelo dono; é onde o port Android e o CI Android vivem. Sem histórico, o push cabe e o repo fica leve; correções do upstream entram por cherry-pick (funciona sem ancestral comum) | Agente |
+| D2 | Repo de trabalho = `albacrux/Westnorth-` (já existia, privado) | O ambiente só tem acesso a esse repo; criar outro repo não é possível daqui | Agente |
+| D3 | **Tornar o repo público** | Minutos ilimitados de GitHub Actions; a GPL exige publicar o código de qualquer forma ao distribuir o APK; e o app baixa os dados do jogo dos releases do repo, o que só funciona sem login se o repo for público | **Dono** — falta executar (Settings → General → Change visibility) |
+| D4 | Chave de assinatura **debug** commitada (`packaging/android/app/westnorth-debug.keystore`, senha `android`) | Cada APK novo instala por cima do anterior e preserva saves/add-ons. Chave sem valor; regra "nunca commitar chaves" continua para chaves reais | **Dono** |
+| D5 | Pacote Android próprio `io.github.albacrux.westnorth`, nome "Westnorth" | Convive com o Wesnoth oficial no A06 para comparar lado a lado | Agente |
+| D6 | APK só `arm64-v8a`, build de debug, publicado no release `nightly` a cada push na `main` | Alvo é o A06; reduz o tempo de CI para ~1/4 | Agente |
+| D7 | Dados do jogo servidos pelo fork: pacote `core` (snapshot upstream, raramente muda) + `patch` cumulativo (só o que o fork mudou) + `music` do upstream | O app não traz dados no APK; o upstream só publica dados de versões oficiais. Mudanças só em WML chegam ao celular sem APK novo | Agente |
+| D8 | O dono não revisa PRs: o agente mergeia cada ciclo ao terminar (critério em `CLAUDE.md`) | Pedido do dono | **Dono** |
+| D9 | Ordem dos ciclos mantida (UI-1 toque primeiro). Mudanças de C++ marcadas com `// Westnorth:` | Toque é o bloqueio nº 1 de jogabilidade; marcação facilita cherry-pick do upstream | Agente |
+| D10 | Confirmação de movimento por toque = **tocar de novo no mesmo hex** (o caminho fica desenhado no 1º toque). Botões "Confirmar/Desfazer" na tela entram no ciclo do HUD (UI-4) | Resolve sem mexer no tema do HUD; um botão na tela depende do redesenho do HUD | Agente |
+| D11 | Upstream do `master` usa SDL3 (o 1.19.29 testado no A06 usa SDL2). Seguimos com SDL3 | É o caminho do upstream; o comportamento de toque foi reescrito com base no código atual | Agente |
+
+## Pendências do dono
+
+- [ ] D3: mudar o repo para público. Até isso acontecer, o app instalado **não consegue baixar os dados** e os minutos de CI são limitados.
+- [ ] Instalar o APK do release `nightly` no A06 e anotar o que achar (pode ser em issue ou comentário no PR já mergeado).

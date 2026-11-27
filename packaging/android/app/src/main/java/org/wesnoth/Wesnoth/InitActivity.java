@@ -66,8 +66,12 @@ import android.widget.Toast;
 import androidx.documentfile.provider.DocumentFile;
 
 public class InitActivity extends Activity {
+	// Westnorth: game data comes from the fork's own GitHub release, not from
+	// SourceForge, so that WML/theme changes reach the phone without a new APK.
+	// The manifest lists a fixed "core" package (upstream snapshot data) and a
+	// cumulative "patch" package with every data file the fork changed.
 	private final static String MANIFEST_URL =
-		"https://sourceforge.net/projects/wesnoth/files/wesnoth/wesnoth-%s/android-data/manifest.txt/download";
+		"https://github.com/albacrux/Westnorth-/releases/download/nightly/manifest.txt";
 
 	private File dataDir;
 	private Properties status = new Properties();
