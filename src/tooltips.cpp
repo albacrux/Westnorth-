@@ -30,8 +30,11 @@ static lg::log_domain log_font("font");
 
 namespace {
 
-static const int font_size = font::SIZE_SMALL;
-static const int text_width = 400;
+// Westnorth: 20 px text (was SIZE_SMALL, 15) and a wider box: on a touch
+// screen these tips appear when a sidebar item is tapped and are the only way
+// to see e.g. a weapon's specials (docs/westnorth/manual-ui-android.md).
+static const int font_size = 20;
+static const int text_width = 540;
 static const double height_fudge = 0.95;  // An artificial "border" to keep tip text from crowding lower edge of viewing area
 
 struct tooltip

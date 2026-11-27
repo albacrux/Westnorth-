@@ -100,6 +100,11 @@ regras do layout de celular). Documentos detalhados: `diagnostico-toque.md` (eve
   desenhados sobre o retângulo do hex; as barras usam coordenadas relativas ao hex de
   72 px. Tudo o que sai do retângulo do hex deixa rastro, porque só o hex é redesenhado.
 
+- Toque em itens do painel lateral: move o "mouse" para lá, então o tooltip do item
+  aparece (ex.: arma → "Arma, Dano, Golpes"), e itens com página de ajuda abrem a Ajuda
+  (hora do dia → página do período). É o substituto do hover no toque; os tooltips
+  usam 20 px desde o UI-7i (`src/tooltips.cpp`).
+
 ## 6. Ambiente de teste na nuvem
 
 - `run_boost_tests` precisa de **`SDL_VIDEODRIVER=dummy`** (senão os 285 falham por
