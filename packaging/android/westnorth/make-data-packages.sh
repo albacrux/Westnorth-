@@ -32,7 +32,8 @@ DATA_DIRS="data images sounds fonts"
 # Music ships in its own package, reuse upstream's.
 MUSIC_DIR="data/core/music"
 # Translation domains compiled to .mo (po/CMakeLists.txt NORMAL_DOMAINS).
-mapfile -t DOMAINS < <(sed -n '/^set(NORMAL_DOMAINS/,/^)/p' "$repo/po/CMakeLists.txt" | grep -E '^\s+wesnoth' | tr -d '[:space:]' | tr -d ')')
+mapfile -t DOMAINS < <(sed -n '/^set(NORMAL_DOMAINS/,/^)/p' "$repo/po/CMakeLists.txt" | grep -E '^\s+wesnoth' | sed 's/[[:space:])]//g')
+[ "${#DOMAINS[@]}" -gt 10 ] || { echo "could not read translation domains" >&2; exit 1; }
 
 mkdir -p "$out"
 work=$(mktemp -d)

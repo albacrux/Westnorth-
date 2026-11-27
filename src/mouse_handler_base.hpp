@@ -131,6 +131,21 @@ public:
 
 	virtual void touch_action(const map_location hex, bool browse);
 
+	/**
+	 * Westnorth: called when a finger is lifted without having dragged and
+	 * without a long press, i.e. on a real tap. Touch input acts on release,
+	 * never on press, so a long press or a drag can never change the selection.
+	 */
+	virtual void touch_tap(int /*x*/, int /*y*/, const bool /*browse*/)
+	{
+	}
+
+	/** Westnorth: called when a finger drag ends. Defaults to left_drag_end(). */
+	virtual void touch_drag_end(int x, int y, const bool browse)
+	{
+		left_drag_end(x, y, browse);
+	}
+
 	/** Called whenever the left mouse drag has "ended". */
 	virtual void left_drag_end(int /*x*/, int /*y*/, const bool /*browse*/);
 

@@ -532,10 +532,13 @@ void pump()
 			// TODO: Implement SDL_MULTIGESTURE. Some day.
 			case SDL_EVENT_MOUSE_MOTION:
 				if(!events::is_touch(event.motion) && event.motion.state == 0) {
-					return;
+					// Westnorth: skip only this hover event. A `return` here dropped
+					// every other event of the batch, e.g. the button press that
+					// follows a pointer move.
+					continue;
 				}
 
-				if(event.motion.state & SDL_BUTTON(SDL_BUTTON_RIGHT))
+				if(event.motion.state & SDL_BUTTON_MASK(SDL_BUTTON_RIGHT))
 				{
 					// Events are given by SDL in draw space
 					point c = video::game_canvas_size();
@@ -545,8 +548,8 @@ void pump()
 					touch_event.type = SDL_EVENT_FINGER_MOTION;
 					touch_event.tfinger.type = SDL_EVENT_FINGER_MOTION;
 					touch_event.tfinger.timestamp = event.motion.timestamp;
-					touch_event.tfinger.touchId = 1;
-					touch_event.tfinger.fingerId = 1;
+					touch_event.tfinger.touchID = 1;
+					touch_event.tfinger.fingerID = 1;
 					touch_event.tfinger.dx = static_cast<float>(event.motion.xrel) / c.x;
 					touch_event.tfinger.dy = static_cast<float>(event.motion.yrel) / c.y;
 					touch_event.tfinger.x = static_cast<float>(event.motion.x) / c.x;
@@ -554,7 +557,7 @@ void pump()
 					touch_event.tfinger.pressure = 1;
 					::SDL_PushEvent(&touch_event);
 
-					event.motion.state = SDL_BUTTON(SDL_BUTTON_LEFT);
+					event.motion.state = SDL_BUTTON_MASK(SDL_BUTTON_LEFT);
 					event.motion.which = SDL_TOUCH_MOUSEID;
 				}
 				break;
@@ -570,10 +573,10 @@ void pump()
 
 					SDL_Event touch_event;
 					touch_event.type = (event.type == SDL_EVENT_MOUSE_BUTTON_DOWN) ? SDL_EVENT_FINGER_DOWN : SDL_EVENT_FINGER_UP;
-					touch_event.tfinger.type = touch_event.type;
+					touch_event.tfinger.type = static_cast<SDL_EventType>(touch_event.type);
 					touch_event.tfinger.timestamp = event.button.timestamp;
-					touch_event.tfinger.touchId = 1;
-					touch_event.tfinger.fingerId = 1;
+					touch_event.tfinger.touchID = 1;
+					touch_event.tfinger.fingerID = 1;
 					touch_event.tfinger.dx = 0;
 					touch_event.tfinger.dy = 0;
 					touch_event.tfinger.x = static_cast<float>(event.button.x) / c.x;

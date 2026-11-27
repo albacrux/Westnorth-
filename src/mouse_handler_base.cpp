@@ -158,12 +158,22 @@ void mouse_handler_base::mouse_press(const SDL_MouseButtonEvent& event, const bo
 
 	show_menu_ = false;
 	map_location loc = gui().hex_clicked_on(event.x, event.y);
-	mouse_update(browse, loc);
+
+	// Westnorth: a finger has no hover; after a drag, don't pretend it hovers the release hex.
+	const bool touch_drag_ended = events::is_touch(event) && !event.down && dragging_started_ && dragging_touch_;
+	if(!touch_drag_ended) {
+		mouse_update(browse, loc);
+	}
 
 	if(events::is_touch(event)) {
-		static std::chrono::steady_clock::time_point touch_timestamp;
+		// Westnorth: measure the press with the events' own timestamps (SDL3: ns).
+		// Using the time the event is *processed* turned short taps into long
+		// presses whenever the game was busy (slow phones, first image loads).
+		using touch_clock = std::chrono::steady_clock;
+		static touch_clock::time_point touch_timestamp;
 		const auto touch_time = gui2::settings::popup_show_delay;
-		const auto now = std::chrono::steady_clock::now();
+		const auto now = touch_clock::time_point{std::chrono::duration_cast<touch_clock::duration>(
+			std::chrono::nanoseconds{event.timestamp})};
 
 		if(event.down == true) {
 			cancel_dragging();
@@ -173,11 +183,18 @@ void mouse_handler_base::mouse_press(const SDL_MouseButtonEvent& event, const bo
 				left_click(event.x, event.y, browse);
 			}
 		} else if(event.down == false) {
+			const bool was_minimap_scroll = minimap_scrolling_;
 			minimap_scrolling_ = false;
+
+			// Westnorth: classify the gesture before the drag state is cleared.
+			bool is_tap = !dragging_started_ && !was_minimap_scroll && dragging_touch_;
 
 			if (!dragging_started_ && touch_timestamp != std::chrono::steady_clock::time_point{}) {
 				auto dt = now - touch_timestamp;
 				if (dt > touch_time) {
+					// Long press: the context menu was (or will be) shown by
+					// controller_base, so this is not a tap.
+					is_tap = false;
 					if (!mouse_button_event(event, SDL_BUTTON_RIGHT, loc, true)) {
 						// BUG: This function won't do anything in the game, need right_mouse_up()
 						right_click(event.x, event.y, browse); // show_menu_ = true;
@@ -190,6 +207,9 @@ void mouse_handler_base::mouse_press(const SDL_MouseButtonEvent& event, const bo
 			clear_dragging(event, browse);
 			mouse_button_event(event, SDL_BUTTON_LEFT, loc);
 			left_mouse_up(event.x, event.y, browse);
+			if(is_tap) {
+				touch_tap(event.x, event.y, browse);
+			}
 			clear_drag_from_hex();
 		}
 	} else if(is_left_click(event)) {
@@ -269,7 +289,9 @@ void mouse_handler_base::mouse_press(const SDL_MouseButtonEvent& event, const bo
 		cursor::set_dragging(false);
 	}
 
-	mouse_update(browse, loc);
+	if(!touch_drag_ended) {
+		mouse_update(browse, loc);
+	}
 }
 
 bool mouse_handler_base::is_left_click(const SDL_MouseButtonEvent& event) const
@@ -410,8 +432,7 @@ void mouse_handler_base::clear_dragging(const SDL_MouseButtonEvent& event, bool 
 
 		if(dragging_touch_) {
 			dragging_touch_ = false;
-			// Maybe to do: create touch_drag_end(). Do panning and what else there. OTOH, it's fine now.
-			left_drag_end(event.x, event.y, browse);
+			touch_drag_end(event.x, event.y, browse);
 		}
 
 		if(dragging_left_) {

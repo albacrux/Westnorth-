@@ -34,6 +34,8 @@ struct preferences_list_defines
 	ADDPREF(acquaintance)
 	/** whether to get the add-on icons when downloading the add-ons list */
 	ADDPREF(addon_icons)
+	/** Westnorth: touch screens move a unit on the first tap instead of asking for a confirmation tap */
+	ADDPREF(touch_move_immediately)
 	/** the sort direction, ie: ascending */
 	ADDPREF(addon_manager_saved_order_direction)
 	/** the name of the column in the add-ons manager to use by default to sort results */
@@ -593,7 +595,8 @@ struct preferences_list_defines
 		reach_map_darken_opacity,
 		reach_map_darken_tex,
 		reach_map_color,
-		reach_map_enemy_color
+		reach_map_enemy_color,
+		touch_move_immediately
 	)
 };
 using prefs_list = string_enums::enum_base<preferences_list_defines>;

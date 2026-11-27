@@ -19,7 +19,16 @@ entradas antigas (se mudar, criar nova entrada que substitui a anterior).
 | D10 | Confirmação de movimento por toque = **tocar de novo no mesmo hex** (o caminho fica desenhado no 1º toque). Botões "Confirmar/Desfazer" na tela entram no ciclo do HUD (UI-4) | Resolve sem mexer no tema do HUD; um botão na tela depende do redesenho do HUD | Agente |
 | D11 | Upstream do `master` usa SDL3 (o 1.19.29 testado no A06 usa SDL2). Seguimos com SDL3 | É o caminho do upstream; o comportamento de toque foi reescrito com base no código atual | Agente |
 
+## 2026-11-27 — UI-1
+
+| # | Decisão | Motivo | Quem |
+|---|---|---|---|
+| D12 | `CORE_GEN` = 2 | O script de pacotes gerava o `core` sem traduções (lista de domínios mal lida). O 1º build ainda não tinha publicado nada (403 no release com o repo privado) | Agente |
+| D13 | Toque processado ao soltar; atalhos de toque (`touchhex`, `selectmoveaction`) desligados para toque | Causa raiz da seleção que se desfaz (ver `diagnostico-toque.md`) | Agente |
+| D14 | Emulação de toque do desktop corrigida e usada nos testes de UI | Única forma de validar toque na nuvem | Agente |
+
 ## Pendências do dono
 
-- [ ] D3: mudar o repo para público. Até isso acontecer, o app instalado **não consegue baixar os dados** e os minutos de CI são limitados.
+- [x] D3: repo público (feito pelo dono em 2026-11-27).
+- [ ] Apagar o ramo `debug-release-perms` no GitHub (sobra de um teste; o ambiente do agente não consegue apagar ramos).
 - [ ] Instalar o APK do release `nightly` no A06 e anotar o que achar (pode ser em issue ou comentário no PR já mergeado).
