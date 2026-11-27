@@ -1,0 +1,69 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+.side { position: absolute; top: 70px; width: 330px; bottom: 120px; }
+.side .art { position: absolute; bottom: 150px; width: 300px; height: 300px; object-fit: cover; object-position: top; filter: drop-shadow(0 4px 10px rgba(0,0,0,.9)); }
+.side .who { position: absolute; bottom: 92px; left: 0; right: 0; }
+.side .hp { position: absolute; bottom: 10px; left: 0; right: 0; }
+.mid { position: absolute; left: 540px; right: 540px; top: 70px; bottom: 120px; }
+.tabs { display: flex; gap: 12px; }
+.tab { flex: 1; height: 78px; border-radius: 12px; border: 1px solid var(--border-dark); background: rgba(0,0,0,.45); display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 16px; }
+.tab.on { border: 2px solid var(--border-bright); background: linear-gradient(180deg, rgba(42,90,132,.6), rgba(15,42,68,.6)); }
+.tab img { width: 40px; height: 40px; }
+.row { display: grid; grid-template-columns: 1fr 140px 1fr; align-items: center; height: 64px; border-bottom: 1px solid rgba(114,79,46,.5); }
+.row .l { text-align: right; font: 900 38px Lato; color: var(--cream); padding-right: 18px; }
+.row .r { text-align: left; font: 900 38px Lato; color: var(--cream); padding-left: 18px; }
+.row .c { text-align: center; }
+.hpbar { height: 22px; border-radius: 6px; position: relative; overflow: hidden; background: rgba(0,0,0,.6); border: 1px solid rgba(213,213,213,.6); }
+.hpbar .now { position: absolute; left: 0; top: 0; bottom: 0; background: var(--good); }
+.hpbar .lost { position: absolute; top: 0; bottom: 0; background: repeating-linear-gradient(45deg, rgba(255,0,0,.75) 0 6px, rgba(120,0,0,.75) 6px 12px); }
+.outcome { display: flex; gap: 12px; margin-top: 18px; }
+.outcome > div { flex: 1; text-align: center; padding: 10px; border-radius: 10px; background: rgba(0,0,0,.45); border: 1px solid var(--border-dark); font-size: 16px; }
+.outcome b { display: block; font: 900 34px Lato; }
+</style></head><body>
+<div class="map"></div><div class="dim"></div>
+
+<div class="panel" style="left:20px;top:16px;right:20px;bottom:16px;border-radius:16px">
+  <div class="title abs" style="left:28px;top:16px;font-size:28px;font-weight:900">Atacar</div>
+  <div class="abs muted" style="right:28px;top:22px;font-size:17px">ⓘ Cálculo detalhado</div>
+
+  <!-- attacker -->
+  <div class="side" style="left:40px">
+    <img class="art" src="a/spearman.webp" style="left:0">
+    <div class="who"><div class="title" style="font:900 30px Lato">Lanceiro</div><div class="muted" style="font-size:17px">Nv 1 · ordeiro <span class="good">+25%</span> · Defesa 40%</div></div>
+    <div class="hp">
+      <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:6px"><span class="label">HP</span><span class="cream" style="font:900 34px Lato">28</span><span class="muted" style="font-size:22px">→</span><span style="font:900 34px Lato;color:var(--yellow)">~22</span><span class="muted" style="font-size:17px">/36</span></div>
+      <div class="hpbar" style="width:320px"><div class="now" style="width:61%"></div><div class="lost" style="left:61%;width:17%"></div></div>
+    </div>
+  </div>
+
+  <!-- defender -->
+  <div class="side" style="right:40px;text-align:right">
+    <img class="art" src="a/thief.webp" style="right:0;transform:scaleX(-1)">
+    <div class="who"><div class="title" style="font:900 30px Lato">Ladrão</div><div class="muted" style="font-size:17px">Nv 1 · caótico <span class="bad">−25%</span> · Defesa 60%</div></div>
+    <div class="hp">
+      <div style="display:flex;align-items:baseline;gap:10px;margin-bottom:6px;justify-content:flex-end"><span class="label">HP</span><span class="cream" style="font:900 34px Lato">24</span><span class="muted" style="font-size:22px">→</span><span style="font:900 34px Lato;color:var(--bad)">~11</span><span class="muted" style="font-size:17px">/24</span></div>
+      <div class="hpbar" style="width:320px;margin-left:auto"><div class="now" style="width:46%;background:var(--yellow)"></div><div class="lost" style="left:46%;width:54%"></div></div>
+    </div>
+  </div>
+
+  <!-- comparison -->
+  <div class="mid">
+    <div class="tabs">
+      <div class="tab on"><img src="a/spear.png"><div><b class="cream" style="font-size:20px">lança</b><br><span class="muted">corpo a corpo</span></div><img src="a/dagger-human.png"></div>
+      <div class="tab"><img src="a/javelin-human.png"><div><b class="cream" style="font-size:20px">azagaia</b><br><span class="muted">à distância</span></div><span class="muted" style="width:40px;text-align:center">—</span></div>
+    </div>
+    <div style="margin-top:14px">
+      <div class="row"><div class="l">8×3</div><div class="c label">Dano</div><div class="r">3×2</div></div>
+      <div class="row"><div class="l" style="color:var(--yellow)">40%</div><div class="c label">Acerto</div><div class="r" style="color:var(--good)">60%</div></div>
+      <div class="row" style="border:0"><div class="l" style="font-size:18px;font-weight:700;color:var(--title)">iniciativa</div><div class="c label">Especial</div><div class="r muted" style="font-size:18px;font-weight:700">—</div></div>
+    </div>
+    <div class="outcome">
+      <div><span class="muted">Derrotar o inimigo</span><b class="good">18%</b></div>
+      <div><span class="muted">Sua unidade morrer</span><b class="cream">0%</b></div>
+    </div>
+  </div>
+
+  <div class="btn" style="left:40px;bottom:22px;width:220px;height:76px;font-size:24px">Cancelar</div>
+  <div class="btn primary" style="right:40px;bottom:22px;width:340px;height:86px;font-size:32px;border-radius:43px">⚔  Atacar</div>
+</div>
+</body></html>

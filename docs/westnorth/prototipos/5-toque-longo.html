@@ -1,0 +1,29 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+.sheet { left: 540px; top: 150px; width: 420px; padding: 10px; }
+.it { display: flex; align-items: center; gap: 16px; height: 72px; padding: 0 16px; border-radius: 10px; font-size: 22px; color: var(--text); }
+.it .ic { width: 44px; height: 44px; border-radius: 10px; background: rgba(0,0,0,.5); border: 1px solid var(--border-dark); display: flex; align-items: center; justify-content: center; font-size: 22px; color: var(--title); }
+.it.main { color: var(--cream); font-weight: 700; }
+.it + .it { border-top: 1px solid rgba(114,79,46,.45); }
+.zoom { right: 16px; top: 190px; width: 72px; padding: 8px; display: flex; flex-direction: column; gap: 8px; }
+.zoom .btn { position: static; width: 56px; height: 56px; font-size: 28px; }
+</style></head><body>
+<div class="map"></div>
+<img class="sprite" src="a/lieutenant_r.png" style="left:150px;top:318px">
+<div class="hex" style="left:150px;top:326px;background:rgba(255,255,255,.15);outline:2px solid #fff"></div>
+<div class="abs" style="left:240px;top:330px;width:300px;height:3px;background:linear-gradient(90deg,rgba(185,158,75,0),var(--border-bright))"></div>
+
+<div class="panel sheet">
+  <div class="label" style="padding:6px 16px 10px">Tenente · Fortaleza</div>
+  <div class="it main"><span class="ic"><img src="a/gold.png" style="height:24px"></span>Recrutar</div>
+  <div class="it main"><span class="ic">↩</span>Convocar veteranos</div>
+  <div class="it main"><span class="ic" style="color:var(--cream)">⇄</span>Mudar de classe</div>
+  <div class="it"><span class="ic">ⓘ</span>Sobre a unidade</div>
+  <div class="it"><span class="ic">⛰</span>Sobre o terreno</div>
+  <div class="it" style="color:var(--muted)"><span class="ic">✎</span>Rótulo no mapa</div>
+</div>
+
+<div class="panel zoom"><div class="btn">＋</div><div class="btn">－</div></div>
+<div class="btn" style="left:16px;top:12px;width:60px;height:52px;font-size:30px">☰</div>
+<div class="btn primary" style="right:16px;bottom:16px;width:300px;height:92px;font-size:28px;border-radius:46px">Terminar Turno</div>
+</body></html>

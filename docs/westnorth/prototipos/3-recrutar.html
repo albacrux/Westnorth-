@@ -1,0 +1,48 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+.grid { position: absolute; left: 28px; top: 76px; width: 930px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.rc { height: 236px; border-radius: 14px; border: 1px solid var(--border-dark); background: rgba(0,0,0,.45); position: relative; text-align: center; }
+.rc.on { border: 2px solid var(--border-bright); background: linear-gradient(180deg, rgba(42,90,132,.55), rgba(15,42,68,.55)); box-shadow: 0 0 18px rgba(185,158,75,.35); }
+.rc.off { opacity: .45; }
+.rc > img { width: 120px; height: 120px; margin-top: 8px; image-rendering: pixelated; }
+.rc .n { font: 900 24px Lato; color: var(--title); }
+.rc .d { font-size: 15px; color: var(--muted); margin-top: 2px; }
+.cost { position: absolute; right: 10px; top: 10px; display: flex; align-items: center; gap: 4px; padding: 4px 10px; border-radius: 999px; background: rgba(0,0,0,.6); border: 1px solid var(--border-dark); font: 900 20px Lato; color: var(--cream); }
+.cost img { height: 20px; }
+.detail { position: absolute; left: 982px; right: 28px; top: 76px; bottom: 28px; }
+.stat { text-align: center; } .stat b { display: block; font: 900 32px Lato; color: var(--cream); }
+.w { display: flex; align-items: center; gap: 10px; font-size: 18px; margin-top: 8px; }
+.w img { width: 36px; height: 36px; }
+</style></head><body>
+<div class="map"></div><div class="dim"></div>
+<div class="panel" style="left:20px;top:16px;right:20px;bottom:16px;border-radius:16px">
+  <div class="title abs" style="left:28px;top:18px;font-size:28px;font-weight:900">Recrutar</div>
+  <div class="abs chip" style="left:690px;top:16px;font-size:20px"><img src="a/gold.png" style="height:22px"><b class="cream">100</b><span class="muted" style="font-size:15px">disponível</span></div>
+
+  <div class="grid">
+    <div class="rc on"><div class="cost"><img src="a/gold.png">14</div><img src="a/spearman_r.png"><div class="n">Escudeiro</div><div class="d">Segura a linha: firme na defesa</div></div>
+    <div class="rc"><div class="cost"><img src="a/gold.png">18</div><img src="a/cavalryman_r.png"><div class="n">Cavaleiro</div><div class="d">Rápido; o golpe deixa o alvo lento</div></div>
+    <div class="rc"><div class="cost"><img src="a/gold.png">16</div><img src="a/bowman_r.png"><div class="n">Arqueiro</div><div class="d">Arco certeiro: 60% no mínimo</div></div>
+    <div class="rc"><div class="cost"><img src="a/gold.png">20</div><img src="a/white_r.png"><div class="n">Mago Branco</div><div class="d">Cura os aliados ao lado</div></div>
+    <div class="rc"><div class="cost"><img src="a/gold.png">17</div><img src="a/mage_r.png"><div class="n">Mago Negro</div><div class="d">Magia forte, mas frágil</div></div>
+    <div class="rc off"><div class="cost" style="color:var(--bad)"><img src="a/gold.png">120</div><img src="a/lieutenant_r.png"><div class="n">Tenente</div><div class="d">Ouro insuficiente</div></div>
+  </div>
+
+  <div class="detail">
+    <img src="a/spearman.webp" style="position:absolute;right:-8px;top:-40px;width:300px;height:300px;object-fit:cover;object-position:top;opacity:.95;filter:drop-shadow(0 4px 10px #000)">
+    <div class="title" style="font:900 34px Lato;margin-top:6px">Escudeiro</div>
+    <div class="muted" style="font-size:17px">Nv 1 · ordeiro · humano</div>
+    <div style="font-size:18px;margin-top:12px;width:250px">Segura a linha: <b class="cream">firme</b> — resistências dobram na defesa.</div>
+    <div style="display:flex;gap:26px;margin-top:70px">
+      <div class="stat"><span class="label">HP</span><b>36</b></div>
+      <div class="stat"><span class="label">MP</span><b>5</b></div>
+      <div class="stat"><span class="label">XP</span><b>42</b></div>
+      <div class="stat"><span class="label">Custo</span><b>14</b></div>
+    </div>
+    <div class="w"><img src="a/spear.png"><b class="cream" style="font-size:22px">7×3</b> lança <span class="muted">· perfurante · iniciativa</span></div>
+    <div class="w"><img src="a/javelin-human.png"><b class="cream" style="font-size:22px">6×1</b> azagaia <span class="muted">· perfurante</span></div>
+    <div class="btn" style="left:0;bottom:0;width:170px;height:76px;font-size:22px">Cancelar</div>
+    <div class="btn primary" style="right:0;bottom:0;width:360px;height:86px;font-size:28px;border-radius:43px">Recrutar · <img src="a/gold.png" style="height:24px">14</div>
+  </div>
+</div>
+</body></html>

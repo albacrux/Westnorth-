@@ -1,0 +1,36 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+.opts { position: absolute; left: 60px; right: 60px; top: 120px; display: flex; gap: 24px; }
+.op { flex: 1; height: 470px; border-radius: 16px; border: 1px solid var(--border-dark); background: rgba(0,0,0,.5); position: relative; overflow: hidden; }
+.op.on { border: 2px solid var(--border-bright); background: linear-gradient(180deg, rgba(42,90,132,.55), rgba(15,42,68,.7)); box-shadow: 0 0 24px rgba(185,158,75,.35); }
+.op .art { position: absolute; right: -20px; top: -10px; width: 280px; height: 280px; object-fit: cover; object-position: top; opacity: .9; }
+.op .spr { position: absolute; left: 20px; top: 20px; width: 110px; height: 110px; image-rendering: pixelated; }
+.op .body { position: absolute; left: 24px; right: 24px; bottom: 20px; }
+.op .n { font: 900 32px Lato; color: var(--title); }
+.ch { display: flex; align-items: center; gap: 10px; font-size: 18px; margin-top: 8px; }
+.ch b { color: var(--cream); font-size: 22px; } .up { color: var(--good); font-weight: 900; }
+</style></head><body>
+<div class="map"></div><div class="dim"></div>
+<div class="abs" style="left:0;right:0;top:36px;text-align:center">
+  <div class="title" style="font:900 36px Lato">Lanceiro evoluiu!</div>
+  <div class="muted" style="font-size:18px;margin-top:4px">Escolha o caminho. A unidade recupera toda a vida.</div>
+</div>
+<div class="opts">
+  <div class="op on"><img class="art" src="a/pikeman.webp"><img class="spr" src="a/pikeman_r.png">
+    <div class="body"><div class="n">Piqueiro</div><div class="muted" style="font-size:16px">Muralha contra cavalaria</div>
+      <div class="ch"><span class="label" style="width:60px">HP</span><b>36 → 55</b><span class="up">+19</span></div>
+      <div class="ch"><img src="a/spear.png" style="width:30px"><b>10×3</b> pique <span class="muted">· iniciativa</span></div>
+      <div class="ch"><span class="label" style="width:60px">Resist.</span><span class="up">perfurante 40%</span></div></div></div>
+  <div class="op"><img class="art" src="a/javelineer.webp"><img class="spr" src="a/javelineer_r.png">
+    <div class="body"><div class="n">Javelineiro</div><div class="muted" style="font-size:16px">Ataque à distância mais forte</div>
+      <div class="ch"><span class="label" style="width:60px">HP</span><b>36 → 48</b><span class="up">+12</span></div>
+      <div class="ch"><img src="a/javelin-human.png" style="width:30px"><b>11×2</b> azagaia <span class="muted">· distância</span></div>
+      <div class="ch"><img src="a/spear.png" style="width:30px"><b>8×3</b> lança</div></div></div>
+  <div class="op"><img class="art" src="a/swordsman.webp"><img class="spr" src="a/swordsman_r.png">
+    <div class="body"><div class="n">Espadachim</div><div class="muted" style="font-size:16px">Corpo a corpo pesado</div>
+      <div class="ch"><span class="label" style="width:60px">HP</span><b>36 → 55</b><span class="up">+19</span></div>
+      <div class="ch"><img src="a/sword-human.png" style="width:30px"><b>8×4</b> espada <span class="muted">· cortante</span></div>
+      <div class="ch"><span class="label" style="width:60px">Resist.</span><span class="up">cortante 20%</span></div></div></div>
+</div>
+<div class="btn primary" style="left:630px;bottom:26px;width:340px;height:80px;font-size:28px;border-radius:40px">Confirmar</div>
+</body></html>
