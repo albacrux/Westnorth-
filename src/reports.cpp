@@ -1791,6 +1791,44 @@ REPORT_GENERATOR(position, rc)
 	return text_report(str.str());
 }
 
+// Westnorth: the phone sidebar's hex line. Like "position" but without the
+// coordinates (rarely useful while playing) and with words instead of
+// "40%,1": what the displayed unit would get on the hex under the finger.
+REPORT_GENERATOR(westnorth_hex, rc)
+{
+	const gamemap &map = rc.map();
+	map_location hex = rc.screen().mouseover_hex();
+	const map_location& displayed_unit_hex = rc.screen().displayed_unit_hex();
+	const map_location& selected_hex = rc.screen().selected_hex();
+	if(!map.on_board(hex)) {
+		if(!map.on_board(selected_hex)) {
+			return config();
+		}
+		hex = selected_hex;
+	}
+
+	const t_translation::terrain_code terrain = map[hex];
+	if(t_translation::terrain_matches(terrain, t_translation::ALL_OFF_MAP)) {
+		return config();
+	}
+
+	const unit *u = get_visible_unit(rc);
+	if(!u || (displayed_unit_hex != hex && displayed_unit_hex != selected_hex)
+		|| rc.screen().viewing_team().shrouded(hex))
+	{
+		return config();
+	}
+
+	const int defense = 100 - u->defense_modifier(terrain, hex);
+	const int move_cost = u->movement_cost(terrain);
+	std::ostringstream str;
+	str << _("hex^Defense") << " " << defense << "%";
+	if(move_cost < movetype::UNREACHABLE) {
+		str << " · " << _("hex^Moves") << " " << move_cost;
+	}
+	return text_report(str.str());
+}
+
 REPORT_GENERATOR(side_playing, rc)
 {
 	const team &active_team = rc.screen().playing_team();

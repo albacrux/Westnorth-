@@ -8,6 +8,8 @@ de classes estilo tática. Documentos de projeto em `docs/westnorth/`:
 - `ui-mobile-brief.md` — problemas de UI observados no A06 e metas de toque
 - `decisoes.md` — registro de decisões (data, decisão, motivo). Acrescente, não reescreva.
 - `diagnostico-toque.md` — como o toque vira clique hoje no código
+- `manual-ui-android.md` — tamanhos (px no A06), estilo e hierarquia de informação
+  (nível 1/2/3) que toda mudança de UI deve seguir
 - `achados-ui.md` — **ler antes de investigar UI**: o que já foi verificado (tema, GUI2,
   Android × desktop, toque, ambiente de teste) e armadilhas que custaram ciclos.
   Ao descobrir algo novo de UI ou do ambiente, registrar lá no mesmo PR.
