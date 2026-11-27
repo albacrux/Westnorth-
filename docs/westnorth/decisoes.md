@@ -117,6 +117,7 @@ entradas antigas (se mudar, criar nova entrada que substitui a anterior).
 | D51 | Etapa 3: Recrutar numa janela própria (`westnorth_recruit`, mesmo C++ do diálogo de unidades) em tela cheia com **grade de cartões** (arte 144 px, nome, custo; sem ouro → cinza), detalhes da escolhida ao lado. Recrutar e Convocar também no menu ☰ do tema Westnorth | Protótipo `3-recrutar.jpg`. Pendências: papel da classe no cartão e retrato grande no painel de detalhes | Agente |
 | D52 | Zoom com dois dedos implementado a partir dos eventos de dedo (não dos eventos de pinça do SDL 3.4, que dependem do backend); um nível de zoom por 25% de variação da distância; centrado na tela | Pedido do dono; funciona igual em qualquer aparelho e é testável por teste unitário | Agente |
 | D53 | Etapa 4: escolha de evolução em tela cheia com um cartão por caminho, lado a lado (retrato, nome, HP/MP/XP, armas, habilidades); o painel de detalhes antigo sai. Ainda sem o "antes → depois" do protótipo (o diálogo não recebe a unidade original) | Protótipo `4-evolucao.jpg` | Agente |
+| D54 | Etapa 5: no celular os menus usam ícones de 36 px (`icons/action/<comando>_36.png` quando existir, senão o ícone de 18 px dobrado), com ícones novos em dourado para Recrutar, Convocar, descrições, rótulos e Continuar; no tema Westnorth o zoom sai do toque longo e vira botões ＋/− fixos na borda direita (além da pinça) | Protótipo `5-toque-longo.jpg`. Sem cabeçalho com nome da unidade/terreno (o menu do motor não tem título) | Agente |
 
 ## Pendências do dono
 

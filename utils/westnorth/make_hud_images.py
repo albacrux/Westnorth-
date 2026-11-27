@@ -89,6 +89,7 @@ def hamburger(im):
 states("hud_menu", (60, 52), 12, NORMAL, ACTIVE, BORDER, 1, hamburger)
 states("hud_endturn", (300, 92), 46, PRIMARY, PRIMARY_ACTIVE, BORDER_BRIGHT, 2)
 states("hud_round", (84, 84), 42, NORMAL, ACTIVE, BORDER, 1)
+states("hud_round64", (64, 64), 32, NORMAL, ACTIVE, BORDER, 1)
 
 # Invisible button over the unit card; a faint highlight while pressed.
 for suffix, alpha in (("", 0), ("-active", 0), ("-pressed", 28), ("-active-pressed", 28)):
