@@ -1,0 +1,5 @@
+# Westnorth: map with units (orbs, crowns, HP/XP bars) on: wesnoth -t westnorth_classes_demo
+sleep 30
+tap 1200 650
+sleep 1
+shot map

@@ -102,7 +102,9 @@ struct energy_bar
 	static constexpr point def_origin{14, 13};
 
 	/** Default width for all bars. */
-	static constexpr int def_w = 4;
+	// Westnorth: 6 instead of 4 (before indicator_scale below), so HP/XP can be
+	// read on a phone.
+	static constexpr int def_w = 6;
 
 	/** Distance between the top left corner of subsequent bars. */
 	static constexpr int spacing = def_w + 1;
@@ -132,21 +134,32 @@ struct energy_bar
 	}
 };
 
+/**
+ * Westnorth: the on-map status indicators (orb, crown, loyal/hero icons and the
+ * HP/XP bars) are drawn this much larger, anchored at the top-left corner of the
+ * hex like upstream's, so they stay aligned with each other and readable on a
+ * phone (docs/westnorth/manual-ui-android.md).
+ */
+constexpr float indicator_scale = 1.35f;
+
 void draw_bar(int index, const energy_bar& data, const rect& bounds)
 {
 	// All absolute bar coordinates are normalized relative to the standard 72px hex.
 	using game_config::tile_size;
+	const float k = indicator_scale;
 
 	SDL_FPoint p1{
-		float(energy_bar::def_origin.x + energy_bar::spacing * index) / tile_size,
-		float(energy_bar::def_origin.y                              ) / tile_size,
+		k * float(energy_bar::def_origin.x + energy_bar::spacing * index) / tile_size,
+		k * float(energy_bar::def_origin.y                              ) / tile_size,
 	};
 
 	// If the top of the bar sits 13px from the top of the scaled hex rect, the bottom
 	// of the bar should extend no closer than 13px from the bottom.
+	// (Westnorth: the bar is scaled but must stay inside the hex: only the hex is
+	// redrawn when it changes.)
 	SDL_FPoint p2{
-		std::min(p1.x + float(data.def_w) / tile_size, 1.0f - p1.x),
-		std::min(p1.y + float(data.bar_h) / tile_size, 1.0f - p1.y)
+		std::min(p1.x + k * float(data.def_w) / tile_size, 1.0f - p1.x),
+		std::min(p1.y + k * float(data.bar_h) / tile_size, 1.0f - p1.y)
 	};
 
 	// Full bar dimensions
@@ -391,8 +404,11 @@ void unit_drawer::redraw_unit(const unit& u) const
 				const rect& dest) {
 				const rect shifted = dest.shifted_by(shift);
 
+				// Westnorth: see indicator_scale.
+				const rect scaled{shifted.x, shifted.y,
+					int(shifted.w * indicator_scale), int(shifted.h * indicator_scale)};
 				for(const texture& tex : textures) {
-					draw::blit(tex, shifted);
+					draw::blit(tex, scaled);
 				}
 
 				for(std::size_t i = 0; i < bars.size(); ++i) { // bar bar bar
