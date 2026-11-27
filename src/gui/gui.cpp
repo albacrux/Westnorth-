@@ -28,6 +28,8 @@
 #include "serialization/schema_validator.hpp"
 #include "wml_exception.hpp"
 
+#include <cstdlib>
+
 namespace gui2
 {
 namespace
@@ -37,6 +39,12 @@ try {
 	preproc_map defines;
 #ifdef __ANDROID__
 	defines.try_emplace("ANDROID");
+#else
+	// Westnorth: WESTNORTH_ANDROID=1 lays out the GUI with the Android sizes on
+	// desktop, so screenshots and the 1600x720 smoke test match the phone.
+	if(const char* v = std::getenv("WESTNORTH_ANDROID"); v && *v && *v != '0') {
+		defines.try_emplace("ANDROID");
+	}
 #endif
 	schema_validation::schema_validator validator{filesystem::get_wml_location("schema/gui.cfg").value()};
 	return io::read(*preprocess_file(path, defines), &validator);
