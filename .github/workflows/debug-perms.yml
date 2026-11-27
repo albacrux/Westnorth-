@@ -1,0 +1,18 @@
+name: debug-perms
+on:
+  push:
+    branches: [ debug-release-perms ]
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - run: gh api repos/$GH_REPO --jq '{private, visibility, permissions}' || true
+      - run: gh api repos/$GH_REPO/actions/permissions/workflow || true
+      - run: gh api -X POST repos/$GH_REPO/git/refs -f ref=refs/tags/debug-probe -f sha=${{ github.sha }} && echo TAG_OK || true
+      - run: gh release create debug-probe --prerelease --notes probe && echo RELEASE_OK || true
+      - run: gh release delete debug-probe --yes --cleanup-tag || gh api -X DELETE repos/$GH_REPO/git/refs/tags/debug-probe || true
