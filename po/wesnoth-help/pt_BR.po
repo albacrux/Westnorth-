@@ -3678,75 +3678,41 @@ msgstr "Add-ons"
 msgid "Commands"
 msgstr "Comandos"
 
-#
 # File: data/core/help.cfg, line: 127
 # File: data/core/help.cfg, line: 127
 # File: data/core/help.cfg, line: 127
 #. [topic]: id=..introduction
 #: data/core/help.cfg:97
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "<italic>text='Battle for Wesnoth'</italic> is a turn-based fantasy "
-#| "strategy game somewhat unusual among modern strategy games. While other "
-#| "games strive for complexity, <italic>text='Battle for Wesnoth'</italic> "
-#| "strives for simplicity of both rules and gameplay. This does not make the "
-#| "game simple, however — from these simple rules arises a wealth of "
-#| "strategy, making the game easy to learn but a challenge to master.\n"
-#| "\n"
-#| "The following pages outline all you need to know to play Wesnoth. As you "
-#| "play, new information is added to the various categories as you come "
-#| "across new aspects of the game. For more detailed information on special "
-#| "situations and exceptions, follow the included links."
 msgid ""
 "<i>Battle for Wesnoth</i> is a turn-based fantasy strategy game somewhat "
-"unusual among modern strategy games. While other games strive for "
-"complexity, <i>Battle for Wesnoth</i> strives for simplicity of both rules "
-"and gameplay. This does not make the game simple, however — from these "
-"simple rules arises a wealth of strategy, making the game easy to learn but "
-"a challenge to master."
+"unusual among modern strategy games. While other games strive for complexity,"
+" <i>Battle for Wesnoth</i> strives for simplicity of both rules and gameplay."
+" This does not make the game simple, however — from these simple rules arises"
+" a wealth of strategy, making the game easy to learn but a challenge to "
+"master."
 msgstr ""
-"\n"
-"\n"
-"<italic>text='Battle for Wesnoth'</italic> é um jogo de fantasia e "
-"estratégia em turnos um pouco diferente doutros jogos modernos de "
-"estratégia. Enquanto outros jogos almejam complexidade, <italic>text='Battle "
-"for Wesnoth'</italic> almeja simplicidade de regras e ações dentro do jogo. "
-"Entretanto, isso não torna o jogo simples, pois esta fundação simples abre a "
-"possibilidade para que o jogo seja simples de aprender mas difícil de "
-"dominar\n"
-"\n"
-"As próximas páginas contêm tudo o que você precisa saber para jogar Wesnoth. "
-"Conforme você joga, novas informações serão adicionadas as várias categorias "
-"conforme você se depara com novos aspectos do jogo. Para mais detalhes sobre "
-"casos especiais e exceções, dê uma olhada nos links."
+"<i>Batalha por Wesnoth</i> é um jogo de estratégia por turnos de fantasia um "
+"tanto incomum entre os jogos de estratégia modernos. Enquanto outros jogos "
+"buscam complexidade, <i>Batalha por Wesnoth</i> busca simplicidade nas regras"
+" e na jogabilidade. Isso não torna o jogo simples — dessas regras simples "
+"nasce uma riqueza de estratégias, o que torna o jogo fácil de aprender, mas "
+"um desafio de dominar."
 
-#
 # File: data/core/help.cfg, line: 142
 # File: data/core/help.cfg, line: 142
 # File: data/core/help.cfg, line: 142
 #. [topic]: id=..introduction
 #: data/core/help.cfg:99
-#, fuzzy
-#| msgid ""
-#| "These pages outline all you need to know to play <italic>text='Battle for "
-#| "Wesnoth'</italic>. They cover how to play and the basic mechanics behind "
-#| "the game. As you play the game, new information is added to these pages "
-#| "as you come across new aspects of the game. For more detailed information "
-#| "on special situations and exceptions, please follow the links included."
 msgid ""
 "The following pages outline all you need to know to play Wesnoth. As you "
 "play, new information is added to the various categories as you come across "
 "new aspects of the game. For more detailed information on special situations "
 "and exceptions, follow the included links."
 msgstr ""
-"Estas páginas delineiam tudo o que você precisa saber para jogar Battle for "
-"Wesnoth. Elas cobrem como jogar, e os mecanismos básicos por trás do jogo. "
-"Conforme você jogar, novas informações serão adicionadas a esta página, na "
-"medida em que você encontrar novos aspectos do jogo. Para informações mais "
-"detalhadas a respeito de situações especiais e exceções, por favor siga os "
-"links inclusos."
+"As páginas a seguir resumem tudo o que você precisa saber para jogar Wesnoth."
+" À medida que você joga, novas informações são acrescentadas às categorias "
+"conforme você encontra novos aspectos do jogo. Para detalhes sobre situações "
+"especiais e exceções, siga os links."
 
 #
 # File: data/core/help.cfg, line: 152
@@ -3759,64 +3725,22 @@ msgstr "Sobre o Jogo"
 
 #. [topic]: id=about_game
 #: data/core/help.cfg:106
-#, fuzzy
-#| msgid ""
-#| "The game takes place on a hex-based game field, where your units battle "
-#| "against those controlled by the computer, friends who each take turns on "
-#| "the same computer (hotseat play), other players on the same network, or "
-#| "players worldwide in multiplayer mode.\n"
-#| "\n"
-#| "Each of these battles is called a <italic>text='scenario'</italic>, which "
-#| "can be strung together to make <italic>text='campaigns'</italic>. Besides "
-#| "the campaigns that ship with the game, Wesnoth supports user-made "
-#| "content, and the add-on server boasts hundreds of custom maps, campaigns, "
-#| "eras, factions, and resources.\n"
-#| "\n"
-#| "The game also features a human-readable markup called Wesnoth Markup "
-#| "Language (WML) to easily allow users to create their own content, as well "
-#| "as a fully-featured Map and Scenario Editor for designing your own "
-#| "battlefields.\n"
-#| "\n"
-#| "The <italic>text='Battle for Wesnoth'</italic> project was begun in 2003, "
-#| "and has been worked on by a multitude of volunteers ever since."
 msgid ""
-"The game takes place on a hex-based game field, where your units battle "
-"against those controlled by the computer, friends who each take turns on the "
-"same computer (hotseat play), other players on the same network, or players "
-"worldwide in multiplayer mode.\n"
+"The game takes place on a hex-based game field, where your units battle against those controlled by the computer, friends who each take turns on the same computer (hotseat play), other players on the same network, or players worldwide in multiplayer mode.\n"
 "\n"
-"Each of these battles is called a <i>scenario</i>, which can be strung "
-"together to make <i>campaigns</i>. Besides the campaigns that ship with the "
-"game, Wesnoth supports user-made content, and the add-on server boasts "
-"hundreds of custom maps, campaigns, eras, factions, and resources.\n"
+"Each of these battles is called a <i>scenario</i>, which can be strung together to make <i>campaigns</i>. Besides the campaigns that ship with the game, Wesnoth supports user-made content, and the add-on server boasts hundreds of custom maps, campaigns, eras, factions, and resources.\n"
 "\n"
-"The game also features a human-readable markup called Wesnoth Markup "
-"Language (WML) to easily allow users to create their own content, as well as "
-"a fully-featured Map and Scenario Editor for designing your own "
-"battlefields.\n"
+"The game also features a human-readable markup called Wesnoth Markup Language (WML) to easily allow users to create their own content, as well as a fully-featured Map and Scenario Editor for designing your own battlefields.\n"
 "\n"
-"The <i>Battle for Wesnoth</i> project was begun in 2003, and has been worked "
-"on by a multitude of volunteers ever since."
+"The <i>Battle for Wesnoth</i> project was begun in 2003, and has been worked on by a multitude of volunteers ever since."
 msgstr ""
-"O espaço do jogo é dividido em hexágonos onde suas unidades enfrentam "
-"unidades controladas pelo computador, amigos que revezam turnos jogando no "
-"mesmo computador (modo local), outros jogadores conectados a rede ou "
-"jogadores de todos os cantos do mundo no modo multiplayer .\n"
+"O jogo acontece num campo de hexágonos, onde suas unidades lutam contra as controladas pelo computador, por amigos que se revezam no mesmo aparelho (modo hotseat), por outros jogadores na mesma rede ou por jogadores do mundo todo no modo multijogador.\n"
 "\n"
-"Batalhas são chamadas de <italic>text='scenario'</italic>. Uma coleção de "
-"cenários que seguem uma história são chamados de <italic>text='campanha'</"
-"italic>. Além das campanhas que já vêm com o jogo, Wesnoth possibilita que "
-"seus jogadores criem livremente conteúdo adicional par ao jogo e, por causa "
-"disso, o servidor de add-ons possui centenas de mapas personalizados, "
-"campanhas, facções, eras e recursos.\n"
+"Cada uma dessas batalhas é um <i>cenário</i>, e cenários encadeados formam <i>campanhas</i>. Além das campanhas que vêm com o jogo, Wesnoth aceita conteúdo feito por usuários, e o servidor de add-ons oferece centenas de mapas, campanhas, eras, facções e recursos.\n"
 "\n"
-"O jogo também possui uma linguagem Markup legível por humanos chamadada de "
-"Wesnoth Markup Língua (WML) para que os jogadores possam criar o que "
-"quiserem de forma fácil. Por fim, há também um editor de mapas e cenários "
-"para que você crie suas próprias batalhas.\n"
+"O jogo também tem uma linguagem de marcação legível chamada Wesnoth Markup Language (WML), que permite criar conteúdo com facilidade, e um Editor de Mapas e Cenários completo para montar seus próprios campos de batalha.\n"
 "\n"
-"O projeto <italic>text='Battle for Wesnoth'</italic> começou em 2003 e "
-"conta, desde então, com o esforço de numerosos voluntários."
+"O projeto <i>Batalha por Wesnoth</i> começou em 2003 e desde então vem sendo feito por uma multidão de voluntários."
 
 #
 # File: data/core/help.cfg, line: 91
@@ -3915,152 +3839,53 @@ msgstr ""
 msgid "Unknown Unit"
 msgstr "Unidade Desconhecida"
 
-#
 # File: data/core/help.cfg, line: 119
 # File: data/core/help.cfg, line: 119
 # File: data/core/help.cfg, line: 119
 #. [topic]: id=.unknown_unit
 #: data/core/help.cfg:158
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "This unit is unknown for the moment. You must discover it in the game to "
-#| "be allowed to see its description."
 msgid ""
 "This unit is unknown for the moment. You must discover it in the game to be "
 "allowed to see its description."
 msgstr ""
-"\n"
-"\n"
-"No momento esta unidade ainda é desconhecida. Você precisa encontrá-la em um "
-"jogo para poder ver sua descrição."
+"Esta unidade ainda é desconhecida. Você precisa encontrá-la no jogo para ver "
+"a descrição dela."
 
 #. [topic]: id=..gameplay
 #: data/core/help.cfg:166
-#, fuzzy
-#| msgid ""
-#| "Wesnoth is comprised of a series of battles, called "
-#| "<italic>text='scenarios'</italic>, that pit your troops against the "
-#| "troops of one or more adversaries. Multiple scenarios that follow on from "
-#| "each other, telling a story, make up <italic>text='campaigns'</italic>. "
-#| "In a campaign, you often need to play more carefully, preserving your "
-#| "best troops for use again in later scenarios.\n"
-#| "\n"
-#| "The interactive <bold>text='Tutorial'</bold> introduces the basics of "
-#| "Wesnoth gameplay in the context of a scenario. Most material covered in "
-#| "the tutorial is explained more in-depth in these pages, so you can always "
-#| "refer back here if you forget something.\n"
-#| "\n"
-#| "After you master the basics, try out a beginner campaign, such as "
-#| "<italic>text='Heir to the Throne'</italic> or <italic>text='The South "
-#| "Guard'</italic>. A full list of installed campaigns can be found via the "
-#| "<bold>text='Campaign'</bold> option on the main menu. As Wesnoth can be "
-#| "quite challenging, you may wish to start on easy before progressing to "
-#| "higher difficulties.\n"
-#| "\n"
-#| "Campaigns are grouped by <italic>text='level'</italic> and "
-#| "<italic>text='difficulty'</italic>. For example, <italic>text='Heir to "
-#| "the Throne'</italic> is ‘Novice’ level, and is playable at three "
-#| "difficulties: ‘Beginner’, ‘Normal’, and ‘Challenging’. The level of a "
-#| "campaign indicates what degree of proficiency in the game mechanics (such "
-#| "as <ref>dst='movement' text='zones of control'</ref> and "
-#| "<ref>dst='time_of_day' text='time of day'</ref>) is assumed. The "
-#| "difficulty indicates how challenging the scenarios will be to a veteran "
-#| "player: at higher difficulties, the obstacles to victory will be higher "
-#| "and overcoming them will require more skillful play. For example, at "
-#| "higher difficulties the enemy may have higher incomes, higher-level "
-#| "units, more castle hexes, and so on."
 msgid ""
-"Wesnoth is comprised of a series of battles, called <i>scenarios</i>, that "
-"pit your troops against the troops of one or more adversaries. Multiple "
-"scenarios that follow on from each other, telling a story, make up "
-"<i>campaigns</i>. In a campaign, you often need to play more carefully, "
-"preserving your best troops for use again in later scenarios.\n"
+"Wesnoth is comprised of a series of battles, called <i>scenarios</i>, that pit your troops against the troops of one or more adversaries. Multiple scenarios that follow on from each other, telling a story, make up <i>campaigns</i>. In a campaign, you often need to play more carefully, preserving your best troops for use again in later scenarios.\n"
 "\n"
-"The interactive tutorial campaign <b>The South Guard</b> introduces Wesnoth "
-"gameplay in the context of a campaign. Most material covered in the tutorial "
-"is explained in these pages, so you can always refer back here if you forget "
-"something.\n"
+"The interactive tutorial campaign <b>The South Guard</b> introduces Wesnoth gameplay in the context of a campaign. Most material covered in the tutorial is explained in these pages, so you can always refer back here if you forget something.\n"
 "\n"
-"After you master the basics, be sure to try another novice campaign next! "
-"You can help two brothers overcome a deadly peril in <i>A Tale of Two "
-"Brothers</i>, help the prince Konrad through a turning point in the history "
-"of Wesnoth in the epic <i>Heir to the Throne</i> or guide the mage Delfador "
-"on his way to becoming a legend in the equally epic <i>The Deceiver’s "
-"Gambit</i>. A full list of installed campaigns can be found via the "
-"<b>Campaign</b> option on the main menu, which is full of equally "
-"interesting adventures in the long history of Wesnoth. We’d recommend "
-"playing them in the order they are listed, but feel free to skip any that’s "
-"not your cup of tea!\n"
+"After you master the basics, be sure to try another novice campaign next! You can help two brothers overcome a deadly peril in <i>A Tale of Two Brothers</i>, help the prince Konrad through a turning point in the history of Wesnoth in the epic <i>Heir to the Throne</i> or guide the mage Delfador on his way to becoming a legend in the equally epic <i>The Deceiver’s Gambit</i>. A full list of installed campaigns can be found via the <b>Campaign</b> option on the main menu, which is full of equally interesting adventures in the long history of Wesnoth. We’d recommend playing them in the order they are listed, but feel free to skip any that’s not your cup of tea!\n"
 "\n"
-"Campaigns are grouped by <i>level</i> and <i>difficulty</i>. For example, "
-"<i>Heir to the Throne</i> is ‘Novice’ level, and is playable at three "
-"difficulties: ‘Beginner’, ‘Normal’, and ‘Challenging’. The level of a "
-"campaign indicates what degree of proficiency in the game mechanics (such as "
-"<ref dst='movement'>zones of control</ref> and <ref dst='time_of_day'>time "
-"of day</ref>) is assumed. The difficulty indicates how challenging the "
-"scenarios will be: at higher difficulties, the obstacles to victory will be "
-"higher and overcoming them will require more skillful play. For example, at "
-"higher difficulties the enemy may have higher incomes, higher-level units, "
-"more castle hexes, and so on."
+"Campaigns are grouped by <i>level</i> and <i>difficulty</i>. For example, <i>Heir to the Throne</i> is ‘Novice’ level, and is playable at three difficulties: ‘Beginner’, ‘Normal’, and ‘Challenging’. The level of a campaign indicates what degree of proficiency in the game mechanics (such as <ref dst='movement'>zones of control</ref> and <ref dst='time_of_day'>time of day</ref>) is assumed. The difficulty indicates how challenging the scenarios will be: at higher difficulties, the obstacles to victory will be higher and overcoming them will require more skillful play. For example, at higher difficulties the enemy may have higher incomes, higher-level units, more castle hexes, and so on."
 msgstr ""
-"Wesnoth consiste em uma série de batalhas ,chamadas de "
-"<italic>text='cenários'</italic>, onde seu exército enfrenta o exército de "
-"um ou mais adversários. Múltiplos cenários sucessivos que se unem para "
-"contar uma história são chamados de <italic>text='campanhas'</italic>. Numa "
-"campanha é importante jogar com mais cuidado do que em um cenário avulso, "
-"pois você precisará de tropas veteranas para os cenários futuros.\n"
+"Wesnoth é formado por uma série de batalhas, chamadas <i>cenários</i>, que colocam suas tropas contra as de um ou mais adversários. Vários cenários em sequência, contando uma história, formam uma <i>campanha</i>. Numa campanha, muitas vezes é preciso jogar com mais cuidado e preservar as melhores tropas para os cenários seguintes.\n"
 "\n"
-"O <bold>text='Tutorial'</bold>explica os fundamentos de Wesnoth no contexto "
-"de um cenário. A maioria do que é explicado no tutorial é explicado mais "
-"afundo aqui.\n"
+"A campanha tutorial interativa <b>A Guarda Sul</b> apresenta a jogabilidade de Wesnoth no contexto de uma campanha. Quase tudo o que o tutorial ensina está explicado nestas páginas, então você sempre pode voltar aqui se esquecer algo.\n"
 "\n"
-"É uma boa ideia começar jogando uma das duas campanhas para iniciantes, "
-"<italic>text='O Herdeiro do Trono'</italic> ou <italic>text='A Guarda do "
-"Sul'</italic>. A lista com todas as campanhas insaladas pode ser encontrada "
-"na opção <bold>text='Camanhas'</bold> no menu principal. Como Wesnoth pode "
-"ser deafiador, é aconselhavel que voê começe na dificuldade mais fácal "
-"antesde tentar as dificuldades mais dificeis.\n"
+"Depois de dominar o básico, experimente outra campanha para novatos! Você pode ajudar dois irmãos a superar um perigo mortal em <i>Uma História de Dois Irmãos</i>, acompanhar o príncipe Konrad num momento decisivo da história de Wesnoth na épica <i>Herdeiro do Trono</i> ou guiar o mago Delfador no caminho para se tornar uma lenda na igualmente épica <i>The Deceiver’s Gambit</i>. A lista completa das campanhas instaladas fica na opção <b>Campanhas</b> do menu principal, cheia de aventuras igualmente interessantes na longa história de Wesnoth. Recomendamos jogá-las na ordem da lista, mas fique à vontade para pular as que não forem do seu gosto!\n"
 "\n"
-"Campanhas são agrupadas por <italic>text='Nível'</italic> e "
-"<italic>text='dificuldade'</italic>. Por exemplo, <italic>text='O Herdeiro "
-"do Trono'</italic> é uma campanha de nível 'Novato' que possui três "
-"dificuldades diferentes: 'Iniciante', 'Normal' e 'Desafiador'. O nível da "
-"campanha indica o nível de proficiência e conhecimento das mecânicas do jogo "
-"(como por exemplo <ref>dst='movement' text='zonas de controle'</ref> e "
-"<ref>dst='time_of_day' text='períodos do dia'</ref>) que é assumido que o "
-"jogador tenha. A dificuldade indica o quanto desafiador os cenários serão "
-"para veteranos: Quanto maior a dificuldade, maior os desafios e mais "
-"habilidade é necessário para alcançar a vitória. Por exemplo, nas "
-"dificuldades mais desafiadoras os inimigos possuem mais ouro, unidades mais "
-"avançadas, castelos maiores e assim por diante."
+"As campanhas são agrupadas por <i>nível</i> e <i>dificuldade</i>. Por exemplo, <i>Herdeiro do Trono</i> é de nível ‘Novato’ e pode ser jogada em três dificuldades: ‘Iniciante’, ‘Normal’ e ‘Desafiador’. O nível de uma campanha indica quanto domínio das mecânicas do jogo (como <ref dst='movement'>zonas de controle</ref> e <ref dst='time_of_day'>hora do dia</ref>) ela pressupõe. A dificuldade indica quão desafiadores serão os cenários: nas dificuldades mais altas, os obstáculos à vitória são maiores e superá-los exige mais habilidade. Por exemplo, o inimigo pode ter mais renda, unidades de nível mais alto, mais hexágonos de castelo e assim por diante."
 
-#
 # File: data/core/help.cfg, line: 147
 # File: data/core/help.cfg, line: 147
 # File: data/core/help.cfg, line: 147
 #. [topic]: id=..gameplay
 #: data/core/help.cfg:175
-#, fuzzy
-#| msgid ""
-#| "While playing, keep in mind that you can mouse-over many items in the "
-#| "game, such as the information displayed in the status pane, to see a "
-#| "brief description explaining each item. This is especially useful when "
-#| "you encounter new elements, such as <ref>dst='..abilities_section' "
-#| "text='abilities'</ref>, for the first time."
 msgid ""
 "While playing, keep in mind that you can mouse-over many items in the game, "
 "such as the information displayed in the status pane, to see a brief "
 "description explaining each item. This is especially useful when you "
-"encounter new elements, such as <ref dst='..abilities_section'>abilities</"
-"ref>, for the first time."
+"encounter new elements, such as <ref "
+"dst='..abilities_section'>abilities</ref>, for the first time."
 msgstr ""
-"Enquanto estiver jogando, tenha em mente que você pode passar o mouse sobre "
-"vários elementos do jogo, como por exemplo a informação que é exibida no "
-"painel de status, para ver uma breve descrição explicando sobre aquele "
-"elemento. Isto é especialmente útil quando você se depara com novas "
-"<ref>dst='..abilities_section' text='habilidades'</ref> pela primeira vez."
+"Durante o jogo, lembre que muitos itens, como as informações do painel "
+"lateral, mostram uma breve descrição quando você passa o ponteiro sobre eles."
+" Isso é especialmente útil quando você encontra elementos novos, como <ref "
+"dst='..abilities_section'>habilidades</ref>, pela primeira vez."
 
 # File: data/core/help.cfg, line: 141
 # File: data/core/help.cfg, line: 141
@@ -4079,65 +3904,42 @@ msgstr "Fundamentos do Jogo"
 msgid "Victory and Defeat"
 msgstr "Vitória e Derrota"
 
-#
 # File: data/core/help.cfg, line: 162
 # File: data/core/help.cfg, line: 162
 # File: data/core/help.cfg, line: 162
 #. [topic]: id=victory_and_defeat
 #: data/core/help.cfg:188
-#, fuzzy
-#| msgid ""
-#| "Pay careful attention to the <bold>text='Objectives'</bold> pop-up box at "
-#| "the beginning of each scenario. In most scenarios, you will achieve "
-#| "victory by killing all enemy leaders ; likewise, the death of your own "
-#| "leader generally results in defeat. However, some scenarios may have "
-#| "other victory objectives, such as getting your leader to a designated "
-#| "point, rescuing an ally, solving a puzzle, or holding out against a siege "
-#| "until a certain number of turns have elapsed."
 msgid ""
-"Pay careful attention to the <b>Objectives</b> pop-up box at the beginning "
-"of each scenario. In most scenarios, you will achieve victory by killing all "
+"Pay careful attention to the <b>Objectives</b> pop-up box at the beginning of"
+" each scenario. In most scenarios, you will achieve victory by killing all "
 "enemy leaders ; likewise, the death of your own leader generally results in "
 "defeat. However, some scenarios may have other victory objectives, such as "
 "getting your leader to a designated point, rescuing an ally, solving a "
 "puzzle, or holding out against a siege until a certain number of turns have "
 "elapsed."
 msgstr ""
-"Preste bastante atenção aos <bold>text='Objectivo'</bold>que aparecem no "
-"início de cada cenário. Geralmente a condição de vitória é matar todos os "
-"líderes inimígos, e a condição de derrota é o seu lider morer. Cenários "
-"podem possuir outros objetivos como, por exemplo,levar seu líder até um "
-"ponto pré-designado, ou resgatar alguém, ou resolver um quebra-cabeças, ou "
-"aguentar um cerco por um certo número de turnos."
+"Preste atenção à janela de <b>Objetivos</b> no início de cada cenário. Na "
+"maioria dos cenários, você vence derrotando todos os líderes inimigos; da "
+"mesma forma, a morte do seu líder geralmente significa derrota. Mas alguns "
+"cenários têm outros objetivos de vitória, como levar seu líder a um ponto "
+"determinado, resgatar um aliado, resolver um enigma ou resistir a um cerco "
+"até passar certo número de turnos."
 
-#
 # File: data/core/help.cfg, line: 162
 # File: data/core/help.cfg, line: 162
 # File: data/core/help.cfg, line: 162
 #. [topic]: id=victory_and_defeat
 #: data/core/help.cfg:190
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "When you win a scenario, the map grays over and the <bold>text='End "
-#| "Turn'</bold> button changes to <bold>text='End Scenario'</bold>. You can "
-#| "now do things like changing your save options or (if you are in a "
-#| "multiplayer game) chatting with other players before pressing that button "
-#| "to advance."
 msgid ""
 "When you win a scenario, the map grays over and the <b>End Turn</b> button "
-"changes to <b>End Scenario</b>. You can now do things like changing your "
-"save options or (if you are in a multiplayer game) chatting with other "
-"players before pressing that button to advance."
+"changes to <b>End Scenario</b>. You can now do things like changing your save"
+" options or (if you are in a multiplayer game) chatting with other players "
+"before pressing that button to advance."
 msgstr ""
-"\n"
-"\n"
-"Quando você vence um cenário, o mapa fica cinza e o botão "
-"<bold>text='Terminar Turno'</bold> mudará para <bold>text='Terminar "
-"Cenário'</bold>. Você pode fazer coisas como mudar as opções de salvamento "
-"do jogo ou (se estiver num jogo multiplayer) conversar com os outros "
-"jogadores antes de pressionar o botão Terminar Cenário."
+"Quando você vence um cenário, o mapa fica cinza e o botão <b>Terminar "
+"Turno</b> vira <b>Terminar Cenário</b>. Antes de apertá-lo para avançar, você"
+" ainda pode, por exemplo, mudar as opções de salvamento ou (numa partida "
+"multijogador) conversar com os outros jogadores."
 
 #
 # File: data/core/help.cfg, line: 171
@@ -4148,148 +3950,89 @@ msgstr ""
 msgid "Recruiting and Recalling"
 msgstr "Recrutando e Convocando"
 
-#
 # File: data/core/help.cfg, line: 172
 # File: data/core/help.cfg, line: 172
 # File: data/core/help.cfg, line: 172
 #. [topic]: id=recruit_and_recall
 #: data/core/help.cfg:198
-#, fuzzy
-#| msgid ""
-#| "Each side begins with one leader in their keep. At the start of any "
-#| "battle, and at times during it, you will need to recruit <ref>dst='.."
-#| "units' text='units'</ref> into your army. To recruit, you must have your "
-#| "leader (for instance, Konrad in the <italic>text='Heir to the Throne'</"
-#| "italic> campaign) on the keep hex of a <ref>dst='..terrain_castle' "
-#| "text='castle'</ref>. Then you may recruit by either choosing "
-#| "<bold>text='Recruit'</bold> from the menu or right-clicking on a hex and "
-#| "selecting <bold>text='Recruit'</bold>. This brings up the recruit menu, "
-#| "which lists units available for recruitment, along with their gold cost. "
-#| "Click on a unit to see its statistics, then press the "
-#| "<bold>text='Recruit'</bold> button to recruit it."
 msgid ""
 "Each side begins with one leader in their keep. At the start of any battle, "
-"and at times during it, you will need to recruit <ref dst='..units'>units</"
-"ref> into your army. To recruit, you must have your leader (for instance, "
-"Konrad in the <i>Heir to the Throne</i> campaign) on the keep hex of a <ref "
-"dst='..terrain_castle'>castle</ref>. Then you may recruit by either choosing "
-"<b>Recruit</b> from the menu or right-clicking on a hex and selecting "
-"<b>Recruit</b>. This brings up the recruit menu, which lists units available "
-"for recruitment, along with their gold cost. Click on a unit to see its "
-"statistics, then press the <b>Recruit</b> button to recruit it."
+"and at times during it, you will need to recruit <ref "
+"dst='..units'>units</ref> into your army. To recruit, you must have your "
+"leader (for instance, Konrad in the <i>Heir to the Throne</i> campaign) on "
+"the keep hex of a <ref dst='..terrain_castle'>castle</ref>. Then you may "
+"recruit by either choosing <b>Recruit</b> from the menu or right-clicking on "
+"a hex and selecting <b>Recruit</b>. This brings up the recruit menu, which "
+"lists units available for recruitment, along with their gold cost. Click on a"
+" unit to see its statistics, then press the <b>Recruit</b> button to recruit "
+"it."
 msgstr ""
-"Cada lado começa com um líder em sua Torre de Menagem. No início de todo "
-"cenário, e de vez em quando no decorrer dele, você precisará recrutar "
-"<ref>dst='..units' text='unidades'</ref> para o seu exército. Para recrutar, "
-"o seu líder (Por exemplo, Konrad na campanha <italic>text='O Herdeiro do "
-"Trono'</italic>) numa Torre de Menagem de um <ref>dst='..terrain_castle' "
-"text='castelo'</ref>. Com isso feito, você pode recrutar escolhendo a opção "
-"<bold>text='Recrutar'</bold> no menu ou clicando com o botão direito em um "
-"hexágono de castelo e selecionando <bold>text='Recrutar'</bold>. Isso abre o "
-"menu de recrutamento, que lista todas as unidades disponíveis para serem "
-"recrutadas e seu custo em ouro. Clique em uma unidade para ver suas "
-"estatísticas e, em seguida, clique no botão <bold>text='Recrutar'</bold> "
-"para recrutar a unidade selecionada."
+"Cada lado começa com um líder em sua fortaleza. No início de toda batalha, e "
+"às vezes durante ela, você precisará recrutar <ref "
+"dst='..units'>unidades</ref> para seu exército. Para recrutar, seu líder (por"
+" exemplo, Konrad na campanha <i>Herdeiro do Trono</i>) precisa estar no "
+"hexágono de fortaleza de um <ref dst='..terrain_castle'>castelo</ref>. Então "
+"escolha <b>Recrutar</b> no menu Ações, ou toque e segure um hexágono do "
+"castelo (botão direito no computador) e escolha <b>Recrutar</b>. Abre-se a "
+"lista de unidades disponíveis, com o custo em ouro de cada uma. Toque numa "
+"unidade para ver seus atributos e depois em <b>Recrutar</b> para recrutá-la."
 
-#
 # File: data/core/help.cfg, line: 172
 # File: data/core/help.cfg, line: 172
 # File: data/core/help.cfg, line: 172
 #. [topic]: id=recruit_and_recall
 #: data/core/help.cfg:200
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "If you right-clicked on a castle hex and selected recruit, the new unit "
-#| "will appear in that hex. Otherwise, it will appear in a free hex near the "
-#| "keep. You may only recruit as many units as you have free hexes in your "
-#| "castle, and you cannot spend more gold than you actually have on "
-#| "recruiting."
 msgid ""
 "If you right-clicked on a castle hex and selected recruit, the new unit will "
 "appear in that hex. Otherwise, it will appear in a free hex near the keep. "
-"You may only recruit as many units as you have free hexes in your castle, "
-"and you cannot spend more gold than you actually have on recruiting."
+"You may only recruit as many units as you have free hexes in your castle, and"
+" you cannot spend more gold than you actually have on recruiting."
 msgstr ""
-"\n"
-"\n"
-"Se você tiver clicado com o botão direito num hexágono de castelo e "
-"selecionar recrutar, a unidade aparecerá naquele hexágono. Caso contrário, "
-"ela aparecerá em um hexágono vazio próximo da Torre de Menagem. Unidades só "
-"podem ser recrutadas caso haja hexágonos de castelo vazios e você não pode "
-"gastar mais ouro do que você possui."
+"Se você abriu o recrutamento a partir de um hexágono do castelo, a nova "
+"unidade aparece nele. Caso contrário, aparece num hexágono livre perto da "
+"fortaleza. Você só pode recrutar tantas unidades quantos forem os hexágonos "
+"livres do castelo, e não pode gastar mais ouro do que tem."
 
-#
 # File: data/core/help.cfg, line: 174
 # File: data/core/help.cfg, line: 174
 # File: data/core/help.cfg, line: 174
 #. [topic]: id=recruit_and_recall
 #: data/core/help.cfg:202
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Recruited units come with two random <ref>dst='..traits_section' "
-#| "text='traits'</ref> which modify their statistics."
 msgid ""
-"Recruited units come with two random <ref dst='..traits_section'>traits</"
-"ref> which modify their statistics."
+"Recruited units come with two random <ref dst='..traits_section'>traits</ref>"
+" which modify their statistics."
 msgstr ""
-"\n"
-"\n"
-"Unidades recrutadas possuem duas <ref>dst='..traits_section' "
-"text='características'</ref> selecionadas aleatoriamente que modificam suas "
-"estatísticas."
+"Unidades recrutadas recebem duas <ref "
+"dst='..traits_section'>características</ref> aleatórias que alteram seus "
+"atributos."
 
-#
 # File: data/core/help.cfg, line: 176
 # File: data/core/help.cfg, line: 176
 # File: data/core/help.cfg, line: 176
 #. [topic]: id=recruit_and_recall
 #: data/core/help.cfg:204
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "In later scenarios, you may also Recall survivors from earlier battles. "
-#| "Recalling costs a standard 20 gold and presents you with a list of all "
-#| "surviving units from previous scenarios."
 msgid ""
 "In later scenarios, you may also Recall survivors from earlier battles. "
 "Recalling costs a standard 20 gold and presents you with a list of all "
 "surviving units from previous scenarios."
 msgstr ""
-"\n"
-"\n"
-"Em cenários posteriores, você também pode convocar sobreviventes de batalhas "
-"anteriores. Convocar custa 20 de ouro e lhe apresenta uma lista com todas as "
-"unidades sobreviventes dos cenários anteriores."
+"Nos cenários seguintes, você também pode Convocar sobreviventes de batalhas "
+"anteriores. Convocar custa normalmente 20 de ouro e mostra a lista de todas "
+"as unidades que sobreviveram aos cenários anteriores."
 
-#
 # File: data/core/help.cfg, line: 178
 # File: data/core/help.cfg, line: 178
 # File: data/core/help.cfg, line: 178
 #. [topic]: id=recruit_and_recall
 #: data/core/help.cfg:206
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Units not only cost gold to Recruit or Recall, they also require money to "
-#| "support. See <ref>dst='income_and_upkeep' text='income and upkeep'</ref> "
-#| "for more information."
 msgid ""
 "Units not only cost gold to Recruit or Recall, they also require money to "
 "support. See <ref dst='income_and_upkeep'>income and upkeep</ref> for more "
 "information."
 msgstr ""
-"\n"
-"\n"
-"Unidades não custam apenas ouro para serem recrutadas ou convocadas, elas "
-"também possuem um custo de ouro para serem mantidas na batalha. Veja "
-"<ref>dst='income_and_upkeep' text='receita e manutenção'</ref> para maiores "
-"informações."
+"As unidades não só custam ouro para Recrutar ou Convocar, como também custam "
+"para manter. Veja <ref dst='income_and_upkeep'>renda e manutenção</ref> para "
+"mais informações."
 
 #
 # File: data/core/help.cfg, line: 323
@@ -4300,159 +4043,87 @@ msgstr ""
 msgid "Income and Upkeep"
 msgstr "Receita e Manutenção"
 
-#
 # File: data/core/help.cfg, line: 324
 # File: data/core/help.cfg, line: 324
 # File: data/core/help.cfg, line: 324
 #. [topic]: id=income_and_upkeep
 #: data/core/help.cfg:214
-#, fuzzy
-#| msgid ""
-#| "In Wesnoth, it is not enough simply to recruit units and fight. You must "
-#| "watch your gold as well, especially in campaigns, where you can carry "
-#| "extra gold over from one scenario to the next. There are two aspects to "
-#| "this; <italic>text='income'</italic> and <italic>text='upkeep'</italic>."
 msgid ""
 "In Wesnoth, it is not enough simply to recruit units and fight. You must "
 "watch your gold as well, especially in campaigns, where you can carry extra "
 "gold over from one scenario to the next. There are two aspects to this; "
 "<i>income</i> and <i>upkeep</i>."
 msgstr ""
-"Em Wesnoth, recrutar unidades e lutar é apenas o começo. É importante que "
-"sempre fique de olho no seu ouro, principalmente no modo campanha, pois "
-"nesse modo você quase sempre leva uma parte do seu ouro para o próximo "
-"cenário. Sua quantidade de ouro é influenciada pelas seguintes mecânicas: "
-"<italic>text='receita'</italic> e <italic>text='manutenção'</italic>."
+"Em Wesnoth, não basta recrutar unidades e lutar. É preciso cuidar do ouro "
+"também, principalmente nas campanhas, onde o ouro que sobra passa de um "
+"cenário para o outro. Há dois lados nisso: <i>renda</i> e <i>manutenção</i>."
 
-#
 # File: data/core/help.cfg, line: 324
 # File: data/core/help.cfg, line: 324
 # File: data/core/help.cfg, line: 324
 #. [topic]: id=income_and_upkeep
 #: data/core/help.cfg:216
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Income is simple. You have a base income of 2 gold per turn. For every "
-#| "village you control, you gain one additional gold each turn. Thus, if you "
-#| "have ten villages, you would normally gain 12 gold each turn. Your upkeep "
-#| "costs are subtracted from this income, as detailed below."
 msgid ""
 "Income is simple. You have a base income of 2 gold per turn. For every "
 "village you control, you gain one additional gold each turn. Thus, if you "
 "have ten villages, you would normally gain 12 gold each turn. Your upkeep "
 "costs are subtracted from this income, as detailed below."
 msgstr ""
-"\n"
-"\n"
-"Receita é simples. Você possui uma receita base de 2 peças de ouro por "
-"turno. Para cada vila sob seu controle você recebe uma peça de ouro "
-"adicional por turno. Dessa forma, se você possuir dez aldeias, sua receita "
-"sserá 12 peças de ouro por turmo. O custo de manutenção é subtraido da "
-"receita, como detalhado abaixo."
+"A renda é simples. Você tem uma renda base de 2 de ouro por turno. Cada "
+"aldeia que você controla rende mais 1 de ouro por turno. Assim, com dez "
+"aldeias, você normalmente ganha 12 de ouro por turno. A manutenção é "
+"descontada dessa renda, como explicado abaixo."
 
-#
 # File: data/core/help.cfg, line: 326
 # File: data/core/help.cfg, line: 326
 # File: data/core/help.cfg, line: 326
 #. [topic]: id=income_and_upkeep
 #: data/core/help.cfg:219
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Upkeep is also fairly simple. Each unit requires an amount of Upkeep "
-#| "equal to its level. You can support as many levels worth of units as you "
-#| "have villages, without paying any upkeep. However, for each level of unit "
-#| "beyond the number of villages you have, you must pay one gold per turn. "
-#| "For example, if you have twelve level one units and ten villages, you "
-#| "would have to pay two gold each turn in upkeep."
 msgid ""
-"Upkeep is also fairly simple. Each unit requires an amount of Upkeep equal "
-"to its level. You can support as many levels worth of units as you have "
+"Upkeep is also fairly simple. Each unit requires an amount of Upkeep equal to"
+" its level. You can support as many levels worth of units as you have "
 "villages, without paying any upkeep. However, for each level of unit beyond "
-"the number of villages you have, you must pay one gold per turn. For "
-"example, if you have twelve level one units and ten villages, you would have "
-"to pay two gold each turn in upkeep."
+"the number of villages you have, you must pay one gold per turn. For example,"
+" if you have twelve level one units and ten villages, you would have to pay "
+"two gold each turn in upkeep."
 msgstr ""
-"\n"
-"\n"
-"Manutenção também é bem simples. Cada unidade possui um custo de manutenção "
-"igual ao seu nível. Você pode suportar gratuitamente um número total de "
-"níveis de unidades igual ao seu número de aldeias. Para cada nível de "
-"unidade além do seu número de aldeias, você tem de pagar uma peça de ouro "
-"por turno. Por exemplo, se você possuir doze unidades de nível um e dez "
-"aldeias, seu custo de manutenção será duas peças de ouro por turno."
+"A manutenção também é simples. Cada unidade exige uma manutenção igual ao seu"
+" nível. Você sustenta de graça tantos níveis de unidades quantas aldeias "
+"tiver. Para cada nível além do número de aldeias, paga 1 de ouro por turno. "
+"Por exemplo, com doze unidades de nível 1 e dez aldeias, você paga 2 de ouro "
+"de manutenção por turno."
 
-#
 # File: data/core/help.cfg, line: 328
 # File: data/core/help.cfg, line: 328
 # File: data/core/help.cfg, line: 328
 #. [topic]: id=income_and_upkeep
 #: data/core/help.cfg:221
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Upkeep costs are subtracted from your income, so in the case of twelve "
-#| "levels of units and ten villages, your resultant Income would be 10 gold "
-#| "per turn."
 msgid ""
-"Upkeep costs are subtracted from your income, so in the case of twelve "
-"levels of units and ten villages, your resultant Income would be 10 gold per "
-"turn."
+"Upkeep costs are subtracted from your income, so in the case of twelve levels"
+" of units and ten villages, your resultant Income would be 10 gold per turn."
 msgstr ""
-"\n"
-"\n"
-"O custo de manutenção é subtraido da sua receita. Então, se você tiver "
-"unidades que, ao todo, soman 12 níveis e dez aldeias, a sua receita seria "
-"dez de ouro a cada turno."
+"A manutenção é descontada da renda; então, com doze níveis de unidades e dez "
+"aldeias, sua Renda final seria de 10 de ouro por turno."
 
 #. [topic]: id=income_and_upkeep
 #: data/core/help.cfg:224
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "In general, the base income, the amount of gold you get per village per "
-#| "turn, and the number of unit levels each village can support are "
-#| "configurable, but in campaigns they are almost always the values "
-#| "described above. The <italic>text='Scenario Settings'</italic> tab of the "
-#| "<italic>text='Status Table'</italic> dialog shows the values for the "
-#| "current scenario."
 msgid ""
-"In general, the base income, the amount of gold you get per village per "
-"turn, and the number of unit levels each village can support are "
-"configurable, but in campaigns they are almost always the values described "
-"above. The <i>Scenario Settings</i> tab of the <i>Status Table</i> dialog "
-"shows the values for the current scenario."
+"In general, the base income, the amount of gold you get per village per turn,"
+" and the number of unit levels each village can support are configurable, but"
+" in campaigns they are almost always the values described above. The "
+"<i>Scenario Settings</i> tab of the <i>Status Table</i> dialog shows the "
+"values for the current scenario."
 msgstr ""
-"\n"
-"\n"
-"De maneira geral, a receita base, a quantidade de ouro que você recebe por "
-"aldeia e o número de níveis que uma aldeia suporta podem ser personalizados, "
-"mas em campanhas esses valores geralmente são os valores citados "
-"anteriormente. A secção <italic>text='Configurações do Cenário'</italic> na "
-"<italic>text='Tabela de Estatísticas'</italic> mostra esses valores para o "
-"cenário atual."
+"Em geral, a renda base, o ouro por aldeia por turno e quantos níveis de "
+"unidade cada aldeia sustenta podem ser configurados, mas nas campanhas quase "
+"sempre valem os números acima. A aba <i>Configurações do Cenário</i> da "
+"<i>Tabela de Estatísticas</i> mostra os valores do cenário atual."
 
-#
 # File: data/core/help.cfg, line: 330
 # File: data/core/help.cfg, line: 330
 # File: data/core/help.cfg, line: 330
 #. [topic]: id=income_and_upkeep
 #: data/core/help.cfg:226
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "There are two important exceptions to upkeep: units with the loyal trait "
-#| "and leaders never incur upkeep. Units you begin the scenario with (such "
-#| "as Delfador), or units who join you during a scenario (such as the "
-#| "horseman in the second scenario of <italic>text='Heir to the Throne'</"
-#| "italic>) will usually have the <italic>text='loyal'</italic> trait. The "
-#| "unit you are playing (such as Konrad) will almost always be a leader."
 msgid ""
 "There are two important exceptions to upkeep: units with the loyal trait and "
 "leaders never incur upkeep. Units you begin the scenario with (such as "
@@ -4461,15 +4132,12 @@ msgid ""
 "<i>loyal</i> trait. The unit you are playing (such as Konrad) will almost "
 "always be a leader."
 msgstr ""
-"\n"
-"\n"
-"Há duas excessões importantes quando o assunto é manutenção: unidades com a "
-"característica leal e líderes não possuem custo de manutenção. Unidades que "
-"começam o cenário sobre seu controle (como Delfador), ou unidades que se "
-"juntam ao seu exército durrante cenários (como a cavalaria no segundo "
-"cenário da campanha <italic>text='O Herdeiro do Trono'</italic>) geralmente "
-"possuem a característica <italic>text='leal'</italic>. A unidade que lhe "
-"representa no jogo (como o Konrad) geralmente será um líder."
+"Há duas exceções importantes à manutenção: unidades com a característica leal"
+" e líderes nunca custam manutenção. Unidades com que você começa o cenário "
+"(como Delfador) ou que se juntam a você durante ele (como o cavaleiro do "
+"segundo cenário de <i>Herdeiro do Trono</i>) geralmente têm a característica "
+"<i>leal</i>. A unidade que você controla (como Konrad) quase sempre é um "
+"líder."
 
 #
 # File: data/core/help.cfg, line: 200
@@ -4480,31 +4148,21 @@ msgstr ""
 msgid "Hitpoints and Experience"
 msgstr "Pontos de Vida e Experiência"
 
-#
 # File: data/core/help.cfg, line: 201
 # File: data/core/help.cfg, line: 201
 # File: data/core/help.cfg, line: 201
 #. [topic]: id=hitpoints
 #: data/core/help.cfg:234
-#, fuzzy
-#| msgid ""
-#| "Each unit has a certain number of <italic>text='hitpoints'</italic> (HP). "
-#| "If the hitpoints of a unit drop below 1, the unit dies. Each unit also "
-#| "has a certain number of <italic>text='experience points'</italic> (XP). A "
-#| "freshly recruited unit starts with no experience points, and gains "
-#| "experience by fighting enemies."
 msgid ""
 "Each unit has a certain number of <i>hitpoints</i> (HP). If the hitpoints of "
 "a unit drop below 1, the unit dies. Each unit also has a certain number of "
 "<i>experience points</i> (XP). A freshly recruited unit starts with no "
 "experience points, and gains experience by fighting enemies."
 msgstr ""
-"Cada unidade possui uma certa quantidade de <italic>text='pontos de vida'</"
-"italic> (HP). Se os pontos de vida de uma unidade forem menores do que 1, a "
-"unidade morre. Cada unidade também possui uma certa quantidade de "
-"<italic>text='pontos de experiência'</italic> (XP). Uma unidade recém "
-"recrutada começa csem pontos de experiência e recebe experiência ao "
-"enfrentar inimigos."
+"Cada unidade tem uma quantidade de <i>pontos de vida</i> (HP). Se os pontos "
+"de vida caem abaixo de 1, a unidade morre. Cada unidade também tem <i>pontos "
+"de experiência</i> (XP). Uma unidade recém-recrutada começa sem experiência e"
+" ganha experiência lutando contra inimigos."
 
 #
 # File: data/core/help.cfg, line: 205
@@ -4521,29 +4179,21 @@ msgstr ""
 "usando dois números (o valor atual e o valor máximo que uma unidade pode "
 "ter)."
 
-#
 # File: data/core/help.cfg, line: 206
 # File: data/core/help.cfg, line: 206
 # File: data/core/help.cfg, line: 206
 #. [topic]: id=hitpoints
 #: data/core/help.cfg:240
-#, fuzzy
-#| msgid ""
-#| "The hitpoints are also indicated by an energy bar next to each unit, "
-#| "which is green, yellow or red. A unit with at least 1 experience point "
-#| "has a blue experience bar, which turns white as the unit is about to "
-#| "<ref>dst='advancement' text='advance'</ref>."
 msgid ""
-"The hitpoints are also indicated by an energy bar next to each unit, which "
-"is green, yellow or red. A unit with at least 1 experience point has a blue "
+"The hitpoints are also indicated by an energy bar next to each unit, which is"
+" green, yellow or red. A unit with at least 1 experience point has a blue "
 "experience bar, which turns white as the unit is about to <ref "
 "dst='advancement'>advance</ref>."
 msgstr ""
-"Os pontos de vida também são representados pela barra de energia que se "
-"encontra ao lado de cada unidade, podendo ela ser verde, amarela ou "
-"vermelha, dependendo da vida atual da unidade. Unidades que possuem ao menos "
-"1 ponto de experiência possuem uma barra azul, que se torna branca quando "
-"ela está prestes a <ref>dst='advancement' text='avançar para'</ref>."
+"Os pontos de vida também aparecem numa barra ao lado de cada unidade, verde, "
+"amarela ou vermelha. Uma unidade com pelo menos 1 ponto de experiência tem "
+"uma barra azul de experiência, que fica branca quando ela está perto de <ref "
+"dst='advancement'>evoluir</ref>."
 
 #
 # File: src/help.cpp, line: 1389
@@ -4572,82 +4222,47 @@ msgstr ""
 "pontos de experiência - 4 para uma unidade de nível 0, 8 para uma de nível "
 "1, 16 para uma de nível 2, 24 para uma de nível 3 e assim por diante."
 
-#
 # File: data/core/help.cfg, line: 296
 # File: data/core/help.cfg, line: 296
 # File: data/core/help.cfg, line: 296
 #. [topic]: id=advancement
 #: data/core/help.cfg:250
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Units have a certain amount of experience required to advance (this is "
-#| "20% less for units with the Intelligent trait). Once they achieve this "
-#| "amount, they immediately advance to the next level, healing fully in the "
-#| "process. In some cases, you will be given a choice of advancement options."
 msgid ""
 "Units have a certain amount of experience required to advance (this is 20% "
 "less for units with the Intelligent trait). Once they achieve this amount, "
 "they immediately advance to the next level, healing fully in the process. In "
 "some cases, you will be given a choice of advancement options."
 msgstr ""
-"\n"
-"\n"
-"Unidades tem uma certa quantidade de pontos de experiência necessários para "
-"avançarem (sendo 20% a menos para unidades com a característica "
-"Inteligente). Uma vez que elas alcancem essa quantidade, elas imediatamente "
-"avançam para o próximo nível, curando-se completamente no processo. Em "
-"alguns casos, você poderá escolher como a unidade avançará."
+"As unidades precisam de certa quantidade de experiência para evoluir (20% "
+"menos para unidades com a característica Inteligente). Ao atingi-la, evoluem "
+"na hora para o nível seguinte e recuperam toda a vida. Em alguns casos, você "
+"poderá escolher entre opções de evolução."
 
-#
 # File: data/core/help.cfg, line: 298
 # File: data/core/help.cfg, line: 298
 # File: data/core/help.cfg, line: 298
 #. [topic]: id=advancement
 #: data/core/help.cfg:252
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "While most units have three levels, not all do. Occasional units (such as "
-#| "<ref>dst='unit_Mage' text='magi'</ref>) may have four. Once a unit has "
-#| "reached its maximum level, it may have an <italic>text='After Maximum "
-#| "Level Advancement'</italic> (AMLA) available to it. The AMLA will modify "
-#| "the unit each time the unit reaches the experience goal, but the unit "
-#| "will remain the same level. The typical AMLA effect is for the unit to "
-#| "raise the maximum HP by 3 and full-heal it. The first AMLA will normally "
-#| "be reached with 150 XP gained (120 XP for intelligent units). However, "
-#| "gaining an AMLA becomes progressively harder for each AMLA the unit "
-#| "receives, and so it is usually more useful to try to advance your lower "
-#| "level units."
 msgid ""
 "While most units have three levels, not all do. Occasional units (such as "
 "<ref dst='unit_Mage'>magi</ref>) may have four. Once a unit has reached its "
 "maximum level, it may have an <i>After Maximum Level Advancement</i> (AMLA) "
-"available to it. The AMLA will modify the unit each time the unit reaches "
-"the experience goal, but the unit will remain the same level. The typical "
-"AMLA effect is for the unit to raise the maximum HP by 3 and full-heal it. "
-"The first AMLA will normally be reached with 150 XP gained (120 XP for "
-"intelligent units). However, gaining an AMLA becomes progressively harder "
-"for each AMLA the unit receives, and so it is usually more useful to try to "
+"available to it. The AMLA will modify the unit each time the unit reaches the"
+" experience goal, but the unit will remain the same level. The typical AMLA "
+"effect is for the unit to raise the maximum HP by 3 and full-heal it. The "
+"first AMLA will normally be reached with 150 XP gained (120 XP for "
+"intelligent units). However, gaining an AMLA becomes progressively harder for"
+" each AMLA the unit receives, and so it is usually more useful to try to "
 "advance your lower level units."
 msgstr ""
-"\n"
-"\n"
-"Embora a maioria das unidades possuem apenas três níveis, algumas possuem "
-"mais ou menos níveis. Algumas unidades (como os <ref>dst='unit_Mage' "
-"text='magos'</ref>) possuem quatro níveis. Quando uma unidade atinge o seu "
-"nível máximo, ela desbloqueia o  <italic>text='Avanço Pós Nível Máximo '</"
-"italic> (APNM). O APNM melhora marginalmente a unidade toda vez que ela "
-"atinge a quantidade experiência necessária para subir de nível. A maioria "
-"das unidades, ao adquirirem um nível de APNM, recebem 3 pontos de vida "
-"adicionais e são curados como se houvessem subido de nível. O primeiro APNM "
-"normalmente custa 150 de XP (120 de XP para unidades inteligentes). Dito "
-"isso, cada nível de APNM é consideravelmente mais difícilo de se obter do "
-"que o anterior. Ou seja, normalmente é melhor focar o ganho de experiência "
-"para as suas unidades de níveis mais baixo do que unidades que já atingiram "
-"o nível máximo."
+"A maioria das unidades tem três níveis, mas não todas. Algumas (como os <ref "
+"dst='unit_Mage'>magos</ref>) têm quatro. Quando uma unidade chega ao nível "
+"máximo, pode ter um <i>Avanço Após o Nível Máximo</i> (AANM). O AANM modifica"
+" a unidade toda vez que ela atinge a meta de experiência, mas ela continua no"
+" mesmo nível. O efeito típico é aumentar a vida máxima em 3 e curá-la por "
+"completo. O primeiro AANM normalmente vem com 150 XP (120 XP para unidades "
+"inteligentes). Cada AANM seguinte fica mais difícil, então costuma valer mais"
+" a pena evoluir suas unidades de nível mais baixo."
 
 #
 # File: data/core/help.cfg, line: 213
@@ -4658,27 +4273,11 @@ msgstr ""
 msgid "Movement"
 msgstr "Movimento"
 
-#
 # File: data/core/help.cfg, line: 214
 # File: data/core/help.cfg, line: 214
 # File: data/core/help.cfg, line: 214
 #. [topic]: id=movement
 #: data/core/help.cfg:260
-#, fuzzy
-#| msgid ""
-#| "Movement in <italic>text='Battle for Wesnoth'</italic> is simple. Click "
-#| "on the unit you wish to move to select it, then click on the hex you wish "
-#| "to move it to. When a unit is selected, everywhere it can move this turn "
-#| "will be highlighted, and all other hexes on the map are made dull. "
-#| "Mousing over a highlighted hex shows the defense rating the unit would "
-#| "have if you moved it to that hex. Mousing over a dull hex will also show "
-#| "the number of turns required to reach it, and clicking will cause the "
-#| "unit to move towards it by the fastest route over this and subsequent "
-#| "turns. If you don’t use up all of a unit’s movement when you first move a "
-#| "unit, you may move it again. This is useful when having two units switch "
-#| "places. Attacking with a unit will use up its movement. Ending a move in "
-#| "a village you don’t already own will also use up a unit’s movement, but "
-#| "will still allow it to attack."
 msgid ""
 "Movement in <i>Battle for Wesnoth</i> is simple. Click on the unit you wish "
 "to move to select it, then click on the hex you wish to move it to. When a "
@@ -4688,88 +4287,53 @@ msgid ""
 "Mousing over a dull hex will also show the number of turns required to reach "
 "it, and clicking will cause the unit to move towards it by the fastest route "
 "over this and subsequent turns. If you don’t use up all of a unit’s movement "
-"when you first move a unit, you may move it again. This is useful when "
-"having two units switch places. Attacking with a unit will use up its "
-"movement. Ending a move in a village you don’t already own will also use up "
-"a unit’s movement, but will still allow it to attack."
+"when you first move a unit, you may move it again. This is useful when having"
+" two units switch places. Attacking with a unit will use up its movement. "
+"Ending a move in a village you don’t already own will also use up a unit’s "
+"movement, but will still allow it to attack."
 msgstr ""
-"Movimento em <italic>text='Battle for Wesnoth'</italic> é simples. Clique na "
-"unidade que você deseja mover para selecioná-la, depois clique no hexágono "
-"em que você deseja que ela vá. Quando uma unidade é selecionada, todos os "
-"locais para onde ela pode se mover nesse turno são destacados, e todos os "
-"outros hexágonos do mapa ficam ofuscados. Passar o mouse por sobre um "
-"hexágono destacado mostra o valor de defesa que a unidade terá se ela se "
-"mover para lá. Passar o mouse sobre um hexágono ofuscado mostrará o número "
-"de turnos necessários para que ela chegue lá, e clicar nele fará com que a "
-"unidade se mova até ele por meio do melhor caminho possível nesse e nos "
-"turnos seguintes. Se você não gastar todos os pontos de movimento de uma "
-"unidade quando movê-la, você pode continuar a move-la nesse turno. Isso é "
-"útil quando precisar que duas unidades troquem de lugar. Atacar com uma "
-"unidade gasta todo o seu movimento. Mover para uma aldeia que não estava "
-"sobre seu controle nesse turno também usa todos os pontos de movimento da "
-"unidade, mas ela ainda pode atacar."
+"O movimento em <i>Batalha por Wesnoth</i> é simples. Toque na unidade que "
+"quer mover para selecioná-la e depois no hexágono de destino; no celular, o "
+"primeiro toque mostra o caminho e o segundo toque no mesmo hexágono confirma."
+" Com a unidade selecionada, os lugares que ela alcança neste turno ficam "
+"destacados e o resto do mapa fica escurecido. O hexágono sob o dedo (ou o "
+"ponteiro) mostra a defesa que a unidade teria ali. Num hexágono escurecido, "
+"aparece também quantos turnos faltam para chegar, e confirmar faz a unidade "
+"seguir pelo caminho mais rápido neste turno e nos seguintes. Se a unidade não"
+" usar todo o movimento, você pode movê-la de novo, o que ajuda a trocar duas "
+"unidades de lugar. Atacar gasta o movimento que sobrou. Terminar o movimento "
+"numa aldeia que ainda não é sua também gasta o movimento, mas a unidade ainda"
+" pode atacar."
 
-#
 # File: data/core/help.cfg, line: 214
 # File: data/core/help.cfg, line: 214
 # File: data/core/help.cfg, line: 214
 #. [topic]: id=movement
 #: data/core/help.cfg:262
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Each unit has a certain number of movement points which are used up when "
-#| "moving into a new hex, depending on the Terrain of that particular hex. "
-#| "For instance, grassland nearly always costs 1 movement point to enter. "
-#| "Exactly how many movement points are spent entering a hex depends on the "
-#| "unit type — in forest, elvish units only spend 1 movement point, most "
-#| "human and orc units spend 2, while horsemen spend 3. You can learn how "
-#| "many movement points a unit requires to enter a certain terrain type by "
-#| "right-clicking on it, selecting <bold>text='Unit Description'</bold>, and "
-#| "then looking at <bold>text='Terrain Modifiers'</bold>."
 msgid ""
 "Each unit has a certain number of movement points which are used up when "
 "moving into a new hex, depending on the Terrain of that particular hex. For "
 "instance, grassland nearly always costs 1 movement point to enter. Exactly "
 "how many movement points are spent entering a hex depends on the unit type — "
-"in forest, elvish units only spend 1 movement point, most human and orc "
-"units spend 2, while horsemen spend 3. You can learn how many movement "
-"points a unit requires to enter a certain terrain type by right-clicking on "
-"it, selecting <b>Unit Description</b>, and then looking at <b>Terrain "
+"in forest, elvish units only spend 1 movement point, most human and orc units"
+" spend 2, while horsemen spend 3. You can learn how many movement points a "
+"unit requires to enter a certain terrain type by right-clicking on it, "
+"selecting <b>Unit Description</b>, and then looking at <b>Terrain "
 "Modifiers</b>."
 msgstr ""
-"\n"
-"\n"
-"Cada unidade possui um certo número de pontos que movimento. Pontos de "
-"movimentos são usados quando a unidade se move. Diferentes tipos de terreno "
-"custam diferentes quantidades de pontos de movimento. Por exemplo, unidades "
-"descolando-se para um campo quase sempre gastam 1 ponto de movimento. O "
-"custo exato dos pontos de movimento que uma unidade gasta para se descolar "
-"para um terreno depende da unidade - em florestas, unidades élficas gastam "
-"apenas 1 ponto para se deslocar, a maioria das unidades humanas e orcs "
-"gastam 2 e unidades montadas 3. Você pode ver quantos pontos de movimento "
-"uma unidade precisa para se deslocar para um terreno clicando com o botão "
-"direito nela selecionando a opção <bold>text='Descrição da Unidade'</bold>, "
-"e prestando atenção nos <bold>text='Modificadores de Terreno'</bold>."
+"Cada unidade tem pontos de movimento, gastos ao entrar num novo hexágono "
+"conforme o terreno dele. Por exemplo, campo quase sempre custa 1 ponto de "
+"movimento. O custo exato depende do tipo de unidade — na floresta, elfos "
+"gastam só 1 ponto, a maioria dos humanos e orcs gasta 2 e cavaleiros gastam "
+"3. Para ver quanto uma unidade gasta em cada terreno, toque no cartão da "
+"unidade no painel lateral (ou toque e segure a unidade e escolha <b>Descrição"
+" do Tipo de Unidade</b>) e veja os <b>Modificadores de Terreno</b>."
 
-#
 # File: data/core/help.cfg, line: 216
 # File: data/core/help.cfg, line: 216
 # File: data/core/help.cfg, line: 216
 #. [topic]: id=movement
 #: data/core/help.cfg:264
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Another thing to keep in mind while moving is <italic>text='zones of "
-#| "control'</italic>. Each unit — except for level 0 units — generates a "
-#| "zone of control in the hexes immediately surrounding it, and any enemy "
-#| "unit entering those hexes immediately ends its movement. Learning how to "
-#| "use zones of control to your advantage is an important part of Wesnoth, "
-#| "as only <ref>dst='ability_skirmisherskirmisher' text='skirmishers'</ref> "
-#| "can ignore zones of control."
 msgid ""
 "Another thing to keep in mind while moving is <i>zones of control</i>. Each "
 "unit — except for level 0 units — generates a zone of control in the hexes "
@@ -4778,41 +4342,26 @@ msgid ""
 "advantage is an important part of Wesnoth, as only <ref "
 "dst='ability_skirmisher'>skirmishers</ref> can ignore zones of control."
 msgstr ""
-"\n"
-"\n"
-"Outra coisa que deve sempre se atentar para são as <italic>text='zonas de "
-"controle'</italic>. Cada unidade, com excessão das de nível 0, exerce uma "
-"zona de controle nos espaços imediatamentes adjacentes a ela. Ao adentrar "
-"uma zona de controle inimiga, a unidade gasta todos os seus pontos de "
-"movimento por aquele turno. Aprender a usar zonas de controle para o seu "
-"benefício é uma parte muito importante do jogo, visto que apenas unidades "
-"com a habilidade de <ref>dst='ability_skirmisherskirmisher' "
-"text='escaramuçador'</ref>podem ignorar zonas de controle inimigas."
+"Outra coisa a lembrar ao mover são as <i>zonas de controle</i>. Toda unidade "
+"— exceto as de nível 0 — cria uma zona de controle nos hexágonos ao seu "
+"redor, e qualquer unidade inimiga que entre neles termina o movimento ali. "
+"Aprender a usar as zonas de controle a seu favor é parte importante de "
+"Wesnoth, pois só <ref dst='ability_skirmisher'>escaramuçadores</ref> podem "
+"ignorá-las."
 
-#
 # File: data/core/help.cfg, line: 218
 # File: data/core/help.cfg, line: 218
 # File: data/core/help.cfg, line: 218
 #. [topic]: id=movement
 #: data/core/help.cfg:266
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "To see where the enemy can move to during their next turn, press Ctrl-v "
-#| "or Cmd-v. Ctrl-b or Cmd-b shows where the enemy could move, if your units "
-#| "were not on the map to block their progress."
 msgid ""
 "To see where the enemy can move to during their next turn, press Ctrl-v or "
 "Cmd-v. Ctrl-b or Cmd-b shows where the enemy could move, if your units were "
 "not on the map to block their progress."
 msgstr ""
-"\n"
-"\n"
-"Para ver onde uma unidade inimiga pode se mover durante o próxmo turno de "
-"seu oponente, pressione Ctrl-v ou Cmd-v. Ctrl-b ou Cmd-b mostra onde o "
-"inimigo poderia se mover caso suas unidades não estivessem no mapa e, "
-"consequentemente, bloqueando algumas de suas opções de movimento."
+"Para ver até onde o inimigo pode ir no próximo turno, use <b>Mostrar "
+"Movimentos do Inimigo</b> no menu Ações (Ctrl-v ou Cmd-v no teclado). Ctrl-b "
+"ou Cmd-b mostra até onde ele iria se suas unidades não estivessem no caminho."
 
 #. [topic]: id=vision
 #: data/core/help.cfg:273
@@ -4827,6 +4376,10 @@ msgid ""
 "with unique vision capabilities deviate from this rule and have vision cost "
 "independent of movement range."
 msgstr ""
+"A visão determina até onde uma unidade enxerga no mapa. Normalmente, o "
+"alcance de visão é o alcance de movimento mais um hexágono. Algumas unidades "
+"com visão especial fogem dessa regra e têm custo de visão independente do "
+"movimento."
 
 #
 # File: data/core/help.cfg, line: 227
@@ -4837,78 +4390,19 @@ msgstr ""
 msgid "Shroud and Fog of War"
 msgstr "Escuridão e Névoa de Guerra"
 
-#
 # File: data/core/help.cfg, line: 228
 # File: data/core/help.cfg, line: 228
 # File: data/core/help.cfg, line: 228
 #. [topic]: id=shroud_and_fog
 #: data/core/help.cfg:282
-#, fuzzy
-#| msgid ""
-#| "In some scenarios, parts of the map will be hidden from you. There are "
-#| "two mechanisms that can be used separately or together. The "
-#| "<italic>text='shroud'</italic> hides both the terrain and any units at a "
-#| "location. However, once it is cleared, you can always see that location. "
-#| "The <italic>text='fog of war'</italic> only hides units and ownership of "
-#| "villages (other than by you or your allies). The fog of war is cleared "
-#| "temporarily when you have units nearby, but returns when they leave. Both "
-#| "the shroud and the fog of war are cleared by units. Each unit clears "
-#| "locations adjacent to those within one turn’s move (ignoring zones of "
-#| "control and enemy units).\n"
-#| "\n"
-#| "Normally you can undo a unit’s movement, as long as an event with a "
-#| "randomized result has not occurred, such as combat or recruitment (as "
-#| "most units receive random traits when recruited). Exploring hidden "
-#| "terrain by clearing shroud or fog will also prevent undos to a previous "
-#| "state. You may wish to activate <bold>text='Delay Shroud Updates'</bold> "
-#| "in the actions menu. This will prevent units from clearing shroud or fog "
-#| "until the next randomized event or a manual update via <bold>text='Update "
-#| "Shroud Now'</bold> (or the end of your turn) and thereby preserve your "
-#| "ability to undo movement."
 msgid ""
-"In some scenarios, parts of the map will be hidden from you. There are two "
-"mechanisms that can be used separately or together. The <i>shroud</i> hides "
-"both the terrain and any units at a location. However, once it is cleared, "
-"you can always see that location. The <i>fog of war</i> only hides units and "
-"ownership of villages (other than by you or your allies). The fog of war is "
-"cleared temporarily when you have units nearby, but returns when they leave. "
-"Both the shroud and the fog of war are cleared by units. Each unit clears "
-"locations adjacent to those within one turn’s move (ignoring zones of "
-"control and enemy units).\n"
+"In some scenarios, parts of the map will be hidden from you. There are two mechanisms that can be used separately or together. The <i>shroud</i> hides both the terrain and any units at a location. However, once it is cleared, you can always see that location. The <i>fog of war</i> only hides units and ownership of villages (other than by you or your allies). The fog of war is cleared temporarily when you have units nearby, but returns when they leave. Both the shroud and the fog of war are cleared by units. Each unit clears locations adjacent to those within one turn’s move (ignoring zones of control and enemy units).\n"
 "\n"
-"Normally you can undo a unit’s movement, as long as an event with a "
-"randomized result has not occurred, such as combat or recruitment (as most "
-"units receive random traits when recruited). Exploring hidden terrain by "
-"clearing shroud or fog will also prevent undos to a previous state. You may "
-"wish to activate <b>Delay Shroud Updates</b> in the actions menu. This will "
-"prevent units from clearing shroud or fog until the next randomized event or "
-"a manual update via <b>Update Shroud Now</b> (or the end of your turn) and "
-"thereby preserve your ability to undo movement."
+"Normally you can undo a unit’s movement, as long as an event with a randomized result has not occurred, such as combat or recruitment (as most units receive random traits when recruited). Exploring hidden terrain by clearing shroud or fog will also prevent undos to a previous state. You may wish to activate <b>Delay Shroud Updates</b> in the actions menu. This will prevent units from clearing shroud or fog until the next randomized event or a manual update via <b>Update Shroud Now</b> (or the end of your turn) and thereby preserve your ability to undo movement."
 msgstr ""
-"Em alguns cenários, partes do mapa estarão escondidas de você. Há duas "
-"formas que isso pode ocorrer, separadamente ou em conjunto. A "
-"<italic>text='escuridão'</italic> oculta tanto o terreno quanto quaisquer "
-"unidades no terreno. Porém, uma vez que a escuridão tenha sido removida de "
-"um local, você sempre poderá ver aquele local. A <italic>text='neblina de "
-"guerra'</italic> apenas esconde as unidades e o indicador de posse das "
-"aldeias (exceto as suas e dos seus aliados). A neblina de guerra é removida "
-"temporariamente quando você tem unidades nas proximidades, mas retorna uma "
-"vez que elas se afastam. Tanto a escuridão quanto a neblina de guerra são "
-"removidas pela presença de unidades. Cada unidade limpa uma distância "
-"equivalente ao seu movimento em um turno (ignorando zona de controle e "
-"unidades inimigas).\n"
+"Em alguns cenários, partes do mapa ficam escondidas. Há dois mecanismos, que podem ser usados juntos ou separados. A <i>escuridão</i> esconde o terreno e as unidades de um lugar; depois de revelado, porém, o lugar fica sempre visível. A <i>névoa de guerra</i> esconde só as unidades e o dono das aldeias (exceto as suas e as dos aliados). A névoa some enquanto você tem unidades por perto, mas volta quando elas saem. Escuridão e névoa são reveladas pelas unidades: cada uma revela os hexágonos vizinhos aos que ela alcançaria num turno (ignorando zonas de controle e unidades inimigas).\n"
 "\n"
-"Normalmente você pode desfazer o movimento de uma unidade, desde que não "
-"tenha ocorrido um evento com resultado aleatório, como combate ou "
-"recrutamento (porque a maioria das unidades recebem características "
-"aleatórias quando recrutadas). Explorar locais obscurecidos pela escuridão "
-"ou neblina também impedirá que um movimento seja desfeito. Você talvez "
-"queira ativar a opção <bold>text='atrasar atualização da escuridão'</bold> "
-"no menu de ações. Isto impedirá que as unidades removam a neblina ou a "
-"escuridão até o próximo evento aleatório, ou até que seja manualmente "
-"atualizado via <bold>text='atualizar escuridão agora'</bold> (ou no final do "
-"seu turno), preservando a sua habilidade de desfazer o movimento das suas "
-"unidades."
+"Normalmente você pode desfazer o movimento de uma unidade, desde que não tenha acontecido nada com resultado aleatório, como um combate ou um recrutamento (a maioria das unidades recebe características aleatórias ao ser recrutada). Revelar terreno escondido também impede desfazer. Você pode ligar <b>Atrasar Atualização da Escuridão</b> no menu Ações: assim as unidades só revelam escuridão ou névoa no próximo evento aleatório, ao usar <b>Atualizar Escuridão Agora</b> ou no fim do turno, e você continua podendo desfazer movimentos."
 
 # File: data/core/help.cfg, line: 813
 # File: data/core/help.cfg, line: 813
@@ -4959,25 +4453,18 @@ msgstr ""
 
 #. [topic]: id=saveload
 #: data/core/help.cfg:298
-#, fuzzy
-#| msgid ""
-#| "One of the challenges of the game is to work out how to protect your "
-#| "heroes. Small risks quickly build up: if you have five important units, "
-#| "and they each have just a 1% chance of death each turn, you can "
-#| "<italic>text='expect'</italic> one of them to die about every 20 turns. "
-#| "So, you’ll rarely make it through a scenario without having it happen."
 msgid ""
 "One of the challenges of the game is to work out how to protect your heroes. "
-"Small risks quickly build up: if you have five important units, and they "
-"each have just a 1% chance of death each turn, you can <i>expect</i> one of "
-"them to die about every 20 turns. So, you’ll rarely make it through a "
-"scenario without having it happen."
+"Small risks quickly build up: if you have five important units, and they each"
+" have just a 1% chance of death each turn, you can <i>expect</i> one of them "
+"to die about every 20 turns. So, you’ll rarely make it through a scenario "
+"without having it happen."
 msgstr ""
-"Um dos desafios do jogo é descobrir como proteger os seus heróis. Pequenos "
-"riscos acumulam-se rapidamente: se você tem cinco unidades importantes e "
-"cada uma delas possui 1% de chance de morrer a cada turno, você pode "
-"<italic>text='esperar'</italic>que uma delas morra mais ou menos a cada 20 "
-"turnos. Então, você raramente completaá um cenário sem que isto aconteça."
+"Um dos desafios do jogo é descobrir como proteger seus heróis. Riscos "
+"pequenos se acumulam depressa: se você tem cinco unidades importantes e cada "
+"uma tem só 1% de chance de morrer por turno, pode <i>esperar</i> que uma "
+"delas morra a cada 20 turnos, mais ou menos. Então, raramente você atravessa "
+"um cenário sem que isso aconteça."
 
 #. [topic]: id=saveload
 #: data/core/help.cfg:301
@@ -5043,28 +4530,16 @@ msgstr ""
 
 #. [topic]: id=whylost
 #: data/core/help.cfg:317
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "When you first start playing, you will probably lose some scenarios. That "
-#| "is normal, and is part of learning the game. When that happens, try to "
-#| "learn from your mistakes: watch the replay, try to understand what you "
-#| "did wrong, then <ref>dst='saveload' text='restart the scenario'</ref> and "
-#| "try again."
 msgid ""
 "When you first start playing, you will probably lose some scenarios. That is "
 "normal, and is part of learning the game. When that happens, try to learn "
 "from your mistakes: watch the replay, try to understand what you did wrong, "
 "then <ref dst='saveload'>restart the scenario</ref> and try again."
 msgstr ""
-"\n"
-"\n"
-"Quando você começar a jogar, você provavelmente perderá alguns cenários. "
-"Isto é normal e faz parte da curva de aprendizado do jogo. Quando isto "
-"acontecer, tente aprender com os seus erros: assista o replay, tente "
-"entender o que você fez de errado, e então <ref>dst='saveload' "
-"text='recomeçe o cenário'</ref> e tente de novo."
+"No começo, você provavelmente vai perder alguns cenários. É normal e faz "
+"parte de aprender o jogo. Quando acontecer, tente aprender com os erros: "
+"assista ao replay, procure entender o que deu errado, depois <ref "
+"dst='saveload'>reinicie o cenário</ref> e tente de novo."
 
 #. [topic]: id=whylost
 #: data/core/help.cfg:319
@@ -5073,135 +4548,75 @@ msgstr "Alguns motivos comuns para perder um cenário são:"
 
 #. [topic]: id=whylost
 #: data/core/help.cfg:321
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "• Playing a campaign at too high a <ref>dst='..gameplay' text='difficulty "
-#| "level'</ref>. Try restarting the scenario at an easier difficulty."
 msgid ""
-"• Playing a campaign at too high a <ref dst='..gameplay'>difficulty level</"
-"ref>. Try restarting the scenario at an easier difficulty."
+"• Playing a campaign at too high a <ref dst='..gameplay'>difficulty "
+"level</ref>. Try restarting the scenario at an easier difficulty."
 msgstr ""
-"\n"
-"\n"
-"• Jogar uma campanha num <ref>dst='..gameplay' text='nível de dificuldade'</"
-"ref> muito difícil. Tente recomeçar o cenário numa dificuldade mais fácil."
+"• Jogar uma campanha numa <ref dst='..gameplay'>dificuldade</ref> alta "
+"demais. Tente reiniciar o cenário numa dificuldade mais fácil."
 
 #. [topic]: id=whylost
 #: data/core/help.cfg:323
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "• Playing a poor strategy: for example, recruiting the wrong types of "
-#| "units, fighting at the wrong <ref>dst='time_of_day' text='time of day'</"
-#| "ref>, not taking advantage of terrain features or units’ special "
-#| "abilities, and so on."
 msgid ""
 "• Playing a poor strategy: for example, recruiting the wrong types of units, "
 "fighting at the wrong <ref dst='time_of_day'>time of day</ref>, not taking "
 "advantage of terrain features or units’ special abilities, and so on."
 msgstr ""
-"\n"
-"\n"
-"• Usar uma estratégia inadequada: por exemplo, recrutar tipos de unidades "
-"inadequados para a situação, lutar no <ref>dst='time_of_day' text='período "
-"do dia'</ref> errado, não tirar proveito das características dos terrenos ou "
-"das habilidades especiais das unidades e assim por diante."
+"• Usar uma estratégia ruim: por exemplo, recrutar os tipos errados de "
+"unidade, lutar na <ref dst='time_of_day'>hora do dia</ref> errada, não "
+"aproveitar o terreno ou as habilidades especiais das unidades, e assim por "
+"diante."
 
 #. [topic]: id=whylost
 #: data/core/help.cfg:325
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "• Missing clues. Often there will be hints in the campaign’s story and "
-#| "dialog about what to expect from a difficult scenario and how to prepare "
-#| "for it. If you have a loyal mage on your side, take the time to listen to "
-#| "its advice; it may save your life."
 msgid ""
-"• Missing clues. Often there will be hints in the campaign’s story and "
-"dialog about what to expect from a difficult scenario and how to prepare for "
-"it. If you have a loyal mage on your side, take the time to listen to its "
-"advice; it may save your life."
+"• Missing clues. Often there will be hints in the campaign’s story and dialog"
+" about what to expect from a difficult scenario and how to prepare for it. If"
+" you have a loyal mage on your side, take the time to listen to its advice; "
+"it may save your life."
 msgstr ""
-"\n"
-"\n"
-"• Não captar as pistas. Geralmente há dicas na história da campanha e no "
-"diálogo sobre o que esperar de um cenário difícil e como se preparar para "
-"encará-lo. Se você tiver um mago leal ao seu lado, ouça os seus conselhos; "
-"eles poderão salvar a sua vida."
+"• Deixar passar pistas. Muitas vezes a história e os diálogos da campanha dão"
+" dicas do que esperar de um cenário difícil e de como se preparar. Se você "
+"tem um mago leal ao seu lado, ouça os conselhos dele; podem salvar sua vida."
 
 #. [topic]: id=whylost
 #: data/core/help.cfg:327
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "• Barely scraping a victory in a previous scenario. Campaigns generally "
-#| "assume that you will have some <italic>text='carryover gold'</italic> and "
-#| "some experienced units on your <italic>text='recall list.'</italic> "
-#| "(These concepts are explained in the tutorial.) If you win a scenario but "
-#| "lose most of your experienced units and much of your gold, the following "
-#| "scenario may be very difficult to beat, even for a more experienced "
-#| "player. If you find yourself in this situation, you may try to go back a "
-#| "scenario or two and win them more convincingly, or change to an easier "
-#| "difficulty. (However, remember that <italic>text='some'</italic> losses "
-#| "are expected, particularly at higher difficulties.)"
 msgid ""
 "• Barely scraping a victory in a previous scenario. Campaigns generally "
 "assume that you will have some <i>carryover gold</i> and some experienced "
 "units on your <i>recall list.</i> (These concepts are explained in the "
 "tutorial.) If you win a scenario but lose most of your experienced units and "
-"much of your gold, the following scenario may be very difficult to beat, "
-"even for a more experienced player. If you find yourself in this situation, "
-"you may try to go back a scenario or two and win them more convincingly, or "
+"much of your gold, the following scenario may be very difficult to beat, even"
+" for a more experienced player. If you find yourself in this situation, you "
+"may try to go back a scenario or two and win them more convincingly, or "
 "change to an easier difficulty. (However, remember that <i>some</i> losses "
 "are expected, particularly at higher difficulties.)"
 msgstr ""
-"\n"
-"\n"
-"• Vitória pírrica num cenário anterior. As campanhas assumem que você terá "
-"algum <italic>text='ouro transferido'</italic> e algumas unidades veteranas "
-"na sua <italic>text='lista de convocação.'</italic> (Estes conceitos são "
-"explicados no tutorial.) Se você ganhar um cenário mas perder a maioria das "
-"suas unidades veteranas e a maior parte do seu ouro, provavelmente será "
-"muito dificil vencer o próximo cenário, até mesmo para um jogador "
-"experiente. Caso você se encontre nesta situação, é uma boa ideia tentar de "
-"novo o último ou penúltimo cenário para ver se obtem uma vitória melhor, ou "
-"então diminuir a dificuldade. (Entretanto, lembre-se de que "
-"<italic>text='algumas'</italic> derrotas são esperadas, particularmente nas "
+"• Vencer por um triz o cenário anterior. As campanhas costumam supor que você"
+" terá algum <i>ouro transferido</i> e algumas unidades experientes na "
+"<i>lista de convocação.</i> (Esses conceitos são explicados no tutorial.) Se "
+"você vence um cenário mas perde a maioria das unidades experientes e boa "
+"parte do ouro, o cenário seguinte pode ficar muito difícil, mesmo para um "
+"jogador mais experiente. Nessa situação, tente voltar um ou dois cenários e "
+"vencê-los com mais folga, ou mude para uma dificuldade mais fácil. (Lembre, "
+"porém, que <i>algumas</i> perdas são esperadas, principalmente nas "
 "dificuldades mais altas.)"
 
 #. [topic]: id=whylost
 #: data/core/help.cfg:329
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "• Poor gold management. At higher difficulties, managing gold — capturing "
-#| "villages to increase the income, and using low-level units and fresh "
-#| "recruits to reduce the spending — becomes important. If you use many high-"
-#| "level units, you might win a scenario easily but have not enough gold "
-#| "carryover for the next scenario. (This would be an example of “barely "
-#| "scraping a victory”.)"
 msgid ""
 "• Poor gold management. At higher difficulties, managing gold — capturing "
-"villages to increase the income, and using low-level units and fresh "
-"recruits to reduce the spending — becomes important. If you use many high-"
-"level units, you might win a scenario easily but have not enough gold "
-"carryover for the next scenario. (This would be an example of “barely "
-"scraping a victory”.)"
+"villages to increase the income, and using low-level units and fresh recruits"
+" to reduce the spending — becomes important. If you use many high-level "
+"units, you might win a scenario easily but have not enough gold carryover for"
+" the next scenario. (This would be an example of “barely scraping a "
+"victory”.)"
 msgstr ""
-"\n"
-"\n"
-"• Mal gerenciamento do ouro. Nas dificuldades mais altas, gerenciar o ouro — "
-"capturar vilas para aumentar a receita e usar unidades de nível baixo e "
-"unidades recém recrutadas para cortar gastos — torna-se importante. Se você "
-"usar muitas unidades de nível alto, talvez você facilmente ganhe o cenário "
-"mas não leve ouro o suficiente para o próximo cenário. (Este seria o exemplo "
-"de uma \"vitória pírrica\".)"
+"• Administrar mal o ouro. Nas dificuldades mais altas, cuidar do ouro — "
+"capturar aldeias para aumentar a renda e usar unidades de nível baixo e "
+"recrutas novos para gastar menos — passa a ser importante. Se você usa muitas"
+" unidades de nível alto, pode vencer um cenário com facilidade e ficar sem "
+"ouro suficiente para o seguinte. (Seria um caso de “vencer por um triz”.)"
 
 #. [topic]: id=whylost
 #: data/core/help.cfg:331
@@ -5210,154 +4625,79 @@ msgstr "Motivos improváveis"
 
 #. [topic]: id=whylost
 #: data/core/help.cfg:333
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "In addition to the common reasons, listed above, there are a few other "
-#| "reasons which are unlikely, though not impossible. They are:"
 msgid ""
 "In addition to the common reasons, listed above, there are a few other "
 "reasons which are unlikely, though not impossible. They are:"
 msgstr ""
-"\n"
-"\n"
-"Além dos motivos comuns, que foram listados acima, há outros motivos que são "
-"improváveis, mas não impossíveis. São eles:"
+"Além dos motivos comuns listados acima, há outros pouco prováveis, mas não "
+"impossíveis:"
 
 #. [topic]: id=whylost
 #: data/core/help.cfg:335
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "• You may have played a strategy that the campaign developer did not "
-#| "anticipate, and ended up with a set of high-level units not suitable for "
-#| "the next scenario."
 msgid ""
 "• You may have played a strategy that the campaign developer did not "
 "anticipate, and ended up with a set of high-level units not suitable for the "
 "next scenario."
 msgstr ""
-"\n"
-"\n"
-"• Talvez você tenha usado uma estratégia que o desenvolvidor da campanha não "
-"anticipou e acabou tendo um grupo de unidades de nível alto que não são "
-"adequadas para o próximo cenário."
+"• Você pode ter usado uma estratégia que o autor da campanha não previu e "
+"acabado com unidades de nível alto que não servem para o cenário seguinte."
 
 #. [topic]: id=whylost
 #: data/core/help.cfg:337
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "• You may have found a scenario that can only be won on the second or "
-#| "third time through, whether by requiring above-average luck or by "
-#| "expecting the players to have foreknowledge — to know what surprises are "
-#| "coming up before they happen. (It is under discussion whether "
-#| "foreknowledge is expected at the highest difficulties. Requiring above-"
-#| "average luck, however, would qualify as a bug.)"
 msgid ""
 "• You may have found a scenario that can only be won on the second or third "
 "time through, whether by requiring above-average luck or by expecting the "
 "players to have foreknowledge — to know what surprises are coming up before "
-"they happen. (It is under discussion whether foreknowledge is expected at "
-"the highest difficulties. Requiring above-average luck, however, would "
-"qualify as a bug.)"
+"they happen. (It is under discussion whether foreknowledge is expected at the"
+" highest difficulties. Requiring above-average luck, however, would qualify "
+"as a bug.)"
 msgstr ""
-"\n"
-"\n"
-"• Você pode ter encontrado um cenário que só pode ser ganho depois da "
-"segunda ou terceira tentativa, seja porque você precisa ter sorte acima da "
-"média ou porque ele espera que o jogador tenha certo conhecimento prévio — "
-"para saber quais surpresas estão por vir antes que elas apareçam. (Atulmente "
-"está em discussão se conhecimento prévio é esperado nas dificuldades mais "
-"difíceis. Precisar de sorte acima da média, por outro lado, pode ser "
-"classificado como bug.)"
+"• Você pode ter encontrado um cenário que só se vence na segunda ou terceira "
+"tentativa, seja por exigir sorte acima da média, seja por esperar que o "
+"jogador já saiba as surpresas antes que aconteçam. (Ainda se discute se esse "
+"conhecimento prévio é esperado nas dificuldades mais altas. Exigir sorte "
+"acima da média, porém, seria um defeito.)"
 
 #. [topic]: id=whylost
 #: data/core/help.cfg:339
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "• Unusually-bad luck. Whether an attack hits or misses is random, so it "
-#| "could happen that the enemy was very lucky and had many hits, while you "
-#| "were very unlucky and had many misses. However, this is a very rare "
-#| "occurrence, virtually unheard of in all but the shortest, smallest "
-#| "scenarios. In fact, losses are more commonly caused by playing a "
-#| "<italic>text='bad'</italic> strategy despite having <italic>text='above-"
-#| "average'</italic> luck, than by playing a <italic>text='good'</italic> "
-#| "strategy but having <italic>text='below-average'</italic> luck. Moreover, "
-#| "merely having “below-average” luck does not excuse a loss; having below-"
-#| "average luck is perfectly normal, and scenarios are designed to be "
-#| "winnable even with below-average luck. It is only exceedingly bad luck, "
-#| "over multiple turns, that we mean here."
 msgid ""
-"• Unusually-bad luck. Whether an attack hits or misses is random, so it "
-"could happen that the enemy was very lucky and had many hits, while you were "
-"very unlucky and had many misses. However, this is a very rare occurrence, "
+"• Unusually-bad luck. Whether an attack hits or misses is random, so it could"
+" happen that the enemy was very lucky and had many hits, while you were very "
+"unlucky and had many misses. However, this is a very rare occurrence, "
 "virtually unheard of in all but the shortest, smallest scenarios. In fact, "
 "losses are more commonly caused by playing a <i>bad</i> strategy despite "
 "having <i>above-average</i> luck, than by playing a <i>good</i> strategy but "
 "having <i>below-average</i> luck. Moreover, merely having “below-average” "
 "luck does not excuse a loss; having below-average luck is perfectly normal, "
-"and scenarios are designed to be winnable even with below-average luck. It "
-"is only exceedingly bad luck, over multiple turns, that we mean here."
+"and scenarios are designed to be winnable even with below-average luck. It is"
+" only exceedingly bad luck, over multiple turns, that we mean here."
 msgstr ""
-"\n"
-"\n"
-"• Tremendo azar. É aleatório se um ataque acerta ou erra, então é possível "
-"que o inimigo tenha sido extremamente sortudo e acertou muitos ataques e que "
-"você foi azarado e errou muitas vezes. Entretanto, isto é extremamente raro "
-"de acontecer e praticamente impossível de acontecer, com excessão de "
-"cenários muito curtos. De fato,derrotas normalmente são causadas por "
-"estratégias <italic>text='ruins'</italic> apesar de ter tido sorte "
-"<italic>text='acima da média'</italic>, ao invés de serem causadas por "
-"estratégias <italic>text='boas'</italic>, mas que tiveram sorte sorte "
-"<italic>text='abaixo da média'</italic>. Além disso, sorte \"abaixo da "
-"média\" não justifica uma perda; ter sorte abaixo da média é perfeitamente "
-"normal e cenários são feitos para serem ganhos mesmo tendo sorte abaixo da "
-"média. É apenas azar extremo, ao longo de vários turnos, a que nos referimos "
-"aqui."
+"• Azar fora do comum. Acertar ou errar um ataque é aleatório, então pode "
+"acontecer de o inimigo ter muita sorte e acertar muito enquanto você erra "
+"muito. Mas isso é raríssimo, praticamente inexistente fora dos cenários mais "
+"curtos e pequenos. Na verdade, derrotas vêm mais de uma estratégia "
+"<i>ruim</i> com sorte <i>acima</i> da média do que de uma estratégia "
+"<i>boa</i> com sorte <i>abaixo</i> da média. E ter sorte “abaixo da média” "
+"não justifica uma derrota: isso é perfeitamente normal, e os cenários são "
+"feitos para serem vencíveis mesmo assim. Aqui falamos só de um azar extremo, "
+"ao longo de vários turnos."
 
 #. [topic]: id=whylost
 #: data/core/help.cfg:341
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Be wary of attributing a loss to any of these reasons. If you are not a "
-#| "veteran player, it is far more likely that your loss was caused by one of "
-#| "the <italic>text='common'</italic> errors, listed above, and is not "
-#| "indicative of a bug in the campaign. However, if you still think you "
-#| "found a bug, then by all means, report it!"
 msgid ""
 "Be wary of attributing a loss to any of these reasons. If you are not a "
-"veteran player, it is far more likely that your loss was caused by one of "
-"the <i>common</i> errors, listed above, and is not indicative of a bug in "
-"the campaign. However, if you still think you found a bug, then by all "
-"means, report it!"
+"veteran player, it is far more likely that your loss was caused by one of the"
+" <i>common</i> errors, listed above, and is not indicative of a bug in the "
+"campaign. However, if you still think you found a bug, then by all means, "
+"report it!"
 msgstr ""
-"\n"
-"\n"
-"Tenho cuidado ao atribuir a sua derrota a qualquer uma destas razões. Se "
-"você não é um jogador veterano, é muito mais provável que a sua derrota "
-"tenha sido causada por um dos erros <italic>text='comuns'</italic>, listados "
-"acima, e não é significa que você encontrou um bug na campanha. Entretanto, "
-"se ainda assim você acha que encontrou um bug, por favor, nos informe!"
+"Cuidado ao atribuir uma derrota a algum desses motivos. Se você não é um "
+"jogador veterano, é muito mais provável que a derrota tenha vindo de um dos "
+"erros <i>comuns</i> listados acima, e não de um defeito da campanha. Mesmo "
+"assim, se achar que encontrou um defeito, relate!"
 
 #. [topic]: id=whylost
 #: data/core/help.cfg:343
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "The “Damage Calculations” dialog shows some statistics that can help "
-#| "determine whether a match was very lucky or very unlucky. However, "
-#| "reading the statistics is no substitute to watching the replay and "
-#| "looking for strategic mistakes, or small bits of luck at critical points "
-#| "in the engagement."
 msgid ""
 "The “Damage Calculations” dialog shows some statistics that can help "
 "determine whether a match was very lucky or very unlucky. However, reading "
@@ -5365,12 +4705,10 @@ msgid ""
 "strategic mistakes, or small bits of luck at critical points in the "
 "engagement."
 msgstr ""
-"\n"
-"\n"
-"A janela de \"Cálculo de Danos\" mostra estatísticas que podem ajudar a "
-"determinar se a partida teve muita sorte ou muito azar. Entretanto, ler as "
-"estatísticas não substitui ver o replay e procurar por erros táticos, ou por "
-"pequenas ocorrencias de sorte em momentos cruciais."
+"A janela “Cálculo de Dano” mostra estatísticas que ajudam a avaliar se uma "
+"partida teve muita sorte ou muito azar. Mas ler as estatísticas não substitui"
+" assistir ao replay procurando erros de estratégia ou pequenos golpes de "
+"sorte nos momentos decisivos."
 
 #
 # File: data/core/help.cfg, line: 237
@@ -5381,48 +4719,32 @@ msgstr ""
 msgid "Combat"
 msgstr "Combate"
 
-#
 # File: data/core/help.cfg, line: 238
 # File: data/core/help.cfg, line: 238
 # File: data/core/help.cfg, line: 238
 #. [topic]: id=combat
 #: data/core/help.cfg:351
-#, fuzzy
-#| msgid ""
-#| "Combat in <italic>text='Battle for Wesnoth'</italic> always takes place "
-#| "between units in adjacent hexes. Click on your unit, and click on the "
-#| "enemy you want to attack: your unit will move towards the enemy unit, and "
-#| "when they are next to each other, combat will begin. The attacker and "
-#| "defender alternate strikes until each has used their allotted number of "
-#| "strikes. The attacker chooses one of its weapons to attack with, and the "
-#| "defender retaliates with one of its attacks of the same type. There are "
-#| "two types of attacks: <italic>text='melee'</italic>, which usually "
-#| "involves weapons such as swords, axes or fangs; and "
-#| "<italic>text='ranged'</italic>, which usually involves weapons such as "
-#| "bows, spears and fireballs."
 msgid ""
 "Combat in <i>Battle for Wesnoth</i> always takes place between units in "
 "adjacent hexes. Click on your unit, and click on the enemy you want to "
-"attack: your unit will move towards the enemy unit, and when they are next "
-"to each other, combat will begin. The attacker and defender alternate "
-"strikes until each has used their allotted number of strikes. The attacker "
-"chooses one of its weapons to attack with, and the defender retaliates with "
-"one of its attacks of the same type. There are two types of attacks: "
-"<i>melee</i>, which usually involves weapons such as swords, axes or fangs; "
-"and <i>ranged</i>, which usually involves weapons such as bows, spears and "
+"attack: your unit will move towards the enemy unit, and when they are next to"
+" each other, combat will begin. The attacker and defender alternate strikes "
+"until each has used their allotted number of strikes. The attacker chooses "
+"one of its weapons to attack with, and the defender retaliates with one of "
+"its attacks of the same type. There are two types of attacks: <i>melee</i>, "
+"which usually involves weapons such as swords, axes or fangs; and "
+"<i>ranged</i>, which usually involves weapons such as bows, spears and "
 "fireballs."
 msgstr ""
-"Combate em <italic>text='Battle for Wesnoth'</italic> só ocorre entre "
-"unidades adjacentes. Primeiro, clique na sua unidade e, em seguida, clique "
-"na unidade inimiga que você deseja atacar: Sua unidade se moverá até a "
-"unidade inimiga e quando elas estiverem lado a lado o combate acontecerá. O "
-"atacante e o defensor alternam golpes até que ambos tenham desferido o "
-"número de golpes de suas armas. O atacante escolhe uma de suas armas para "
-"atacar e o defensor contra-ataca com um de seus ataques do mesmo tipo. "
-"Existem dois tipos de ataques: <italic>text='corpo-a-corpo'</italic> que "
-"geralmente envolve armas como espadas, machados ou garras; e <italic>text='à "
-"distância'</italic> que geralmente envolve armas como arcos, lanças e bolas "
-"de fogo."
+"O combate em <i>Batalha por Wesnoth</i> sempre acontece entre unidades em "
+"hexágonos vizinhos. Toque na sua unidade e depois no inimigo que quer atacar:"
+" se ele estiver longe, o primeiro toque mostra o caminho e o segundo "
+"confirma; sua unidade vai até ele e, quando estiverem lado a lado, abre-se a "
+"janela de ataque. Atacante e defensor alternam golpes até cada um usar todos "
+"os seus. O atacante escolhe com qual arma atacar, e o defensor revida com um "
+"ataque do mesmo tipo. Há dois tipos de ataque: <i>corpo a corpo</i>, "
+"geralmente com armas como espadas, machados ou presas; e <i>à distância</i>, "
+"geralmente com arcos, lanças e bolas de fogo."
 
 # File: data/core/help.cfg, line: 238
 # File: data/core/help.cfg, line: 238
@@ -5432,41 +4754,26 @@ msgstr ""
 msgid "Order and Number of Strikes"
 msgstr "Ordem e Número de Golpes"
 
-#
 # File: data/core/help.cfg, line: 240
 # File: data/core/help.cfg, line: 240
 # File: data/core/help.cfg, line: 240
 #. [topic]: id=combat
 #: data/core/help.cfg:355
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "The attacker gets the first strike, then the defender retaliates. Each "
-#| "strike either hits, doing a given amount of damage, or misses, doing no "
-#| "damage at all. Strikes alternate until each unit has used up all of its "
-#| "strikes. The number of strikes a unit has varies; for instance, an elvish "
-#| "fighter with a 5×4 attack may strike 4 times, each successful strike "
-#| "dealing 5 damage, while an orcish grunt with a 9×2 attack can only strike "
-#| "twice (but at 9 damage for each hit)."
 msgid ""
-"The attacker gets the first strike, then the defender retaliates. Each "
-"strike either hits, doing a given amount of damage, or misses, doing no "
-"damage at all. Strikes alternate until each unit has used up all of its "
-"strikes. The number of strikes a unit has varies; for instance, an elvish "
-"fighter with a 5×4 attack may strike 4 times, each successful strike dealing "
-"5 damage, while an orcish grunt with a 9×2 attack can only strike twice (but "
-"at 9 damage for each hit)."
+"The attacker gets the first strike, then the defender retaliates. Each strike"
+" either hits, doing a given amount of damage, or misses, doing no damage at "
+"all. Strikes alternate until each unit has used up all of its strikes. The "
+"number of strikes a unit has varies; for instance, an elvish fighter with a "
+"5×4 attack may strike 4 times, each successful strike dealing 5 damage, while"
+" an orcish grunt with a 9×2 attack can only strike twice (but at 9 damage for"
+" each hit)."
 msgstr ""
-"\n"
-"\n"
-"O atacante ataca primeiro, em seguida o defensor contra-ataca. Cada golpe ou "
-"acerta, causando uma determinada quantia de dano, ou erra, não causando "
-"dano. Ambas unidades golpeiam alternadamente até que as duas tenham usado "
-"todos os seus golpes. O número de golpes de uma unidade varia. Por exemplo, "
-"um guerreiro élfico com um ataque 5x4 golpeia 4 vezes, com cada acerto "
-"causando 5 pontos de dano. Já um orc grunt com um ataque 9x2 golpeia apenas "
-"2 vezes, mas cada acerto causa 9 pontos de dano."
+"O atacante golpeia primeiro e o defensor revida. Cada golpe acerta, causando "
+"certa quantidade de dano, ou erra, sem causar dano. Os golpes se alternam até"
+" cada unidade usar todos os seus. O número de golpes varia; por exemplo, um "
+"Guerreiro Élfico com ataque 5×4 golpeia 4 vezes, 5 de dano por acerto, "
+"enquanto um Orc Grunt com ataque 9×2 golpeia só duas vezes (mas 9 de dano por"
+" acerto)."
 
 # File: data/core/help.cfg, line: 242
 # File: data/core/help.cfg, line: 242
@@ -5476,24 +4783,11 @@ msgstr ""
 msgid "Chance to Hit"
 msgstr "Chance de Acerto"
 
-#
 # File: data/core/help.cfg, line: 244
 # File: data/core/help.cfg, line: 244
 # File: data/core/help.cfg, line: 244
 #. [topic]: id=combat
 #: data/core/help.cfg:359
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Every unit has a chance of being hit, based on the "
-#| "<italic>text='terrain'</italic> it is in. This is shown in the status "
-#| "pane, and may also be found by right-clicking a unit, selecting "
-#| "<bold>text='Unit Description'</bold>, and then looking at "
-#| "<bold>text='Terrain Modifiers'</bold>. For instance, many elves have a "
-#| "defense rating of 70% in forest, so a unit attacking them has only a 30% "
-#| "chance of hitting. Conversely, the elf’s chance of hitting the attacker "
-#| "in return depends on what terrain the attacker is in."
 msgid ""
 "Every unit has a chance of being hit, based on the <i>terrain</i> it is in. "
 "This is shown in the status pane, and may also be found by right-clicking a "
@@ -5503,33 +4797,18 @@ msgid ""
 "Conversely, the elf’s chance of hitting the attacker in return depends on "
 "what terrain the attacker is in."
 msgstr ""
-"\n"
-"\n"
-"Cada unidade possui uma chance de ser atingida que varia de acordo com o "
-"<italic>text='terreno'</italic> em que ela se encontra. Essa chance de ser "
-"acertada pode ser vista do painel de estatísticas e também pode ser vista "
-"pressionando o botão direito numa unidade, selecionando a "
-"<bold>text='Descrição da Unidade'</bold> e vendo os "
-"<bold>text='Modificadores de Terreno'</bold>. Por exemplo, muitos elfos "
-"possuem 70% de defesa em florestas, o que significa que um inimigo possui "
-"30% de acerta-los quando eles estão em florestas. Inversamente, a chance do "
-"elfo acertar o seu oponente depende do terreno em que ele se encontra."
+"Toda unidade tem uma chance de ser atingida que depende do <i>terreno</i> em "
+"que está. Ela aparece no painel lateral (linha “Defesa”) e também nos "
+"<b>Modificadores de Terreno</b> da descrição da unidade (toque no cartão da "
+"unidade). Por exemplo, muitos elfos têm 70% de defesa na floresta, então quem"
+" os ataca tem só 30% de chance de acertar. Já a chance do elfo acertar de "
+"volta depende do terreno em que o atacante está."
 
-#
 # File: data/core/help.cfg, line: 246
 # File: data/core/help.cfg, line: 246
 # File: data/core/help.cfg, line: 246
 #. [topic]: id=combat
 #: data/core/help.cfg:361
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "There are two exceptions to this rule: <ref>dst='weaponspecial_magical' "
-#| "text='magical attacks'</ref> and <ref>dst='weaponspecial_marksman' "
-#| "text='marksmen'</ref>. Magical attacks always have a 70% chance to hit, "
-#| "regardless of terrain, and, when used offensively, marksmen always have "
-#| "at least a 60% chance to hit, regardless of terrain."
 msgid ""
 "There are two exceptions to this rule: <ref "
 "dst='weaponspecial_magical'>magical attacks</ref> and <ref "
@@ -5537,83 +4816,52 @@ msgid ""
 "70% chance to hit, regardless of terrain, and, when used offensively, "
 "marksmen always have at least a 60% chance to hit, regardless of terrain."
 msgstr ""
-"\n"
-"\n"
-"Há duas excessões para essa regra: <ref>dst='weaponspecial_magical' "
-"text='ataques mágicos'</ref> e <ref>dst='weaponspecial_marksman' "
-"text='atirador'</ref>. Ataques mágicos sempre tem 70% de chance de acertar, "
-"independentemente do terreno, e, quando usado ofensivamente, atirador sempre "
-"tem pelo menos 60% de chance de acertar, independentemente do terreno."
+"Há duas exceções: <ref dst='weaponspecial_magical'>ataques mágicos</ref> e "
+"<ref dst='weaponspecial_marksman'>atiradores</ref>. Ataques mágicos sempre "
+"têm 70% de chance de acertar, seja qual for o terreno, e atiradores, ao "
+"atacar, sempre têm pelo menos 60% de chance de acertar."
 
 #. [topic]: id=combat
 #: data/core/help.cfg:363
 msgid "Damage"
 msgstr "Dano"
 
-#
 # File: data/core/help.cfg, line: 250
 # File: data/core/help.cfg, line: 250
 # File: data/core/help.cfg, line: 250
 #. [topic]: id=combat
 #: data/core/help.cfg:365
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Each strike which hits causes a base amount of damage depending on the "
-#| "attack type. For instance, an elvish fighter with a 5×4 attack does 5 "
-#| "base damage. This is usually modified by two things: "
-#| "<ref>dst='damage_types_and_resistance' text='resistance'</ref> and "
-#| "<ref>dst='time_of_day' text='time of day'</ref>. To see how base damage "
-#| "is modified by the circumstances, select <bold>text='Damage "
-#| "Calculations'</bold> in the attack selection menu."
 msgid ""
-"Each strike which hits causes a base amount of damage depending on the "
-"attack type. For instance, an elvish fighter with a 5×4 attack does 5 base "
-"damage. This is usually modified by two things: <ref "
+"Each strike which hits causes a base amount of damage depending on the attack"
+" type. For instance, an elvish fighter with a 5×4 attack does 5 base damage. "
+"This is usually modified by two things: <ref "
 "dst='damage_types_and_resistance'>resistance</ref> and <ref "
 "dst='time_of_day'>time of day</ref>. To see how base damage is modified by "
 "the circumstances, select <b>Damage Calculations</b> in the attack selection "
 "menu."
 msgstr ""
-"\n"
-"\n"
-"Cada golpe que acerta causa uma quantia de dano que depende do tipo do "
-"ataque. Por exemplo, um guerreiro élfico com um ataque de 5x4 causa 5 pontos "
-"de dano. Esse úmero é modificado por dois fatores: "
-"<ref>dst='damage_types_and_resistance' text='resistência'</ref> e "
-"<ref>dst='time_of_day' text='período do dia'</ref>. Para ver como o dano "
-"será modificado por estas circunstâncias, selecione <bold>text='Cálculos de "
-"Dano'</bold> no menu de seleção de ataques."
+"Cada golpe que acerta causa um dano base que depende do ataque. Por exemplo, "
+"um Guerreiro Élfico com ataque 5×4 causa 5 de dano base. Esse dano costuma "
+"ser alterado por duas coisas: <ref "
+"dst='damage_types_and_resistance'>resistência</ref> e <ref "
+"dst='time_of_day'>hora do dia</ref>. Para ver como as circunstâncias alteram "
+"o dano base, use <b>Cálculo de Dano</b> na janela de ataque."
 
-#
 # File: data/core/help.cfg, line: 252
 # File: data/core/help.cfg, line: 252
 # File: data/core/help.cfg, line: 252
 #. [topic]: id=combat
 #: data/core/help.cfg:367
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "A few units have special <ref>dst='..abilities_section' text='abilities'</"
-#| "ref> which affect damage dealt in combat. The most common of these is "
-#| "<ref>dst='weaponspecial_charge' text='charge'</ref>, which doubles the "
-#| "damage dealt by both attacker and defender when the unit with charge "
-#| "attacks."
 msgid ""
-"A few units have special <ref dst='..abilities_section'>abilities</ref> "
-"which affect damage dealt in combat. The most common of these is <ref "
+"A few units have special <ref dst='..abilities_section'>abilities</ref> which"
+" affect damage dealt in combat. The most common of these is <ref "
 "dst='weaponspecial_charge'>charge</ref>, which doubles the damage dealt by "
 "both attacker and defender when the unit with charge attacks."
 msgstr ""
-"\n"
-"\n"
-"Algumas unidades possuem <ref>dst='..abilities_section' text='habilidades'</"
-"ref> especiais que afetam seu dano causado em combate. A mais comum dessas é "
-"<ref>dst='weaponspecial_charge' text='Carga'</ref>, que dobra o dano causado "
-"pelo atacante e pelo defensor quando o atacante usa um ataque que possua a "
-"habilidade carga."
+"Algumas unidades têm <ref dst='..abilities_section'>habilidades</ref> "
+"especiais que afetam o dano em combate. A mais comum é <ref "
+"dst='weaponspecial_charge'>carga</ref>, que dobra o dano causado pelo "
+"atacante e pelo defensor quando a unidade com carga ataca."
 
 #
 # File: data/core/help.cfg, line: 260
@@ -5624,20 +4872,11 @@ msgstr ""
 msgid "Damage Types and Resistance"
 msgstr "Tipos de Danos, e Resistência"
 
-#
 # File: data/core/help.cfg, line: 261
 # File: data/core/help.cfg, line: 261
 # File: data/core/help.cfg, line: 261
 #. [topic]: id=damage_types_and_resistance
 #: data/core/help.cfg:374
-#, fuzzy
-#| msgid ""
-#| "In Wesnoth, there are three types of damage usually associated with "
-#| "physical attacks: <italic>text='blade, pierce, and impact damage'</"
-#| "italic>. Additionally, there are three further types of damage usually "
-#| "associated with magical attacks: <italic>text='fire, cold, and arcane "
-#| "attacks'</italic>. Different units may have resistances which alter the "
-#| "damage which they take from certain damage types."
 msgid ""
 "In Wesnoth, there are three types of damage usually associated with physical "
 "attacks: <i>blade, pierce, and impact damage</i>. Additionally, there are "
@@ -5645,28 +4884,16 @@ msgid ""
 "<i>fire, cold, and arcane attacks</i>. Different units may have resistances "
 "which alter the damage which they take from certain damage types."
 msgstr ""
-"Em Wesnoth, há três tipos de dano associados a ataques físicos: "
-"<italic>text='cortante, perfurante e esmagador'</italic>. Além disso, há "
-"outros três tipos de dano que geralmente são associados a ataques mágicos: "
-"<italic>text='fogo, frio, e ataques arcanos'</italic>. Diferentes unidades "
-"podem ser resistêntes contra certos tipos de dano, diminuindo o dano que "
-"elas recebem daqueles tipos de ataques."
+"Em Wesnoth, há três tipos de dano normalmente ligados a ataques físicos: "
+"<i>cortante, perfurante e impacto</i>. Há também três tipos normalmente "
+"ligados a ataques mágicos: <i>fogo, frio e arcano</i>. Cada unidade pode ter "
+"resistências que alteram o dano que recebe de certos tipos."
 
-#
 # File: data/core/help.cfg, line: 261
 # File: data/core/help.cfg, line: 261
 # File: data/core/help.cfg, line: 261
 #. [topic]: id=damage_types_and_resistance
 #: data/core/help.cfg:376
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Resistances work very simply: if a unit has 40% resistance against a "
-#| "damage type, then it will suffer 40% less damage when hit with that "
-#| "damage type. It is also possible for a unit to be vulnerable against some "
-#| "damage types. If a unit has −100% resistance against a damage type, it "
-#| "will suffer 100% more damage when hit by that type."
 msgid ""
 "Resistances work very simply: if a unit has 40% resistance against a damage "
 "type, then it will suffer 40% less damage when hit with that damage type. It "
@@ -5674,61 +4901,36 @@ msgid ""
 "unit has −100% resistance against a damage type, it will suffer 100% more "
 "damage when hit by that type."
 msgstr ""
-"\n"
-"\n"
-"Resistências são bem simples: Se uma unidade possui 40% de resitência contra "
-"um tipo de dano, ela receberá 40% de dano a menos quando acertada com aquele "
-"tipo de dano. Unidades também podem ser vulneráveis contra certos tipos de "
-"dano. Se uma unidade possui -100% de resitência contra um tipo de dano, ela "
-"receberá 100% de dano a mais quando acertada por aquele tipo de dano."
+"As resistências são simples: se uma unidade tem 40% de resistência a um tipo "
+"de dano, sofre 40% menos dano quando atingida por ele. Uma unidade também "
+"pode ser vulnerável a alguns tipos: com −100% de resistência, sofre 100% mais"
+" dano daquele tipo."
 
-#
 # File: data/core/help.cfg, line: 263
 # File: data/core/help.cfg, line: 263
 # File: data/core/help.cfg, line: 263
 #. [topic]: id=damage_types_and_resistance
 #: data/core/help.cfg:378
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "For example, skeletons are highly resistant to blade and pierce damage, "
-#| "but are vulnerable to impact and fire damage, and extremely vulnerable to "
-#| "arcane damage."
 msgid ""
 "For example, skeletons are highly resistant to blade and pierce damage, but "
 "are vulnerable to impact and fire damage, and extremely vulnerable to arcane "
 "damage."
 msgstr ""
-"\n"
-"\n"
-"Por exemplo, esqueletos são altamente resistentes contra lâminas e dano "
-"perfurante, mas são vulneráeis contra dano de impacto e fogo, e são "
-"extremamente vulneráeis contra dano arcano."
+"Por exemplo, esqueletos resistem muito a dano cortante e perfurante, mas são "
+"vulneráveis a impacto e fogo, e extremamente vulneráveis a arcano."
 
-#
 # File: data/core/help.cfg, line: 265
 # File: data/core/help.cfg, line: 265
 # File: data/core/help.cfg, line: 265
 #. [topic]: id=damage_types_and_resistance
 #: data/core/help.cfg:380
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "If a strike is determined to hit, it will always do at least 1 point of "
-#| "damage. This applies even if the defender has 100% resistance to the "
-#| "damage type."
 msgid ""
 "If a strike is determined to hit, it will always do at least 1 point of "
 "damage. This applies even if the defender has 100% resistance to the damage "
 "type."
 msgstr ""
-"\n"
-"\n"
-"Se um golpe acertar, ele sempre causará ao menos 1 ponto de dano. Isso é "
-"verdade mesmo que o defensor possua 100% de resistência contra aquele tipo "
-"de dano."
+"Um golpe que acerta sempre causa pelo menos 1 ponto de dano, mesmo que o "
+"defensor tenha 100% de resistência àquele tipo de dano."
 
 #. [topic]: id=orbs
 #: data/core/help.cfg:386
@@ -5737,97 +4939,41 @@ msgstr "Esferas e elipses"
 
 #. [topic]: id=orbs
 #: data/core/help.cfg:387
-#, fuzzy
-#| msgid ""
-#| "There are colored indicators above the energy bars of some units, "
-#| "consisting of a colored orb (and sometimes a <ref>dst='crowns' "
-#| "text='crown'</ref>)."
 msgid ""
 "There are colored indicators above the energy bars of some units, consisting "
 "of a colored orb (and sometimes a <ref dst='crowns'>crown</ref>)."
 msgstr ""
-"Existem indicadores coloridos acima da barra de energia de algumas unidades "
-"que consistem de uma esfera colorida (e as vezes uma <ref>dst='crowns' "
-"text='coroa'</ref>)."
+"Algumas unidades têm indicadores coloridos acima da barra de vida: uma esfera"
+" colorida (e às vezes uma <ref dst='crowns'>coroa</ref>)."
 
 #. [topic]: id=orbs
-#. The help page has a set of images above this paragraph, in the same order as the bullet points
+#. The help page has a set of images above this paragraph, in the same order as
+#. the bullet points
 #: data/core/help.cfg:398
-#, fuzzy
-#| msgid ""
-#| "The orbs show whether the unit can move or attack. The statuses and their "
-#| "standard colors are:\n"
-#| "• <bold>text='Green'</bold> if it has neither moved nor attacked this "
-#| "turn.\n"
-#| "• <bold>text='Yellow'</bold> if it has moved (or attacked), and can still "
-#| "attack. It might still be able to move further too.\n"
-#| "• <bold>text='Red'</bold> if it can neither move further nor attack again "
-#| "this turn.\n"
-#| "    • Red is also used after the ‘end unit turn’ command, and,\n"
-#| "    • when a unit is in the middle of a multi-turn move (has been told to "
-#| "move further than it can in the current turn).\n"
-#| "• <bold>text='Red and yellow'</bold> if it has moved (or attacked), can "
-#| "still move further, but it can no longer attack.\n"
-#| "    • This can happen due to campaign-specific events or abilities, for "
-#| "example the <italic>text='disengage'</italic> ability in the campaign "
-#| "<italic>text='Under the Burning Suns'</italic>.\n"
-#| "• <bold>text='Blue'</bold> for allied units, except during that ally’s "
-#| "own turn.\n"
-#| "    • During the ally’s own turn, their units will be shown with the "
-#| "colors showing whether the units can still move and attack; however their "
-#| "moves, and the corresponding orb changes, are delayed as explained in "
-#| "<ref>dst='shroud_and_fog' text='Shroud and Fog of War'</ref>.\n"
-#| "• Enemy units normally don’t have orbs, however these can be enabled in "
-#| "the advanced preference “Customize orb colors”."
 msgid ""
-"The orbs show whether the unit can move or attack. The statuses and their "
-"standard colors are:\n"
+"The orbs show whether the unit can move or attack. The statuses and their standard colors are:\n"
 "• <b>Green</b> if it has neither moved nor attacked this turn.\n"
-"• <b>Yellow</b> if it has moved (or attacked), and can still attack. It "
-"might still be able to move further too.\n"
+"• <b>Yellow</b> if it has moved (or attacked), and can still attack. It might still be able to move further too.\n"
 "• <b>Red</b> if it can neither move further nor attack again this turn.\n"
 "    • Red is also used after the ‘end unit turn’ command, and,\n"
-"    • when a unit is in the middle of a multi-turn move (has been told to "
-"move further than it can in the current turn).\n"
-"• <b>Red and yellow</b> if it has moved (or attacked), can still move "
-"further, but it can no longer attack.\n"
-"    • This can happen due to campaign-specific events or abilities, for "
-"example the <i>disengage</i> ability in the campaign <i>Under the Burning "
-"Suns</i>.\n"
+"    • when a unit is in the middle of a multi-turn move (has been told to move further than it can in the current turn).\n"
+"• <b>Red and yellow</b> if it has moved (or attacked), can still move further, but it can no longer attack.\n"
+"    • This can happen due to campaign-specific events or abilities, for example the <i>disengage</i> ability in the campaign <i>Under the Burning Suns</i>.\n"
 "• <b>Blue</b> for allied units, except during that ally’s own turn.\n"
-"    • During the ally’s own turn, their units will be shown with the colors "
-"showing whether the units can still move and attack; however their moves, "
-"and the corresponding orb changes, are delayed as explained in <ref "
-"dst='shroud_and_fog'>Shroud and Fog of War</ref>.\n"
-"• Enemy units normally don’t have orbs, however these can be enabled in the "
-"advanced preference “Customize orb colors”."
+"    • During the ally’s own turn, their units will be shown with the colors showing whether the units can still move and attack; however their moves, and the corresponding orb changes, are delayed as explained in <ref dst='shroud_and_fog'>Shroud and Fog of War</ref>.\n"
+"• Enemy units normally don’t have orbs, however these can be enabled in the advanced preference “Customize orb colors”."
 msgstr ""
-"As esferas indicam se uma unidade pode se mover ou atacar. As cores padrão "
-"são:\n"
-"• <bold>text='Verde'</bold> se ela não tiver nem se movido nem atacado neste "
-"turno.\n"
-"• <bold>text='Amarelo'</bold> se ela já tiver se movido (ou atacado), e "
-"ainda puder se mover. Talvez ela ainda possa se mover também.\n"
-"• <bold>text='Vermelho'</bold> se ela não puder se mover nem atacar mais "
-"neste turno.\n"
-"    • Vermelho também é usado depois do comando de ‘terminar o turno’, e,\n"
-"    • quando a unidade está no meio de um movimento que envolve múltiplos "
-"turnos (foi dada uma ordem para que se move-se mais longe do que é capaz em "
-"apenas um turno).\n"
-"• <bold>text='Vermelho e amarelo'</bold> se ela tiver se movido (ou "
-"atacado), ainda pode se mover mais, mas não atacar.\n"
-"    • Isso pode acontecer em decorrência de eventos ou habilidades "
-"específicas e certas campanhas como, por exemplo, a habilidade "
-"<italic>text='desengajar'</italic> na campanha <italic>text='Sob os Sóis "
-"Incandescentes'</italic>.\n"
-"• <bold>text='Azul'</bold> para unidades aliadas, exceto no turno do seu "
-"aliado.\n"
-"    • Durante o turno do aliado, as suas unidades podem esferas com as cores "
-"verde/amarelo/vermelho/branco; mas as suas ações, e a mudaça de cor das "
-"esferas, são atrasadas, como explicado em <ref>dst='shroud_and_fog' "
-"text='Escuridão e Névoa de Guerra'</ref>.\n"
-"• Unidades inimigas normalmente não possuem esferas, mas elas podem ser "
-"habilitadas nas preferências avançadas “Personalizar a cor das esferas”."
+"As esferas mostram se a unidade ainda pode mover ou atacar. Os estados e suas cores padrão são:\n"
+"• <b>Verde</b> se ela não moveu nem atacou neste turno.\n"
+"• <b>Amarelo</b> se ela moveu (ou atacou) e ainda pode atacar. Talvez ainda possa mover também.\n"
+"• <b>Vermelho</b> se ela não pode mais mover nem atacar neste turno.\n"
+"    • O vermelho também aparece depois do comando ‘terminar turno da unidade’, e\n"
+"    • quando a unidade está no meio de um movimento de vários turnos (mandada para mais longe do que alcança no turno atual).\n"
+"• <b>Vermelho e amarelo</b> se ela moveu (ou atacou), ainda pode mover, mas não pode mais atacar.\n"
+"    • Isso pode acontecer por eventos ou habilidades de certas campanhas, como a habilidade <i>desengajar</i> na campanha <i>Under the Burning Suns</i>.\n"
+"• <b>Azul</b> para unidades aliadas, exceto durante o turno do próprio aliado.\n"
+"    • No turno do aliado, as unidades dele aparecem com as cores de quem ainda pode mover e atacar; mas os movimentos, e as mudanças de esfera, aparecem com atraso, como explicado em <ref dst='shroud_and_fog'>Escuridão e Névoa de Guerra</ref>.\n"
+"• Unidades inimigas normalmente não têm esferas, mas elas podem ser ligadas na preferência avançada “Personalizar cores das esferas”."
 
 # File: data/core/help.cfg, line: 248
 # File: data/core/help.cfg, line: 248
@@ -5848,38 +4994,21 @@ msgstr ""
 "algumas unidades não sejam elipticas."
 
 #. [topic]: id=orbs
-#. The help page has a set of images above this paragraph, in the same order as the bullet points
+#. The help page has a set of images above this paragraph, in the same order as
+#. the bullet points
 #: data/core/help.cfg:423
-#, fuzzy
-#| msgid ""
-#| "• Most units have a circular ellipse.\n"
-#| "• Units that can recruit have a seven-pointed star.\n"
-#| "• <ref>dst='crowns' text='Hero units'</ref> have a smaller variant of the "
-#| "seven-pointed star, these units can’t recruit.\n"
-#| "• Units without a <ref>dst='movement' text='zone of control'</ref> have a "
-#| "broken outline version of the shape.\n"
-#| "• Some campaigns start with a level zero leader. Able to recruit but "
-#| "lacking a ZoC, these units have a broken outline version of the seven-"
-#| "pointed star."
 msgid ""
 "• Most units have a circular ellipse.\n"
 "• Units that can recruit have a seven-pointed star.\n"
-"• <ref dst='crowns'>Hero units</ref> have a smaller variant of the seven-"
-"pointed star, these units can’t recruit.\n"
-"• Units without a <ref dst='movement'>zone of control</ref> have a broken "
-"outline version of the shape.\n"
-"• Some campaigns start with a level zero leader. Able to recruit but lacking "
-"a ZoC, these units have a broken outline version of the seven-pointed star."
+"• <ref dst='crowns'>Hero units</ref> have a smaller variant of the seven-pointed star, these units can’t recruit.\n"
+"• Units without a <ref dst='movement'>zone of control</ref> have a broken outline version of the shape.\n"
+"• Some campaigns start with a level zero leader. Able to recruit but lacking a ZoC, these units have a broken outline version of the seven-pointed star."
 msgstr ""
-"• A maioria das unidades possuem uma elipse circular.\n"
-"• As unidades que podem recrutar possuem uma estrela de sete pontas.\n"
-"•<ref>dst='crowns' text='Unidades Heróis'</ref> possuem uma variante menor "
-"da estrela de sete pontas. Estas unidades não podem recrutar.\n"
-"• Unidades que não possuem <ref>dst='movement' text='zona de controle'</ref> "
-"possuem uma forma quebrada.\n"
-"• Algumas campanhas começam com um líder de nível zero. Capaz de recrutar "
-"mas sem ZdC, estas unidades possuem uma versão quebrada da estrela de sete "
-"pontas."
+"• A maioria das unidades tem uma elipse circular.\n"
+"• Unidades que podem recrutar têm uma estrela de sete pontas.\n"
+"• <ref dst='crowns'>Heróis</ref> têm uma versão menor da estrela de sete pontas e não podem recrutar.\n"
+"• Unidades sem <ref dst='movement'>zona de controle</ref> têm a forma com contorno tracejado.\n"
+"• Algumas campanhas começam com um líder de nível zero. Como pode recrutar mas não tem zona de controle, ele tem a estrela de sete pontas com contorno tracejado."
 
 #. [topic]: id=crowns
 #: data/core/help.cfg:434
@@ -5888,83 +5017,45 @@ msgstr "Coroas e marcadores de lealdade"
 
 #. [topic]: id=crowns
 #: data/core/help.cfg:435
-#, fuzzy
-#| msgid ""
-#| "Some units have an additional marker superimposed on their "
-#| "<ref>dst='orbs' text='orb'</ref>, and a corresponding shape to their "
-#| "<ref>dst='orbs' text='ellipses'</ref>:"
 msgid ""
 "Some units have an additional marker superimposed on their <ref "
 "dst='orbs'>orb</ref>, and a corresponding shape to their <ref "
 "dst='orbs'>ellipses</ref>:"
 msgstr ""
-"Algumas unidades possuem um marcador sobreposto à suas <ref>dst='orbs' "
-"text='esferas'</ref>, e um formato corresponde à suas <ref>dst='orbs' "
-"text='elipses'</ref>:"
+"Algumas unidades têm um marcador extra sobre a <ref dst='orbs'>esfera</ref> e"
+" uma forma correspondente na <ref dst='orbs'>elipse</ref>:"
 
 #. [topic]: id=crowns
-#. The help page has a set of images above this paragraph, in the same order as the first set of bullet points, showing what the "loyal icon" is and the difference between "silver" and "blueish-silver".
+#. The help page has a set of images above this paragraph, in the same order as
+#. the first set of bullet points, showing what the "loyal icon" is and the
+#. difference between "silver" and "blueish-silver".
 #: data/core/help.cfg:448
-#, fuzzy
-#| msgid ""
-#| "• Leaders are shown with a <bold>text='gold crown'</bold>.\n"
-#| "• Heroes have a <bold>text='blueish-silver crown'</bold>.\n"
-#| "• Expendable leaders are shown with a <bold>text='silver crown'</bold>.\n"
-#| "• <ref>dst='traits_loyal' text='Loyal units'</ref> have the "
-#| "<bold>text='loyal icon'</bold>.\n"
-#| "\n"
-#| "Of these categories, only leaders are built into the basic game rules. "
-#| "The others are found in campaigns, and are characters that form part of "
-#| "the narration. The exact rules for them are set by their campaign, which "
-#| "might deviate from these standard expectations about them:\n"
-#| "\n"
-#| "• The death of any hero leads to immediate defeat.\n"
-#| "• The death of an expendable leader doesn’t lead to immediate defeat, "
-#| "even though they can recruit.\n"
-#| "• All of these units have the main advantage of the loyal trait, that "
-#| "they cost no upkeep.\n"
-#| "• Losing any of these units causes a disadvantage for the remainder of "
-#| "the campaign, assuming it doesn’t end immediately.\n"
-#| "• These units will never occur as random recruits."
 msgid ""
 "• Leaders are shown with a <b>gold crown</b>.\n"
 "• Heroes have a <b>blueish-silver crown</b>.\n"
 "• Expendable leaders are shown with a <b>silver crown</b>.\n"
 "• <ref dst='traits_loyal'>Loyal units</ref> have the <b>loyal icon</b>.\n"
 "\n"
-"Of these categories, only leaders are built into the basic game rules. The "
-"others are found in campaigns, and are characters that form part of the "
-"narration. The exact rules for them are set by their campaign, which might "
-"deviate from these standard expectations about them:\n"
+"Of these categories, only leaders are built into the basic game rules. The others are found in campaigns, and are characters that form part of the narration. The exact rules for them are set by their campaign, which might deviate from these standard expectations about them:\n"
 "\n"
 "• The death of any hero leads to immediate defeat.\n"
-"• The death of an expendable leader doesn’t lead to immediate defeat, even "
-"though they can recruit.\n"
-"• All of these units have the main advantage of the loyal trait, that they "
-"cost no upkeep.\n"
-"• Losing any of these units causes a disadvantage for the remainder of the "
-"campaign, assuming it doesn’t end immediately.\n"
+"• The death of an expendable leader doesn’t lead to immediate defeat, even though they can recruit.\n"
+"• All of these units have the main advantage of the loyal trait, that they cost no upkeep.\n"
+"• Losing any of these units causes a disadvantage for the remainder of the campaign, assuming it doesn’t end immediately.\n"
 "• These units will never occur as random recruits."
 msgstr ""
-"• Líderes possuem uma <bold>text='coroa dourada'</bold>.\n"
-"• Heróis possuem uma <bold>text='coroa cinza-azulada'</bold>.\n"
-"• Líderes descartáveis possuem uma <bold>text='coroa cinza'</bold>.\n"
-"• <ref>dst='traits_loyal' text='Unidades Leais'</ref> posuem o "
-"<bold>text='símbolo de leal'</bold>.\n"
+"• Líderes têm uma <b>coroa dourada</b>.\n"
+"• Heróis têm uma <b>coroa prateada azulada</b>.\n"
+"• Líderes dispensáveis têm uma <b>coroa prateada</b>.\n"
+"• <ref dst='traits_loyal'>Unidades leais</ref> têm o <b>ícone de leal</b>.\n"
 "\n"
-"Dessas categorias, só líderes fazem parte das regras básicas do jogo. As "
-"outras aparecem em campanhas e são personagens que compõem a narrativa. As "
-"regras exatas para eles são ditadas pela campanha, as quais podem ser um "
-"pouco diferentes das exdplicadas a seguir:\n"
+"Dessas categorias, só os líderes fazem parte das regras básicas do jogo. As outras aparecem nas campanhas e são personagens da história. As regras exatas são definidas por cada campanha, que pode fugir do esperado:\n"
 "\n"
-"• A morte de qualquer heói leva à derrota imediatamente.\n"
-"• A morte de um líder descartável não leva à derrota imediatamente, mesmo "
-"ele podendo recrutart.\n"
-"• Todas essas unidades possuem a principal vantagem de uma unidade leal, ou "
-"seja, não possuem custo de manutenção.\n"
-"• Se o cenário não terminar imediatamente, a perda de qualquer dessas "
-"unidades causa uma disvantagem para o resto da campanha.\n"
-"• Essas unidades nunca aparecem como recrutas aleatórios."
+"• A morte de qualquer herói leva à derrota imediata.\n"
+"• A morte de um líder dispensável não leva à derrota imediata, mesmo que ele possa recrutar.\n"
+"• Todas essas unidades têm a principal vantagem da característica leal: não custam manutenção.\n"
+"• Perder qualquer uma delas deixa você em desvantagem pelo resto da campanha, se ela não terminar na hora.\n"
+"• Essas unidades nunca aparecem em recrutamentos aleatórios."
 
 #
 # File: data/core/help.cfg, line: 273
@@ -5986,6 +5077,8 @@ msgid ""
 "• <span weight='heavy' size='15'>LAWFUL</span> units get +25% damage in "
 "daytime, and −25% damage at night."
 msgstr ""
+"• Unidades <span weight='heavy' size='15'>ORDEIRAS</span> causam +25% de dano"
+" de dia e −25% à noite."
 
 #. [topic]: id=time_of_day
 #: data/core/help.cfg:470
@@ -6014,32 +5107,19 @@ msgstr ""
 "• Unidades <span weight='heavy' size='15'>LIMINARES</span> causam +25% de "
 "dano no crepúsculo."
 
-#
 # File: data/core/help.cfg, line: 278
 # File: data/core/help.cfg, line: 278
 # File: data/core/help.cfg, line: 278
 #. [topic]: id=time_of_day
 #: data/core/help.cfg:474
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "The current time of day can be observed under the minimap in the status "
-#| "pane. For the usual day/night cycle, morning and afternoon count as day, "
-#| "first and second watch count as night:\n"
-#| "\n"
 msgid ""
-"The current time of day can be observed under the minimap in the status "
-"pane. For the usual day/night cycle, morning and afternoon count as day, "
-"first and second watch count as night:"
+"The current time of day can be observed under the minimap in the status pane."
+" For the usual day/night cycle, morning and afternoon count as day, first and"
+" second watch count as night:"
 msgstr ""
-"\n"
-"\n"
-"O período do dia encontra-se abaixo do minimapa. Para o ciclo normal de dia "
-"e noite, manhã e tarde contam como dia, anoitecer e noite contam como "
-"noite:\n"
-"\n"
-"\n"
+"A hora do dia atual aparece no painel lateral, abaixo do minimapa. No ciclo "
+"normal de dia e noite, manhã e tarde contam como dia, primeira e segunda "
+"vigília contam como noite:"
 
 #
 # File: data/core/help.cfg, line: 281
@@ -6160,21 +5240,14 @@ msgstr ""
 
 #. [topic]: id=time_of_day
 #: data/core/help.cfg:501
-#, fuzzy
-#| msgid ""
-#| "Finally, units with the <ref>dst='ability_illuminationilluminates' "
-#| "text='illuminates'</ref> ability and terrain features such as "
-#| "<ref>dst='terrain_lava' text='lava'</ref> change the time of day bonus "
-#| "around them."
 msgid ""
 "Finally, units with the <ref dst='ability_illumination'>illuminates</ref> "
 "ability and terrain features such as <ref dst='terrain_lava'>lava</ref> "
 "change the time of day bonus around them."
 msgstr ""
-"Por fim, unidades que possuem a habilidade "
-"<ref>dst='ability_illuminationilluminates' text='iluminar'</ref> e terrenos "
-"como <ref>dst='terrain_lava' text='lava'</ref> mudam o período do dia ao "
-"redor deles."
+"Por fim, unidades com a habilidade <ref "
+"dst='ability_illumination'>iluminar</ref> e terrenos como a <ref "
+"dst='terrain_lava'>lava</ref> mudam o bônus da hora do dia ao seu redor."
 
 #
 # File: data/core/help.cfg, line: 307
@@ -6196,168 +5269,100 @@ msgstr ""
 "de curar unidades feridas. Entretanto, com excessão do descanso, essas "
 "opções não stacam; apenas uma pode ocorrer por turno."
 
-#
 # File: data/core/help.cfg, line: 308
 # File: data/core/help.cfg, line: 308
 # File: data/core/help.cfg, line: 308
 #. [topic]: id=healing
 #: data/core/help.cfg:511
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "• <bold>text='Resting'</bold>: A unit which neither moves, attacks, nor "
-#| "is attacked will heal 2 HP in its next turn."
 msgid ""
 "• <b>Resting</b>: A unit which neither moves, attacks, nor is attacked will "
 "heal 2 HP in its next turn."
 msgstr ""
-"\n"
-"\n"
-"<italic>text='Descansar'</italic>: Uma unidade que não se moveu, atacou, ou "
-"foi atacada cura 2 de HP no seu próximo turno."
+"• <b>Descanso</b>: uma unidade que não se move, não ataca e não é atacada "
+"recupera 2 HP no turno seguinte."
 
-#
 # File: data/core/help.cfg, line: 310
 # File: data/core/help.cfg, line: 310
 # File: data/core/help.cfg, line: 310
 #. [topic]: id=healing
 #: data/core/help.cfg:512
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "• <bold>text='Villages'</bold>: A unit which starts a turn in a village "
-#| "or <ref>dst='terrain_oasis' text='oasis'</ref> will heal 8HP. If the unit "
-#| "is poisoned, the poison will be cured instead."
 msgid ""
 "• <b>Villages</b>: A unit which starts a turn in a village or <ref "
 "dst='terrain_oasis'>oasis</ref> will heal 8HP. If the unit is poisoned, the "
 "poison will be cured instead."
 msgstr ""
-"\n"
-"• <bold>text='Aldeias'</bold>: Uma unidade que começa o seu turno em uma "
-"aldeia ou <ref>dst='terrain_oasis' text='oasis'</ref>recupera 8 de HP. Se a "
-"unidade estiver envenenada, o envenenamento será curada e ela não recuperará "
-"vida."
+"• <b>Aldeias</b>: uma unidade que começa o turno numa aldeia ou <ref "
+"dst='terrain_oasis'>oásis</ref> recupera 8 HP. Se estiver envenenada, em vez "
+"disso o veneno é curado."
 
-#
 # File: data/core/help.cfg, line: 311
 # File: data/core/help.cfg, line: 311
 # File: data/core/help.cfg, line: 311
 #. [topic]: id=healing
 #: data/core/help.cfg:513
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "• <ref>dst='ability_regeneratesregenerates' text='Regeneration'</ref>: "
-#| "Certain units (such as trolls) will automatically heal 8HP every turn. If "
-#| "the unit is poisoned, the poison will be cured instead."
 msgid ""
-"• <ref dst='ability_regenerates_8'>Regeneration</ref>: Certain units (such "
-"as trolls) will automatically heal 8HP every turn. If the unit is poisoned, "
-"the poison will be cured instead."
+"• <ref dst='ability_regenerates_8'>Regeneration</ref>: Certain units (such as"
+" trolls) will automatically heal 8HP every turn. If the unit is poisoned, the"
+" poison will be cured instead."
 msgstr ""
-"\n"
-"• <ref>dst='ability_regeneratesregenerates' text='Regeneração'</ref>: "
-"Algumas unidades, como os trolls, automaticamente curam 8 de HP a cada "
-"turno. Se a unidade estiver envenenada, o veneno será curado e a unidade não "
-"recuperará vida naquele turno."
+"• <ref dst='ability_regenerates_8'>Regeneração</ref>: certas unidades (como "
+"os trolls) recuperam 8 HP sozinhas a cada turno. Se estiverem envenenadas, em"
+" vez disso o veneno é curado."
 
-#
 # File: data/core/help.cfg, line: 312
 # File: data/core/help.cfg, line: 312
 # File: data/core/help.cfg, line: 312
 #. [topic]: id=healing
 #: data/core/help.cfg:514
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "• <bold>text='Healing units'</bold>: Units with the "
-#| "<ref>dst='ability_healingheals +4' text='Heals'</ref> ability will heal "
-#| "each allied adjacent unit, usually <ref>dst='ability_healingheals +4' "
-#| "text='4HP'</ref> or <ref>dst='ability_healingheals +8' text='8HP'</ref> "
-#| "per turn, or prevent Poison from causing that unit damage."
 msgid ""
-"• <b>Healing units</b>: Units with the <ref dst='ability_heals_4'>Heals</"
-"ref> ability will heal each allied adjacent unit, usually <ref "
+"• <b>Healing units</b>: Units with the <ref dst='ability_heals_4'>Heals</ref>"
+" ability will heal each allied adjacent unit, usually <ref "
 "dst='ability_heals_4'>4HP</ref> or <ref dst='ability_heals_8'>8HP</ref> per "
 "turn, or prevent Poison from causing that unit damage."
 msgstr ""
-"\n"
-"• <bold>text='Medicando unidades'</bold>: Unidades com a habilidade "
-"<ref>dst='ability_healingheals +4' text='Medicar'</ref> irá curar cada "
-"unidade adjacente, normalmente por <ref>dst='ability_healingheals +4' "
-"text='4 de HP'</ref> ou <ref>dst='ability_healingheals +8' text='8 de HP'</"
-"ref> por turno, ou impedir que o veneno machuque uma unidade envenenada "
-"naquele turno."
+"• <b>Curandeiros</b>: unidades com a habilidade <ref "
+"dst='ability_heals_4'>Medicar</ref> curam cada aliado vizinho, geralmente "
+"<ref dst='ability_heals_4'>4 HP</ref> ou <ref dst='ability_heals_8'>8 "
+"HP</ref> por turno, ou impedem que o Veneno cause dano a ele."
 
-#
 # File: data/core/help.cfg, line: 313
 # File: data/core/help.cfg, line: 313
 # File: data/core/help.cfg, line: 313
 #. [topic]: id=healing
 #: data/core/help.cfg:515
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "• <bold>text='Curing units'</bold>: Units with the "
-#| "<ref>dst='ability_curingcures' text='cures'</ref> ability will cure "
-#| "Poison in all allied adjacent units (in preference to healing, if it has "
-#| "that ability as well)."
 msgid ""
 "• <b>Curing units</b>: Units with the <ref dst='ability_cures'>cures</ref> "
 "ability will cure Poison in all allied adjacent units (in preference to "
 "healing, if it has that ability as well)."
 msgstr ""
-"\n"
-"• <bold>text='Curando unidades'</bold>: Unidades com a habilidade "
-"<ref>dst='ability_cures' text='Curar'</ref> removerão envenemaneto de todas "
-"as unidades aliadas adjacentes (se ela puder curar pontos de vida, a "
-"preferencia será em curar o envenenamento)."
+"• <b>Unidades que curam veneno</b>: unidades com a habilidade <ref "
+"dst='ability_cures'>curar</ref> curam o Veneno de todos os aliados vizinhos "
+"(no lugar de curar vida, se também tiverem essa habilidade)."
 
 #. [topic]: id=healing
 #: data/core/help.cfg:516
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "• <bold>text='Advancement'</bold>: When a unit <ref>dst='advancement' "
-#| "text='advances'</ref>, it will heal fully. This can happen as soon as "
-#| "your unit gains enough experience, whether it is your turn or not."
 msgid ""
 "• <b>Advancement</b>: When a unit <ref dst='advancement'>advances</ref>, it "
 "will heal fully. This can happen as soon as your unit gains enough "
 "experience, whether it is your turn or not."
 msgstr ""
-"\n"
-"• <bold>text='Avança para'</bold>: Quando uma <ref>dst='advancement' "
-"text='avança para'</ref> outra unidade, ela recupera todos os pontos de "
-"vida. Isso acontece no momento em que a unidade tem pontos de experiência "
-"suficientes, independentemente de ser o turno de seu controlador ou não."
+"• <b>Evolução</b>: quando uma unidade <ref dst='advancement'>evolui</ref>, "
+"recupera toda a vida. Isso acontece assim que ela ganha experiência "
+"suficiente, seja no seu turno ou não."
 
-#
 # File: data/core/help.cfg, line: 314
 # File: data/core/help.cfg, line: 314
 # File: data/core/help.cfg, line: 314
 #. [topic]: id=healing
 #: data/core/help.cfg:518
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Resting can be combined with other forms of healing, but villages, "
-#| "regeneration, healing and curing cannot combine with each other: the best "
-#| "option will be used. Finally, units heal fully between scenarios."
 msgid ""
 "Resting can be combined with other forms of healing, but villages, "
 "regeneration, healing and curing cannot combine with each other: the best "
 "option will be used. Finally, units heal fully between scenarios."
 msgstr ""
-"\n"
-"\n"
-"O descanso pode ser combinado com outras formas de recuperação, mas o efeito "
-"de vilas, regeneração, medicamento e cura não podem ser combinados entre si: "
-"Apenas o melhor deles será utilizado. Além disso, as unidades se recuperarão "
-"completamente de um cenário para o outro."
+"O descanso se soma às outras formas de cura, mas aldeia, regeneração, medicar"
+" e curar não se somam entre si: vale a melhor delas. Por fim, as unidades "
+"recuperam toda a vida entre um cenário e outro."
 
 # File: src/help.cpp, line: 1389
 # File: src/help.cpp, line: 1389
@@ -6369,31 +5374,18 @@ msgstr "Avançado"
 
 #. [topic]: id=healing
 #: data/core/help.cfg:522
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Unlike other forms of healing, the heals ability will not take effect on "
-#| "the healed unit’s turn, but on the healer’s turn. This means that while a "
-#| "unit surrounded by several healers on the same side will only receive "
-#| "healing from one healer per turn, a unit surrounded by healers from "
-#| "several allied sides will be healed once on each of said allied sides’ "
-#| "turns."
 msgid ""
 "Unlike other forms of healing, the heals ability will not take effect on the "
 "healed unit’s turn, but on the healer’s turn. This means that while a unit "
-"surrounded by several healers on the same side will only receive healing "
-"from one healer per turn, a unit surrounded by healers from several allied "
-"sides will be healed once on each of said allied sides’ turns."
+"surrounded by several healers on the same side will only receive healing from"
+" one healer per turn, a unit surrounded by healers from several allied sides "
+"will be healed once on each of said allied sides’ turns."
 msgstr ""
-"\n"
-"\n"
-"Diferentemente de outras formas de cura, a habilidade curar não enra em ação "
-"no turno da unidade curada, mas sim no turno da unidade que cura. Isso "
-"significa que uma unidade rodeada por curandeiros do seu lado só receberá o "
-"efeito de cura uma vez por turno, mas uma unidade rodeada por curandeiros de "
-"diferentes aliados será curada no início de cada turno do controlador "
-"daquela unidade com a habilidade de cura."
+"Diferente das outras formas de cura, a habilidade medicar faz efeito no turno"
+" do curandeiro, não no da unidade curada. Assim, uma unidade cercada por "
+"vários curandeiros do mesmo lado recebe a cura de um só por turno, mas uma "
+"cercada por curandeiros de vários lados aliados é curada uma vez no turno de "
+"cada um deles."
 
 #
 # File: data/core/help.cfg, line: 338
@@ -6404,33 +5396,24 @@ msgstr ""
 msgid "Wrap Up"
 msgstr "Conclusão"
 
-#
 # File: data/core/help.cfg, line: 339
 # File: data/core/help.cfg, line: 339
 # File: data/core/help.cfg, line: 339
 #. [topic]: id=wrap_up
 #: data/core/help.cfg:529
-#, fuzzy
-#| msgid ""
-#| "This concludes the fundamentals of Wesnoth. You might want to read up on "
-#| "basic strategy, or familiarize yourself with <ref>dst='..traits_section' "
-#| "text='traits'</ref> and <ref>dst='..abilities_section' text='abilities'</"
-#| "ref>, but you now know everything you need to know to play the "
-#| "<italic>text='Heir to the Throne'</italic> campaign. Have fun, and good "
-#| "luck!"
 msgid ""
 "This concludes the fundamentals of Wesnoth. You might want to read up on "
-"basic strategy, or familiarize yourself with <ref dst='.."
-"traits_section'>traits</ref> and <ref dst='..abilities_section'>abilities</"
-"ref>, but you now know everything you need to know to play the <i>Heir to "
-"the Throne</i> campaign. Have fun, and good luck!"
+"basic strategy, or familiarize yourself with <ref "
+"dst='..traits_section'>traits</ref> and <ref "
+"dst='..abilities_section'>abilities</ref>, but you now know everything you "
+"need to know to play the <i>Heir to the Throne</i> campaign. Have fun, and "
+"good luck!"
 msgstr ""
-"Assim concluímos os fundamentos de Wesnoth. Talvez você queira ler mais "
-"sobre estratégias básicas, ou se familiarizar com as <ref>dst='.."
-"traits_section' text='Características'</ref> e <ref>dst='.."
-"abilities_section' text='Habilidades'</ref>, mas você já sabe tudo o que "
-"precisa para jogar a campanha <italic>text='O Herdeiro do Trono'</italic>. "
-"Boa sorte e divirta-se!"
+"Estes são os fundamentos de Wesnoth. Vale a pena ler sobre estratégia básica "
+"e conhecer as <ref dst='..traits_section'>características</ref> e <ref "
+"dst='..abilities_section'>habilidades</ref>, mas você já sabe tudo o que "
+"precisa para jogar a campanha <i>Herdeiro do Trono</i>. Divirta-se e boa "
+"sorte!"
 
 #
 # File: data/core/help.cfg, line: 350
@@ -6443,75 +5426,44 @@ msgstr "Licença"
 
 #. [topic]: id=..traits_section
 #: data/core/help.cfg:545
-#, fuzzy
-#| msgid ""
-#| "Traits are modifications that change a unit’s attributes slightly. They "
-#| "are usually randomly assigned to a unit when it is recruited. The traits "
-#| "available to a unit are largely determined by its <italic>text='race'</"
-#| "italic>."
 msgid ""
 "Traits are modifications that change a unit’s attributes slightly. They are "
 "usually randomly assigned to a unit when it is recruited. The traits "
 "available to a unit are largely determined by its <i>race</i>."
 msgstr ""
-"Características são modificações que alteram sutilmente os atributos de uma "
-"unidade. Eles são geralmente escolhidos aleatóriamente quando a unidade é "
-"recrutada. As características disponíveis para uma unidade dependem em "
-"grande parte de sua <italic>text='raça'</italic>."
+"Características são modificações que alteram um pouco os atributos de uma "
+"unidade. Normalmente são sorteadas quando a unidade é recrutada. As "
+"características possíveis dependem principalmente da <i>raça</i> da unidade."
 
-#
 # File: data/core/help.cfg, line: 359
 # File: data/core/help.cfg, line: 359
 # File: data/core/help.cfg, line: 359
 #. [topic]: id=..traits_section
 #: data/core/help.cfg:547
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Most units have two traits. However, goblins have only one trait, undead "
-#| "units are always assigned the single trait <italic>text='undead'</italic> "
-#| "and in some cases <italic>text='fearless'</italic>, and woses do not "
-#| "receive any traits. "
 msgid ""
 "Most units have two traits. However, goblins have only one trait, undead "
 "units are always assigned the single trait <i>undead</i> and in some cases "
 "<i>fearless</i>, and woses do not receive any traits. "
 msgstr ""
-"\n"
-"\n"
-"A maioria das unidades possuem duas características. Entretanto, góblins "
-"possuem apenas uma característica, unidades mortas-vivas só possuem a "
-"característica <italic>text='morto-vivo'</italic> e, em alguns casos, "
-"<italic>text='destemido'</italic> e woses não possuem nenhuma "
-"característica. "
+"A maioria das unidades tem duas características. Mas os goblins têm só uma, "
+"os mortos-vivos sempre recebem apenas <i>morto-vivo</i> (e às vezes "
+"<i>destemido</i>), e os woses não recebem nenhuma."
 
-#
 # File: data/core/help.cfg, line: 359
 # File: data/core/help.cfg, line: 359
 # File: data/core/help.cfg, line: 359
 #. [topic]: id=..traits_section
 #: data/core/help.cfg:549
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "The traits that are available to most non‐undead units are "
-#| "<ref>dst='traits_intelligent' text='intelligent'</ref>, "
-#| "<ref>dst='traits_quick' text='quick'</ref>, <ref>dst='traits_resilient' "
-#| "text='resilient'</ref>, and <ref>dst='traits_strong' text='strong'</ref>."
 msgid ""
 "The traits that are available to most non‐undead units are <ref "
-"dst='traits_intelligent'>intelligent</ref>, <ref dst='traits_quick'>quick</"
-"ref>, <ref dst='traits_resilient'>resilient</ref>, and <ref "
-"dst='traits_strong'>strong</ref>."
+"dst='traits_intelligent'>intelligent</ref>, <ref "
+"dst='traits_quick'>quick</ref>, <ref dst='traits_resilient'>resilient</ref>, "
+"and <ref dst='traits_strong'>strong</ref>."
 msgstr ""
-"\n"
-"\n"
-"As características que estão disponíveis para a maioria das unidades que não "
-"são mortas-vivas são <ref>dst='traits_intelligent' text='Inteligente'</ref>, "
-"<ref>dst='traits_quick' text='Veloz'</ref>, <ref>dst='traits_resilient' "
-"text='Resistente'</ref> e <ref>dst='traits_strong' text='Forte'</ref>."
+"As características disponíveis para a maioria das unidades que não são "
+"mortas-vivas são <ref dst='traits_intelligent'>inteligente</ref>, <ref "
+"dst='traits_quick'>veloz</ref>, <ref dst='traits_resilient'>resistente</ref> "
+"e <ref dst='traits_strong'>forte</ref>."
 
 #
 # File: data/core/help.cfg, line: 361
@@ -8994,42 +7946,25 @@ msgstr "leal"
 msgid "Zero upkeep"
 msgstr "Sem custo de manutenção"
 
-#
 # File: data/core/help.cfg, line: 416
 # File: data/core/help.cfg, line: 416
 # File: data/core/help.cfg, line: 416
 #. [trait]: id=loyal
 #: data/core/macros/traits.cfg:15
-#, fuzzy
-#| msgid ""
-#| "<italic>text='Loyal'</italic> units don’t incur upkeep. Most units incur "
-#| "an upkeep cost at the end of every turn, which is equal to their level. "
-#| "Loyal units do not incur this cost."
 msgid ""
-"<i>Loyal</i> units don’t incur upkeep. Most units incur an upkeep cost at "
-"the end of every turn, which is equal to their level. Loyal units do not "
-"incur this cost."
+"<i>Loyal</i> units don’t incur upkeep. Most units incur an upkeep cost at the"
+" end of every turn, which is equal to their level. Loyal units do not incur "
+"this cost."
 msgstr ""
-"Unidades <italic>text='Leais'</italic>não requerem manutenção. A maioria das "
-"unidades possuem um custo de manutenção cobrado ao final de cada turno que é "
-"igual ao seu nível. Unidades leais não possuem este custo."
+"Unidades <i>leais</i> não têm manutenção. A maioria das unidades custa, no "
+"fim de cada turno, uma manutenção igual ao seu nível. Unidades leais não "
+"pagam esse custo."
 
-#
 # File: data/core/help.cfg, line: 416
 # File: data/core/help.cfg, line: 416
 # File: data/core/help.cfg, line: 416
 #. [trait]: id=loyal
 #: data/core/macros/traits.cfg:17
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "During campaigns, certain units may opt to join the player’s forces of "
-#| "their own volition. These units are marked with the loyal trait. Although "
-#| "they may require payment to be recalled, they never incur any upkeep "
-#| "costs. This can make them invaluable during a long campaign, when gold is "
-#| "in short supply. This trait is never given to recruited units, so it may "
-#| "be unwise to dismiss such units or to send them to a foolish death."
 msgid ""
 "During campaigns, certain units may opt to join the player’s forces of their "
 "own volition. These units are marked with the loyal trait. Although they may "
@@ -9038,15 +7973,12 @@ msgid ""
 "This trait is never given to recruited units, so it may be unwise to dismiss "
 "such units or to send them to a foolish death."
 msgstr ""
-"\n"
-"\n"
-"Durante as campanhas, certas unidades podem optar por se juntar às forças do "
-"jogador por sua própria vontade. Essas unidades possuem a característica "
-"leal. Embora elas possuam um custo para serem convocadas, elas nunca possuem "
-"um custo de manutenção. Isso faz com que elas sejam inestimáveis durante uma "
-"campanha longa onde ouro é escasso. Essa característica nunca é atribuida às "
-"unidades recrutadas, então não é uma boa ideia dispersar tais unidades ou "
-"mandá-las para a morte certa."
+"Durante as campanhas, algumas unidades podem se juntar às forças do jogador "
+"por vontade própria. Essas unidades têm a característica leal. Embora possa "
+"ser preciso pagar para convocá-las, elas nunca custam manutenção. Isso pode "
+"torná-las valiosíssimas numa campanha longa, quando o ouro está escasso. Esta"
+" característica nunca é dada a unidades recrutadas, então pode ser imprudente"
+" dispensar essas unidades ou mandá-las para uma morte inútil."
 
 #
 # File: data/core/macros/traits.cfg, line: 23
@@ -9083,32 +8015,21 @@ msgstr "Imune a dreno, veneno e praga"
 msgid "<i>Undead</i> units are immune to poison, drain, and plague."
 msgstr "Unidades <i>mortas-vivas</i> são imunes a veneno, dreno e praga."
 
-#
 # File: data/core/help.cfg, line: 424
 # File: data/core/help.cfg, line: 424
 # File: data/core/help.cfg, line: 424
 #. [trait]: id=undead
 #: data/core/macros/traits.cfg:60
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Undead units generally have undead as their only trait. Since undead "
-#| "units are the bodies of the dead, risen to fight again, poison has no "
-#| "effect upon them. This can make them invaluable in dealing with foes who "
-#| "use poison in conjunction with their attacks."
 msgid ""
 "Undead units generally have undead as their only trait. Since undead units "
 "are the bodies of the dead, risen to fight again, poison has no effect upon "
 "them. This can make them invaluable in dealing with foes who use poison in "
 "conjunction with their attacks."
 msgstr ""
-"\n"
-"\n"
-"Mortos-vivos normalmente tem morto-vivo como sua única característica. Já "
-"que Mortos-vivos são os corpos dos mortos animados para lutar de novo, "
-"venenos não surtem efeito neles. Isso torna-os valiosíssimos contra inimigos "
-"que usam veneno em seus ataques."
+"Unidades mortas-vivas geralmente têm morto-vivo como única característica. "
+"Como são corpos de mortos que se levantaram para lutar de novo, o veneno não "
+"tem efeito sobre elas. Isso pode torná-las valiosíssimas contra inimigos que "
+"usam veneno em seus ataques."
 
 #
 # File: data/core/macros/traits.cfg, line: 45
@@ -9136,29 +8057,18 @@ msgstr "mecânica"
 msgid "<i>Mechanical</i> units are immune to poison, drain, and plague."
 msgstr "Unidades <i>mecânicas</i> são imunes a veneno, dreno e praga."
 
-#
 # File: data/core/help.cfg, line: 432
 # File: data/core/help.cfg, line: 432
 # File: data/core/help.cfg, line: 432
 #. [trait]: id=mechanical
 #: data/core/macros/traits.cfg:86
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Mechanical units generally have mechanical as their only trait. Since "
-#| "mechanical units don’t really have life, drain, poison, and plague have "
-#| "no effect upon them."
 msgid ""
 "Mechanical units generally have mechanical as their only trait. Since "
 "mechanical units don’t really have life, drain, poison, and plague have no "
 "effect upon them."
 msgstr ""
-"\n"
-"\n"
-"Unidades mecânicas normalmente tem mecânico como sua única característica. "
-"Unidades mecânicas não são vivas e, portanto, são imunes a veneno, e dreno e "
-"praga não funcionam nelas."
+"Unidades mecânicas geralmente têm mecânica como única característica. Como "
+"não têm vida de verdade, dreno, veneno e praga não têm efeito sobre elas."
 
 #
 # File: data/core/macros/traits.cfg, line: 68
@@ -9186,29 +8096,18 @@ msgstr "elemental"
 msgid "<i>Elemental</i> units are immune to poison, drain, and plague."
 msgstr "Unidades <i>elementais</i> são imunes a veneno, dreno e praga."
 
-#
 # File: data/core/help.cfg, line: 440
 # File: data/core/help.cfg, line: 440
 # File: data/core/help.cfg, line: 440
 #. [trait]: id=elemental
 #: data/core/macros/traits.cfg:112
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Elemental units generally have elemental as their only trait. Since "
-#| "elemental units are energy-based beings, drain, poison, and plague have "
-#| "no effect upon them."
 msgid ""
-"Elemental units generally have elemental as their only trait. Since "
-"elemental units are energy-based beings, drain, poison, and plague have no "
-"effect upon them."
+"Elemental units generally have elemental as their only trait. Since elemental"
+" units are energy-based beings, drain, poison, and plague have no effect upon"
+" them."
 msgstr ""
-"\n"
-"\n"
-"Unidades elementais normalmente tem elemental como sua única característica. "
-"Já que unidades elementais são seres de pura energia, elas são imunes a "
-"veneno, e dreno e praga não funcionam nelas."
+"Unidades elementais geralmente têm elemental como única característica. Como "
+"são seres feitos de energia, dreno, veneno e praga não têm efeito sobre elas."
 
 #
 # File: data/core/macros/traits.cfg, line: 90
@@ -9228,49 +8127,33 @@ msgstr "forte"
 msgid "female^strong"
 msgstr "forte"
 
-#
 # File: data/core/help.cfg, line: 396
 # File: data/core/help.cfg, line: 396
 # File: data/core/help.cfg, line: 396
 #. [trait]: id=strong
 #: data/core/macros/traits.cfg:134
-#, fuzzy
-#| msgid ""
-#| "<italic>text='Strong'</italic> units do 1 more damage for every "
-#| "successful strike in melee combat, and have 1 additional hitpoint."
 msgid ""
 "<i>Strong</i> units do 1 more damage for every successful strike in melee "
 "combat, and have 1 additional hitpoint."
 msgstr ""
-"Unidades <italic>text='Fortes'</italic>causam 1 dano a mais para cada acerto "
-"em combate corpo a corpo e possuem 1 de HP adicional."
+"Unidades <i>fortes</i> causam 1 de dano a mais a cada golpe acertado em "
+"combate corpo a corpo e têm 1 ponto de vida a mais."
 
-#
 # File: data/core/help.cfg, line: 396
 # File: data/core/help.cfg, line: 396
 # File: data/core/help.cfg, line: 396
 #. [trait]: id=strong
 #: data/core/macros/traits.cfg:136
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "While useful for any close-combat unit, strong is most effective for "
-#| "units who have a high number of swings such as the elvish fighter. Strong "
-#| "units can be very useful when a tiny bit of extra damage is all that is "
-#| "needed to turn a damaging stroke into a killing blow."
 msgid ""
 "While useful for any close-combat unit, strong is most effective for units "
-"who have a high number of swings such as the elvish fighter. Strong units "
-"can be very useful when a tiny bit of extra damage is all that is needed to "
-"turn a damaging stroke into a killing blow."
+"who have a high number of swings such as the elvish fighter. Strong units can"
+" be very useful when a tiny bit of extra damage is all that is needed to turn"
+" a damaging stroke into a killing blow."
 msgstr ""
-"\n"
-"\n"
-"Enquanto útil para qualquer unidade de combate corpo a corpo, Forte é mais "
-"efetivo para unidades com um grande número de ataques, como os soldados "
-"élficos. Unidades Fortes são muito úteis quando um pouquinho a mais de dano "
-"é tudo o que é preciso para tornar um golpe certeiro em um ataque letal."
+"Útil para qualquer unidade de combate corpo a corpo, forte é mais eficaz em "
+"unidades que golpeiam muitas vezes, como o Guerreiro Élfico. Unidades fortes "
+"podem fazer a diferença quando só falta um pouco de dano para transformar um "
+"golpe em um golpe fatal."
 
 #
 # File: data/core/macros/traits.cfg, line: 108
@@ -9302,33 +8185,21 @@ msgstr ""
 "Unidades <i>habilidosas</i> causam 1 de dano a mais em cada golpe certeiro à "
 "distância."
 
-#
 # File: data/core/help.cfg, line: 448
 # File: data/core/help.cfg, line: 448
 # File: data/core/help.cfg, line: 448
 #. [trait]: id=dextrous
 #: data/core/macros/traits.cfg:157
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Dextrous is a trait possessed only by elves. The elven people are known "
-#| "for their uncanny grace, and their great facility with the bow. Some, "
-#| "however, are gifted with natural talent that exceeds their brethren. "
-#| "These elves inflict an additional point of damage with each arrow."
 msgid ""
 "Dextrous is a trait possessed only by elves. The elven people are known for "
 "their uncanny grace, and their great facility with the bow. Some, however, "
 "are gifted with natural talent that exceeds their brethren. These elves "
 "inflict an additional point of damage with each arrow."
 msgstr ""
-"\n"
-"\n"
-"Habilidoso é uma característica possuida somente pelos Elfos. O povo Élfico "
-"é conhecido por sua graça singular e sua grande facilidade com o manejo do "
-"arco. Entretanto, alguns são agraciados com um talento natural que excede o "
-"de seus irmãos. Esses elfos inflingem um ponto de dano adicional com cada "
-"flecha."
+"Habilidoso é uma característica exclusiva dos elfos. O povo élfico é "
+"conhecido por sua graça incomum e por sua grande facilidade com o arco. "
+"Alguns, porém, têm um talento natural que supera o de seus irmãos. Esses "
+"elfos causam um ponto de dano a mais com cada flecha."
 
 #
 # File: data/core/macros/traits.cfg, line: 122
@@ -9360,22 +8231,11 @@ msgstr ""
 "Unidades <i>velozes</i> têm 1 ponto de movimento extra, mas 5% menos pontos "
 "de vida."
 
-#
 # File: data/core/help.cfg, line: 380
 # File: data/core/help.cfg, line: 380
 # File: data/core/help.cfg, line: 380
 #. [trait]: id=quick
 #: data/core/macros/traits.cfg:174
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Quick is the most noticeable trait, particularly in slower moving units "
-#| "such as trolls or heavy infantry. Units with the quick trait often have "
-#| "greatly increased mobility in rough terrain, which can be important to "
-#| "consider when deploying your forces. Also, quick units aren’t quite as "
-#| "tough as units without this trait and are subsequently less good at "
-#| "holding contested positions."
 msgid ""
 "Quick is the most noticeable trait, particularly in slower moving units such "
 "as trolls or heavy infantry. Units with the quick trait often have greatly "
@@ -9384,14 +8244,11 @@ msgid ""
 "without this trait and are subsequently less good at holding contested "
 "positions."
 msgstr ""
-"\n"
-"\n"
-"Veloz é a característica cujo efeito é mais visível, particularmente em "
-"unidades mais lentas, como Trolls ou Infantaria Pesada. Unidades Velozes "
-"frequentemente se movem muito melhor em terrenos acidentados, o que deve ser "
-"considerado antes de posicionar suas tropas. Além disso, unidades Velozes "
-"não são tão robustas quanto as unidades sem essa característica e, portanto, "
-"não são tão boas em defender posições onde espera-se que haja muito combate."
+"Veloz é a característica que mais se nota, sobretudo em unidades lentas como "
+"trolls ou infantaria pesada. Unidades velozes costumam ter muito mais "
+"mobilidade em terreno difícil, o que vale considerar ao posicionar suas "
+"forças. Por outro lado, são um pouco menos resistentes que unidades sem esta "
+"característica e, por isso, piores para segurar posições disputadas."
 
 #
 # File: data/core/macros/traits.cfg, line: 140
@@ -9412,22 +8269,11 @@ msgid ""
 msgstr ""
 "Unidades <i>inteligentes</i> precisam de 20% menos experiência para evoluir."
 
-#
 # File: data/core/help.cfg, line: 372
 # File: data/core/help.cfg, line: 372
 # File: data/core/help.cfg, line: 372
 #. [trait]: id=intelligent
 #: data/core/macros/traits.cfg:194
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "<italic>text='Intelligent'</italic> units are very useful at the "
-#| "beginning of a campaign as they can advance to higher levels more "
-#| "quickly. Later in campaigns Intelligent is not quite as useful because "
-#| "the <italic>text='After Maximum Level Advancement'</italic> (AMLA) is not "
-#| "as significant a change as advancing a level. If you have many ‘maximum "
-#| "level’ units you may wish to recall units with more desirable traits."
 msgid ""
 "Intelligent units are very useful at the beginning of a campaign as they can "
 "advance to higher levels more quickly. Later in campaigns Intelligent is not "
@@ -9435,15 +8281,11 @@ msgid ""
 "not as significant a change as advancing a level. If you have many ‘maximum "
 "level’ units you may wish to recall units with more desirable traits."
 msgstr ""
-"\n"
-"\n"
-" Unidades <italic>text='Intelligentes'</italic> são muito úteis no início de "
-"uma campanha, pois elas podem chegar a níveis maiores mais rapidamente. Mais "
-"adiante nas campanhas Inteligência perde um pouco da utilidade porque o "
-"<italic>text='Avanço Pós Nível Máximo'</italic> (APNM) não são tão "
-"significativos quanto os avanços que mudam a forma da unidade. Se você "
-"possuir muitas unidades de ‘nível máximo’, pode ser uma boa ideia convocar "
-"unidades com as características mais úteis."
+"Unidades inteligentes são muito úteis no início de uma campanha, pois sobem "
+"de nível mais rápido. Mais adiante, inteligente perde valor, porque o "
+"<i>Avanço Após o Nível Máximo</i> (AANM) muda bem menos que subir de nível. "
+"Se você tiver muitas unidades no nível máximo, talvez prefira convocar "
+"unidades com características mais vantajosas."
 
 #
 # File: data/core/macros/traits.cfg, line: 152
@@ -9475,35 +8317,23 @@ msgstr ""
 "Unidades <i>resistentes</i> têm 4 pontos de vida a mais e ganham mais 1 por "
 "nível."
 
-#
 # File: data/core/help.cfg, line: 388
 # File: data/core/help.cfg, line: 388
 # File: data/core/help.cfg, line: 388
 #. [trait]: id=resilient
 #: data/core/macros/traits.cfg:210
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Resilient units can be useful at all stages of a campaign, and this is a "
-#| "useful trait for all units. Resilient is often most helpful as a trait "
-#| "when it occurs in a unit that has some combination of low hitpoints, good "
-#| "defense, or high resistances. Resilient units are especially useful for "
-#| "holding strategic positions against opponents."
 msgid ""
 "Resilient units can be useful at all stages of a campaign, and this is a "
 "useful trait for all units. Resilient is often most helpful as a trait when "
-"it occurs in a unit that has some combination of low hitpoints, good "
-"defense, or high resistances. Resilient units are especially useful for "
-"holding strategic positions against opponents."
+"it occurs in a unit that has some combination of low hitpoints, good defense,"
+" or high resistances. Resilient units are especially useful for holding "
+"strategic positions against opponents."
 msgstr ""
-"\n"
-"\n"
-"Unidades Resistentes são úteis em todos os estágios de uma campanha e é uma "
-"característica útil para todas as unidades. Resistente é frequentemente mais "
-"útil em unidades que possuem uma combinação de pontos de vida baixos, boa "
-"defesa ou resistências altas. Unidades Resistentes são especialmente úteis "
-"para defender posições estratégicas contra os ataques inimigos."
+"Unidades resistentes são úteis em qualquer fase de uma campanha, e esta é uma"
+" boa característica para qualquer unidade. Ela costuma ajudar mais em "
+"unidades que combinam poucos pontos de vida, boa defesa ou resistências "
+"altas. Unidades resistentes são especialmente úteis para segurar posições "
+"estratégicas contra o inimigo."
 
 #
 # File: data/core/macros/traits.cfg, line: 170
@@ -9538,24 +8368,14 @@ msgstr ""
 
 #. [trait]: id=healthy
 #: data/core/macros/traits.cfg:232
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "<italic>text='Healthy'</italic> units have 1 additional hitpoint, and "
-#| "gain 1 more per level. They will also heal 2 hitpoints each turn, "
-#| "regardless of whether they engaged in combat the turn before."
 msgid ""
 "<i>Healthy</i> units have 1 additional hitpoint, and gain 1 more per level. "
-"They will also heal 2 hitpoints each turn, regardless of whether they "
-"engaged in combat the turn before."
+"They will also heal 2 hitpoints each turn, regardless of whether they engaged"
+" in combat the turn before."
 msgstr ""
-"\n"
-"\n"
-"Unidades com a característica <italic>text='Vigoroso'</italic>possuem 1 de "
-"HP a mai, e ganham 1 de HP adicional por nível. Elas também curam 2 pontos "
-"de vida a cada turno, independentemente de terem lutado contra um oponente "
-"no turno anterior ou não."
+"Unidades <i>vigorosas</i> têm 1 ponto de vida a mais e ganham mais 1 por "
+"nível. Elas também recuperam 2 pontos de vida a cada turno, mesmo que tenham "
+"lutado no turno anterior."
 
 #
 # File: data/core/macros/traits.cfg, line: 190
@@ -9618,28 +8438,20 @@ msgstr "selvagem"
 msgid "Receives only 50% defense in land-based villages"
 msgstr "Recebem apenas 50% de defesa em aldeias situadas em terra firme"
 
-#
 # File: data/core/help.cfg, line: 410
 # File: data/core/help.cfg, line: 410
 # File: data/core/help.cfg, line: 410
 #. [trait]: id=feral
 #: data/core/macros/traits.cfg:288
-#, fuzzy
-#| msgid ""
-#| "Dwellings of sentient beings are not easily used for cover by feral "
-#| "creatures of low intelligence. As a result, <italic>text='feral'</italic> "
-#| "units receive a maximum of 50% defense in any land-based village "
-#| "regardless of base terrain."
 msgid ""
-"Dwellings of sentient beings are not easily used for cover by feral "
-"creatures of low intelligence. As a result, <i>feral</i> units receive a "
-"maximum of 50% defense in any land-based village regardless of base terrain."
+"Dwellings of sentient beings are not easily used for cover by feral creatures"
+" of low intelligence. As a result, <i>feral</i> units receive a maximum of "
+"50% defense in any land-based village regardless of base terrain."
 msgstr ""
-"As moradias das unidades sentientes não fornecem necessariamente uma boa "
-"defesa para criaturas pouco inteligentes. Portanto, unidades que possuem a "
-"característica <italic>text='selvagem'</italic>recebem no máximo 50% de "
-"defesa em aldeias localizadas sobre terra firme, independentemente do "
-"terreno onde a aldeia encontra-se."
+"Criaturas selvagens de pouca inteligência não sabem se proteger bem nas "
+"moradias de seres pensantes. Por isso, unidades <i>selvagens</i> têm no "
+"máximo 50% de defesa em qualquer aldeia em terra, seja qual for o terreno "
+"base."
 
 #
 # File: data/core/macros/traits.cfg, line: 232
@@ -9699,29 +8511,19 @@ msgstr ""
 "Unidades <i>lentas</i> têm 1 ponto de movimento a menos, mas 5% mais pontos "
 "de vida."
 
-#
 # File: data/core/help.cfg, line: 472
 # File: data/core/help.cfg, line: 472
 # File: data/core/help.cfg, line: 472
 #. [trait]: id=slow
 #: data/core/macros/traits.cfg:327
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Thick-bodied and clumsy, slow individuals of goblins and other species "
-#| "take a movement penalty but are compensated for it with a slight increase "
-#| "in endurance."
 msgid ""
-"Thick-bodied and clumsy, slow individuals of goblins and other species take "
-"a movement penalty but are compensated for it with a slight increase in "
+"Thick-bodied and clumsy, slow individuals of goblins and other species take a"
+" movement penalty but are compensated for it with a slight increase in "
 "endurance."
 msgstr ""
-"\n"
-"\n"
-" De pele grossa e desajeitados, indivíduos lentos, sejam eles góblins ou "
-"membros de outras espécies, pssuem uma penalidade no seu movimento que é "
-"compensada por um leve acréscimo na sua constituição."
+"Corpulentos e desajeitados, os indivíduos lentos entre os goblins e outras "
+"espécies sofrem uma penalidade de movimento, compensada por um pouco mais de "
+"resistência."
 
 #
 # File: data/core/macros/traits.cfg, line: 267
@@ -9753,27 +8555,18 @@ msgstr ""
 "Unidades com a característica <i>obtuso</i> precisam de 20% mais experiência "
 "para evoluir."
 
-#
 # File: data/core/help.cfg, line: 464
 # File: data/core/help.cfg, line: 464
 # File: data/core/help.cfg, line: 464
 #. [trait]: id=dim
 #: data/core/macros/traits.cfg:347
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Dim is a trait all too common in goblins and other lesser species. There "
-#| "are reasons these species are lesser, and this is one of them."
 msgid ""
 "Dim is a trait all too common in goblins and other lesser species. There are "
 "reasons these species are lesser, and this is one of them."
 msgstr ""
-"\n"
-"\n"
-"Teimosia é um traço de personalidade muito comum em góblins e outras "
-"espécies menos sofisticadas. Há razões para que essas espécies sejam menos "
-"sofisticadas, e essa é uma delas."
+"Teimoso é uma característica comum demais entre goblins e outras espécies "
+"inferiores. Há motivos para essas espécies serem inferiores, e este é um "
+"deles."
 
 #
 # File: data/core/macros/traits.cfg, line: 280
@@ -9793,23 +8586,17 @@ msgstr "envelhecido"
 msgid "female^aged"
 msgstr "envelhecida"
 
-#
 # File: data/core/help.cfg, line: 486
 # File: data/core/help.cfg, line: 486
 # File: data/core/help.cfg, line: 486
 #. [trait]: id=aged
 #: data/core/macros/traits.cfg:361
-#, fuzzy
-#| msgid ""
-#| "Units with the <italic>text='aged'</italic> trait have 8 hitpoints less "
-#| "and suffer from a 1 point decrease in movement and melee damage."
 msgid ""
 "Units with the <i>aged</i> trait have 8 hitpoints less and suffer from a 1 "
 "point decrease in movement and melee damage."
 msgstr ""
-"Unidades com a característica <italic>text='envelhecido'</italic> tem 8 "
-"pontos de vida a menos e possuem seus pontos de movimento e ataque corpo a "
-"corpo diminuido em 1."
+"Unidades com a característica <i>envelhecido</i> têm 8 pontos de vida a menos"
+" e perdem 1 ponto de movimento e 1 de dano corpo a corpo."
 
 #. [trait]: id=oceangoing
 #: data/core/macros/traits.cfg:386
@@ -9817,12 +8604,15 @@ msgid "oceangoing"
 msgstr "navegante"
 
 #. [trait]: id=oceangoing
-#. this is a defense reduction - without this ability most oceangoing ships would have 30% defense on these terrains
+#. this is a defense reduction - without this ability most oceangoing ships
+#. would have 30% defense on these terrains
 #: data/core/macros/traits.cfg:388
 msgid ""
 "This unit is limited to 20% defense while in ford, bridge, oasis, or water-"
 "based village/castle terrain."
 msgstr ""
+"Esta unidade fica limitada a 20% de defesa em vau, ponte, oásis ou "
+"aldeia/castelo sobre a água."
 
 #. [trait]: id=push_poles
 #. https://en.wikipedia.org/wiki/Setting_pole
@@ -10302,11 +9092,16 @@ msgstr "Felinos"
 #. [race]: id=cats
 #: data/core/units.cfg:52
 msgid ""
-"Big cats are nimble, solitary predators that can cause trouble for any "
-"farmer or hunter that encounter them. The cats that hunt rodents and drive "
-"away lone wolves are tolerated by civilized folk, but some big cats are "
-"considered terrifying monsters."
+"Big cats are nimble, solitary predators that can cause trouble for any farmer"
+" or hunter that encounter them. The cats that hunt rodents and drive away "
+"lone wolves are tolerated by civilized folk, but some big cats are considered"
+" terrifying monsters."
 msgstr ""
+"Os grandes felinos são predadores ágeis e solitários que podem causar "
+"problemas a qualquer fazendeiro ou caçador que os encontre. Os gatos que "
+"caçam roedores e afastam lobos solitários são tolerados pelos povos "
+"civilizados, mas alguns grandes felinos são considerados monstros "
+"aterrorizantes."
 
 #
 # File: data/core/units.cfg, line: 54
@@ -10905,47 +9700,27 @@ msgstr ""
 "Goblins são franzinos e bem frágeis; raramente passam do tamanho de uma "
 "criança humana."
 
-#
 # File: data/core/units.cfg, line: 135
 # File: data/core/units.cfg, line: 135
 # File: data/core/units.cfg, line: 135
 #. [race]: id=goblin
 #: data/core/units.cfg:144
-#, fuzzy
-#| msgid ""
-#| "\n"
-#| "\n"
-#| "Goblins are puny and quite frail, rarely growing past the size and "
-#| "stature of a human child.\n"
-#| "\n"
-#| "Goblins are born into a lifetime of near-slavery to their larger kin, and "
-#| "used as sword-fodder in battle. They thrive in spite of their tragic "
-#| "fate; in part because they are so very numerous, and also because their "
-#| "brother orcs are well aware how dependent they are on the goblins. They "
-#| "perform the bulk of manual labor needed by the orcs, with the sole "
-#| "exception of jobs that require the brute strength of true orcs. Those the "
-#| "orcs revel in as proof of their prowess."
 msgid ""
 "Goblins are born into a lifetime of near-slavery to their larger kin, and "
-"used as sword-fodder in battle. They thrive in spite of their tragic fate; "
-"in part because they are so very numerous, and also because their brother "
-"orcs are well aware how dependent they are on the goblins. They perform the "
-"bulk of manual labor needed by the orcs, with the sole exception of jobs "
-"that require the brute strength of true orcs. Those the orcs revel in as "
-"proof of their prowess."
+"used as sword-fodder in battle. They thrive in spite of their tragic fate; in"
+" part because they are so very numerous, and also because their brother orcs "
+"are well aware how dependent they are on the goblins. They perform the bulk "
+"of manual labor needed by the orcs, with the sole exception of jobs that "
+"require the brute strength of true orcs. Those the orcs revel in as proof of "
+"their prowess."
 msgstr ""
-"\n"
-"\n"
-"Goblins são fracos e bem frágeis, raramente atingindo o tamanho e estatura "
-"de uma criança humana.\n"
-"\n"
-"Goblins nascem em uma vida de semi-escravidão para com seus irmãos maiores, "
-"e usados como bucha para espadas em batalha. Eles prosperam, apesar de seu "
-"destino trágico; em parte porque eles são bem numerosos, e porque seus "
-"irmãos orcs possuem plena noção do quanto são dependentes dos góblins. Eles "
-"fazem a maior parte dos trabalhos físicos que os orcs necessitam. A única "
-"escesão dessa regra são os trabalhos que requerem a força bruta de "
-"verdadeiros orcs. Esses orcs regojizam-se disso como prova de seu valor."
+"Os goblins nascem para uma vida de quase escravidão a seus parentes maiores e"
+" são usados como bucha de espada nas batalhas. Prosperam apesar desse destino"
+" trágico, em parte por serem muito numerosos e também porque seus irmãos orcs"
+" sabem bem o quanto dependem deles. Os goblins fazem a maior parte do "
+"trabalho braçal de que os orcs precisam, com a única exceção das tarefas que "
+"exigem a força bruta de um orc de verdade. Dessas, os orcs se orgulham como "
+"prova de sua bravura."
 
 #
 # File: data/core/units.cfg, line: 150
@@ -11586,27 +10361,19 @@ msgstr "Navio"
 msgid "race+plural^Ships"
 msgstr "Navios"
 
-#
 # File: data/core/units.cfg, line: 199
 # File: data/core/units.cfg, line: 199
 # File: data/core/units.cfg, line: 199
 #. [race]: id=ship
 #: data/core/units.cfg:263
-#, fuzzy
-#| msgid ""
-#| "Animated neither by natural life nor by necromancy, the term "
-#| "<italic>text='mechanical'</italic> describes a created artifact of an "
-#| "intelligent being. Most mechanical things neither move nor think on their "
-#| "own, but some do so as a result of magical enchantment."
 msgid ""
-"Ships are not living beings, but they are crafted and (usually) controlled "
-"by living beings. Most ships neither move nor think on their own, but some "
-"do so as a result of magical enchantment."
+"Ships are not living beings, but they are crafted and (usually) controlled by"
+" living beings. Most ships neither move nor think on their own, but some do "
+"so as a result of magical enchantment."
 msgstr ""
-"Animados nem por vida natural nem por necromancia, o termo "
-"<italic>text='mecânico'</italic> descreve um artefato criado por um ser "
-"inteligente. Muitas coisas mecânicas não se movem nem possuem inteligência "
-"própria, mas alguns o fazem por meio de encantamentos mágicos."
+"Navios não são seres vivos, mas são construídos e (geralmente) controlados "
+"por seres vivos. A maioria dos navios não se move nem pensa sozinha, mas "
+"alguns o fazem graças a encantamentos mágicos."
 
 #
 # File: data/core/units.cfg, line: 208
@@ -12423,8 +11190,11 @@ msgstr ""
 "Aldeis permitem que unidades que ocupem o seu espaço se curem ou removam "
 "envenenamento."
 
-#. TRANSLATORS: special note for terrains such as the oasis; the only terrain in core with this property heals 8 hp just like a village.
-#. For the single-hitpoint variant, the wording is different because I assume the player will be more interested in the curing-poison part than the minimal healing.
+#. TRANSLATORS: special note for terrains such as the oasis; the only terrain
+#. in core with this property heals 8 hp just like a village.
+#. For the single-hitpoint variant, the wording is different because I assume
+#. the player will be more interested in the curing-poison part than the
+#. minimal healing.
 #: src/help/help_topic_generators.cpp:182
 msgid ""
 "This terrain allows units to be cured of poison, or to heal a single "
@@ -12433,11 +11203,11 @@ msgid_plural ""
 "This terrain allows units to heal $amount hitpoints, or to be cured of "
 "poison, as if stationed in a village."
 msgstr[0] ""
-"Este terreno permite que a unidade seja curada do efeito de envenenamento ou "
-"que recupere um ponto de vida."
+"Este terreno permite que a unidade seja curada de veneno ou recupere um ponto"
+" de vida."
 msgstr[1] ""
-"Este terreno permite que unidades curem $amoun pontos de vida ou sejam "
-"curadas do efeito de envenenamento como se estivessem em uma aldeia."
+"Este terreno permite que as unidades recuperem $amount pontos de vida ou "
+"sejam curadas de veneno, como se estivessem numa aldeia."
 
 #: src/help/help_topic_generators.cpp:189
 msgid ""
@@ -12474,20 +11244,20 @@ msgstr ""
 msgid "Special Notes"
 msgstr "Notas Especiais"
 
-#
 # File: src/help.cpp, line: 1606
 # File: src/help.cpp, line: 1606
 # File: src/help.cpp, line: 1606
-#. TRANSLATORS: $types is a conjunct list, typical values will be "Castle" or "Flat and Shallow Water".
-#. The terrain names will be hypertext links to the help page of the corresponding terrain type.
-#. There will always be at least 1 item in the list, but unlikely to be more than 3.
+#. TRANSLATORS: $types is a conjunct list, typical values will be "Castle" or
+#. "Flat and Shallow Water".
+#. The terrain names will be hypertext links to the help page of the
+#. corresponding terrain type.
+#. There will always be at least 1 item in the list, but unlikely to be more
+#. than 3.
 #: src/help/help_topic_generators.cpp:266
-#, fuzzy
-#| msgid "Base Terrain: "
 msgid "Basic terrain type: $types"
 msgid_plural "Basic terrain types: $types"
-msgstr[0] "Terreno Base: "
-msgstr[1] "Terreno Base: "
+msgstr[0] "Tipo de terreno básico: $types"
+msgstr[1] "Tipos de terreno básicos: $types"
 
 #. TRANSLATORS: In the help for a terrain type, for example Dwarven Village is
 #. often placed on Cave Floor
@@ -12575,8 +11345,8 @@ msgstr "Raça:"
 #: src/help/help_topic_generators.cpp:546
 msgid "(1 of):"
 msgid_plural "(random $number of):"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "(1 entre):"
+msgstr[1] "($number aleatórias entre):"
 
 # File: src/help.cpp, line: 1455
 # File: src/help.cpp, line: 1455
@@ -12718,8 +11488,8 @@ msgstr "Especial"
 #: src/help/help_topic_generators.cpp:712
 msgid "uses $num attack"
 msgid_plural "uses $num attacks"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "usa $num ataque"
+msgstr[1] "usa $num ataques"
 
 #
 # File: src/help.cpp, line: 1567
