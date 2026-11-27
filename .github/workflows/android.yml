@@ -39,7 +39,9 @@ jobs:
           else
             packaging/android/westnorth/make-data-packages.sh core out
             # Create the tag first: release creation then never depends on --target.
-            gh api -X POST "repos/$GH_REPO/git/refs" -f ref="refs/tags/core-data-$CORE_GEN" -f sha="$CORE_REF" || true
+            # The tag points at the current commit, not at CORE_REF: GITHUB_TOKEN
+            # may not create refs to commits with other workflow files (HTTP 403).
+            gh api -X POST "repos/$GH_REPO/git/refs" -f ref="refs/tags/core-data-$CORE_GEN" -f sha="$GITHUB_SHA" || true
             gh release create "core-data-$CORE_GEN" out/core.zip --prerelease --verify-tag \
               --title "Core data $CORE_GEN" \
               --notes "Upstream Wesnoth data at $CORE_REF, used by the Android app. Do not delete."
