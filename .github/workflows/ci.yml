@@ -13,7 +13,8 @@ on:
 
 concurrency:
   group: ci-${{ github.ref }}
-  cancel-in-progress: true
+  # Only PR runs are superseded; every merge to main gets a full run.
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   checks:
@@ -50,6 +51,9 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: wesnoth/wesnoth:2404-sdl3
+      env:
+        # Same as upstream: the tests need a video driver and the container has no display.
+        SDL_VIDEODRIVER: dummy
     steps:
       - { uses: actions/checkout@v6, with: { submodules: "recursive" } }
       - name: Set git safe directory
@@ -90,7 +94,8 @@ jobs:
         run: |
           apt-get update -qq && apt-get install -y -qq xdotool imagemagick > /dev/null
           export XDG_RUNTIME_DIR=$(mktemp -d)
-          utils/westnorth/smoke_1600x720.sh ./wesnoth
+          # Real X server (Xvfb) here, so the screenshots show the layout.
+          env -u SDL_VIDEODRIVER utils/westnorth/smoke_1600x720.sh ./wesnoth
       - name: Run unit tests
         if: success() || steps.build.outcome == 'success'
         run: ./run_boost_tests
