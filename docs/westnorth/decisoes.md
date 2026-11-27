@@ -27,6 +27,15 @@ entradas antigas (se mudar, criar nova entrada que substitui a anterior).
 | D13 | Toque processado ao soltar; atalhos de toque (`touchhex`, `selectmoveaction`) desligados para toque | Causa raiz da seleção que se desfaz (ver `diagnostico-toque.md`) | Agente |
 | D14 | Emulação de toque do desktop corrigida e usada nos testes de UI | Única forma de validar toque na nuvem | Agente |
 
+## 2026-11-27 — UI-2
+
+| # | Decisão | Motivo | Quem |
+|---|---|---|---|
+| D15 | Confirmação de "Terminar Turno" ligada por padrão quando alguma unidade ainda pode se mover (pref `confirm_end_turn` vazia = "yellow") | Brief: botão grande precisa de proteção contra toque acidental | Agente |
+| D16 | Nova resolução GUI2 `GUI_TOUCH_RESOLUTION` (tela ≥ 1500x700, perde para `GUI_BIG_RESOLUTION` em telas maiores) com botões de 72 px | Diálogos tocáveis sem afetar desktops comuns | Agente |
+| D17 | O layout `1024x600` do tema do HUD vira o layout de celular (é o que telas 1600x720 recebem): barra superior 40 px, Menu/Ações 200x40, "Terminar Turno" 172x80 | O tema escolhe o 1º layout que cabe; criar outro antes dele exigiria reordenar o tema | Agente |
+| D18 | Meta de 48 dp (79 px) atingida no "Terminar Turno" (80 px) e quase nos botões de diálogo (72 px ≈ 44 dp); Menu/Ações ficaram com 40 px de altura (≈ 24 dp, mas 200 px de largura) | Barra de 79 px tiraria 11% da altura do mapa. Resolver de vez no UI-4 (menu ☰ e barra de ações) | Agente |
+
 ## Pendências do dono
 
 - [x] D3: repo público (feito pelo dono em 2026-11-27).

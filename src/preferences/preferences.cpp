@@ -1851,14 +1851,16 @@ bool prefs::green_confirm()
 
 bool prefs::yellow_confirm()
 {
-	return preferences_[prefs_list::confirm_end_turn] == "yellow";
+	// Westnorth: on by default. On a phone "End Turn" is easy to hit by accident,
+	// so ask whenever some unit can still move (upstream default: "no_moves").
+	const std::string confirmation = preferences_[prefs_list::confirm_end_turn];
+	return confirmation == "yellow" || confirmation.empty();
 }
 
 bool prefs::confirm_no_moves()
 {
-	// This is very non-intrusive so it is on by default
 	const std::string confirmation = preferences_[prefs_list::confirm_end_turn];
-	return confirmation == "no_moves" || confirmation.empty();
+	return confirmation == "no_moves";
 }
 
 void prefs::encounter_recruitable_units(const std::vector<team>& teams)
