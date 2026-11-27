@@ -735,7 +735,9 @@ void command_executor_default::set_button_state()
 
 			ui_command command_obj = ui_command(command);
 			std::string tooltip = action.tooltip(i);
-			if (filesystem::file_exists(game_config::path + "/images/icons/action/" + command + "_25.png" ))
+			// Westnorth: buttons with a text label (the phone HUD's Undo/Next) get no icon overlay;
+			// their images have no size suffix, so the overlay path did not exist.
+			if (action.title().empty() && filesystem::file_exists(game_config::path + "/images/icons/action/" + command + "_25.png" ))
 				button->set_overlay("icons/action/" + command);
 			if (!tooltip.empty())
 				button->set_tooltip_string(tooltip);

@@ -52,6 +52,13 @@ entradas antigas (se mudar, criar nova entrada que substitui a anterior).
 | D23 | Smoke test `utils/westnorth/smoke_1600x720.sh` no CI | Pega layouts que não cabem na tela do A06 | Agente |
 | D24 | `wesnoth-lib` pt-BR 100% traduzido (188 textos: 88 sem tradução + 100 "fuzzy", que o jogo ignorava) | Itens do brief ("Show Topics", "Tip of the Day", "About") e outros textos em inglês ou com tradução errada | Agente |
 
+## 2026-11-27 — UI-4 (parte 1) e UI-5 (diagnóstico)
+
+| # | Decisão | Motivo | Quem |
+|---|---|---|---|
+| D25 | Botões "Desfazer" e "Próxima" (84x76 px) no painel lateral, logo acima do "Terminar Turno" | Brief: Desfazer sempre visível depois de mover; o canto inferior direito é onde o polegar já está. O tema desabilita o botão quando a ação não está disponível | Agente |
+| D26 | Zoom: nenhuma mudança por enquanto; diagnóstico em `diagnostico-zoom.md` | O ambiente de teste mostra hexes pretos com zoom diferente de 1x, com ou sem as correções. Sem o aparelho não dá para separar bug do jogo de artefato do Mesa | Agente |
+
 ## Pendências do dono
 
 - [x] D3: repo público (feito pelo dono em 2026-11-27).

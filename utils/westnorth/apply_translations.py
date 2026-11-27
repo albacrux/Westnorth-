@@ -2,6 +2,7 @@
 # Westnorth: apply the fork's pt-BR translations to po/<domain>/pt_BR.po.
 #
 # Each file in utils/westnorth/translations/<domain>-*.py defines a dict T
+# (files named <domain>-new.py hold strings the fork added; missing ones are appended)
 # {msgid: msgstr} (plural entries: msgid -> [singular, plural]). Matching entries
 # get the new msgstr and lose the "fuzzy" flag; unknown msgids are reported.
 # Re-run after cherry-picking upstream translation updates.
@@ -48,8 +49,17 @@ def main():
             lines = f.read().split("\n")
         spans = entry_spans(lines)
         replacements = {}
+        appended = 0
         for msgid, msgstr in table.items():
             entry = by_id.get(msgid)
+            if entry is None and path.endswith("-new.py"):
+                # Strings that only exist in the fork: append them to the .po.
+                entry = polib.POEntry(msgid=msgid, msgstr=msgstr,
+                                      comment="Westnorth: string added by the fork")
+                lines.extend(entry.__unicode__(wrapwidth=79).split("\n"))
+                by_id[msgid] = entry
+                appended += 1
+                continue
             if entry is None:
                 print(f"{os.path.basename(path)}: msgid not in {domain}: {msgid[:60]!r}")
                 missing += 1
@@ -74,7 +84,7 @@ def main():
         if not check_only:
             with open(po_path, "w", encoding="utf-8") as f:
                 f.write("\n".join(lines))
-        print(f"{domain}: {len(replacements)} entries from {os.path.basename(path)}")
+        print(f"{domain}: {len(replacements)} updated, {appended} added from {os.path.basename(path)}")
     return 1 if (missing and check_only) else 0
 
 
