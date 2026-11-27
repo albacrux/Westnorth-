@@ -1270,3 +1270,11 @@
 
 # Behavioral tests
 0 village_capture_ends_movement
+#
+# Westnorth: job classes (data/westnorth)
+#
+0 westnorth_classes_types
+0 westnorth_classes_identity
+0 westnorth_classes_change_keeps_progress
+0 westnorth_classes_change_caps_experience
+0 westnorth_classes_change_rules

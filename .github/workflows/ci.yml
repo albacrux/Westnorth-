@@ -46,6 +46,9 @@ jobs:
       - name: Run luacheck
         if: success() || failure()
         run: luacheck .
+      - name: Westnorth content validation
+        if: success() || failure()
+        run: python3 utils/westnorth/validate_content.py
 
   build-and-test:
     runs-on: ubuntu-latest

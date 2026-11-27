@@ -176,18 +176,18 @@ Princípios: cada classe deve mudar **o que o jogador faz**, não só números. 
 - Ambientes cloud do Claude Code: https://code.claude.com/docs/en/cloud-environments.md
 - Claude Code na web: https://code.claude.com/docs/en/claude-code-on-the-web.md
 
-## 11. Ordem de execução revisada (2026-11-27)
+## 11. Ordem de execução revisada e status (atualizado 2026-11-27)
 
-| Ordem | Ciclo | Conteúdo | Camada |
+| Ordem | Ciclo | Conteúdo | Status |
 |---|---|---|---|
-| 0 | Fundação | `CLAUDE.md`, CI desktop, APK + dados no `nightly`, keystore debug | CI |
-| 1 | UI-1 | Fluxo de toque: tocar para selecionar, tocar 2x para mover, tocar no inimigo para atacar, arrastar = rolar mapa | C++ |
-| 2 | UI-2 | "Terminar Turno" grande e protegido; botões dos diálogos Atacar/Recrutar ≥ 56 dp | Tema HUD + GUI2 |
-| 3 | UI-3 | Barra superior enxuta, menus sem coluna de atalhos em telas de toque | Tema HUD + C++ pequeno |
-| 4 | UI-4 | Cartão da unidade + barra de ações inferior (Confirmar, Desfazer, Esperar); remove barra lateral | Tema HUD |
-| 5 | UI-5 | Zoom nítido (passos inteiros, filtro) e zoom padrão maior | C++ / prefs |
-| 6 | UI-6 | Menu inicial, ajuda, add-ons, traduções pt-BR | GUI2 / po |
-| 7 | M2 | Era/add-on próprio, validador de dados | WML/Lua |
-| 8+ | M4–M7 | Classes, conquistas, sprites (desktop), campanha | WML/Lua |
+| 0 | Fundação | `CLAUDE.md`, CI desktop, APK + dados no `nightly`, keystore debug | **Feito** (#1, #4, #7) |
+| 1 | UI-1 | Fluxo de toque: tocar para selecionar, tocar 2x para mover, tocar no inimigo para atacar, arrastar = rolar mapa | **Feito** (#2) — falta validar no A06 |
+| 2 | UI-2 | "Terminar Turno" grande e protegido; botões dos diálogos Atacar/Recrutar | **Feito** (#3, corrigido em #6) |
+| 3 | UI-3 | Menus sem coluna de atalhos, linhas maiores, submenu "Mais..." | **Feito** (#5) |
+| 4 | UI-4 | Botões Desfazer/Próxima no painel | **Parte 1 feita** (#8, #9). Falta: cartão da unidade, botão Confirmar, menu ☰ |
+| 5 | UI-5 | Zoom nítido | **Diagnóstico** (`diagnostico-zoom.md`), precisa de capturas do A06 |
+| 6 | UI-6 | Traduções pt-BR | **`wesnoth-lib` 100%** (#6). Faltam `wesnoth` e ajuda; menu inicial e add-ons |
+| 7 | M2 + M4 | Conteúdo próprio: 6 classes × 2 níveis, troca de classe, era com 2 facções, mapa 2p, testes e validador | **Rodada 1 feita** (este PR) — ver `classes.md` |
+| 8+ | M5–M7 | Conquistas, sprites (desktop), mini-campanha, balanceamento IA × IA | A fazer |
 
-M3 "modo low-end" foi rebaixado: o A06 já roda bem. Volta se o sistema de classes pesar.
+O modo low-end do M3 foi rebaixado: o A06 já roda bem. Volta se o sistema de classes pesar.
