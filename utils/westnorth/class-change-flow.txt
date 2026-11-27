@@ -1,0 +1,12 @@
+# Westnorth: long press on the leader (on a keep) and "Mudar de classe..." (touch-emulation build) on: wesnoth -t westnorth_classes_demo
+sleep 30
+tap 1200 650
+sleep 1
+tap 545 300
+sleep 1
+longpress 545 300
+sleep 2
+shot menu
+click 700 450
+sleep 2
+shot choose

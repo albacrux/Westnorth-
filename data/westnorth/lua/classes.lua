@@ -112,9 +112,11 @@ function classes.menu_change_class(x, y)
 	for _, c in ipairs(classes.list) do
 		if c ~= info.class then
 			local t = wesnoth.unit_types[c.levels[info.level]]
+			-- Two short lines instead of one long one: on the phone a single line
+			-- ran off the dialog (docs/westnorth/manual-ui-android.md).
 			local description = c.role
 			if info.level > 1 then
-				description = t.name .. " — " .. c.role
+				description = t.name .. "\n" .. c.role
 			end
 			table.insert(options, {
 				image = t.image .. "~TC(" .. u.side .. ",magenta)",
@@ -130,7 +132,7 @@ function classes.menu_change_class(x, y)
 		speaker = "narrator",
 		image = "wesnoth-icon.png",
 		caption = _ "Mudar de classe",
-		message = _ "Escolha a nova classe. A unidade mantém experiência e traços, mas termina o turno.",
+		message = _ "Mantém experiência e traços; termina o turno.",
 	}, options)
 
 	local class_id = ids[choice]
