@@ -470,6 +470,8 @@ theme::status_item::status_item(std::size_t sw, std::size_t sh, const config& cf
 	, font_(cfg["font_size"].to_size_t())
 	, font_rgb_set_(false)
 	, font_rgb_(DefaultFontRGB)
+	, background_(cfg["background"].str())
+	, padding_(cfg["padding"].to_int(0))
 {
 	if(font_ == 0)
 		font_ = DefaultFontSize;

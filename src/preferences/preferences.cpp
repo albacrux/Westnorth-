@@ -1353,7 +1353,12 @@ std::string prefs::theme()
 
 	std::string res = preferences_[prefs_list::theme];
 	if(res.empty()) {
+#ifdef __ANDROID__
+		// Westnorth: phones start with the full-screen HUD (data/themes/westnorth.cfg).
+		return "Westnorth";
+#else
 		return "Default";
+#endif
 	}
 
 	return res;

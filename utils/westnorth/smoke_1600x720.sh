@@ -1,7 +1,8 @@
 #!/bin/bash
 # Westnorth: smoke test at the Galaxy A06 screen size (1600x720 landscape).
 # Opens the title screen and a test scenario in both UI themes, with the
-# desktop and the Android GUI sizes (WESTNORTH_ANDROID=1), and fails if
+# desktop and the Android GUI sizes (WESTNORTH_ANDROID=1), plus a scenario with the
+# phone HUD theme "Westnorth", and fails if
 # the log shows a dialog that does not fit or a WML error. Catches layout
 # regressions that the headless unit/WML tests cannot see (e.g. buttons made
 # so tall that the title screen no longer fits 720 px and the game quits).
@@ -17,7 +18,7 @@ fail=0
 run() {
 	local name=$1 theme=$2
 	shift 2
-	WESTNORTH_ANDROID=${android:-} WESTNORTH_TIPS=yes WESTNORTH_GUI_THEME=$theme WESTNORTH_DISPLAY=${WESTNORTH_DISPLAY:-79} \
+	WESTNORTH_THEME=${hud_theme:-} WESTNORTH_ANDROID=${android:-} WESTNORTH_TIPS=yes WESTNORTH_GUI_THEME=$theme WESTNORTH_DISPLAY=${WESTNORTH_DISPLAY:-79} \
 		timeout 120 "$here/screenshot.sh" -b "$bin" "$out/$name" -- "$@" >/dev/null 2>&1
 	if grep -E "Failed to size window|WML exception|doesn’t fit on the screen|não cabe na tela" "$out/$name/game.log"; then
 		echo "FAIL $name (theme=$theme)"
@@ -38,6 +39,9 @@ for android in "" 1; do
 		run "scenario-$theme$suffix" "$theme" -t westnorth_touch
 	done
 done
+
+# The phone HUD theme (data/themes/westnorth.cfg), as on Android.
+android=1 hud_theme=Westnorth run "scenario-westnorth-hud-android" default -t westnorth_touch
 
 echo "screenshots and logs: $out"
 exit $fail

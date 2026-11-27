@@ -1791,9 +1791,9 @@ REPORT_GENERATOR(position, rc)
 	return text_report(str.str());
 }
 
-// Westnorth: the phone sidebar's hex line. Like "position" but without the
-// coordinates (rarely useful while playing) and with words instead of
-// "40%,1": what the displayed unit would get on the hex under the finger.
+// Westnorth: the phone HUD's terrain line (theme "Westnorth"): the name of the
+// terrain under the finger and, with a unit displayed, what that unit would get
+// there ("Forest · Defense 50% · Moves 2"). No coordinates.
 REPORT_GENERATOR(westnorth_hex, rc)
 {
 	const gamemap &map = rc.map();
@@ -1807,26 +1807,68 @@ REPORT_GENERATOR(westnorth_hex, rc)
 		hex = selected_hex;
 	}
 
+	const team& viewing_team = rc.screen().viewing_team();
+	if(viewing_team.shrouded(hex)) {
+		return config();
+	}
 	const t_translation::terrain_code terrain = map[hex];
 	if(t_translation::terrain_matches(terrain, t_translation::ALL_OFF_MAP)) {
 		return config();
 	}
 
-	const unit *u = get_visible_unit(rc);
-	if(!u || (displayed_unit_hex != hex && displayed_unit_hex != selected_hex)
-		|| rc.screen().viewing_team().shrouded(hex))
-	{
-		return config();
-	}
-
-	const int defense = 100 - u->defense_modifier(terrain, hex);
-	const int move_cost = u->movement_cost(terrain);
 	std::ostringstream str;
-	str << _("hex^Defense") << " " << defense << "%";
-	if(move_cost < movetype::UNREACHABLE) {
-		str << " · " << _("hex^Moves") << " " << move_cost;
+	str << span_color(font::TITLE_COLOR, map.get_terrain_info(terrain).name());
+
+	const unit *u = get_visible_unit(rc);
+	if(u && (displayed_unit_hex == hex || displayed_unit_hex == selected_hex)) {
+		const int defense = 100 - u->defense_modifier(terrain, hex);
+		const int move_cost = u->movement_cost(terrain);
+		str << "  ·  " << _("hex^Defense") << " "
+			<< markup::bold(span_color(font::weapon_color, defense, "%"));
+		if(move_cost < movetype::UNREACHABLE) {
+			str << "  ·  " << _("hex^Moves") << " " << markup::bold(span_color(font::weapon_color, move_cost));
+		}
 	}
 	return text_report(str.str());
+}
+
+// Westnorth: phone HUD unit card (theme "Westnorth"). Not drawn itself: it is
+// non-empty while a unit is displayed, which shows the card's background (see
+// theme::status_item::background()) and the details button.
+REPORT_GENERATOR(westnorth_unit_card, rc)
+{
+	return get_visible_unit(rc) ? text_report(" ") : config();
+}
+
+// Westnorth: wide HP/XP bars for the phone HUD unit card, as one image built
+// with image path functions: the frame, and the fill cropped to the ratio.
+static config westnorth_bar(const std::string& stem, int value, int max, const color_t& color)
+{
+	// Inner width of images/westnorth/hud/<stem>-fill.png
+	static const int fill_w = 248;
+	const int h = stem == "bar18" ? 16 : 6;
+	std::ostringstream img;
+	img << "westnorth/hud/" << stem << "-bg.png";
+	const int w = max > 0 ? std::clamp(value * fill_w / max, 0, fill_w) : 0;
+	if(w > 0) {
+		img << "~BLIT(westnorth/hud/" << stem << "-fill.png~CROP(0,0," << w << "," << h << ")"
+			<< "~BLEND(" << int(color.r) << "," << int(color.g) << "," << int(color.b) << ",1.0),1,1)";
+	}
+	return image_report(img.str());
+}
+
+REPORT_GENERATOR(westnorth_hp_bar, rc)
+{
+	const unit *u = get_visible_unit(rc);
+	if(!u) return config();
+	return westnorth_bar("bar18", u->hitpoints(), u->max_hitpoints(), u->hp_color());
+}
+
+REPORT_GENERATOR(westnorth_xp_bar, rc)
+{
+	const unit *u = get_visible_unit(rc);
+	if(!u || !u->can_advance()) return config();
+	return westnorth_bar("bar8", u->experience(), u->max_experience(), u->xp_color());
 }
 
 REPORT_GENERATOR(side_playing, rc)

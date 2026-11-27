@@ -4,6 +4,9 @@ T = {
 "Undo": "Desfazer",
 "button^Next": "Próxima",
 "hex^Defense": "Defesa",
+"Westnorth (phone)": "Westnorth (celular)",
+"level^Lv": "Nv",
+"Full-screen map with floating cards, made for phones in landscape.": "Mapa em tela cheia com cartões flutuantes, feito para celular na horizontal.",
 "hex^Moves": "Mov.",
 "Touch: move without confirmation": "Toque: mover sem confirmação",
 "On touch screens, a unit moves on the first tap on a hex. When disabled, the first tap shows the path and a second tap on the same hex confirms the move.":
