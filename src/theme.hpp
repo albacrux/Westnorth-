@@ -182,11 +182,16 @@ public:
 
 		const std::vector<std::string>& items() const { return items_; }
 
+		// Westnorth: font_size= for the button label (0 = engine default), so
+		// the phone layout can use readable text on its large touch buttons.
+		int font_size() const { return font_size_; }
+
 		void set_title(const std::string& new_title) { title_ = new_title; }
 	private:
 		bool context_, auto_tooltip_, tooltip_name_prepend_;
 		std::string title_, tooltip_, image_, overlay_,  type_;
 		std::vector<std::string> items_;
+		int font_size_;
 	};
 
 	class slider : public object
@@ -235,12 +240,16 @@ public:
 
 		const std::vector<config>& items() const { return items_; }
 
+		// Westnorth: see action::font_size().
+		int font_size() const { return font_size_; }
+
 		void set_title(const std::string& new_title) { title_ = new_title; }
 	private:
 		bool button_;
 		bool context_;
 		std::string title_, tooltip_, image_, overlay_;
 		std::vector<config> items_;
+		int font_size_;
 	};
 
 	explicit theme(const config& cfg, const rect& screen);

@@ -844,8 +844,10 @@ void display::create_buttons()
 			continue;
 		}
 
+		// Westnorth: the theme may set the label size (see theme::menu::font_size).
 		auto b = std::make_shared<gui::button>(menu.title(), gui::button::TYPE_PRESS, menu.image(),
-			gui::button::DEFAULT_SPACE, true, menu.overlay(), font::SIZE_BUTTON_SMALL);
+			gui::button::DEFAULT_SPACE, true, menu.overlay(),
+			menu.font_size() > 0 ? menu.font_size() : font::SIZE_BUTTON_SMALL);
 
 		DBG_DP << "drawing button " << menu.get_id();
 		b->set_id(menu.get_id());
@@ -862,8 +864,10 @@ void display::create_buttons()
 
 	DBG_DP << "creating action buttons...";
 	for(const auto& action : theme_.actions()) {
+		// Westnorth: the theme may set the label size (see theme::action::font_size).
 		auto b = std::make_shared<gui::button>(action.title(), string_to_button_type(action.type()),
-			action.image(), gui::button::DEFAULT_SPACE, true, action.overlay(), font::SIZE_BUTTON_SMALL);
+			action.image(), gui::button::DEFAULT_SPACE, true, action.overlay(),
+			action.font_size() > 0 ? action.font_size() : font::SIZE_BUTTON_SMALL);
 
 		DBG_DP << "drawing button " << action.get_id();
 		b->set_id(action.get_id());
