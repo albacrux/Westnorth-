@@ -91,6 +91,12 @@ entradas antigas (se mudar, criar nova entrada que substitui a anterior).
 
 | D36 | No Android, os botões genéricos da GUI2 (tema default) passam de 26 px / texto 16 px para 44 px / texto 20 px; "large" vai a 48 px. O tema Celes não foi mudado | Sim/Não, Salvar, Fechar e a tela inicial ficavam com botões e texto pequenos. 44 px (não 72) mantém a tela inicial e os diálogos altos dentro de 720 px (smoke test nos dois temas) | Agente |
 
+## 2026-11-27 — UI-7: HUD replanejado por hierarquia de informação
+
+| # | Decisão | Motivo | Quem |
+|---|---|---|---|
+| D37 | O layout de celular passa a seguir `manual-ui-android.md`: nível 1 (HP, MP, defesa no hex, tipo, ouro, turno, renda) grande; nível 2 (XP, alinhamento, habilidades, armas) a 18 px; nível 3 (nome próprio, raça, traços, lado, coordenadas, visão, contador 1/6, unidades/manutenção, botões do minimapa) sai da tela. O cartão da unidade vira botão e abre a descrição (`describeunit`) | Pedido do dono: o HUD do upstream dá destaque ao que não decide jogadas (ex.: o nome do personagem) e é preciso replanejar para o fluxo do celular, não só aumentar fontes | Agente |
+
 ## Pendências do dono
 
 - [x] D3: repo público (feito pelo dono em 2026-11-27).

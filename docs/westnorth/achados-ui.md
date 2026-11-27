@@ -5,7 +5,8 @@ Registro do que **já foi verificado** sobre como a UI funciona neste snapshot
 se o assunto estiver aqui, parta da conclusão em vez de repetir a verificação.
 Acrescente novos achados no fim da seção certa (data + PR).
 
-Documentos detalhados: `diagnostico-toque.md` (eventos de toque), `diagnostico-zoom.md`
+Manual de tamanhos e hierarquia de informação: `manual-ui-android.md` (fonte das
+regras do layout de celular). Documentos detalhados: `diagnostico-toque.md` (eventos de toque), `diagnostico-zoom.md`
 (zoom/nitidez), `decisoes.md` (D1–D36: o que foi decidido e por quê).
 
 ## 1. Tela e escala
@@ -41,6 +42,14 @@ Documentos detalhados: `diagnostico-toque.md` (eventos de toque), `diagnostico-z
 - `[add]` aceita **um** filho por bloco (schema). Vários elementos = vários `[add]` (#9).
 - Sem `ref=`, o `rect` é relativo ao **elemento anterior na ordem do arquivo**. Ao
   reposicionar, ponha `ref=` explícito nos vizinhos (ex.: `unit-traits` → `unit-abilities`).
+- `ref=` só encontra elementos **anteriores no arquivo** (`do_resolve_rects` procura no
+  config já resolvido). Ordem no `[resolution]` base: painéis (caixas de status), menus,
+  ações, `[label]`s (label-hp...), depois os itens do `[status]`. Um `[label]` não pode
+  usar `ref=` de um item do `[status]`; ref inexistente cai no elemento anterior em
+  silêncio (só um ERR no log).
+- `[change]` não troca o nome da tag; para um relatório novo no layout de celular, o item
+  vai no `[status]` base com `rect="0,0,0,0"` (nunca desenhado) e o `[change]` do layout
+  parcial o posiciona (`westnorth_hex`, #24). Só o primeiro `[status]` é lido.
 - Imagens de `[panel]` são desenhadas **em mosaico** (`draw::tiled`), não esticadas:
   painel mais largo precisa de imagem nova (`images/themes/westnorth/*-240.png`).
 - Ícones de `[label]` são esticados para o tamanho do `rect`.
@@ -76,6 +85,12 @@ Documentos detalhados: `diagnostico-toque.md` (eventos de toque), `diagnostico-z
 - Emulação de toque (`-DMOUSE_TOUCH_EMULATION`, build em `../build-touch`): o botão
   direito vira dedo. Só funciona com o *compiler launcher* (ver `diagnostico-toque.md`).
   A emulação cria eventos de dedo já como fração, por isso escondeu o bug acima.
+
+- Botões do HUD (GUI1: Terminar Turno, Desfazer, cartão da unidade) só respondem ao
+  botão **esquerdo**. Na emulação de toque o "dedo" é o botão direito, então `tap` não
+  os aciona: teste com `click`. No aparelho o SDL gera clique esquerdo a partir do toque.
+- `describeunit` (cartão da unidade) abre a página de **tipo** da unidade na ajuda, não
+  o nome/traços daquela unidade; esses ficam na Lista de Unidades.
 
 ## 6. Ambiente de teste na nuvem
 

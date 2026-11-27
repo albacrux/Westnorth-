@@ -19954,3 +19954,11 @@ msgstr ""
 "Em telas de toque, a unidade se move no primeiro toque num hexágono. "
 "Desligado, o primeiro toque mostra o caminho e um segundo toque no mesmo "
 "hexágono confirma o movimento."
+
+#. Westnorth: string added by the fork
+msgid "hex^Defense"
+msgstr "Defesa"
+
+#. Westnorth: string added by the fork
+msgid "hex^Moves"
+msgstr "Mov."
