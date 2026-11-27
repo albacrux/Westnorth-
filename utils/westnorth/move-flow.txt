@@ -1,0 +1,12 @@
+# Westnorth: pending move and pending attack (touch-emulation build) on: wesnoth -t westnorth_touch
+sleep 30
+tap 1200 650
+sleep 1
+tap 626 425
+sleep 1
+tap 680 245
+sleep 1
+shot pending
+tap 788 389
+sleep 1
+shot attackpending
