@@ -8,14 +8,18 @@ de classes estilo tática. Documentos de projeto em `docs/westnorth/`:
 - `ui-mobile-brief.md` — problemas de UI observados no A06 e metas de toque
 - `decisoes.md` — registro de decisões (data, decisão, motivo). Acrescente, não reescreva.
 - `diagnostico-toque.md` — como o toque vira clique hoje no código
+- `achados-ui.md` — **ler antes de investigar UI**: o que já foi verificado (tema, GUI2,
+  Android × desktop, toque, ambiente de teste) e armadilhas que custaram ciclos.
+  Ao descobrir algo novo de UI ou do ambiente, registrar lá no mesmo PR.
 
 ## Fluxo de trabalho (vale para toda sessão)
 
 1. **O dono não revisa PRs.** Cada ciclo termina com PR aberto e **mergeado na `main`
    pelo próprio agente**, assim que o critério de merge abaixo for cumprido.
    Squash merge, título no formato `UI-1: ...`.
-2. Critério de merge: build desktop local passa, `run_boost_tests` passa e os testes
-   WML afetados passam. Se o CI desktop (`.github/workflows/ci.yml`) já tiver terminado,
+2. Critério de merge: build desktop local passa, `run_boost_tests` passa, os testes
+   WML afetados passam e as verificações do job `checks` passam (`fix_whitespace.sh` sem
+   diff, `wmllint`). Se o CI desktop (`.github/workflows/ci.yml`) já tiver terminado,
    ele precisa estar verde; se ainda estiver rodando, pode mergear e conferir depois.
    Se o CI quebrar na `main`, o próximo ciclo começa consertando isso.
 3. Um objetivo por PR. Descrição do PR em português: o que mudou, como foi testado,
@@ -58,7 +62,7 @@ git submodule update --init --recursive
 cmake -S . -B ../build-desktop -G Ninja -DCMAKE_BUILD_TYPE=Release \
   -DENABLE_SERVER=OFF -DENABLE_TESTS=ON -DCMAKE_CXX_COMPILER_LAUNCHER=ccache
 ninja -C ../build-desktop wesnoth boost_unit_tests
-./run_boost_tests            # a partir da raiz, com os binários linkados aqui
+SDL_VIDEODRIVER=dummy ./run_boost_tests  # a partir da raiz; recompile boost_unit_tests antes
 ./run_wml_tests -g -c -t 20  # testes WML
 ```
 
