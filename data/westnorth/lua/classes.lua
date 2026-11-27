@@ -146,6 +146,26 @@ function classes.menu_change_class(x, y)
 	end
 end
 
+--- Adds "Mudar de classe..." to the context menu (long press on a unit).
+--- Called once at prestart by {WN_CLASS_SYSTEM}, or directly by test scenarios.
+function classes.add_menu_item()
+	wesnoth.wml_actions.set_menu_item {
+		id = "westnorth_change_class",
+		description = _ "Mudar de classe...",
+		image = "icons/action/editor-tool-unit_25.png",
+		wml.tag.show_if {
+			wml.tag.have_unit {
+				x = "$x1", y = "$y1", side = "$side_number",
+				wml.tag.filter_location { terrain = classes.change_terrain },
+				wml.tag["and"] { lua_function = "westnorth_is_class_unit" },
+			},
+		},
+		wml.tag.command {
+			wml.tag.lua { code = "westnorth_classes.menu_change_class(wml.variables.x1, wml.variables.y1)" },
+		},
+	}
+end
+
 -- Unit filter hook for WML (lua_function=westnorth_is_class_unit).
 function westnorth_is_class_unit(u)
 	return classes.of_unit(u) ~= nil
