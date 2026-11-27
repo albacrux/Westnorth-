@@ -1,0 +1,14 @@
+# Westnorth: tapping sidebar items (time of day opens help; weapons show a tooltip) on: wesnoth -t westnorth_touch
+sleep 30
+tap 1200 650
+sleep 1
+tap 626 425
+sleep 1
+click 1430 258
+sleep 2
+shot tod
+key Escape
+sleep 1
+click 1440 480
+sleep 2
+shot weapon
