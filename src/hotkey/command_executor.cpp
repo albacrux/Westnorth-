@@ -407,6 +407,8 @@ void command_executor::surrender_game() {
 	}
 }
 
+static bool has_touch_screen();
+
 void command_executor::show_menu(const std::vector<config>& items_arg, const point& menu_loc, bool /*context_menu*/)
 {
 	if(items_arg.empty()) {
@@ -417,6 +419,21 @@ void command_executor::show_menu(const std::vector<config>& items_arg, const poi
 	std::vector<config> items = items_arg;
 	for(std::size_t i = 0; i < items.size(); ++i) {
 		populate_menu_item_info(items[i], i);
+	}
+
+	// Westnorth: on touch screens menu icons are 36 px (a finger-sized row,
+	// docs/westnorth/prototipos/5-toque-longo.jpg): a dedicated
+	// icons/action/<command>_36.png when there is one, else the 18 px icon
+	// doubled.
+	if(has_touch_screen()) {
+		for(config& item : items) {
+			const std::string big = "icons/action/" + item["id"].str() + "_36.png";
+			if(filesystem::file_exists(game_config::path + "/images/" + big)) {
+				item["icon"] = big;
+			} else if(!item["icon"].empty()) {
+				item["icon"] = item["icon"].str() + "~SCALE_SHARP(36,36)";
+			}
+		}
 	}
 
 	const auto do_command = [&](int selected_item) {

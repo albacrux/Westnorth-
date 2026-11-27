@@ -1,0 +1,9 @@
+# Westnorth: long press on the leader in the keep (touch-emulation build, WESTNORTH_THEME=Westnorth); on: wesnoth -t westnorth_classes_demo
+sleep 30
+tap 1200 650
+sleep 1
+tap 660 280
+sleep 1
+longpress 660 280
+sleep 2
+shot sheet
