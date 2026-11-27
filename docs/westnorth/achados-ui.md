@@ -110,5 +110,7 @@ Documentos detalhados: `diagnostico-toque.md` (eventos de toque), `diagnostico-z
   `core-data-<N>` apontam para `$GITHUB_SHA`.
 - Depois de squash merge, recomece o ramo de trabalho a partir de `origin/main`
   (`git checkout -B ... origin/main`) antes do próximo ciclo; senão o PR seguinte conflita.
+- APK: o Maven Central às vezes responde 429 ao Gradle (run #20 do Android). O workflow
+  tem cache do Gradle e tenta o build 3 vezes; uma falha isolada desse tipo não é código.
 - Mudança só de WML/imagens chega ao A06 pelo pacote `patch` (sem APK novo); C++ exige
   o APK do `nightly`.
