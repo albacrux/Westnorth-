@@ -16,6 +16,8 @@
 
 #include "gui/dialogs/unit_advance.hpp"
 
+#include "font/standard_colors.hpp"
+#include "gettext.hpp"
 #include "gui/widgets/button.hpp"
 #include "gui/widgets/listbox.hpp"
 #include "gui/widgets/unit_preview_pane.hpp"
@@ -23,6 +25,8 @@
 #include "units/unit.hpp"
 #include "units/types.hpp"
 #include "help/help.hpp"
+#include "serialization/markup.hpp"
+#include "serialization/string_utils.hpp"
 
 #include <functional>
 
@@ -72,8 +76,15 @@ void unit_advance::pre_show()
 			name = back["description"].str();
 		}
 
+		// Westnorth: card art (portrait when the type has one) and a summary of
+		// what the new unit brings, so the cards can be compared at a glance.
 		if(image_string.empty()) {
-			image_string = sample.type().image() + sample.image_mods();
+			const std::string& profile = sample.big_profile();
+			image_string = profile != sample.absolute_image()
+				? profile + "~SCALE_INTO(200,200)"
+				: sample.type().image() + sample.image_mods() + "~SCALE_INTO_SHARP(144,144)";
+		} else {
+			image_string += "~SCALE_INTO_SHARP(144,144)";
 		}
 
 		column["label"] = image_string;
@@ -81,6 +92,32 @@ void unit_advance::pre_show()
 
 		column["label"] = name;
 		row_data.emplace("advancement_name", column);
+
+		std::ostringstream stats;
+		const auto stat = [&stats](const std::string& label, int value) {
+			stats << markup::span_color("#808080", label, " ")
+				<< markup::bold(markup::span_color(font::weapon_color, value)) << "    ";
+		};
+		stat(_("HP"), sample.max_hitpoints());
+		stat(_("MP"), sample.total_movement());
+		if(sample.can_advance()) {
+			stat(_("XP"), sample.max_experience());
+		}
+		for(const auto& at : sample.attacks()) {
+			stats << "\n" << markup::bold(markup::span_color(font::weapon_color,
+					at.damage(), font::weapon_numbers_sep, at.num_attacks()))
+				<< " " << at.name()
+				<< markup::span_color("#808080", " · ", translation::dgettext("wesnoth", at.type().c_str()));
+		}
+		std::vector<std::string> abilities;
+		for(const auto& ab : sample.ability_tooltips()) {
+			abilities.push_back(ab.name.str());
+		}
+		if(!abilities.empty()) {
+			stats << "\n" << markup::span_color("#baac7d", utils::join(abilities, ", "));
+		}
+		column["label"] = stats.str();
+		row_data.emplace("wn_advancement_stats", column);
 
 		list.add_row(row_data);
 	}
@@ -100,8 +137,10 @@ void unit_advance::list_item_clicked()
 		return;
 	}
 
-	find_widget<unit_preview_pane>("advancement_details")
-		.set_display_data(*previews_[selected_row]);
+	// Westnorth: the phone layout shows the cards only (no preview pane).
+	if(auto pane = find_widget<unit_preview_pane>("advancement_details", false, false)) {
+		pane->set_display_data(*previews_[selected_row]);
+	}
 }
 
 void unit_advance::show_help()
