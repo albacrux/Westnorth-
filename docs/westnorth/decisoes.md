@@ -89,6 +89,8 @@ entradas antigas (se mudar, criar nova entrada que substitui a anterior).
 
 | D35 | `WESTNORTH_ANDROID=1` faz o desktop montar a GUI com o define `ANDROID` (fontes 22 px), e o smoke test roda nos dois modos | As capturas e o smoke test até aqui usavam as fontes de desktop (17 px); o A06 usa as de Android. Com elas, o diálogo de ataque escondia a segunda arma, por isso os botões dele foram para uma linha só | Agente |
 
+| D36 | No Android, os botões genéricos da GUI2 (tema default) passam de 26 px / texto 16 px para 44 px / texto 20 px; "large" vai a 48 px. O tema Celes não foi mudado | Sim/Não, Salvar, Fechar e a tela inicial ficavam com botões e texto pequenos. 44 px (não 72) mantém a tela inicial e os diálogos altos dentro de 720 px (smoke test nos dois temas) | Agente |
+
 ## Pendências do dono
 
 - [x] D3: repo público (feito pelo dono em 2026-11-27).
