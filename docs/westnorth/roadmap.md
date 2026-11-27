@@ -192,6 +192,6 @@ Princípios: cada classe deve mudar **o que o jogador faz**, não só números. 
 | 7 | M2 + M4 | Conteúdo próprio: 6 classes × 2 níveis, troca de classe, era com 2 facções, mapa 2p, testes e validador | **Rodada 1 feita** (este PR) — ver `classes.md` |
 | 8 | M5 | 10 conquistas do sistema de classes | **Feito** — ver `classes.md` |
 | 9 | M7 (parte) | Ferramenta de balanceamento IA × IA e primeira medição | **Feito** — ver `balanceamento.md` |
-| 10+ | M6–M7 | Sprites (desktop), mini-campanha, ajuste fino | A fazer |
+| 10+ | M6–M7 | Sprites (desktop) — plano em `plano-sprites.md`; mini-campanha, ajuste fino | **Plano dos sprites feito**; demais a fazer |
 
 O modo low-end do M3 foi rebaixado: o A06 já roda bem. Volta se o sistema de classes pesar.
