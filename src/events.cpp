@@ -527,6 +527,24 @@ void pump()
 
 		SDL_ConvertEventToRenderCoordinates(video::get_renderer(), &event);
 
+		// Westnorth: SDL3 converts finger positions to render (pixel)
+		// coordinates here, but every finger consumer (gui2 event handler,
+		// scrollarea swipes, touch emulation below) expects the SDL2 meaning:
+		// a proportion of the game canvas, 0.0 to 1.0. Without this, a real
+		// touch screen gets positions multiplied by the canvas size twice and
+		// swipe-scrolling lists does not work.
+		if(event.type == SDL_EVENT_FINGER_DOWN || event.type == SDL_EVENT_FINGER_UP
+			|| event.type == SDL_EVENT_FINGER_MOTION || event.type == SDL_EVENT_FINGER_CANCELED)
+		{
+			const point c = video::game_canvas_size();
+			if(c.x > 0 && c.y > 0) {
+				event.tfinger.x /= c.x;
+				event.tfinger.y /= c.y;
+				event.tfinger.dx /= c.x;
+				event.tfinger.dy /= c.y;
+			}
+		}
+
 #ifdef MOUSE_TOUCH_EMULATION
 		switch (event.type) {
 			// TODO: Implement SDL_MULTIGESTURE. Some day.
