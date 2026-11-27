@@ -106,6 +106,13 @@ entradas antigas (se mudar, criar nova entrada que substitui a anterior).
 | D45 | Tooltips do HUD com texto de 20 px (era 15) e caixa de 540 px | No toque, o tooltip aparece ao tocar num item do painel e é o único jeito de ver detalhes como os de uma arma | Agente |
 | D46 | Fluxo de partida local no celular: abas do "Criar Jogo" com nomes curtos ("Opções", "Ajustes"), menus suspensos de 44 px no Android, facção "Aleatória" traduzida | Com as fontes de Android o "Criar Jogo" passava da largura da tela (coluna da direita e botões cortados): é o caminho para jogar a era das classes contra a IA. A versão compacta do diálogo foi testada e descartada (estoura na altura) | Agente |
 
+## 2026-11-27 — UI-8: redesenho das telas de combate
+
+| # | Decisão | Motivo | Quem |
+|---|---|---|---|
+| D47 | Parar os ajustes incrementais e redesenhar do zero as 5 telas de combate (mapa, ataque, recrutar, evolução, toque longo), mantendo cores e fontes; protótipos em `docs/westnorth/prototipos/` | Pedido do dono: as telas ainda tinham a estrutura do desktop | Dono/Agente |
+| D48 | O HUD novo será um **tema próprio "Westnorth"** (padrão no Android), e não mais mudanças no tema Default | Permite diagramação livre (mapa em tela cheia, cartões flutuantes) e mantém o Default próximo do upstream para cherry-picks | Agente |
+
 ## Pendências do dono
 
 - [x] D3: repo público (feito pelo dono em 2026-11-27).

@@ -1,0 +1,78 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css">
+<style>
+.top { top: 12px; height: 52px; display: flex; align-items: center; gap: 22px; padding: 0 22px; font-size: 22px; font-weight: 700; }
+.top img { height: 26px; }
+.stat { display: flex; align-items: center; gap: 8px; }
+.sep { width: 1px; height: 26px; background: var(--border-dark); }
+.card { left: 16px; bottom: 16px; width: 640px; height: 180px; }
+.portrait { position: absolute; left: 0; bottom: 16px; width: 230px; height: 230px; object-fit: cover; object-position: top; filter: drop-shadow(0 4px 8px rgba(0,0,0,.8)); }
+.info { position: absolute; left: 215px; top: 14px; right: 16px; }
+.weap { display: inline-flex; align-items: center; gap: 8px; margin-right: 10px; padding: 4px 12px 4px 6px; border-radius: 10px; background: rgba(0,0,0,.45); border: 1px solid var(--border-dark); font-size: 18px; }
+.weap img { width: 34px; height: 34px; }
+.terrain { left: 262px; bottom: 206px; height: 50px; padding: 0 18px; display: flex; align-items: center; gap: 14px; font-size: 20px; }
+.step { position: absolute; width: 14px; height: 10px; border-radius: 50%; background: rgba(40,30,20,.75); }
+</style></head><body>
+<div class="map"></div>
+
+<!-- units -->
+<img class="sprite" src="a/lieutenant_r.png" style="left:150px;top:318px">
+<img class="sprite" src="a/bowman_r.png" style="left:420px;top:180px">
+<img class="sprite" src="a/spearman_r.png" style="left:470px;top:410px">
+<img class="sprite" src="a/thief_b.png" style="left:860px;top:350px">
+<img class="sprite" src="a/rogue_b.png" style="left:960px;top:200px">
+<!-- selection, path and destination -->
+<div class="hex" style="left:470px;top:418px;background:rgba(255,255,255,.12);outline:2px solid #fff"></div>
+<div class="step" style="left:560px;top:440px"></div><div class="step" style="left:590px;top:420px"></div>
+<div class="step" style="left:625px;top:400px"></div><div class="step" style="left:655px;top:380px"></div>
+<div class="hex" style="left:665px;top:325px;background:rgba(186,172,125,.28)"></div>
+<div class="abs" style="left:665px;top:342px;width:92px;text-align:center;font:900 34px Lato;color:var(--yellow);text-shadow:0 0 4px #000,0 0 2px #000">40%</div>
+
+<!-- top bar -->
+<div class="btn" style="left:16px;top:12px;width:60px;height:52px;font-size:30px">☰</div>
+<div class="panel pill top" style="left:330px">
+  <div class="stat"><img src="a/flag-icon.png"> <span class="cream">3</span><span class="muted" style="font-size:16px">/27</span></div><div class="sep"></div>
+  <div class="stat"><img src="a/gold.png"> <span class="cream">120</span></div><div class="sep"></div>
+  <div class="stat"><img src="a/income.png"> <span class="good">+8</span></div><div class="sep"></div>
+  <div class="stat"><img src="a/villages.png"> <span class="cream">6</span><span class="muted" style="font-size:16px">/24</span></div><div class="sep"></div>
+  <div class="stat"><img src="a/schedule-morning.png" style="height:30px;border-radius:4px"> <span class="title" style="font-size:18px">Manhã</span></div>
+</div>
+<div class="panel" style="right:16px;top:12px;width:250px;height:150px;padding:6px;overflow:hidden">
+  <div style="width:100%;height:100%;background:url(map.jpg) center/cover;border-radius:6px;filter:saturate(.8)"></div>
+</div>
+
+<!-- terrain chip -->
+<div class="panel pill terrain"><span class="title">Campo</span><span>Defesa <b class="cream" style="font-size:24px">40%</b></span><span>Mov. <b class="cream" style="font-size:24px">1</b></span></div>
+
+<!-- unit card -->
+<div class="panel card">
+  <img class="portrait" src="a/spearman.webp">
+  <div class="info">
+    <div style="display:flex;align-items:baseline;gap:12px">
+      <span class="title" style="font-size:30px;font-weight:900">Lanceiro</span>
+      <span class="muted" style="font-size:16px">Nv 1</span>
+      <img src="a/alignment_lawful_30.png" style="width:22px;align-self:center"><span class="good" style="font-size:16px">+25%</span>
+      <span style="margin-left:auto;font-size:15px" class="muted">ⓘ Detalhes</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px;margin-top:10px">
+      <span class="label" style="width:30px">HP</span>
+      <div class="bar" style="width:250px;height:18px"><i style="width:78%"></i></div>
+      <span class="cream" style="font-size:28px;font-weight:900">28</span><span class="muted" style="font-size:18px">/36</span>
+      <span class="label" style="margin-left:14px">MP</span><span class="cream" style="font-size:28px;font-weight:900">5</span><span class="muted" style="font-size:18px">/5</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px;margin-top:6px">
+      <span class="label" style="width:30px">XP</span>
+      <div class="bar" style="width:250px;height:8px"><i style="width:28%;background:var(--xp)"></i></div>
+      <span style="font-size:16px;color:var(--xp)">12/42</span>
+    </div>
+    <div style="margin-top:12px">
+      <span class="weap"><img src="a/spear.png"><b class="cream">7×3</b> <span class="muted">lança</span></span>
+      <span class="weap"><img src="a/javelin-human.png"><b class="cream">6×1</b> <span class="muted">azagaia</span></span>
+    </div>
+  </div>
+</div>
+
+<!-- thumb cluster -->
+<div class="btn round" style="right:186px;bottom:120px;width:84px;height:84px;font-size:15px"><img src="a/undo_30.png" style="width:30px">Desfazer</div>
+<div class="btn round" style="right:90px;bottom:120px;width:84px;height:84px;font-size:15px"><span style="font-size:26px;color:var(--cream)">⏭</span>Próxima</div>
+<div class="btn primary" style="right:16px;bottom:16px;width:300px;height:92px;font-size:28px;border-radius:46px">Terminar Turno</div>
+</body></html>
