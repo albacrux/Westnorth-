@@ -14181,21 +14181,19 @@ msgstr "Sair para o Menu"
 msgid "Set Team Label"
 msgstr "Definir Nome do Time"
 
-#
 # File: src/hotkeys.cpp, line: 115
 # File: src/hotkeys.cpp, line: 115
 # File: src/hotkeys.cpp, line: 115
 #: src/hotkey/hotkey_command.cpp:136
 msgid "Set Label"
-msgstr "Definir Nome"
+msgstr "Rótulo no Mapa"
 
-#
 # File: src/hotkeys.cpp, line: 116
 # File: src/hotkeys.cpp, line: 116
 # File: src/hotkeys.cpp, line: 116
 #: src/hotkey/hotkey_command.cpp:137
 msgid "Clear Labels"
-msgstr "Apagar Nomes"
+msgstr "Apagar Rótulos"
 
 #
 # File: src/hotkeys.cpp, line: 117

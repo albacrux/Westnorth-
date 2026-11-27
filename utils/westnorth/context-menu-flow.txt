@@ -1,0 +1,9 @@
+# Westnorth: long press on a unit (touch-emulation build) on: wesnoth -t westnorth_touch
+sleep 30
+tap 1200 650
+sleep 1
+tap 626 425
+sleep 1
+longpress 626 425
+sleep 2
+shot context
