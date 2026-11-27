@@ -28,7 +28,8 @@ depois (pipeline de sprites no desktop do dono, M6).
 
 - **Onde:** com a unidade numa vila ou num castelo/fortaleza.
 - **Como:** toque longo na unidade (botão direito no desktop) → **Mudar de classe...**
-  → escolher. A lista mostra a arte de cada classe e o papel dela.
+  → escolher. A lista mostra a arte de cada classe, o nome no nível da unidade e o
+  papel dela, em duas linhas curtas (cabem na tela do A06).
 - **Custo:** a unidade termina o turno (movimento e ataque zerados). Não pode trocar
   depois de atacar.
 - **O que preserva:** nível (nível 1 → nível 1 da nova classe), **experiência**
