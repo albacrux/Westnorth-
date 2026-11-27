@@ -67,9 +67,9 @@ void controller_base::long_touch_callback(int x, int y)
 		uint32_t mouse_state = sdl::get_mouse_state(&x_now, &y_now);
 
 #ifdef MOUSE_TOUCH_EMULATION
-		if(mouse_state & SDL_BUTTON(SDL_BUTTON_RIGHT)) {
+		if(mouse_state & SDL_BUTTON_MASK(SDL_BUTTON_RIGHT)) {
 			// Monkey-patch touch controls again to make them look like left button.
-			mouse_state = SDL_BUTTON(SDL_BUTTON_LEFT);
+			mouse_state = SDL_BUTTON_MASK(SDL_BUTTON_LEFT);
 		}
 #endif
 
@@ -156,6 +156,13 @@ void controller_base::handle_event(const SDL_Event& event)
 		if(SDL_PeepEvents(&new_event, 1, SDL_GETEVENT, SDL_EVENT_MOUSE_MOTION, SDL_EVENT_MOUSE_MOTION) > 0) {
 			while(SDL_PeepEvents(&new_event, 1, SDL_GETEVENT, SDL_EVENT_MOUSE_MOTION, SDL_EVENT_MOUSE_MOTION) > 0) {};
 
+#ifdef MOUSE_TOUCH_EMULATION
+			// Westnorth: events taken straight from the SDL queue skipped the
+			// emulation in events::pump(); a right-button drag is a finger here.
+			if(new_event.motion.state & SDL_BUTTON_MASK(SDL_BUTTON_RIGHT)) {
+				new_event.motion.which = SDL_TOUCH_MOUSEID;
+			}
+#endif
 			if(!events::is_touch(new_event.motion)) {
 				mh_base.mouse_motion_event(new_event.motion, is_browsing());
 			}
@@ -188,7 +195,13 @@ void controller_base::handle_event(const SDL_Event& event)
 		}
 
 		mh_base.mouse_press(event.button, is_browsing());
-		hotkey::mbutton_event(event, get_hotkey_command_executor());
+		// Westnorth: touch no longer goes through the "touchhex"/"selectmoveaction"
+		// hotkeys, which acted on finger *down* (a press on the selected unit
+		// deselected it before a drag could start). Taps are handled on release
+		// by mouse_handler_base::touch_tap().
+		if(!events::is_touch(event.button)) {
+			hotkey::mbutton_event(event, get_hotkey_command_executor());
+		}
 		break;
 
 	case SDL_EVENT_FINGER_DOWN:

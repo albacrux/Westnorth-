@@ -1,0 +1,46 @@
+# Westnorth UI-1 touch flow on: wesnoth -t westnorth_touch (touch-emulation build)
+# utils/westnorth/screenshot.sh -b BUILD/wesnoth -s utils/westnorth/touch-flow.txt OUTDIR -- -t westnorth_touch
+sleep 12
+# dismiss the objectives popup
+tap 1200 650
+sleep 1
+shot 0-start
+# 1. select the spearman at 4,4
+tap 626 425
+sleep 1
+shot 1-selected
+# 2. tap the thug at 7,4 (not adjacent): path + attack hex shown, nothing happens yet
+tap 788 389
+sleep 1
+shot 2-enemy-pending
+# 3. tap it again: attack dialog
+tap 788 389
+sleep 2
+shot 3-attack-dialog
+key Escape
+sleep 1
+shot 3b-after-cancel
+# 4. tap an empty hex (5,2): path only
+tap 680 245
+sleep 1
+shot 4-move-pending
+# 5. tap it again: the unit moves
+tap 680 245
+sleep 3
+shot 5-moved
+# 6. adjacent enemy: select spearman 7,6 then tap thug 8,6 -> dialog right away
+tap 788 533
+sleep 1
+tap 842 569
+sleep 2
+shot 6-adjacent-dialog
+key Escape
+sleep 1
+# 7. one-finger drag with a unit selected scrolls the map and keeps the selection
+drag 900 150 700 150
+sleep 1
+shot 7-pan
+# 8. long press on the selected unit: context menu, selection kept
+longpress 588 483
+sleep 1
+shot 8-longpress

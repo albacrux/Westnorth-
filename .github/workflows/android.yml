@@ -20,7 +20,7 @@ env:
   # Upstream snapshot the "core" data package is built from. Bump CORE_GEN
   # whenever the snapshot is replaced, so phones download the new core.
   CORE_REF: c3a225dd5eba42277008dd7c2b87d287efb801ed
-  CORE_GEN: 1
+  CORE_GEN: 2
   GH_REPO: ${{ github.repository }}
 
 jobs:
@@ -38,8 +38,10 @@ jobs:
             echo "core-data-$CORE_GEN already published"
           else
             packaging/android/westnorth/make-data-packages.sh core out
-            gh release create "core-data-$CORE_GEN" out/core.zip --prerelease \
-              --target "$CORE_REF" --title "Core data $CORE_GEN" \
+            # Create the tag first: release creation then never depends on --target.
+            gh api -X POST "repos/$GH_REPO/git/refs" -f ref="refs/tags/core-data-$CORE_GEN" -f sha="$CORE_REF" || true
+            gh release create "core-data-$CORE_GEN" out/core.zip --prerelease --verify-tag \
+              --title "Core data $CORE_GEN" \
               --notes "Upstream Wesnoth data at $CORE_REF, used by the Android app. Do not delete."
           fi
       - name: Patch package and manifest
@@ -110,9 +112,12 @@ jobs:
           Instalar no celular: baixe westnorth-arm64-v8a.apk e abra.
           Os dados do jogo (core + patch) são baixados pelo próprio app ao abrir."
           if ! gh release view nightly >/dev/null 2>&1; then
-            gh release create nightly --prerelease --title "Westnorth nightly" --notes "$notes" --target "${{ github.sha }}"
+            gh api -X POST "repos/$GH_REPO/git/refs" -f ref=refs/tags/nightly -f sha="${{ github.sha }}" || true
+            gh release create nightly --prerelease --verify-tag --title "Westnorth nightly" --notes "$notes"
           else
-            gh release edit nightly --notes "$notes" --target "${{ github.sha }}"
+            # Move the tag so the release page shows the commit the files came from.
+            gh api -X PATCH "repos/$GH_REPO/git/refs/tags/nightly" -f sha="${{ github.sha }}" -F force=true || true
+            gh release edit nightly --notes "$notes"
           fi
           # Upload the data first, the manifest last, so a phone never sees a
           # manifest that points at a patch that is not there yet.

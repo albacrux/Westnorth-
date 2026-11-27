@@ -30,6 +30,7 @@
 #include "map/map.hpp"                       // for gamemap
 #include "pathfind/teleport.hpp"             // for get_teleport_locations, etc
 #include "play_controller.hpp"               // for playing_side, set_button_state
+#include "preferences/preferences.hpp"       // Westnorth: touch_move_immediately
 #include "replay_helper.hpp"
 #include "scripting/game_lua_kernel.hpp"
 #include "sound.hpp"
@@ -96,7 +97,9 @@ int mouse_handler::drag_threshold() const
 {
     // Function uses window resolution as an estimate of users perception of distance
     // Tune this variable if necessary:
-    const unsigned threshold_1080p = 14; // threshold number of pixels for 1080p
+    // Westnorth: raised from 14 so a slightly moving finger still counts as a tap
+    // (about 16 px ~ 10 dp on a 1600x720 phone; Android's own touch slop is 8 dp).
+    const unsigned threshold_1080p = 20; // threshold number of pixels for 1080p
     double screen_diagonal = std::hypot(gui2::settings::screen_width,gui2::settings::screen_height);
     const double scale_factor = threshold_1080p / std::hypot(1080,1920);
     return static_cast<int>(screen_diagonal * scale_factor);
@@ -116,6 +119,12 @@ void mouse_handler::touch_motion(int x, int y, const bool browse, bool update, m
 	tooltips::process(x, y);
 
 	if(simple_warp_) {
+		return;
+	}
+
+	// Westnorth: a finger that is not down cannot hover; a stray motion event
+	// (e.g. delivered after the release) must not draw a path under it.
+	if(!is_dragging() && !minimap_scrolling_) {
 		return;
 	}
 
@@ -145,6 +154,19 @@ void mouse_handler::touch_motion(int x, int y, const bool browse, bool update, m
 
 			if(drag_distance > drag_threshold()*drag_threshold()) {
 				dragging_started_ = true;
+				// Westnorth: a drag only moves a unit when it starts on the
+				// selected own unit; any other one-finger drag scrolls the map.
+				const auto drag_unit = find_unit(selected_hex_);
+				touch_unit_drag_ = !browse && drag_unit.valid() && drag_unit->side() == side_num_
+					&& drag_from_hex_ == selected_hex_;
+				if(!touch_unit_drag_) {
+					// Scrolling the map: drop the path previewed at finger-down.
+					touch_pending_hex_ = map_location::null_location();
+					current_route_.steps.clear();
+					gui().set_route(nullptr);
+					gui().clear_attack_indicator();
+					pc_.get_whiteboard()->erase_temp_move();
+				}
 			}
 		}
 	}
@@ -152,7 +174,7 @@ void mouse_handler::touch_motion(int x, int y, const bool browse, bool update, m
 	// Not-so-smooth panning
 	const auto found_unit = find_unit(selected_hex_);
 	bool selected_hex_has_my_unit = found_unit.valid() && found_unit.get_shared_ptr()->side() == side_num_;
-	if((browse || !found_unit.valid()) && is_dragging() && dragging_started_) {
+	if(is_dragging() && dragging_started_ && (browse || !touch_unit_drag_)) {
 
 		if(gui().map_area().contains(x, y)) {
 			point pos = sdl::get_mouse_location();
@@ -1153,8 +1175,115 @@ void mouse_handler::touch_action(const map_location touched_hex, bool browse)
 #endif
 }
 
+/*
+ * Westnorth: tap-only control for touch screens (docs/westnorth/diagnostico-toque.md).
+ *
+ * Every tap is handled on finger release, after mouse_press() has refreshed the
+ * hover state (last_hex_, current_route_, attack indicator) for the tapped hex,
+ * exactly like a mouse hovering it. Then:
+ *
+ *  - tap own unit                  -> select it (shows its reach)
+ *  - tap the selected unit         -> cancel the pending move, or deselect
+ *  - tap reachable empty hex       -> show the path; tap it again to move
+ *  - tap attackable enemy          -> adjacent: attack dialog right away;
+ *                                     otherwise show the path and the hex the
+ *                                     attack comes from; tap again for the dialog
+ *  - tap other unit                -> select it (shows its reach)
+ *  - tap anything else             -> deselect
+ *
+ * The attack dialog has its own Attack/Cancel, so nothing happens without a
+ * confirmation. The "touch_move_immediately" preference skips the second tap.
+ * To attack from a specific hex, tap that hex first, then the enemy.
+ */
+void mouse_handler::touch_tap(int x, int y, const bool browse)
+{
+	const map_location hex = gui().hex_clicked_on(x, y);
+	const map_location pending = touch_pending_hex_;
+	touch_pending_hex_ = map_location::null_location();
+
+	if(!pc_.get_map().on_board(hex) || gui().view_locked()) {
+		return;
+	}
+
+	// mouse_press() already did this; make sure the hover state matches the tapped hex.
+	if(last_hex_ != hex) {
+		mouse_update(browse, hex);
+	}
+
+	// Tapping the selected unit: first cancel a pending move, then deselect.
+	if(hex == selected_hex_) {
+		if(pending.valid()) {
+			current_route_.steps.clear();
+			gui().set_route(nullptr);
+			gui().clear_attack_indicator();
+			pc_.get_whiteboard()->erase_temp_move();
+		} else {
+			deselect_hex();
+		}
+		return;
+	}
+
+	const bool confirmed = pending == hex || prefs::get().touch_move_immediately();
+	const bool can_command = !browse || pc_.get_whiteboard()->is_active();
+
+	bool own_unit_selected = false;
+	bool tapped_unit = false;
+	bool reachable = false;
+	map_location attack_from;
+	{
+		wb::future_map_if_active planned_unit_map;
+		const unit_map::const_iterator selected_u = find_unit(selected_hex_);
+		own_unit_selected = selected_u.valid() && selected_u->side() == side_num_;
+		tapped_unit = find_unit(hex).valid();
+		reachable = current_paths_.destinations.contains(hex);
+		attack_from = current_unit_attacks_from(hex);
+	}
+
+	if(can_command && own_unit_selected && !commands_disabled) {
+		if(tapped_unit && attack_from.valid()) {
+			if(attack_from == selected_hex_ || confirmed) {
+				move_action(browse);
+			} else {
+				touch_pending_hex_ = hex;
+			}
+			return;
+		}
+
+		if(!tapped_unit && reachable) {
+			if(confirmed) {
+				move_action(browse);
+			} else {
+				touch_pending_hex_ = hex;
+			}
+			return;
+		}
+	}
+
+	if(tapped_unit) {
+		wb::future_map_if_active planned_unit_map;
+		if(game_lua_kernel* lk = pc_.gamestate().lua_kernel_.get()) {
+			lk->select_hex_callback(hex);
+		}
+		select_hex(hex, browse);
+		return;
+	}
+
+	deselect_hex();
+}
+
+void mouse_handler::touch_drag_end(int x, int y, const bool browse)
+{
+	// Westnorth: dropping a dragged unit behaves like tapping the drop hex
+	// (shows the path or opens the attack dialog); map scrolling ends silently.
+	if(touch_unit_drag_) {
+		touch_unit_drag_ = false;
+		touch_tap(x, y, browse);
+	}
+}
+
 void mouse_handler::select_hex(const map_location& hex, const bool browse, const bool highlight, const bool fire_event, const bool force_unhighlight)
 {
+	touch_pending_hex_ = map_location::null_location();
 	bool unhighlight = selected_hex_.valid() && force_unhighlight;
 
 	selected_hex_ = hex;

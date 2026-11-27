@@ -85,6 +85,13 @@ public:
 
 	void touch_action(const map_location hex, bool browse) override;
 
+	/** Westnorth: one-finger tap flow, see the comment in mouse_events.cpp. */
+	void touch_tap(int x, int y, const bool browse) override;
+	void touch_drag_end(int x, int y, const bool browse) override;
+
+	/** Westnorth: hex waiting for a confirmation tap (move or move+attack), if any. */
+	const map_location& touch_pending_hex() const { return touch_pending_hex_; }
+
 	void select_or_action(bool browse);
 	void select_teleport();
 
@@ -173,6 +180,10 @@ private:
 	// the hex of the selected unit and empty hex are "free"
 	map_location previous_hex_;
 	map_location previous_free_hex_;
+	/** Westnorth: destination shown after a first tap; a second tap on it confirms. */
+	map_location touch_pending_hex_;
+	/** Westnorth: the current finger drag started on the selected own unit (drag-to-move). */
+	bool touch_unit_drag_ = false;
 	map_location selected_hex_;
 	map_location next_unit_;
 	pathfind::marked_route current_route_;

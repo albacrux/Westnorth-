@@ -510,6 +510,8 @@ public:
 	void set_sub_achievement(const std::string& content_for, const std::string& id, const std::string& sub_id);
 
 	PREF_GETTER_SETTER(addon_icons, bool, true)
+	// Westnorth: see touch_tap() in mouse_events.cpp
+	PREF_GETTER_SETTER(touch_move_immediately, bool, false)
 	PREF_GETTER_SETTER(show_ally_orb, bool, game_config::show_ally_orb)
 	PREF_GETTER_SETTER(show_status_on_ally_orb, bool, game_config::show_status_on_ally_orb)
 	PREF_GETTER_SETTER(show_enemy_orb, bool, game_config::show_enemy_orb)
@@ -852,6 +854,7 @@ private:
 		prefs_list::reach_map_darken_tex,
 		prefs_list::reach_map_color,
 		prefs_list::reach_map_enemy_color,
+		prefs_list::touch_move_immediately,
 	};
 	static constexpr std::array synced_children_{
 		prefs_list::acquaintance,
