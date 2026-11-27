@@ -26,6 +26,7 @@ tests/test_sdl.cpp
 tests/test_serialization.cpp
 tests/test_simple_wml.cpp
 tests/test_team.cpp
+tests/test_touch_pinch.cpp
 tests/test_unit_map.cpp
 tests/test_util.cpp
 tests/test_version.cpp

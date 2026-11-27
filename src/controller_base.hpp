@@ -42,6 +42,7 @@
 #include "map/location.hpp"
 #include "quit_confirmation.hpp"
 #include "theme.hpp"
+#include "touch_pinch.hpp"
 
 #include <chrono>
 
@@ -213,4 +214,7 @@ private:
 
 	/** Context menu timer */
 	std::size_t long_touch_timer_;
+
+	/** Westnorth: two-finger pinch zoom on the map. */
+	touch_pinch pinch_;
 };

@@ -362,6 +362,7 @@ teambuilder.cpp
 terrain/filter.cpp
 tls_root_store.cpp
 tod_manager.cpp
+touch_pinch.cpp
 units/abilities.cpp
 units/animation.cpp
 units/animation_component.cpp
