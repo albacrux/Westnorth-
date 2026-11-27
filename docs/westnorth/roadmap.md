@@ -185,7 +185,7 @@ Princípios: cada classe deve mudar **o que o jogador faz**, não só números. 
 | 2 | UI-2 | "Terminar Turno" grande e protegido; botões dos diálogos Atacar/Recrutar | **Feito** (#3, corrigido em #6) |
 | 3 | UI-3 | Menus sem coluna de atalhos, linhas maiores, submenu "Mais..." | **Feito** (#5) |
 | 4 | UI-4 | Botões Desfazer/Próxima no painel; HUD legível (painel 240 px, fontes 15–20 px) | **Partes 1 e 2 feitas** (#8, #9, UI-4b). Falta: textos dos diálogos, cartão da unidade, botão Confirmar, menu ☰ |
-| 4b | UI-7 | HUD replanejado por hierarquia (manual `manual-ui-android.md`): nível 1 grande, nível 3 fora, cartão da unidade abre detalhes | **Feito** (HUD). Próximo: diálogo de ataque e recrutar pela mesma hierarquia |
+| 4b | UI-7 | HUD replanejado por hierarquia (manual `manual-ui-android.md`): nível 1 grande, nível 3 fora, cartão da unidade abre detalhes | **Feito** (HUD #24, diálogo de ataque). Próximo: recrutar, lista de unidades e ajuda pela mesma hierarquia |
 | 5 | UI-5 | Zoom nítido | **Diagnóstico** (`diagnostico-zoom.md`), precisa de capturas do A06 |
 | 6 | UI-6 | Traduções pt-BR | **`wesnoth-lib` e `wesnoth` 100%**; ajuda: textos curtos feitos, faltam ~200 textos longos (`wesnoth-help`); menu inicial e add-ons |
 | 7 | M2 + M4 | Conteúdo próprio: 6 classes × 2 níveis, troca de classe, era com 2 facções, mapa 2p, testes e validador | **Rodada 1 feita** (este PR) — ver `classes.md` |

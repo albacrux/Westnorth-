@@ -482,19 +482,17 @@ void unit_preview_pane::set_display_data(const unit& u)
 	if(label_details_) {
 		std::stringstream str;
 
-		const std::string name = markup::span_size("large", (!u.name().empty() ? u.name() : " "));
-		str << name << "\n";
-
-		str << markup::span_color(font::unit_type_color, u.type_name()) << "\n";
+		// Westnorth: ordered by what decides the attack (docs/westnorth/
+		// manual-ui-android.md): the unit type and HP stand out; level and
+		// alignment share a line; the unit's own name and traits are left to
+		// the "Profile" button (upstream led with the name in large type).
+		str << markup::span_size("large", markup::span_color(font::unit_type_color, u.type_name())) << "\n";
 
 		std::string l_str = VGETTEXT("Lvl $lvl", {{"lvl", std::to_string(u.level())}});
-		str << l_str << "\n";
+		str << l_str << " · " << unit_type::alignment_description(u.alignment(), u.gender()) << "\n";
 
-		str << unit_type::alignment_description(u.alignment(), u.gender()) << "\n";
-
-		str << utils::join(u.trait_names(), ", ") << "\n";
-
-		str << markup::span_color(u.hp_color(), _("HP: "), u.hitpoints(), "/", u.max_hitpoints(), "\n");
+		str << markup::span_size("large", markup::bold(markup::span_color(u.hp_color(),
+			_("HP: "), u.hitpoints(), "/", u.max_hitpoints()))) << "\n";
 
 		if(u.can_advance()) {
 			str << markup::span_color(u.xp_color(), _("XP: "), u.experience(), "/", u.max_experience());

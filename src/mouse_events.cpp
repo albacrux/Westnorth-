@@ -1673,11 +1673,30 @@ int mouse_handler::show_attack_dialog(const map_location& attacker_loc, const ma
 
 			// Use attacker/defender.num_blows instead of attacker/defender_weapon.num_attacks() because the latter does
 			// not consider the swarm weapon special
-			attacker_stats_str << markup::bold(attw_name) << "\n"
-							   << attw_type << "\n"
-							   << attacker_stats.damage << font::weapon_numbers_sep << attacker_stats.num_blows
-							   << attw_specials << "\n"
-							   << markup::span_color(a_cth_color,  attacker_stats.chance_to_hit, "%");
+			// Westnorth: what decides the attack first, large: damage x strikes
+			// and chance to hit; then weapon name and damage type; specials last
+			// and small (docs/westnorth/manual-ui-android.md). Upstream started
+			// with the weapon name and put the numbers on lines 3 and 4.
+			const auto weapon_lines = [](const std::string& name, const std::string& type,
+				const battle_context_unit_stats& stats, const color_t& cth_color, const std::string& specials)
+			{
+				std::stringstream str;
+				str << markup::span_size("large", markup::bold(stats.damage, font::weapon_numbers_sep, stats.num_blows))
+					<< "  "
+					<< markup::span_size("large", markup::bold(markup::span_color(cth_color, stats.chance_to_hit, "%")));
+				// "name · type"; nothing for the empty "no weapon" (name " ", no type)
+				const bool has_name = name.find_first_not_of(' ') != std::string::npos;
+				if(has_name || !type.empty()) {
+					str << "\n" << name << (has_name && !type.empty() ? " · " : "") << type;
+				}
+				// specials come with a leading space (see above)
+				if(const auto first = specials.find_first_not_of(' '); first != std::string::npos) {
+					str << "\n" << markup::tag("small", specials.substr(first));
+				}
+				return str.str();
+			};
+
+			attacker_stats_str << weapon_lines(attw_name, attw_type, attacker_stats, a_cth_color, attw_specials);
 
 			attacker_tooltip << _("Weapon: ") << markup::bold(attw_name) << "\n"
 							 << _("Type: ") << attw_type << "\n"
@@ -1687,11 +1706,7 @@ int mouse_handler::show_attack_dialog(const map_location& attacker_loc, const ma
 							 << markup::span_color(a_cth_color, attacker_stats.chance_to_hit, "%")
 							 << markup::italic(attw_specials_cth) << attw_specials_others;
 
-			defender_stats_str << markup::bold(defw_name) << "\n"
-							   << defw_type << "\n"
-							   << defender_stats.damage << font::weapon_numbers_sep << defender_stats.num_blows
-							   << defw_specials << "\n"
-							   << markup::span_color(d_cth_color, defender_stats.chance_to_hit, "%");
+			defender_stats_str << weapon_lines(defw_name, defw_type, defender_stats, d_cth_color, defw_specials);
 
 			defender_tooltip << _("Weapon: ") << markup::bold(defw_name) << "\n"
 							 << _("Type: ") << defw_type << "\n"
