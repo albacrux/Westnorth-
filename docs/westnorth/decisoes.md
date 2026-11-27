@@ -68,6 +68,12 @@ entradas antigas (se mudar, criar nova entrada que substitui a anterior).
 | D29 | **Troca de classe** só em vila ou castelo, custa o resto do turno, não é permitida depois de atacar, mantém nível, experiência (abaixo do máximo), traços e proporção de vida | Era decisão em aberto no roadmap ("livre, só em cidade, ou custo"). Escolhi a opção que cria decisão tática sem burocracia. **Pendente de validação do dono** | Agente |
 | D30 | Facções do protótipo: Ordem da Coroa (Escudeiro, Cavaleiro, Arqueiro, Mago Branco) e Companhia Sombria (Ladino, Mago Negro, Arqueiro, Escudeiro) | Duas facções mínimas pedidas no M2, com estilos opostos (linha firme × infiltração/magia) | Agente |
 
+## 2026-11-27 — M5: conquistas
+
+| # | Decisão | Motivo | Quem |
+|---|---|---|---|
+| D31 | 10 conquistas no grupo `content_for=westnorth`, só para o humano local, disparadas pelos eventos do sistema de classes | Conquistas ficam nas preferências do aparelho: dar ao AI ou ao adversário de rede não faria sentido | Agente |
+
 ## Pendências do dono
 
 - [x] D3: repo público (feito pelo dono em 2026-11-27).

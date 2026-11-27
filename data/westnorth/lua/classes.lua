@@ -139,6 +139,9 @@ function classes.menu_change_class(x, y)
 		classes.change(u, class_id)
 		-- Same as [transform_unit]: the map does not redraw a transformed unit by itself.
 		wesnoth.wml_actions.redraw {}
+		if westnorth_achievements then
+			westnorth_achievements.class_changed(u)
+		end
 		wesnoth.interface.float_label(u.x, u.y, old_name .. " → " .. classes.find(class_id).name)
 	end
 end

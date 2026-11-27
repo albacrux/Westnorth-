@@ -46,6 +46,26 @@ depois (pipeline de sprites no desktop do dono, M6).
   pensado para caber na tela do celular. Dá para jogar contra a IA.
 - Teste rápido no desktop: `wesnoth -t westnorth_classes_demo`.
 
+## Conquistas (M5)
+
+Grupo **"Westnorth: Classes"** na tela de Conquistas (`data/westnorth/achievements.cfg`,
+concedidas por `data/westnorth/lua/achievements.lua`). Valem só para o jogador humano
+deste aparelho, em partidas que usam as classes (era do Westnorth ou cenário com
+`{WN_CLASS_SYSTEM}`).
+
+| Conquista | Como conseguir |
+|---|---|
+| Nova Vocação | Mudar a classe de uma unidade |
+| Mestre de Todos os Ofícios | Ter cada uma das 6 classes no exército (recrutando ou trocando); progresso 0/6 |
+| Promovido | Levar uma unidade de classe ao nível 2 |
+| Segunda Carreira | Mudar a classe de uma unidade de nível 2 |
+| Freio de Mão | Acertar 10 golpes corpo a corpo com Cavaleiros (progresso 0/10) |
+| Pelas Costas | Derrotar um inimigo com Ladino ou Sombra |
+| Magia Negra | Derrotar um inimigo com Mago Negro ou Feiticeiro Sombrio |
+| Senhor da Encruzilhada | Vencer no mapa 2p — Encruzilhada |
+| Sem Baixas | Vencer sem perder nenhuma unidade |
+| Guerra Relâmpago | Vencer em até 12 turnos |
+
 ## Fica para as próximas rodadas
 
 - Habilidades aprendidas por pontos ("JP"); hoje a experiência é única por unidade.
