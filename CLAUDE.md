@@ -66,6 +66,9 @@ Capturas em 1600x720: `utils/westnorth/screenshot.sh` (Xvfb).
 **Antes de mergear mudança de UI**, rode `utils/westnorth/smoke_1600x720.sh` (abre a tela
 inicial e um cenário nos temas default e celes; falha se um diálogo não couber em 720 px).
 Testar só dentro de uma campanha não basta: a tela inicial já quebrou assim.
+**`run_boost_tests` vale também para mudanças só de WML**: vários testes unitários
+pré-processam `data/` (e `data/test` sozinho). Por isso nada em `data/test` pode usar
+macros de `data/westnorth` (use as funções Lua, ex. `westnorth_classes.add_menu_item()`).
 Traduções pt-BR do fork: tabelas em `utils/westnorth/translations/`, aplicadas por
 `utils/westnorth/apply_translations.py` (precisa de `pip install polib`).
 Lint de WML: `data/tools/wmllint`, `data/tools/wmlscope`, `luacheck .`.
