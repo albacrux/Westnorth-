@@ -1,0 +1,6 @@
+# Westnorth: message and choice dialogs on: wesnoth -t westnorth_message
+sleep 30
+shot msg1
+key Return
+sleep 2
+shot msg2
