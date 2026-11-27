@@ -95,6 +95,11 @@ regras do layout de celular). Documentos detalhados: `diagnostico-toque.md` (eve
 - `describeunit` (cartão da unidade) abre a página de **tipo** da unidade na ajuda, não
   o nome/traços daquela unidade; esses ficam na Lista de Unidades.
 
+- Indicadores no mapa (`src/units/drawer.cpp`): esfera, coroa e ícones de leal/herói
+  são imagens 72x72 com o desenho no canto superior esquerdo (x 14–27, y 1–12) e são
+  desenhados sobre o retângulo do hex; as barras usam coordenadas relativas ao hex de
+  72 px. Tudo o que sai do retângulo do hex deixa rastro, porque só o hex é redesenhado.
+
 ## 6. Ambiente de teste na nuvem
 
 - `run_boost_tests` precisa de **`SDL_VIDEODRIVER=dummy`** (senão os 285 falham por
