@@ -626,7 +626,9 @@ void game_display::draw_movement_info(const map_location& loc)
 			color_t color = game_config::red_to_green(def, false);
 
 			// simple mark (no turn point) use smaller font
-			int def_font = w->second.turns > 0 ? 18 : 16;
+			// Westnorth: 26/24 instead of 18/16 (and the other map numbers below
+			// about 1.4x): read on a phone, they decide where to stop.
+			int def_font = w->second.turns > 0 ? 26 : 24;
 			draw_text_in_hex(loc, drawing_layer::move_info, def_text.str(), def_font, color);
 
 			drawing_buffer_add(drawing_layer::move_info, loc,
@@ -648,7 +650,7 @@ void game_display::draw_movement_info(const map_location& loc)
 			if (w->second.turns > 1 || (w->second.turns == 1 && loc != route_.steps.back())) {
 				std::stringstream turns_text;
 				turns_text << w->second.turns;
-				draw_text_in_hex(loc, drawing_layer::move_info, turns_text.str(), 17, font::NORMAL_COLOR, 0.5,0.8);
+				draw_text_in_hex(loc, drawing_layer::move_info, turns_text.str(), 24, font::NORMAL_COLOR, 0.5,0.8);
 			}
 
 			// The hex is full now, so skip the "show enemy moves"
@@ -669,7 +671,7 @@ void game_display::draw_movement_info(const map_location& loc)
 			color_t color = game_config::red_to_green(def, false);
 
 			// use small font
-			int def_font = 16;
+			int def_font = 24; // Westnorth: was 16
 			draw_text_in_hex(loc, drawing_layer::move_info, def_text.str(), def_font, color);
 		}
 	}
@@ -678,7 +680,7 @@ void game_display::draw_movement_info(const map_location& loc)
 		reach_map::iterator reach = reach_map_.find(loc);
 		if (reach != reach_map_.end() && reach->second > 1) {
 			const std::string num = std::to_string(reach->second);
-			draw_text_in_hex(loc, drawing_layer::move_info, num, 16, font::YELLOW_COLOR);
+			draw_text_in_hex(loc, drawing_layer::move_info, num, 22, font::YELLOW_COLOR); // Westnorth: was 16
 		}
 	}
 }
@@ -753,7 +755,9 @@ void game_display::float_label(const map_location& loc, const std::string& text,
 	const double pixels_per_millisecond = 0.1 * turbo_speed() * get_zoom_factor();
 
 	font::floating_label flabel(text);
-	flabel.set_font_size(int(font::SIZE_FLOAT_LABEL * get_zoom_factor()));
+	// Westnorth: 1.4x (damage, healing and XP numbers popping over units are
+	// read on a phone).
+	flabel.set_font_size(int(font::SIZE_FLOAT_LABEL * 1.4 * get_zoom_factor()));
 	flabel.set_color(color);
 	flabel.set_position(loc_rect.center().x, loc_rect.y); // middle of top edge
 	flabel.set_move(0, -pixels_per_millisecond); // moving up
