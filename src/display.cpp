@@ -214,6 +214,12 @@ display::display(const display_context* dc,
 	fill_images_list(game_config::shroud_prefix, shroud_images_);
 
 	unsigned int tile_size = prefs::get().tile_size();
+	// Westnorth: phones start once at a bigger zoom (game_config.cfg,
+	// westnorth_initial_zoom); after that the player's own zoom is kept.
+	if(game_config::westnorth_initial_zoom != 0 && !prefs::get().westnorth_initial_zoom_done()) {
+		tile_size = game_config::westnorth_initial_zoom;
+		prefs::get().set_westnorth_initial_zoom_done(true);
+	}
 	if(tile_size < MinZoom || tile_size > MaxZoom)
 		tile_size = DefaultZoom;
 	zoom_index_ = get_zoom_levels_index(tile_size);

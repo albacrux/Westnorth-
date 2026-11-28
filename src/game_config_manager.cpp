@@ -101,6 +101,26 @@ game_config_manager* game_config_manager::get()
 	return singleton;
 }
 
+namespace
+{
+/**
+ * Westnorth: whether to define ANDROID while loading the game config: on
+ * Android, and on the desktop with WESTNORTH_ANDROID set (see gui/gui.cpp).
+ * Every config load needs it, not only the first one: starting a game
+ * reloads the config, and game_lua_kernel re-reads [game_config] from it
+ * (e.g. the phone's zoom levels).
+ */
+bool westnorth_android()
+{
+#ifdef __ANDROID__
+	return true;
+#else
+	const char* emulate_android = std::getenv("WESTNORTH_ANDROID");
+	return emulate_android && *emulate_android && *emulate_android != '0';
+#endif
+}
+} // namespace
+
 bool game_config_manager::init_game_config(FORCE_RELOAD_CONFIG force_reload)
 {
 	// Add preproc defines according to the command line arguments.
@@ -108,14 +128,7 @@ bool game_config_manager::init_game_config(FORCE_RELOAD_CONFIG force_reload)
 	game_config::scoped_preproc_define test("TEST", cmdline_opts_.test.has_value());
 	game_config::scoped_preproc_define mptest("MP_TEST", cmdline_opts_.mptest);
 	game_config::scoped_preproc_define editor("EDITOR", cmdline_opts_.editor.has_value());
-#ifdef __ANDROID__
-	game_config::scoped_preproc_define android("ANDROID", true);
-#else
-	// Westnorth: see WESTNORTH_ANDROID in gui/gui.cpp.
-	const char* emulate_android = std::getenv("WESTNORTH_ANDROID");
-	game_config::scoped_preproc_define android("ANDROID",
-		emulate_android && *emulate_android && *emulate_android != '0');
-#endif
+	game_config::scoped_preproc_define android("ANDROID", westnorth_android());
 	game_config::scoped_preproc_define title_screen("TITLE_SCREEN",
 		!cmdline_opts_.multiplayer && !cmdline_opts_.test && !cmdline_opts_.editor);
 
@@ -688,6 +701,7 @@ void game_config_manager::load_game_config_for_editor()
 void game_config_manager::load_game_config_for_game(
 	const game_classification& classification, const std::string& scenario_id)
 {
+	game_config::scoped_preproc_define android("ANDROID", westnorth_android()); // Westnorth
 	game_config::scoped_preproc_define difficulty(classification.difficulty,
 		!classification.difficulty.empty());
 	game_config::scoped_preproc_define campaign(classification.campaign_define,
@@ -738,6 +752,7 @@ void game_config_manager::load_game_config_for_game(
 
 void game_config_manager::load_game_config_for_create(bool is_mp, bool is_test)
 {
+	game_config::scoped_preproc_define android("ANDROID", westnorth_android()); // Westnorth
 	game_config::scoped_preproc_define multiplayer("MULTIPLAYER", is_mp);
 	game_config::scoped_preproc_define test("TEST", is_test);
 	game_config::scoped_preproc_define mptest("MP_TEST", cmdline_opts_.mptest && is_mp);

@@ -45,6 +45,8 @@ namespace game_config
 	extern std::string default_terrain;
 
 	extern std::vector<unsigned int> zoom_levels;
+	/** Westnorth: zoom the map starts at once on a device (0: tile_size). */
+	extern unsigned int westnorth_initial_zoom;
 
 	inline int kill_xp(int level)
 	{

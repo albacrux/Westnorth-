@@ -534,6 +534,7 @@ public:
 	PREF_GETTER_SETTER(show_tips, bool, true)
 	PREF_GETTER_SETTER(stop_music_in_background, bool, false)
 	PREF_GETTER_SETTER(tile_size, unsigned, 0)
+	PREF_GETTER_SETTER(westnorth_initial_zoom_done, bool, false) // Westnorth
 	PREF_GETTER_SETTER(mouse_scrolling, bool, true)
 	PREF_GETTER_SETTER(refresh_rate, int, -1)
 	PREF_GETTER_SETTER(animate_map, bool, true)
@@ -877,6 +878,7 @@ private:
 		prefs_list::pixel_scale,
 		prefs_list::theme,
 		prefs_list::tile_size,
+		prefs_list::westnorth_initial_zoom_done,
 		prefs_list::vsync,
 		prefs_list::xresolution,
 		prefs_list::yresolution,

@@ -182,6 +182,10 @@ regras do layout de celular). Documentos detalhados: `diagnostico-toque.md` (eve
   olha para a esquerda (um `~BLIT` na imagem espelha junto). Habilidade sem nome com
   `overlay_image` = sobreposição fixa sem estado por unidade. Só o **primeiro**
   `[abilities]` do tipo é lido (`add_registry_entries`).
+- **Define `ANDROID`**: o `game_config_manager` recarrega a configuração ao iniciar uma
+  partida (`load_game_config_for_game`) e o `game_lua_kernel` relê o `[game_config]`
+  dela. Um define posto só no `init_game_config` some nessa recarga (era o caso do
+  `ANDROID`, inclusive no celular). Agora `westnorth_android()` entra nas três cargas.
 - **Substituir arte do upstream**: `get_binary_file_location` junta os caminhos num
   `std::set` (ordem alfabética do caminho completo), então `.../data/core/images` vence
   `.../images` e `.../data/westnorth/images`. Use `data/westnorth/override/images/<mesmo
