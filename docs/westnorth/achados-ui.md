@@ -130,6 +130,10 @@ regras do layout de celular). Documentos detalhados: `diagnostico-toque.md` (eve
   `_header_grid`. Para cartões de largura uniforme, um `[spacer] width=` dentro do item.
   Texto com `<img>` (ex.: custo com ícone de ouro) precisa de `[rich_label]`.
   No `rich_label`, `<span size=...>` some (a linha fica em branco); use só `color`.
+- Menus do jogo (`command_executor::show_menu`, `drop_down_menu`): não há título; uma
+  linha pode ganhar rótulo/ícone próprios com `westnorth_label`/`westnorth_icon` no
+  config do item (o `populate_menu_item_info` sobrescreve `label` antes). O hex do toque
+  longo é `mouse_handler::get_last_hex()`.
 - Temas de UI sem uma definição de widget (ex.: `unit_preview_pane` `westnorth_portrait`
   só no default) usam a do tema default (Celes testado no #49).
   Um mesmo diálogo C++ pode usar outra `[window]` (construtor com id, ver

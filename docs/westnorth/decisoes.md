@@ -122,6 +122,7 @@ entradas antigas (se mudar, criar nova entrada que substitui a anterior).
 | D56 | Pinça amplia em volta do ponto entre os dedos (`display::set_zoom_at`), não do centro da tela; os botões ＋/− continuam no centro | Pendência de #41; é o comportamento esperado em mapas de celular | Agente |
 | D57 | No tema Westnorth, tocar na pílula de recursos abre a Tabela de Estatísticas (ouro, aldeias e unidades de todos os lados) e tocar na linha do terreno abre a descrição daquele terreno; os dois deixam de passar o toque para o mapa | Pendência de D49; segue o manual (nível 2 a um toque do nível 1) | Agente |
 | D58 | Recrutar: cada cartão ganha uma linha de papel automática (habilidades da unidade; senão especiais das armas; senão "corpo a corpo"/"à distância"), e o painel de detalhes mostra o retrato grande (240 px) quando o tipo tem um (`unit_preview_pane` `portrait = true`, definição `westnorth_portrait`) | Pendência de D51. Automático para servir às classes e ao upstream sem texto novo por unidade | Agente |
+| D59 | Menu de toque longo começa com o que foi tocado: sprite + tipo da unidade + terreno e defesa (ou ícone e nome do terreno); a linha é o antigo "Descrição da Unidade/Terreno" (tocar abre a descrição), sem item duplicado | Pendência de D54 (o menu do motor não tem título; o cabeçalho é uma linha do próprio menu) | Agente |
 
 ## Pendências do dono
 
