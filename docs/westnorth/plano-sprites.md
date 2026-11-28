@@ -91,6 +91,7 @@ Checklist do validador (antes de entrar no repositório):
 - No Drive também há a rodada 2 (Monge, Lanceiro, Samurai, Ninja, Invocador, Geomante
   e evoluções), selos de classe, retratos 400×400 e terrenos/estruturas HD: ainda não
   integrados (rodada 2 precisa das classes; retratos e selos são o próximo passo).
+- Retratos da rodada 1 integrados (D64; nível 2 usa o do nível 1).
 - O motor ainda desenha a versão 72×72 (o @2x espera a etapa 2).
 
 ### Etapa 4 — integração e teste
