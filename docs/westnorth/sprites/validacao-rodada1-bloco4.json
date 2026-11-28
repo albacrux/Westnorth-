@@ -1,0 +1,542 @@
+[
+  {
+    "file": "shadow@4x.png",
+    "size": 288,
+    "height_pct": 76.0,
+    "feet_y": 235,
+    "tc_px": 4496,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "shadow@2x.png",
+    "size": 144,
+    "height_pct": 75.7,
+    "feet_y": 117,
+    "tc_px": 1111,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "shadow.png",
+    "size": 72,
+    "height_pct": 76.4,
+    "feet_y": 58,
+    "tc_px": 282,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "shadow-defend-1@4x.png",
+    "size": 288,
+    "height_pct": 76.0,
+    "feet_y": 235,
+    "tc_px": 5446,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "shadow-defend-1@2x.png",
+    "size": 144,
+    "height_pct": 76.4,
+    "feet_y": 117,
+    "tc_px": 1381,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "shadow-defend-1.png",
+    "size": 72,
+    "height_pct": 76.4,
+    "feet_y": 58,
+    "tc_px": 342,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "shadow-defend-2@4x.png",
+    "size": 288,
+    "height_pct": 68.1,
+    "feet_y": 235,
+    "tc_px": 4112,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "shadow-defend-2@2x.png",
+    "size": 144,
+    "height_pct": 68.1,
+    "feet_y": 117,
+    "tc_px": 1043,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "shadow-defend-2.png",
+    "size": 72,
+    "height_pct": 68.1,
+    "feet_y": 58,
+    "tc_px": 258,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "shadow-attack-1@4x.png",
+    "size": 288,
+    "height_pct": 75.7,
+    "feet_y": 235,
+    "tc_px": 5515,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "shadow-attack-1@2x.png",
+    "size": 144,
+    "height_pct": 75.7,
+    "feet_y": 117,
+    "tc_px": 1375,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "shadow-attack-1.png",
+    "size": 72,
+    "height_pct": 75.0,
+    "feet_y": 58,
+    "tc_px": 352,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "shadow-attack-2@4x.png",
+    "size": 288,
+    "height_pct": 71.9,
+    "feet_y": 235,
+    "tc_px": 5062,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "shadow-attack-2@2x.png",
+    "size": 144,
+    "height_pct": 72.2,
+    "feet_y": 117,
+    "tc_px": 1255,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "shadow-attack-2.png",
+    "size": 72,
+    "height_pct": 72.2,
+    "feet_y": 58,
+    "tc_px": 323,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "shadow-attack-3@4x.png",
+    "size": 288,
+    "height_pct": 77.8,
+    "feet_y": 235,
+    "tc_px": 4373,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "shadow-attack-3@2x.png",
+    "size": 144,
+    "height_pct": 77.8,
+    "feet_y": 117,
+    "tc_px": 1100,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "shadow-attack-3.png",
+    "size": 72,
+    "height_pct": 77.8,
+    "feet_y": 58,
+    "tc_px": 282,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "light-priest@4x.png",
+    "size": 288,
+    "height_pct": 76.0,
+    "feet_y": 235,
+    "tc_px": 1635,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "light-priest@2x.png",
+    "size": 144,
+    "height_pct": 75.7,
+    "feet_y": 117,
+    "tc_px": 417,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "light-priest.png",
+    "size": 72,
+    "height_pct": 75.0,
+    "feet_y": 58,
+    "tc_px": 104,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "light-priest-defend-1@4x.png",
+    "size": 288,
+    "height_pct": 74.7,
+    "feet_y": 235,
+    "tc_px": 1373,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "light-priest-defend-1@2x.png",
+    "size": 144,
+    "height_pct": 74.3,
+    "feet_y": 117,
+    "tc_px": 344,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "light-priest-defend-1.png",
+    "size": 72,
+    "height_pct": 73.6,
+    "feet_y": 58,
+    "tc_px": 87,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "light-priest-defend-2@4x.png",
+    "size": 288,
+    "height_pct": 69.4,
+    "feet_y": 235,
+    "tc_px": 1810,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "light-priest-defend-2@2x.png",
+    "size": 144,
+    "height_pct": 69.4,
+    "feet_y": 117,
+    "tc_px": 454,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "light-priest-defend-2.png",
+    "size": 72,
+    "height_pct": 68.1,
+    "feet_y": 58,
+    "tc_px": 117,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "light-priest-attack-1@4x.png",
+    "size": 288,
+    "height_pct": 81.2,
+    "feet_y": 235,
+    "tc_px": 1564,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "light-priest-attack-1@2x.png",
+    "size": 144,
+    "height_pct": 80.6,
+    "feet_y": 117,
+    "tc_px": 397,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "light-priest-attack-1.png",
+    "size": 72,
+    "height_pct": 79.2,
+    "feet_y": 58,
+    "tc_px": 99,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "light-priest-attack-2@4x.png",
+    "size": 288,
+    "height_pct": 73.3,
+    "feet_y": 235,
+    "tc_px": 1501,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "light-priest-attack-2@2x.png",
+    "size": 144,
+    "height_pct": 73.6,
+    "feet_y": 117,
+    "tc_px": 380,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "light-priest-attack-2.png",
+    "size": 72,
+    "height_pct": 73.6,
+    "feet_y": 58,
+    "tc_px": 95,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "light-priest-attack-3@4x.png",
+    "size": 288,
+    "height_pct": 73.3,
+    "feet_y": 235,
+    "tc_px": 1597,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "light-priest-attack-3@2x.png",
+    "size": 144,
+    "height_pct": 72.9,
+    "feet_y": 117,
+    "tc_px": 392,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "light-priest-attack-3.png",
+    "size": 72,
+    "height_pct": 73.6,
+    "feet_y": 58,
+    "tc_px": 101,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "dark-sorcerer@4x.png",
+    "size": 288,
+    "height_pct": 76.0,
+    "feet_y": 235,
+    "tc_px": 1974,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "dark-sorcerer@2x.png",
+    "size": 144,
+    "height_pct": 75.7,
+    "feet_y": 117,
+    "tc_px": 486,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "dark-sorcerer.png",
+    "size": 72,
+    "height_pct": 76.4,
+    "feet_y": 58,
+    "tc_px": 121,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "dark-sorcerer-defend-1@4x.png",
+    "size": 288,
+    "height_pct": 77.1,
+    "feet_y": 235,
+    "tc_px": 567,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "dark-sorcerer-defend-1@2x.png",
+    "size": 144,
+    "height_pct": 77.1,
+    "feet_y": 117,
+    "tc_px": 136,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "dark-sorcerer-defend-1.png",
+    "size": 72,
+    "height_pct": 76.4,
+    "feet_y": 58,
+    "tc_px": 39,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "dark-sorcerer-defend-2@4x.png",
+    "size": 288,
+    "height_pct": 71.5,
+    "feet_y": 235,
+    "tc_px": 3394,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "dark-sorcerer-defend-2@2x.png",
+    "size": 144,
+    "height_pct": 71.5,
+    "feet_y": 117,
+    "tc_px": 852,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "dark-sorcerer-defend-2.png",
+    "size": 72,
+    "height_pct": 70.8,
+    "feet_y": 58,
+    "tc_px": 213,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "dark-sorcerer-attack-1@4x.png",
+    "size": 288,
+    "height_pct": 81.2,
+    "feet_y": 235,
+    "tc_px": 2232,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "dark-sorcerer-attack-1@2x.png",
+    "size": 144,
+    "height_pct": 80.6,
+    "feet_y": 117,
+    "tc_px": 556,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "dark-sorcerer-attack-1.png",
+    "size": 72,
+    "height_pct": 79.2,
+    "feet_y": 58,
+    "tc_px": 138,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "dark-sorcerer-attack-2@4x.png",
+    "size": 288,
+    "height_pct": 70.1,
+    "feet_y": 235,
+    "tc_px": 2092,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "dark-sorcerer-attack-2@2x.png",
+    "size": 144,
+    "height_pct": 70.1,
+    "feet_y": 117,
+    "tc_px": 523,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "dark-sorcerer-attack-2.png",
+    "size": 72,
+    "height_pct": 69.4,
+    "feet_y": 58,
+    "tc_px": 136,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "dark-sorcerer-attack-3@4x.png",
+    "size": 288,
+    "height_pct": 69.1,
+    "feet_y": 235,
+    "tc_px": 1469,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "dark-sorcerer-attack-3@2x.png",
+    "size": 144,
+    "height_pct": 69.4,
+    "feet_y": 117,
+    "tc_px": 360,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "dark-sorcerer-attack-3.png",
+    "size": 72,
+    "height_pct": 69.4,
+    "feet_y": 58,
+    "tc_px": 92,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  }
+]

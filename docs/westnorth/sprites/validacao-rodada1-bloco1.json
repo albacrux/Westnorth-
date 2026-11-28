@@ -1,0 +1,542 @@
+[
+  {
+    "file": "squire@4x.png",
+    "size": 288,
+    "height_pct": 76.0,
+    "feet_y": 235,
+    "tc_px": 820,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "squire@2x.png",
+    "size": 144,
+    "height_pct": 75.0,
+    "feet_y": 117,
+    "tc_px": 192,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "squire.png",
+    "size": 72,
+    "height_pct": 75.0,
+    "feet_y": 58,
+    "tc_px": 52,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "squire-defend-1@4x.png",
+    "size": 288,
+    "height_pct": 73.3,
+    "feet_y": 235,
+    "tc_px": 932,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "squire-defend-1@2x.png",
+    "size": 144,
+    "height_pct": 73.6,
+    "feet_y": 117,
+    "tc_px": 231,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "squire-defend-1.png",
+    "size": 72,
+    "height_pct": 72.2,
+    "feet_y": 58,
+    "tc_px": 61,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "squire-defend-2@4x.png",
+    "size": 288,
+    "height_pct": 57.6,
+    "feet_y": 235,
+    "tc_px": 791,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "squire-defend-2@2x.png",
+    "size": 144,
+    "height_pct": 57.6,
+    "feet_y": 117,
+    "tc_px": 198,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "squire-defend-2.png",
+    "size": 72,
+    "height_pct": 58.3,
+    "feet_y": 58,
+    "tc_px": 48,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "squire-attack-1@4x.png",
+    "size": 288,
+    "height_pct": 70.5,
+    "feet_y": 235,
+    "tc_px": 1113,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "squire-attack-1@2x.png",
+    "size": 144,
+    "height_pct": 70.8,
+    "feet_y": 117,
+    "tc_px": 283,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "squire-attack-1.png",
+    "size": 72,
+    "height_pct": 70.8,
+    "feet_y": 58,
+    "tc_px": 73,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "squire-attack-2@4x.png",
+    "size": 288,
+    "height_pct": 61.5,
+    "feet_y": 235,
+    "tc_px": 948,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "squire-attack-2@2x.png",
+    "size": 144,
+    "height_pct": 61.8,
+    "feet_y": 117,
+    "tc_px": 229,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "squire-attack-2.png",
+    "size": 72,
+    "height_pct": 61.1,
+    "feet_y": 58,
+    "tc_px": 61,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "squire-attack-3@4x.png",
+    "size": 288,
+    "height_pct": 66.0,
+    "feet_y": 235,
+    "tc_px": 966,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "squire-attack-3@2x.png",
+    "size": 144,
+    "height_pct": 66.0,
+    "feet_y": 117,
+    "tc_px": 228,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "squire-attack-3.png",
+    "size": 72,
+    "height_pct": 66.7,
+    "feet_y": 58,
+    "tc_px": 59,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "knight@4x.png",
+    "size": 288,
+    "height_pct": 76.0,
+    "feet_y": 235,
+    "tc_px": 4077,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "knight@2x.png",
+    "size": 144,
+    "height_pct": 75.7,
+    "feet_y": 117,
+    "tc_px": 1024,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "knight.png",
+    "size": 72,
+    "height_pct": 76.4,
+    "feet_y": 58,
+    "tc_px": 256,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "knight-defend-1@4x.png",
+    "size": 288,
+    "height_pct": 74.3,
+    "feet_y": 235,
+    "tc_px": 3582,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "knight-defend-1@2x.png",
+    "size": 144,
+    "height_pct": 74.3,
+    "feet_y": 117,
+    "tc_px": 898,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "knight-defend-1.png",
+    "size": 72,
+    "height_pct": 75.0,
+    "feet_y": 58,
+    "tc_px": 229,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "knight-defend-2@4x.png",
+    "size": 288,
+    "height_pct": 74.7,
+    "feet_y": 235,
+    "tc_px": 3505,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "knight-defend-2@2x.png",
+    "size": 144,
+    "height_pct": 75.0,
+    "feet_y": 117,
+    "tc_px": 878,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "knight-defend-2.png",
+    "size": 72,
+    "height_pct": 75.0,
+    "feet_y": 58,
+    "tc_px": 220,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "knight-attack-1@4x.png",
+    "size": 288,
+    "height_pct": 79.5,
+    "feet_y": 235,
+    "tc_px": 5746,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "knight-attack-1@2x.png",
+    "size": 144,
+    "height_pct": 79.9,
+    "feet_y": 117,
+    "tc_px": 1447,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "knight-attack-1.png",
+    "size": 72,
+    "height_pct": 79.2,
+    "feet_y": 58,
+    "tc_px": 355,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "knight-attack-2@4x.png",
+    "size": 288,
+    "height_pct": 71.5,
+    "feet_y": 235,
+    "tc_px": 4805,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "knight-attack-2@2x.png",
+    "size": 144,
+    "height_pct": 71.5,
+    "feet_y": 117,
+    "tc_px": 1217,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "knight-attack-2.png",
+    "size": 72,
+    "height_pct": 72.2,
+    "feet_y": 58,
+    "tc_px": 308,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "knight-attack-3@4x.png",
+    "size": 288,
+    "height_pct": 71.9,
+    "feet_y": 235,
+    "tc_px": 5051,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "knight-attack-3@2x.png",
+    "size": 144,
+    "height_pct": 72.2,
+    "feet_y": 117,
+    "tc_px": 1270,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "knight-attack-3.png",
+    "size": 72,
+    "height_pct": 72.2,
+    "feet_y": 58,
+    "tc_px": 327,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "archer@4x.png",
+    "size": 288,
+    "height_pct": 76.0,
+    "feet_y": 235,
+    "tc_px": 1395,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "archer@2x.png",
+    "size": 144,
+    "height_pct": 75.7,
+    "feet_y": 117,
+    "tc_px": 357,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "archer.png",
+    "size": 72,
+    "height_pct": 76.4,
+    "feet_y": 58,
+    "tc_px": 93,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "archer-defend-1@4x.png",
+    "size": 288,
+    "height_pct": 76.7,
+    "feet_y": 235,
+    "tc_px": 1559,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "archer-defend-1@2x.png",
+    "size": 144,
+    "height_pct": 77.1,
+    "feet_y": 117,
+    "tc_px": 393,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "archer-defend-1.png",
+    "size": 72,
+    "height_pct": 76.4,
+    "feet_y": 58,
+    "tc_px": 98,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "archer-defend-2@4x.png",
+    "size": 288,
+    "height_pct": 71.9,
+    "feet_y": 235,
+    "tc_px": 1709,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "archer-defend-2@2x.png",
+    "size": 144,
+    "height_pct": 71.5,
+    "feet_y": 117,
+    "tc_px": 437,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "archer-defend-2.png",
+    "size": 72,
+    "height_pct": 72.2,
+    "feet_y": 58,
+    "tc_px": 112,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "archer-attack-1@4x.png",
+    "size": 288,
+    "height_pct": 81.2,
+    "feet_y": 235,
+    "tc_px": 1402,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "archer-attack-1@2x.png",
+    "size": 144,
+    "height_pct": 80.6,
+    "feet_y": 117,
+    "tc_px": 347,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "archer-attack-1.png",
+    "size": 72,
+    "height_pct": 79.2,
+    "feet_y": 58,
+    "tc_px": 85,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "archer-attack-2@4x.png",
+    "size": 288,
+    "height_pct": 81.2,
+    "feet_y": 235,
+    "tc_px": 1240,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "archer-attack-2@2x.png",
+    "size": 144,
+    "height_pct": 80.6,
+    "feet_y": 117,
+    "tc_px": 300,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "archer-attack-2.png",
+    "size": 72,
+    "height_pct": 79.2,
+    "feet_y": 58,
+    "tc_px": 74,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "archer-attack-3@4x.png",
+    "size": 288,
+    "height_pct": 81.2,
+    "feet_y": 235,
+    "tc_px": 1327,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "archer-attack-3@2x.png",
+    "size": 144,
+    "height_pct": 80.6,
+    "feet_y": 117,
+    "tc_px": 327,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "archer-attack-3.png",
+    "size": 72,
+    "height_pct": 79.2,
+    "feet_y": 58,
+    "tc_px": 79,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  }
+]

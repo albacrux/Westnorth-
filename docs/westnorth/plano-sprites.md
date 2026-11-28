@@ -83,6 +83,16 @@ Checklist do validador (antes de entrar no repositório):
 5. Quadros da mesma animação alinhados (sem "pulo" entre quadros).
 6. Captura no jogo nos zooms 72, 108 e 144, lado a lado com a unidade do upstream.
 
+### Situação (2026-11-28)
+- **Rodada 1 integrada** (12 classes × 6 quadros): sprites 72×72 e @2x vindos da pasta
+  do dono no Drive (blocos 1–4), todos `ok` no validador (`docs/westnorth/sprites/`).
+  Ficam em `data/westnorth/images/units/westnorth/`; as animações estão em
+  `data/westnorth/macros/class_art.cfg`. O @4x (288 px) fica no Drive até ser usado.
+- No Drive também há a rodada 2 (Monge, Lanceiro, Samurai, Ninja, Invocador, Geomante
+  e evoluções), selos de classe, retratos 400×400 e terrenos/estruturas HD: ainda não
+  integrados (rodada 2 precisa das classes; retratos e selos são o próximo passo).
+- O motor ainda desenha a versão 72×72 (o @2x espera a etapa 2).
+
 ### Etapa 4 — integração e teste
 Arquivos em `data/westnorth/images/units/` referenciados pelas classes
 (`data/westnorth/units/classes.cfg`, hoje com `[base_unit]` do upstream), capturas

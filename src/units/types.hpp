@@ -325,6 +325,11 @@ private:
 	std::string parent_id_;
 	/** from [base_unit] */
 	std::string base_unit_id_;
+	/**
+	 * Westnorth: [base_unit] inherit_animations=no takes the base's stats but
+	 * none of its images or animations (the fork's classes have their own art).
+	 */
+	bool base_unit_animations_ = true;
 	t_string type_name_;
 	t_string description_;
 	std::vector<t_string> special_notes_;

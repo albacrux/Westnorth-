@@ -173,6 +173,9 @@ regras do layout de celular). Documentos detalhados: `diagnostico-toque.md` (eve
 - `apply_translations.py`: remover uma entrada obsoleta (`#~`) desloca as linhas; o
   script relê o `.po` depois disso (antes dava `KeyError` em `spans[entry.linenum]`).
   Confira com `msgfmt -c -o /dev/null po/<domínio>/pt_BR.po`.
+- **Arquivos do Drive do dono**: o conector Google Drive (`download_file_content`) salva
+  binários em disco (pasta `tool-results` da sessão), não na conversa: dá para baixar os
+  pacotes de sprites. A rede do ambiente bloqueia `drive.google.com` direto (curl).
 - **No A06 o tema de UI padrão é o Celes**: na primeira execução
   `prefs::set_initial_gui2_theme` escolhe `modern` quando a tela tem ≥ 1280x720 (o A06
   tem 1600x720). Para ver o que o celular mostra, capture com

@@ -1,0 +1,542 @@
+[
+  {
+    "file": "thief@4x.png",
+    "size": 288,
+    "height_pct": 76.0,
+    "feet_y": 235,
+    "tc_px": 1470,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "thief@2x.png",
+    "size": 144,
+    "height_pct": 75.7,
+    "feet_y": 117,
+    "tc_px": 345,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "thief.png",
+    "size": 72,
+    "height_pct": 76.4,
+    "feet_y": 58,
+    "tc_px": 99,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "thief-defend-1@4x.png",
+    "size": 288,
+    "height_pct": 74.7,
+    "feet_y": 235,
+    "tc_px": 1351,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "thief-defend-1@2x.png",
+    "size": 144,
+    "height_pct": 75.0,
+    "feet_y": 117,
+    "tc_px": 341,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "thief-defend-1.png",
+    "size": 72,
+    "height_pct": 75.0,
+    "feet_y": 58,
+    "tc_px": 93,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "thief-defend-2@4x.png",
+    "size": 288,
+    "height_pct": 68.1,
+    "feet_y": 235,
+    "tc_px": 1280,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "thief-defend-2@2x.png",
+    "size": 144,
+    "height_pct": 68.1,
+    "feet_y": 117,
+    "tc_px": 316,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "thief-defend-2.png",
+    "size": 72,
+    "height_pct": 68.1,
+    "feet_y": 58,
+    "tc_px": 80,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "thief-attack-1@4x.png",
+    "size": 288,
+    "height_pct": 79.5,
+    "feet_y": 235,
+    "tc_px": 1644,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "thief-attack-1@2x.png",
+    "size": 144,
+    "height_pct": 79.9,
+    "feet_y": 117,
+    "tc_px": 407,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "thief-attack-1.png",
+    "size": 72,
+    "height_pct": 79.2,
+    "feet_y": 58,
+    "tc_px": 105,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "thief-attack-2@4x.png",
+    "size": 288,
+    "height_pct": 76.7,
+    "feet_y": 235,
+    "tc_px": 1433,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "thief-attack-2@2x.png",
+    "size": 144,
+    "height_pct": 77.1,
+    "feet_y": 117,
+    "tc_px": 366,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "thief-attack-2.png",
+    "size": 72,
+    "height_pct": 76.4,
+    "feet_y": 58,
+    "tc_px": 97,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "thief-attack-3@4x.png",
+    "size": 288,
+    "height_pct": 74.7,
+    "feet_y": 235,
+    "tc_px": 1995,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "thief-attack-3@2x.png",
+    "size": 144,
+    "height_pct": 74.3,
+    "feet_y": 117,
+    "tc_px": 501,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "thief-attack-3.png",
+    "size": 72,
+    "height_pct": 75.0,
+    "feet_y": 58,
+    "tc_px": 133,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "white-mage@4x.png",
+    "size": 288,
+    "height_pct": 76.0,
+    "feet_y": 235,
+    "tc_px": 1362,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "white-mage@2x.png",
+    "size": 144,
+    "height_pct": 75.7,
+    "feet_y": 117,
+    "tc_px": 328,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "white-mage.png",
+    "size": 72,
+    "height_pct": 76.4,
+    "feet_y": 58,
+    "tc_px": 83,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "white-mage-defend-1@4x.png",
+    "size": 288,
+    "height_pct": 75.3,
+    "feet_y": 235,
+    "tc_px": 1192,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "white-mage-defend-1@2x.png",
+    "size": 144,
+    "height_pct": 75.7,
+    "feet_y": 117,
+    "tc_px": 295,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "white-mage-defend-1.png",
+    "size": 72,
+    "height_pct": 75.0,
+    "feet_y": 58,
+    "tc_px": 72,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "white-mage-defend-2@4x.png",
+    "size": 288,
+    "height_pct": 70.8,
+    "feet_y": 235,
+    "tc_px": 944,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "white-mage-defend-2@2x.png",
+    "size": 144,
+    "height_pct": 70.8,
+    "feet_y": 117,
+    "tc_px": 230,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "white-mage-defend-2.png",
+    "size": 72,
+    "height_pct": 70.8,
+    "feet_y": 58,
+    "tc_px": 58,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "white-mage-attack-1@4x.png",
+    "size": 288,
+    "height_pct": 81.2,
+    "feet_y": 235,
+    "tc_px": 969,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "white-mage-attack-1@2x.png",
+    "size": 144,
+    "height_pct": 80.6,
+    "feet_y": 117,
+    "tc_px": 236,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "white-mage-attack-1.png",
+    "size": 72,
+    "height_pct": 79.2,
+    "feet_y": 58,
+    "tc_px": 61,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "white-mage-attack-2@4x.png",
+    "size": 288,
+    "height_pct": 75.3,
+    "feet_y": 235,
+    "tc_px": 1112,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "white-mage-attack-2@2x.png",
+    "size": 144,
+    "height_pct": 75.0,
+    "feet_y": 117,
+    "tc_px": 268,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "white-mage-attack-2.png",
+    "size": 72,
+    "height_pct": 75.0,
+    "feet_y": 58,
+    "tc_px": 67,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "white-mage-attack-3@4x.png",
+    "size": 288,
+    "height_pct": 75.3,
+    "feet_y": 235,
+    "tc_px": 1039,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "white-mage-attack-3@2x.png",
+    "size": 144,
+    "height_pct": 75.0,
+    "feet_y": 117,
+    "tc_px": 255,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "white-mage-attack-3.png",
+    "size": 72,
+    "height_pct": 75.0,
+    "feet_y": 58,
+    "tc_px": 65,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "black-mage@4x.png",
+    "size": 288,
+    "height_pct": 76.0,
+    "feet_y": 235,
+    "tc_px": 1518,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "black-mage@2x.png",
+    "size": 144,
+    "height_pct": 75.7,
+    "feet_y": 117,
+    "tc_px": 380,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "black-mage.png",
+    "size": 72,
+    "height_pct": 76.4,
+    "feet_y": 58,
+    "tc_px": 102,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "black-mage-defend-1@4x.png",
+    "size": 288,
+    "height_pct": 75.0,
+    "feet_y": 235,
+    "tc_px": 1171,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "black-mage-defend-1@2x.png",
+    "size": 144,
+    "height_pct": 75.0,
+    "feet_y": 117,
+    "tc_px": 287,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "black-mage-defend-1.png",
+    "size": 72,
+    "height_pct": 75.0,
+    "feet_y": 58,
+    "tc_px": 74,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "black-mage-defend-2@4x.png",
+    "size": 288,
+    "height_pct": 79.2,
+    "feet_y": 235,
+    "tc_px": 1183,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "black-mage-defend-2@2x.png",
+    "size": 144,
+    "height_pct": 79.2,
+    "feet_y": 117,
+    "tc_px": 285,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "black-mage-defend-2.png",
+    "size": 72,
+    "height_pct": 79.2,
+    "feet_y": 58,
+    "tc_px": 76,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "black-mage-attack-1@4x.png",
+    "size": 288,
+    "height_pct": 81.2,
+    "feet_y": 235,
+    "tc_px": 1508,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "black-mage-attack-1@2x.png",
+    "size": 144,
+    "height_pct": 80.6,
+    "feet_y": 117,
+    "tc_px": 364,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "black-mage-attack-1.png",
+    "size": 72,
+    "height_pct": 79.2,
+    "feet_y": 58,
+    "tc_px": 92,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "black-mage-attack-2@4x.png",
+    "size": 288,
+    "height_pct": 70.5,
+    "feet_y": 235,
+    "tc_px": 1239,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "black-mage-attack-2@2x.png",
+    "size": 144,
+    "height_pct": 70.8,
+    "feet_y": 117,
+    "tc_px": 313,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "black-mage-attack-2.png",
+    "size": 72,
+    "height_pct": 70.8,
+    "feet_y": 58,
+    "tc_px": 75,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "black-mage-attack-3@4x.png",
+    "size": 288,
+    "height_pct": 69.8,
+    "feet_y": 235,
+    "tc_px": 1182,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "black-mage-attack-3@2x.png",
+    "size": 144,
+    "height_pct": 69.4,
+    "feet_y": 117,
+    "tc_px": 294,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  },
+  {
+    "file": "black-mage-attack-3.png",
+    "size": 72,
+    "height_pct": 69.4,
+    "feet_y": 58,
+    "tc_px": 77,
+    "semi": 0,
+    "blk": 0,
+    "ok": true
+  }
+]
