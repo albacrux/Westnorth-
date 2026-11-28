@@ -478,6 +478,12 @@ public:
 	/** Zooms the display in (true) or out (false). */
 	bool set_zoom(bool increase);
 
+	/**
+	 * Westnorth: zooms in or out keeping the map point under @a anchor
+	 * (screen coordinates) in place, for the two-finger pinch.
+	 */
+	bool set_zoom_at(bool increase, const point& anchor);
+
 	/** Sets the display zoom to the specified amount. */
 	bool set_zoom(unsigned int amount, const bool validate_value_and_set_index = true);
 

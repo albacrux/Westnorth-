@@ -16,6 +16,7 @@
 
 #include <cstdint>
 #include <map>
+#include <utility>
 
 /**
  * Westnorth: two-finger pinch on the map, built from raw finger events so it
@@ -42,6 +43,9 @@ public:
 
 	/** The current (or last, if no finger is down) gesture used two fingers. */
 	bool happened() const { return happened_; }
+
+	/** Midpoint between the first two fingers (0,0 with fewer than two). */
+	std::pair<double, double> center() const;
 
 private:
 	struct point { double x, y; };

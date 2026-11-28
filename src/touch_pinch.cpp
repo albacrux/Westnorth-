@@ -61,6 +61,16 @@ void touch_pinch::finger_up(std::int64_t id)
 	}
 }
 
+std::pair<double, double> touch_pinch::center() const
+{
+	if(fingers_.size() < 2) {
+		return {0.0, 0.0};
+	}
+	const point& a = fingers_.begin()->second;
+	const point& b = std::next(fingers_.begin())->second;
+	return {(a.x + b.x) / 2.0, (a.y + b.y) / 2.0};
+}
+
 double touch_pinch::distance() const
 {
 	if(fingers_.size() < 2) {
