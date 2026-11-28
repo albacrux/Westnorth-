@@ -17,7 +17,8 @@
 #   key KEYSYM       e.g. Return, Escape, ctrl+r
 #   shot NAME        save OUTDIR/NAME.png
 # Without a script it waits 25 s and saves OUTDIR/screen.png.
-# Env: WESTNORTH_GUI_THEME=celes|default (UI theme), WESTNORTH_TIPS=yes (title tips),
+# Env: WESTNORTH_GUI_THEME=celes|default (UI theme; with WESTNORTH_ANDROID the
+#      default is celes, as on the phone), WESTNORTH_TIPS=yes (title tips),
 #      WESTNORTH_ANDROID=1 (GUI laid out with the Android font sizes),
 #      WESTNORTH_THEME=Westnorth (in-game HUD theme; unset = game default),
 #      WESTNORTH_FONT_SCALE=PERCENT (font_scale preference; unset = game default).
@@ -64,6 +65,11 @@ mkdir -p "$userdata/logs"  # an existing logs dir skips the first-run migration 
 # The Celes UI theme's id is "modern" (data/gui/themes/celes/_main.cfg); an
 # unknown id silently falls back to the default theme.
 gui2_theme="${WESTNORTH_GUI_THEME:-}"
+# With the Android sizes and no theme asked for, use what the phone picks on
+# its first run: Celes, for any screen of 1280x720 or more.
+if [ -z "$gui2_theme" ] && [ -n "${WESTNORTH_ANDROID:-}" ] && [ "${WESTNORTH_ANDROID}" != 0 ]; then
+	gui2_theme=modern
+fi
 if [ "$gui2_theme" = celes ]; then gui2_theme=modern; fi
 cat > "$userdata/preferences" <<EOF
 locale="pt_BR"

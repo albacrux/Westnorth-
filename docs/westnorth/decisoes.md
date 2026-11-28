@@ -124,6 +124,7 @@ entradas antigas (se mudar, criar nova entrada que substitui a anterior).
 | D58 | Recrutar: cada cartão ganha uma linha de papel automática (habilidades da unidade; senão especiais das armas; senão "corpo a corpo"/"à distância"), e o painel de detalhes mostra o retrato grande (240 px) quando o tipo tem um (`unit_preview_pane` `portrait = true`, definição `westnorth_portrait`) | Pendência de D51. Automático para servir às classes e ao upstream sem texto novo por unidade | Agente |
 | D59 | Menu de toque longo começa com o que foi tocado: sprite + tipo da unidade + terreno e defesa (ou ícone e nome do terreno); a linha é o antigo "Descrição da Unidade/Terreno" (tocar abre a descrição), sem item duplicado | Pendência de D54 (o menu do motor não tem título; o cabeçalho é uma linha do próprio menu) | Agente |
 | D60 | Falas: retrato do cartão do HUD pré-reduzido a 200 px (corrige o retrato da fala que sumia no tema Westnorth) e, no Android, OK das escolhas com o botão `touch` | Achado ao revisar as telas fora do combate | Agente |
+| D61 | Capturas e smoke passam a refletir o celular: com `WESTNORTH_ANDROID=1` o `screenshot.sh` usa o tema de UI Celes (o que o jogo escolhe no A06), e a rodada do HUD Westnorth no smoke usa o Celes. A tela inicial do Celes fica como está (itens de 36 px; ampliar exige reestruturar) | O jogo escolhe `modern` (Celes) em telas ≥ 1280x720; as capturas usavam o default | Agente |
 
 ## Pendências do dono
 

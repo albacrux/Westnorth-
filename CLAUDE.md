@@ -74,7 +74,8 @@ SDL_VIDEODRIVER=dummy ./run_wml_tests -g -c -t 20  # testes WML
 
 Capturas em 1600x720: `utils/westnorth/screenshot.sh` (Xvfb). **No Android a GUI2 usa
 fontes maiores** (`#ifdef ANDROID` em `data/gui/macros/_initial.cfg`: 22 px em vez de 17);
-para ver o que o A06 mostra, capture com `WESTNORTH_ANDROID=1`.
+para ver o que o A06 mostra, capture com `WESTNORTH_ANDROID=1`, que também escolhe o
+tema de UI **Celes**, o padrão do jogo em telas ≥ 1280x720 como a do A06.
 **Antes de mergear mudança de UI**, rode `utils/westnorth/smoke_1600x720.sh` (abre a tela
 inicial e um cenário nos temas default e celes, com fontes de desktop e de Android;
 falha se um diálogo não couber em 720 px).
