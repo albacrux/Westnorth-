@@ -173,6 +173,12 @@ regras do layout de celular). Documentos detalhados: `diagnostico-toque.md` (eve
 - `apply_translations.py`: remover uma entrada obsoleta (`#~`) desloca as linhas; o
   script relê o `.po` depois disso (antes dava `KeyError` em `spans[entry.linenum]`).
   Confira com `msgfmt -c -o /dev/null po/<domínio>/pt_BR.po`.
+- **Indicadores no mapa** (`units/drawer.cpp`): esfera, coroa e sobreposições são imagens
+  72×72 desenhadas a partir do canto superior esquerdo do hex, ampliadas por
+  `indicator_scale` (1,35) e **nunca espelhadas**; o sprite da unidade espelha quando ela
+  olha para a esquerda (um `~BLIT` na imagem espelha junto). Habilidade sem nome com
+  `overlay_image` = sobreposição fixa sem estado por unidade. Só o **primeiro**
+  `[abilities]` do tipo é lido (`add_registry_entries`).
 - **Arquivos do Drive do dono**: o conector Google Drive (`download_file_content`) salva
   binários em disco (pasta `tool-results` da sessão), não na conversa: dá para baixar os
   pacotes de sprites. A rede do ambiente bloqueia `drive.google.com` direto (curl).

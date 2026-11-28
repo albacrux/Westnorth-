@@ -98,16 +98,24 @@ struct energy_bar
 	/** Color for the bar's filled area. */
 	color_t fill_color{};
 
+	/**
+	 * Bar width in pixels (before indicator_scale).
+	 * Westnorth: HP is 6 px wide (upstream: 4) so it reads on a phone; XP stays
+	 * thinner (4) and secondary.
+	 */
+	int w{def_w};
+
 	/** Initial coordinates for the first bar drawn. */
-	static constexpr point def_origin{14, 13};
+	// Westnorth: x 3 instead of 14. The fork's sprites fill more of the hex
+	// (figure from x~20), and the scaled bars at x 14 covered half the unit;
+	// at the hex's left edge they stay clear of it.
+	static constexpr point def_origin{3, 13};
 
 	/** Default width for all bars. */
-	// Westnorth: 6 instead of 4 (before indicator_scale below), so HP/XP can be
-	// read on a phone.
 	static constexpr int def_w = 6;
 
-	/** Distance between the top left corner of subsequent bars. */
-	static constexpr int spacing = def_w + 1;
+	/** Gap between subsequent bars. */
+	static constexpr int gap = 1;
 
 	/** Background color for the unfilled bar area. */
 	static constexpr color_t background_color{0, 0, 0, 80};
@@ -142,15 +150,17 @@ struct energy_bar
  */
 constexpr float indicator_scale = 1.35f;
 
-void draw_bar(int index, const energy_bar& data, const rect& bounds)
+// Westnorth: X is the bar's left edge in standard-hex pixels (bars can have
+// different widths), instead of upstream's bar index.
+void draw_bar(int x, const energy_bar& data, const rect& bounds)
 {
 	// All absolute bar coordinates are normalized relative to the standard 72px hex.
 	using game_config::tile_size;
 	const float k = indicator_scale;
 
 	SDL_FPoint p1{
-		k * float(energy_bar::def_origin.x + energy_bar::spacing * index) / tile_size,
-		k * float(energy_bar::def_origin.y                              ) / tile_size,
+		k * float(x                          ) / tile_size,
+		k * float(energy_bar::def_origin.y) / tile_size,
 	};
 
 	// If the top of the bar sits 13px from the top of the scaled hex rect, the bottom
@@ -158,7 +168,7 @@ void draw_bar(int index, const energy_bar& data, const rect& bounds)
 	// (Westnorth: the bar is scaled but must stay inside the hex: only the hex is
 	// redrawn when it changes.)
 	SDL_FPoint p2{
-		std::min(p1.x + k * float(data.def_w) / tile_size, 1.0f - p1.x),
+		std::min(p1.x + k * float(data.w) / tile_size, 1.0f - p1.x),
 		std::min(p1.y + k * float(data.bar_h) / tile_size, 1.0f - p1.y)
 	};
 
@@ -395,7 +405,8 @@ void unit_drawer::redraw_unit(const unit& u) const
 			bars.AGGREGATE_EMPLACE(
 				energy_bar::get_height(u.max_experience(), u.xp_bar_scaling() / std::max(u.level(), 1)),
 				energy_bar::get_filled(u.experience(), u.max_experience()),
-				energy_bar::get_color(u.xp_color(), bar_focus)
+				energy_bar::get_color(u.xp_color(), bar_focus),
+				4 // Westnorth: thinner XP bar, see energy_bar::w
 			);
 		}
 
@@ -411,8 +422,10 @@ void unit_drawer::redraw_unit(const unit& u) const
 					draw::blit(tex, scaled);
 				}
 
-				for(std::size_t i = 0; i < bars.size(); ++i) { // bar bar bar
-					draw_bar(i, bars[i], shifted);
+				int x = energy_bar::def_origin.x;
+				for(const energy_bar& bar : bars) { // bar bar bar
+					draw_bar(x, bar, shifted);
+					x += bar.w + energy_bar::gap;
 				}
 			});
 	}
