@@ -266,6 +266,8 @@ struct preferences_list_defines
 	ADDPREF(theme)
 	/** hex size used to determine zoom level */
 	ADDPREF(tile_size)
+	/** Westnorth: the phone's initial zoom (game_config westnorth_initial_zoom) was applied */
+	ADDPREF(westnorth_initial_zoom_done)
 	/** whether to enable accelerated animation speed */
 	ADDPREF(turbo)
 	/** how much to accelerate animation speed */
@@ -527,6 +529,7 @@ struct preferences_list_defines
 		stop_music_in_background,
 		theme,
 		tile_size,
+		westnorth_initial_zoom_done,
 		turbo,
 		turbo_speed,
 		turn_bell,

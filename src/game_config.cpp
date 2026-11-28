@@ -58,6 +58,7 @@ std::string default_terrain;
 std::string shroud_prefix, fog_prefix, reach_map_prefix;
 
 std::vector<unsigned int> zoom_levels {36, 72, 144};
+unsigned int westnorth_initial_zoom = 0;
 
 //
 // Display scale constants
@@ -283,6 +284,8 @@ void load_config(const config &v)
 	lobby_refresh    = chrono::parse_duration(v["lobby_refresh"], 2000ms);
 	default_terrain  = v["default_terrain"].str();
 	tile_size        = v["tile_size"].to_int(72);
+
+	westnorth_initial_zoom = v["westnorth_initial_zoom"].to_unsigned(0); // Westnorth
 
 	std::vector<std::string> zoom_levels_str = utils::split(v["zoom_levels"]);
 	if(!zoom_levels_str.empty()) {
