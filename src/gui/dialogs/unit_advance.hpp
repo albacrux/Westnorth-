@@ -23,7 +23,10 @@ namespace gui2::dialogs
 class unit_advance : public modal_dialog
 {
 public:
-	unit_advance(const std::vector<unit_const_ptr>& samples, std::size_t real);
+	// Westnorth: `base` is the unit before advancing; when given, the cards
+	// show what changes (HP before -> after, new attacks).
+	unit_advance(const std::vector<unit_const_ptr>& samples, std::size_t real,
+		unit_const_ptr base = nullptr);
 
 	int get_selected_index() const
 	{
@@ -40,6 +43,7 @@ private:
 	void show_help();
 
 	const std::vector<unit_const_ptr>& previews_;
+	unit_const_ptr base_;
 
 	std::size_t selected_index_, last_real_advancement_;
 };

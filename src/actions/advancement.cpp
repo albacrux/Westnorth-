@@ -82,7 +82,8 @@ namespace
 		}
 
 		if (previews.size() > 1 || always_display) {
-			gui2::dialogs::unit_advance dlg(previews, num_real_advances);
+			// Westnorth: pass the current unit so the cards show what changes.
+			gui2::dialogs::unit_advance dlg(previews, num_real_advances, u.shared_from_this());
 
 			if(dlg.show()) {
 				return dlg.get_selected_index();

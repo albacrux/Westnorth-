@@ -69,7 +69,7 @@ cmake -S . -B ../build-desktop -G Ninja -DCMAKE_BUILD_TYPE=Release \
   -DENABLE_SERVER=OFF -DENABLE_TESTS=ON -DCMAKE_CXX_COMPILER_LAUNCHER=ccache
 ninja -C ../build-desktop wesnoth boost_unit_tests
 SDL_VIDEODRIVER=dummy ./run_boost_tests  # a partir da raiz; recompile boost_unit_tests antes
-./run_wml_tests -g -c -t 20  # testes WML
+SDL_VIDEODRIVER=dummy ./run_wml_tests -g -c -t 20  # testes WML
 ```
 
 Capturas em 1600x720: `utils/westnorth/screenshot.sh` (Xvfb). **No Android a GUI2 usa

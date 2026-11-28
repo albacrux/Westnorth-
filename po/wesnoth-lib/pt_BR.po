@@ -17261,3 +17261,7 @@ msgstr "Derrotar o inimigo"
 #. Westnorth: string added by the fork
 msgid "attack^Your unit dies"
 msgstr "Sua unidade morrer"
+
+#. Westnorth: string added by the fork
+msgid "attack^new"
+msgstr "nova"

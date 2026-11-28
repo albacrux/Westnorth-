@@ -140,6 +140,8 @@ regras do layout de celular). Documentos detalhados: `diagnostico-toque.md` (eve
   timeout com "Could not initialise SDL_video") e de **recompilar `boost_unit_tests`**
   depois de mudar C++ (o link `./boost_unit_tests` aponta para `../build-desktop`).
 - Não rode `run_boost_tests` e o smoke test ao mesmo tempo (timeouts).
+- `run_wml_tests` também precisa de **`SDL_VIDEODRIVER=dummy`**; sem ele cada teste tenta
+  abrir vídeo 10 vezes e o script quebra com `'NoneType' object has no attribute 'returncode'`.
 - **Antes de mergear WML**, rode o que o job `checks` roda:
   `./utils/CI/fix_whitespace.sh && git diff --exit-code`, `wmllint`, `check_wml_images.sh`.
   O wmlindent reindenta corpo de `#define` feito dentro de blocos: defina macros no topo
