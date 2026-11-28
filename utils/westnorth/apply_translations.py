@@ -71,9 +71,14 @@ def main():
         if path.endswith("-new.py"):
             # An obsolete copy of a string we append would be a duplicate for
             # msgfmt; drop it before the line spans below are computed.
+            before = len(lines)
             for msgid in table:
                 if msgid not in by_id:
                     drop_obsolete(lines, msgid)
+            if len(lines) != before:
+                # Line numbers moved: parse again so entry.linenum matches.
+                po = polib.pofile("\n".join(lines), wrapwidth=79)
+                by_id = {e.msgid: e for e in po if not e.obsolete}
         spans = entry_spans(lines)
         replacements = {}
         appended = 0

@@ -94,3 +94,6 @@ states("hud_round64", (64, 64), 32, NORMAL, ACTIVE, BORDER, 1)
 # Invisible button over the unit card; a faint highlight while pressed.
 for suffix, alpha in (("", 0), ("-active", 0), ("-pressed", 28), ("-active-pressed", 28)):
     save(rounded((640, 200), 12, (255, 255, 255, alpha), hilite=False), btn + "hud_card" + suffix + ".png")
+    # Over the top pill (status table) and the terrain line (terrain description).
+    save(rounded((560, 52), 26, (255, 255, 255, alpha), hilite=False), btn + "hud_pill" + suffix + ".png")
+    save(rounded((440, 46), 23, (255, 255, 255, alpha), hilite=False), btn + "hud_chip" + suffix + ".png")

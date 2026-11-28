@@ -8,6 +8,7 @@ T = {
 "level^Lv": "Nv",
 "button^Next unit": "Próxima\nunidade",
 "Next unit that can still move or attack": "Próxima unidade que ainda pode mover ou atacar",
+"Status Table": "Tabela de Estatísticas",
 "Full-screen map with floating cards, made for phones in landscape.": "Mapa em tela cheia com cartões flutuantes, feito para celular na horizontal.",
 "hex^Moves": "Mov.",
 "Touch: move without confirmation": "Toque: mover sem confirmação",

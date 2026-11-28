@@ -61,6 +61,11 @@ regras do layout de celular). Documentos detalhados: `diagnostico-toque.md` (eve
   depois do layout parcial; o relógio "11:00" continua pequeno (sem importância).
 - Limite vertical do painel em 720 px: conteúdo até y≈545, botões de 550 a 712.
   Unidade com 3 ataques pode ter a última linha cortada (o relatório de armas não rola).
+- Tema Westnorth (`westnorth.cfg`): painéis e relatórios **não bloqueiam** toques; o que
+  fica sobre o mapa e deve bloquear é um `[action]` com imagem transparente do mesmo
+  tamanho (`hud_card`, `hud_pill`, `hud_chip`, 4 estados, `make_hud_images.py`). Botões
+  ligados a um relatório que some são escondidos em `display::refresh_report`. O mouse
+  sobre um botão do HUD não muda o hex sob o cursor (`display::point_in_hud_button`).
 
 ## 4. GUI2 (diálogos)
 
@@ -152,6 +157,9 @@ regras do layout de celular). Documentos detalhados: `diagnostico-toque.md` (eve
   do arquivo (quebrou o CI no #17, corrigido no #21).
 - Xvfb/Mesa: zoom diferente de 1x desenha hexes pretos (também sem mudanças do fork).
   Não conclua nada sobre nitidez de zoom pelas capturas (`diagnostico-zoom.md`).
+- `apply_translations.py`: remover uma entrada obsoleta (`#~`) desloca as linhas; o
+  script relê o `.po` depois disso (antes dava `KeyError` em `spans[entry.linenum]`).
+  Confira com `msgfmt -c -o /dev/null po/<domínio>/pt_BR.po`.
 - Em `bash`, não use `S=... && (cmd) &`: a variável não chega aos outros comandos; e
   `rm` com variável vazia é bloqueado pela proteção do ambiente.
 
