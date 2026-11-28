@@ -41,6 +41,7 @@
 #include "units/unit.hpp"
 #include "wml_exception.hpp"
 
+#include <algorithm>
 #include <functional>
 
 namespace gui2
@@ -411,7 +412,10 @@ void unit_preview_pane::set_display_data(const unit_type& type)
 		}
 
 		// Print ability details
-		if(!type.abilities_metadata().empty()) {
+		// Westnorth: nameless (hidden) abilities, like the class seal, don't
+		// count, so there is no empty "Abilities" header.
+		const auto& abilities = type.abilities_metadata();
+		if(std::any_of(abilities.begin(), abilities.end(), [](const auto& ab) { return !ab.name.empty(); })) {
 
 			auto& header_node = add_name_tree_node(tree_details_->get_root_node(), "header", markup::bold(_("Abilities")));
 
@@ -553,10 +557,11 @@ void unit_preview_pane::set_display_data(const unit& u)
 			}
 		}
 
-		if(!u.get_ability_id_list().empty()) {
+		// Westnorth: only abilities with a name (see above).
+		if(const auto tooltips = u.ability_tooltips(); !tooltips.empty()) {
 			auto& header_node = add_name_tree_node(tree_details_->get_root_node(), "header", markup::bold(_("Abilities")));
 
-			for(const auto& ab : u.ability_tooltips()) {
+			for(const auto& ab : tooltips) {
 				add_name_tree_node(
 					header_node,
 					"item",
