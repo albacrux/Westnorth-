@@ -165,7 +165,10 @@ regras do layout de celular). Documentos detalhados: `diagnostico-toque.md` (eve
 - `run_wml_tests` também precisa de **`SDL_VIDEODRIVER=dummy`**; sem ele cada teste tenta
   abrir vídeo 10 vezes e o script quebra com `'NoneType' object has no attribute 'returncode'`.
 - **Antes de mergear WML**, rode o que o job `checks` roda:
-  `./utils/CI/fix_whitespace.sh && git diff --exit-code`, `wmllint`, `check_wml_images.sh`.
+  `./utils/CI/fix_whitespace.sh && git diff --exit-code`, `wmllint`, `check_wml_images.sh`,
+  `luacheck .` e **`python3 utils/westnorth/validate_content.py`** (validador do fork;
+  esquecê-lo quebrou o CI no #54 quando `[base_unit]` ganhou `inherit_animations=`).
+  `check_utf8.sh` precisa de `isutf8` (moreutils), ausente aqui.
   O wmlindent reindenta corpo de `#define` feito dentro de blocos: defina macros no topo
   do arquivo (quebrou o CI no #17, corrigido no #21).
 - Xvfb/Mesa: zoom diferente de 1x desenha hexes pretos (também sem mudanças do fork).
