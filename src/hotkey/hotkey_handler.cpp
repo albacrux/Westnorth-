@@ -27,10 +27,13 @@
 #include "play_controller.hpp"
 #include "preferences/preferences.hpp"
 #include "savegame.hpp"
+#include "serialization/markup.hpp"
 #include "units/unit.hpp"
 #include "whiteboard/manager.hpp"
 
 #include <boost/algorithm/string/predicate.hpp>
+
+#include <algorithm>
 
 namespace balg = boost::algorithm;
 
@@ -452,6 +455,37 @@ void play_controller::hotkey_handler::show_menu(const std::vector<config>& items
 
 	if(items.empty()) {
 		return;
+	}
+
+	// Westnorth: the long-press menu starts with what was pressed (unit or
+	// terrain, with the defense there); tapping it opens its description
+	// (docs/westnorth/prototipos/5-toque-longo.jpg).
+	if(context_menu) {
+		const map_location hex = mouse_handler_.get_last_hex();
+		const gamemap& map = play_controller_.get_map();
+		const team& viewing = gui()->viewing_team();
+		if(map.on_board(hex) && !viewing.shrouded(hex)) {
+			const t_translation::terrain_code terrain = map[hex];
+			const std::string terrain_name = map.get_terrain_info(terrain).name();
+			const unit* u = gamestate().board_.get_visible_unit(hex, viewing);
+			const std::string id = u ? "describeunit" : "describeterrain";
+			const auto it = std::find_if(items.begin(), items.end(),
+				[&id](const config& item) { return item["id"] == id; });
+			if(it != items.end()) {
+				config header = *it;
+				items.erase(it);
+				if(u) {
+					header["westnorth_label"] = markup::bold(u->type_name()) + "\n"
+						+ markup::span_color("#a0a0a0", terrain_name, " · ", _("hex^Defense"), " ",
+							100 - u->defense_modifier(terrain, hex), "%");
+					header["westnorth_icon"] = u->absolute_image() + u->image_mods() + "~SCALE_SHARP(54,54)";
+				} else {
+					header["westnorth_label"] = markup::bold(terrain_name);
+					header["westnorth_icon"] = map.get_terrain_info(terrain).editor_image() + "~SCALE_SHARP(54,54)";
+				}
+				items.insert(items.begin(), std::move(header));
+			}
+		}
 	}
 
 	command_executor::show_menu(items, menu_loc, context_menu);

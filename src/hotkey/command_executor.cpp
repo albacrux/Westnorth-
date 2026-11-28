@@ -427,12 +427,24 @@ void command_executor::show_menu(const std::vector<config>& items_arg, const poi
 	// doubled.
 	if(has_touch_screen()) {
 		for(config& item : items) {
+			if(item.has_attribute("westnorth_icon")) {
+				continue;
+			}
 			const std::string big = "icons/action/" + item["id"].str() + "_36.png";
 			if(filesystem::file_exists(game_config::path + "/images/" + big)) {
 				item["icon"] = big;
 			} else if(!item["icon"].empty()) {
 				item["icon"] = item["icon"].str() + "~SCALE_SHARP(36,36)";
 			}
+		}
+	}
+
+	// Westnorth: a header row set by the caller (game long-press menu).
+	for(config& item : items) {
+		if(item.has_attribute("westnorth_label")) {
+			item["label"] = item["westnorth_label"];
+			item["icon"] = item["westnorth_icon"];
+			item.remove_attribute("details");
 		}
 	}
 
