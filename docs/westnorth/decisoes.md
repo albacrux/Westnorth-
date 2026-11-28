@@ -125,6 +125,7 @@ entradas antigas (se mudar, criar nova entrada que substitui a anterior).
 | D59 | Menu de toque longo começa com o que foi tocado: sprite + tipo da unidade + terreno e defesa (ou ícone e nome do terreno); a linha é o antigo "Descrição da Unidade/Terreno" (tocar abre a descrição), sem item duplicado | Pendência de D54 (o menu do motor não tem título; o cabeçalho é uma linha do próprio menu) | Agente |
 | D60 | Falas: retrato do cartão do HUD pré-reduzido a 200 px (corrige o retrato da fala que sumia no tema Westnorth) e, no Android, OK das escolhas com o botão `touch` | Achado ao revisar as telas fora do combate | Agente |
 | D61 | Capturas e smoke passam a refletir o celular: com `WESTNORTH_ANDROID=1` o `screenshot.sh` usa o tema de UI Celes (o que o jogo escolhe no A06), e a rodada do HUD Westnorth no smoke usa o Celes. A tela inicial do Celes fica como está (itens de 36 px; ampliar exige reestruturar) | O jogo escolhe `modern` (Celes) em telas ≥ 1280x720; as capturas usavam o default | Agente |
+| D62 | Tema Westnorth: botão redondo **Recrutar** no grupo do polegar (Recrutar, Desfazer, Próxima com 84 px e 24 px de folga, alinhados à largura de Terminar Turno) e sem "Sair para o Desktop" no ☰ | Pedido do dono (UI-8b, patch na pasta do Drive), aplicado sobre a versão atual do tema | Dono |
 
 ## Pendências do dono
 

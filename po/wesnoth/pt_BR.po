@@ -16323,13 +16323,6 @@ msgstr "Opções do Quadro-Branco"
 #~ msgstr "Escolha um corpo"
 
 #
-# File: src/dialogs.cpp, line: 466
-# File: src/dialogs.cpp, line: 466
-# File: src/dialogs.cpp, line: 466
-#~ msgid "Recruit"
-#~ msgstr "Recrutar"
-
-#
 # File: src/dialogs.cpp, line: 1196
 # File: src/dialogs.cpp, line: 1196
 # File: src/dialogs.cpp, line: 1196
@@ -19980,3 +19973,11 @@ msgstr "Próxima unidade que ainda pode mover ou atacar"
 #. Westnorth: string added by the fork
 msgid "Status Table"
 msgstr "Tabela de Estatísticas"
+
+#. Westnorth: string added by the fork
+msgid "Recruit"
+msgstr "Recrutar"
+
+#. Westnorth: string added by the fork
+msgid "Recruit a new unit"
+msgstr "Recrutar uma nova unidade"
