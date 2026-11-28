@@ -187,11 +187,16 @@ void controller_base::handle_event(const SDL_Event& event)
 			latest = new_event.tfinger;
 		}
 		if(pinch_.happened()) {
+			// Westnorth: zoom around the point between the fingers.
+			const auto [cx, cy] = pinch_.center();
+			const point anchor = pinch_.active()
+				? point{static_cast<int>(cx), static_cast<int>(cy)}
+				: get_display().map_area().center();
 			for(; zoom_steps > 0; --zoom_steps) {
-				get_display().set_zoom(true);
+				get_display().set_zoom_at(true, anchor);
 			}
 			for(; zoom_steps < 0; ++zoom_steps) {
-				get_display().set_zoom(false);
+				get_display().set_zoom_at(false, anchor);
 			}
 		} else {
 			mh_base.touch_motion_event(latest, is_browsing());

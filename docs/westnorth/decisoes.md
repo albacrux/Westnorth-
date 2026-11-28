@@ -119,6 +119,7 @@ entradas antigas (se mudar, criar nova entrada que substitui a anterior).
 | D53 | Etapa 4: escolha de evolução em tela cheia com um cartão por caminho, lado a lado (retrato, nome, HP/MP/XP, armas, habilidades); o painel de detalhes antigo sai. Ainda sem o "antes → depois" do protótipo (o diálogo não recebe a unidade original) | Protótipo `4-evolucao.jpg` | Agente |
 | D54 | Etapa 5: no celular os menus usam ícones de 36 px (`icons/action/<comando>_36.png` quando existir, senão o ícone de 18 px dobrado), com ícones novos em dourado para Recrutar, Convocar, descrições, rótulos e Continuar; no tema Westnorth o zoom sai do toque longo e vira botões ＋/− fixos na borda direita (além da pinça) | Protótipo `5-toque-longo.jpg`. Sem cabeçalho com nome da unidade/terreno (o menu do motor não tem título) | Agente |
 | D55 | Evolução: o diálogo recebe a unidade original; nos cartões, HP e MP que mudam aparecem "antes → depois" (novo em verde), armas com o mesmo id mostram o dano antigo → novo e armas que a unidade não tinha ganham a etiqueta "nova" | Pendência de D53 (protótipo `4-evolucao.jpg`) | Agente |
+| D56 | Pinça amplia em volta do ponto entre os dedos (`display::set_zoom_at`), não do centro da tela; os botões ＋/− continuam no centro | Pendência de #41; é o comportamento esperado em mapas de celular | Agente |
 
 ## Pendências do dono
 

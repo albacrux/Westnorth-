@@ -133,6 +133,10 @@ regras do layout de celular). Documentos detalhados: `diagnostico-toque.md` (eve
   multitoque: para testar, empurre eventos sintéticos com `SDL_PushEvent` (dedos com
   x/y em fração da janela; mouse com `which = SDL_TOUCH_MOUSEID`) num ajuste local
   temporário. Arquivos novos em `source_lists/` exigem rodar o `cmake` de novo.
+- Para conferir o ponto fixo da pinça use um **mapa maior que a tela** (ex.: cenário
+  temporário com `map_file=multiplayer/maps/2p_Caves_of_the_Basilisk.map`): em mapa
+  pequeno o `bounds_check_position` centraliza o mapa e esconde o efeito. Nos cenários
+  `-t`, um clique fecha o balão de objetivos; `Escape` abre "Sair".
 
 ## 6. Ambiente de teste na nuvem
 

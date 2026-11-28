@@ -1712,6 +1712,26 @@ bool display::set_zoom(unsigned int amount, const bool validate_value_and_set_in
 	return true;
 }
 
+// Westnorth: zoom around the pinch midpoint instead of the screen center.
+bool display::set_zoom_at(bool increase, const point& anchor)
+{
+	const rect area = map_area();
+	const point offset = anchor - area.origin();
+	const point map_pixel = viewport_origin_ + offset;
+	const unsigned int old_zoom = zoom_;
+
+	if(!set_zoom(increase)) {
+		return false;
+	}
+
+	const double factor = static_cast<double>(zoom_) / static_cast<double>(old_zoom);
+	const point target{
+		static_cast<int>(std::round(map_pixel.x * factor)) - offset.x,
+		static_cast<int>(std::round(map_pixel.y * factor)) - offset.y};
+	scroll(target - viewport_origin_, true);
+	return true;
+}
+
 void display::toggle_default_zoom()
 {
 	if (zoom_ != DefaultZoom) {

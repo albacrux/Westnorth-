@@ -68,4 +68,15 @@ BOOST_AUTO_TEST_CASE(gesture_stays_a_pinch_until_the_next_first_finger)
 	BOOST_CHECK(!p.happened()); // a new gesture
 }
 
+BOOST_AUTO_TEST_CASE(center_is_the_midpoint_of_the_fingers)
+{
+	touch_pinch p;
+	p.finger_down(1, 100, 200);
+	BOOST_CHECK(p.center() == std::make_pair(0.0, 0.0));
+	p.finger_down(2, 300, 400);
+	BOOST_CHECK(p.center() == std::make_pair(200.0, 300.0));
+	p.finger_motion(2, 500, 200);
+	BOOST_CHECK(p.center() == std::make_pair(300.0, 200.0));
+}
+
 BOOST_AUTO_TEST_SUITE_END()
