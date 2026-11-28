@@ -182,6 +182,12 @@ regras do layout de celular). Documentos detalhados: `diagnostico-toque.md` (eve
   olha para a esquerda (um `~BLIT` na imagem espelha junto). Habilidade sem nome com
   `overlay_image` = sobreposição fixa sem estado por unidade. Só o **primeiro**
   `[abilities]` do tipo é lido (`add_registry_entries`).
+- **Substituir arte do upstream**: `get_binary_file_location` junta os caminhos num
+  `std::set` (ordem alfabética do caminho completo), então `.../data/core/images` vence
+  `.../images` e `.../data/westnorth/images`. Use `data/westnorth/override/images/<mesmo
+  caminho>` (D68). Aldeias têm variantes (`human2..4`, `-night`); bandeiras de aldeia são
+  recoloridas a partir de `flag_green`, não de magenta. Em `map_data` a 1ª/última linha e
+  coluna são borda.
 - **Arquivos do Drive do dono**: o conector Google Drive (`download_file_content`) salva
   binários em disco (pasta `tool-results` da sessão), não na conversa: dá para baixar os
   pacotes de sprites. A rede do ambiente bloqueia `drive.google.com` direto (curl).

@@ -1663,6 +1663,17 @@ utils::optional<std::string> get_binary_file_location(const std::string& type, c
 		return utils::nullopt;
 	}
 
+	// Westnorth: files under data/westnorth/override/<type>/ replace upstream
+	// files with the same path (new terrain, village and time-of-day art from
+	// the owner). The binary paths are searched in sorted order, so data/core
+	// would otherwise always win over the fork's directories.
+	if(!game_config::path.empty()) {
+		const bfs::path override_path = bfs::path(game_config::path) / "data/westnorth/override" / type / filename;
+		if(file_exists(override_path)) {
+			return override_path.string();
+		}
+	}
+
 	std::string result;
 	// fix for duplicate mainline paths on macOS for some reason
 	// would be good for someone who uses macOS to debug the cause at some point
