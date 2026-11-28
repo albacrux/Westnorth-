@@ -40,8 +40,8 @@ for android in "" 1; do
 	done
 done
 
-# The phone HUD theme (data/themes/westnorth.cfg), as on Android.
-android=1 hud_theme=Westnorth run "scenario-westnorth-hud-android" default -t westnorth_touch
+# The phone HUD theme (data/themes/westnorth.cfg) with the Celes UI, as on Android.
+android=1 hud_theme=Westnorth run "scenario-westnorth-hud-android" celes -t westnorth_touch
 
 echo "screenshots and logs: $out"
 exit $fail

@@ -173,6 +173,14 @@ regras do layout de celular). Documentos detalhados: `diagnostico-toque.md` (eve
 - `apply_translations.py`: remover uma entrada obsoleta (`#~`) desloca as linhas; o
   script relê o `.po` depois disso (antes dava `KeyError` em `spans[entry.linenum]`).
   Confira com `msgfmt -c -o /dev/null po/<domínio>/pt_BR.po`.
+- **No A06 o tema de UI padrão é o Celes**: na primeira execução
+  `prefs::set_initial_gui2_theme` escolhe `modern` quando a tela tem ≥ 1280x720 (o A06
+  tem 1600x720). Para ver o que o celular mostra, capture com
+  `WESTNORTH_GUI_THEME=celes WESTNORTH_ANDROID=1` (sem a variável, o `screenshot.sh`
+  usa o default).
+- Tela inicial do Celes no Android: os 7 itens secundários (36 px) já ocupam a coluna
+  até o rodapé; 48 px não cabe (janela 734 > 720) e 46 px encosta "Sair" na versão.
+  Para crescer precisa mudar a estrutura (logo menor ou itens em outra área).
 - O tema de UI **Celes tem id `modern`** (`data/gui/themes/celes/_main.cfg`). Com
   `gui2_theme="celes"` o jogo cai no default só com um `error gui/parse: Missing [gui]
   definition` no log: até o #49 as rodadas "celes" do smoke testavam o default. O
