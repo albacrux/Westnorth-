@@ -101,6 +101,7 @@ unit_type::unit_type(default_ctor_t, const config& cfg, const std::string & pare
 {
 	if(auto base_unit = cfg.optional_child("base_unit")) {
 		base_unit_id_ = base_unit["id"].str();
+		base_unit_animations_ = base_unit["inherit_animations"].to_bool(true); // Westnorth
 		LOG_UT << "type '" <<  id_ << "' has base unit '" << base_unit_id_ << "'";
 	}
 	check_id(id_);
@@ -959,7 +960,29 @@ void unit_type_data::apply_base_unit(unit_type& type, std::vector<std::string>& 
 		base_tree.pop_back();
 
 		// Merge the base unit "under" our config.
-		type.writable_cfg().inherit_from(base_type.get_cfg());
+		if(type.base_unit_animations_) {
+			type.writable_cfg().inherit_from(base_type.get_cfg());
+		} else {
+			// Westnorth: keep the base's stats, drop its art (inherit_animations=no).
+			// Portraits stay until the classes have their own.
+			config base_cfg = base_type.get_cfg();
+			static const std::array<std::string_view, 27> art_tags {
+				"animation", "standing_anim", "idle_anim", "movement_anim",
+				"pre_movement_anim", "post_movement_anim", "attack_anim", "defend",
+				"death", "victory_anim", "extra_anim", "teleport_anim", "healing_anim",
+				"healed_anim", "poison_anim", "leading_anim", "teaching_anim",
+				"recruit_anim", "recruiting_anim", "levelin_anim", "levelout_anim",
+				"resistance_anim", "draw_weapon_anim", "sheath_weapon_anim",
+				"male", "female", "variation"
+			};
+			for(std::string_view tag : art_tags) {
+				base_cfg.clear_children(tag);
+			}
+			for(const char* key : {"image", "image_icon", "halo"}) {
+				base_cfg.remove_attribute(key);
+			}
+			type.writable_cfg().inherit_from(base_cfg);
+		}
 	}
 	else {
 		ERR_CF << "[base_unit]: unit type not found: " << type.base_unit_id_;
