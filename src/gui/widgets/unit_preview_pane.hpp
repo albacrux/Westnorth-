@@ -94,6 +94,9 @@ private:
 
 	std::string image_mods_;
 
+	/** Westnorth: show the unit type's portrait instead of its sprite. */
+	bool portrait_;
+
 	template<typename T> // This is only a template to avoid including units/attack.hpp
 	void print_attack_details(
 		T attacks,
@@ -147,6 +150,9 @@ struct builder_unit_preview_pane : public builder_styled_widget
 	virtual std::unique_ptr<widget> build() const override;
 
 	std::string image_mods;
+
+	/** Westnorth: see unit_preview_pane::portrait_. */
+	bool portrait;
 };
 
 } // namespace implementation

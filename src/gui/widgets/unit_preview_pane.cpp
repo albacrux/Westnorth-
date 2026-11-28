@@ -63,6 +63,7 @@ unit_preview_pane::unit_preview_pane(const implementation::builder_unit_preview_
 	, tree_details_(nullptr)
 	, button_profile_(nullptr)
 	, image_mods_(builder.image_mods)
+	, portrait_(builder.portrait)
 {
 }
 
@@ -306,7 +307,14 @@ void unit_preview_pane::set_display_data(const unit_type& type)
 
 		mods += image_mods_;
 
-		icon_type_->set_label((type.icon().empty() ? type.image() : type.icon()) + mods);
+		// Westnorth: the phone recruit screen shows the big portrait when the
+		// type has one (redesenho-combate.md, 3.3).
+		const std::string& profile = type.big_profile();
+		if(portrait_ && !profile.empty() && profile != type.image()) {
+			icon_type_->set_label(profile + mods);
+		} else {
+			icon_type_->set_label((type.icon().empty() ? type.image() : type.icon()) + mods);
+		}
 	}
 
 	if(label_name_) {
@@ -621,6 +629,7 @@ namespace implementation
 builder_unit_preview_pane::builder_unit_preview_pane(const config& cfg)
 	: builder_styled_widget(cfg)
 	, image_mods(cfg["image_mods"])
+	, portrait(cfg["portrait"].to_bool())
 {
 }
 
