@@ -129,6 +129,9 @@ regras do layout de celular). Documentos detalhados: `diagnostico-toque.md` (eve
 - `[grid_listbox]` (lista em grade, já no schema) quebra os itens por largura; não cria
   `_header_grid`. Para cartões de largura uniforme, um `[spacer] width=` dentro do item.
   Texto com `<img>` (ex.: custo com ícone de ouro) precisa de `[rich_label]`.
+  No `rich_label`, `<span size=...>` some (a linha fica em branco); use só `color`.
+- Temas de UI sem uma definição de widget (ex.: `unit_preview_pane` `westnorth_portrait`
+  só no default) usam a do tema default (Celes testado no #49).
   Um mesmo diálogo C++ pode usar outra `[window]` (construtor com id, ver
   `units_dialog`), sem quebrar o teste de diálogos registrados.
 
@@ -160,6 +163,10 @@ regras do layout de celular). Documentos detalhados: `diagnostico-toque.md` (eve
 - `apply_translations.py`: remover uma entrada obsoleta (`#~`) desloca as linhas; o
   script relê o `.po` depois disso (antes dava `KeyError` em `spans[entry.linenum]`).
   Confira com `msgfmt -c -o /dev/null po/<domínio>/pt_BR.po`.
+- O tema de UI **Celes tem id `modern`** (`data/gui/themes/celes/_main.cfg`). Com
+  `gui2_theme="celes"` o jogo cai no default só com um `error gui/parse: Missing [gui]
+  definition` no log: até o #49 as rodadas "celes" do smoke testavam o default. O
+  `screenshot.sh` agora traduz `celes` → `modern`.
 - Em `bash`, não use `S=... && (cmd) &`: a variável não chega aos outros comandos; e
   `rm` com variável vazia é bloqueado pela proteção do ambiente.
 

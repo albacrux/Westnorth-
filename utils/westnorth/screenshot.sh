@@ -61,6 +61,10 @@ export DISPLAY=$display
 
 # Fixed preferences so captures are comparable: pt_BR, no sound, full window.
 mkdir -p "$userdata/logs"  # an existing logs dir skips the first-run migration dialog
+# The Celes UI theme's id is "modern" (data/gui/themes/celes/_main.cfg); an
+# unknown id silently falls back to the default theme.
+gui2_theme="${WESTNORTH_GUI_THEME:-}"
+if [ "$gui2_theme" = celes ]; then gui2_theme=modern; fi
 cat > "$userdata/preferences" <<EOF
 locale="pt_BR"
 fullscreen=no
@@ -71,7 +75,7 @@ sound=no
 music=no
 turbo=yes
 show_tip_of_day=${WESTNORTH_TIPS:-no}
-gui2_theme="${WESTNORTH_GUI_THEME:-}"
+gui2_theme="$gui2_theme"
 EOF
 if [ -n "${WESTNORTH_THEME:-}" ]; then
 	echo "theme=\"$WESTNORTH_THEME\"" >> "$userdata/preferences"

@@ -17265,3 +17265,15 @@ msgstr "Sua unidade morrer"
 #. Westnorth: string added by the fork
 msgid "attack^new"
 msgstr "nova"
+
+#. Westnorth: string added by the fork
+msgid "recruit^melee and ranged"
+msgstr "corpo a corpo e à distância"
+
+#. Westnorth: string added by the fork
+msgid "recruit^melee"
+msgstr "corpo a corpo"
+
+#. Westnorth: string added by the fork
+msgid "recruit^ranged"
+msgstr "à distância"

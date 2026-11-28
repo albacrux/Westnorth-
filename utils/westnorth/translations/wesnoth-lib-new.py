@@ -6,4 +6,8 @@ T = {
 "attack^Your unit dies": "Sua unidade morrer",
 # advancement cards (src/gui/dialogs/unit_advance.cpp)
 "attack^new": "nova",
+# recruit cards (src/gui/dialogs/units_dialog.cpp)
+"recruit^melee and ranged": "corpo a corpo e à distância",
+"recruit^melee": "corpo a corpo",
+"recruit^ranged": "à distância",
 }

@@ -37,8 +37,10 @@
 #include "play_controller.hpp"
 #include "resources.hpp"
 #include "serialization/markup.hpp"
+#include "serialization/string_utils.hpp"
 #include "synced_context.hpp"
 #include "team.hpp"
+#include "units/attack_type.hpp"
 #include "units/helper.hpp"
 #include "units/unit.hpp"
 #include "units/ptr.hpp"
@@ -46,6 +48,7 @@
 #include "utils/ci_searcher.hpp"
 #include "whiteboard/manager.hpp"
 
+#include <algorithm>
 #include <functional>
 #include <string>
 
@@ -520,6 +523,50 @@ std::unique_ptr<units_dialog> units_dialog::build_create_dialog(const std::vecto
 	return dlg;
 }
 
+namespace
+{
+/**
+ * Westnorth: one short line telling what the unit is for, for the recruit
+ * cards: its abilities, else its weapon specials, else how it fights.
+ */
+std::string recruit_role_line(const unit_type& type)
+{
+	std::vector<std::string> items;
+	const auto add = [&items](const std::string& item) {
+		if(!item.empty() && std::find(items.begin(), items.end(), item) == items.end()) {
+			items.push_back(item);
+		}
+	};
+	for(const auto& ab : type.abilities_metadata()) {
+		add(ab.name.str());
+	}
+	if(items.empty()) {
+		for(const auto& at : type.attacks()) {
+			for(const auto& sp : at.special_tooltips()) {
+				add(sp.name.str());
+			}
+		}
+	}
+	if(items.empty()) {
+		bool melee = false, ranged = false;
+		for(const auto& at : type.attacks()) {
+			(at.range() == "melee" ? melee : ranged) = true;
+		}
+		if(melee && ranged) {
+			add(_("recruit^melee and ranged"));
+		} else if(melee) {
+			add(_("recruit^melee"));
+		} else if(ranged) {
+			add(_("recruit^ranged"));
+		}
+	}
+	if(items.size() > 2) {
+		items.resize(2);
+	}
+	return utils::join(items, ", ");
+}
+} // namespace
+
 std::unique_ptr<units_dialog> units_dialog::build_recruit_dialog(
 	const std::vector<const unit_type*>& recruit_list,
 	recruit_msgs_map& err_msgs_map,
@@ -547,7 +594,10 @@ std::unique_ptr<units_dialog> units_dialog::build_recruit_dialog(
 	set_column("unit_details", [&](const auto& recruit) {
 		// Does the unit have error message? If so, grey out text here.
 		bool recruitable = err_msgs_map[recruit].empty();
+		// Westnorth: a short role line under the name (redesenho-combate.md, 3.3).
+		const std::string role = recruit_role_line(*recruit);
 		return unit_helper::maybe_inactive(recruit->type_name(), recruitable)
+			+ (role.empty() ? "" : "\n" + markup::span_color("#a0a0a0", role))
 			+ '\n'
 			+ unit_helper::format_cost_string(recruit->cost(), recruitable);
 	}, sort_type::generator);
