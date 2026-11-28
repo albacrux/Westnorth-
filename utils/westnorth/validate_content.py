@@ -61,7 +61,7 @@ def main():
             for k in ("name", "cost", "description"):
                 if key(b, k) is None:
                     err(f"{uid}: missing {k}=")
-            base = re.search(r"\[base_unit\]\s*id\s*=\s*(.+?)\s*\[/base_unit\]", b, re.S)
+            base = re.search(r"\[base_unit\]\s*id\s*=\s*([^\n]+?)\s*\n[^\[]*\[/base_unit\]", b)
             if base:
                 if base.group(1).strip() not in core:
                     err(f"{uid}: [base_unit] id={base.group(1).strip()} does not exist in data/core/units")
