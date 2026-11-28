@@ -393,6 +393,9 @@ public:
 	 *       accomplish a specific task before the next screen refresh.
 	 */
 	std::shared_ptr<gui::button> find_action_button(const std::string& id);
+
+	/** Westnorth: whether @a p is on a visible theme button (they float over the map). */
+	bool point_in_hud_button(const point& p) const;
 	std::shared_ptr<gui::button> find_menu_button(const std::string& id);
 
 	void create_buttons();

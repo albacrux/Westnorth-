@@ -436,6 +436,12 @@ void mouse_handler::mouse_motion(int x, int y, const bool browse, bool update, m
 		return;
 	}
 
+	// Westnorth: the phone HUD's buttons float over the map; the pointer on
+	// one of them keeps the hex it was over (the terrain line describes it).
+	if(new_hex == map_location::null_location() && gui().point_in_hud_button({x, y})) {
+		return;
+	}
+
 	if(new_hex == map_location::null_location()) {
 		new_hex = gui().hex_clicked_on(x, y);
 	}

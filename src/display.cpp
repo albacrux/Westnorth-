@@ -1712,6 +1712,18 @@ bool display::set_zoom(unsigned int amount, const bool validate_value_and_set_in
 	return true;
 }
 
+bool display::point_in_hud_button(const point& p) const
+{
+	for(const auto* list : {&menu_buttons_, &action_buttons_}) {
+		for(const auto& b : *list) {
+			if(b && !b->hidden() && b->location().contains(p)) {
+				return true;
+			}
+		}
+	}
+	return false;
+}
+
 // Westnorth: zoom around the pinch midpoint instead of the screen center.
 bool display::set_zoom_at(bool increase, const point& anchor)
 {
@@ -2744,11 +2756,16 @@ void display::refresh_report(const std::string& report_name, const config * new_
 	// but it seems to be working so i'm not changing it.
 	tooltips::clear_tooltips(loc);
 
-	// Westnorth: the invisible "unit details" button over the phone HUD's unit
-	// card exists only while the card does, so it never blocks taps on the map.
+	// Westnorth: the invisible buttons over the phone HUD's unit card and
+	// terrain line exist only while the card does, so they never block taps
+	// on the map.
 	if(report_name == "westnorth_unit_card") {
 		if(auto details = find_action_button("button-westnorth-details")) {
 			details->hide(report.empty());
+		}
+	} else if(report_name == "westnorth_hex") {
+		if(auto terrain = find_action_button("button-westnorth-terrain")) {
+			terrain->hide(report.empty());
 		}
 	}
 
