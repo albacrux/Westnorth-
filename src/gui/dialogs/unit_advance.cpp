@@ -24,6 +24,7 @@
 #include "gui/widgets/window.hpp"
 #include "units/unit.hpp"
 #include "units/types.hpp"
+#include "units/attack_type.hpp"
 #include "help/help.hpp"
 #include "serialization/markup.hpp"
 #include "serialization/string_utils.hpp"
@@ -35,9 +36,11 @@ namespace gui2::dialogs
 
 REGISTER_DIALOG(unit_advance)
 
-unit_advance::unit_advance(const std::vector<unit_const_ptr>& samples, std::size_t real)
+unit_advance::unit_advance(const std::vector<unit_const_ptr>& samples, std::size_t real,
+		unit_const_ptr base)
 	: modal_dialog(window_id())
 	, previews_(samples)
+	, base_(std::move(base))
 	, selected_index_(0)
 	, last_real_advancement_(real)
 {
@@ -93,21 +96,47 @@ void unit_advance::pre_show()
 		column["label"] = name;
 		row_data.emplace("advancement_name", column);
 
+		// Westnorth: numbers that change read "before -> after" with the new
+		// value in green; attacks the unit did not have are tagged as new.
 		std::ostringstream stats;
-		const auto stat = [&stats](const std::string& label, int value) {
-			stats << markup::span_color("#808080", label, " ")
-				<< markup::bold(markup::span_color(font::weapon_color, value)) << "    ";
+		const auto stat = [&stats](const std::string& label, int value, int before) {
+			stats << markup::span_color("#808080", label, " ");
+			if(before >= 0 && before != value) {
+				stats << markup::span_color("#808080", before, " → ")
+					<< markup::bold(markup::span_color(font::GOOD_COLOR, value));
+			} else {
+				stats << markup::bold(markup::span_color(font::weapon_color, value));
+			}
+			stats << "    ";
 		};
-		stat(_("HP"), sample.max_hitpoints());
-		stat(_("MP"), sample.total_movement());
+		stat(_("HP"), sample.max_hitpoints(), base_ ? base_->max_hitpoints() : -1);
+		stat(_("MP"), sample.total_movement(), base_ ? base_->total_movement() : -1);
 		if(sample.can_advance()) {
-			stat(_("XP"), sample.max_experience());
+			stat(_("XP"), sample.max_experience(), -1);
 		}
 		for(const auto& at : sample.attacks()) {
-			stats << "\n" << markup::bold(markup::span_color(font::weapon_color,
+			const attack_type* old_attack = nullptr;
+			if(base_) {
+				for(const auto& b : base_->attacks()) {
+					if(b.id() == at.id()) {
+						old_attack = &b;
+					}
+				}
+			}
+			stats << "\n";
+			if(old_attack && (old_attack->damage() != at.damage()
+				|| old_attack->num_attacks() != at.num_attacks())) {
+				stats << markup::span_color("#808080", old_attack->damage(),
+					font::weapon_numbers_sep, old_attack->num_attacks(), " → ");
+			}
+			stats << markup::bold(markup::span_color(
+					base_ && !old_attack ? font::GOOD_COLOR : font::weapon_color,
 					at.damage(), font::weapon_numbers_sep, at.num_attacks()))
 				<< " " << at.name()
 				<< markup::span_color("#808080", " · ", translation::dgettext("wesnoth", at.type().c_str()));
+			if(base_ && !old_attack) {
+				stats << " " << markup::span_color(font::GOOD_COLOR, _("attack^new"));
+			}
 		}
 		std::vector<std::string> abilities;
 		for(const auto& ab : sample.ability_tooltips()) {

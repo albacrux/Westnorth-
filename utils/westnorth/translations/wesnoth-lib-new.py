@@ -4,4 +4,6 @@ T = {
 "attack^Defense": "Defesa",
 "attack^Defeat the enemy": "Derrotar o inimigo",
 "attack^Your unit dies": "Sua unidade morrer",
+# advancement cards (src/gui/dialogs/unit_advance.cpp)
+"attack^new": "nova",
 }
