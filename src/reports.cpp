@@ -1342,7 +1342,12 @@ REPORT_GENERATOR(unit_profile, rc)
 {
 	const unit *u = get_visible_unit(rc);
 	if (!u) return config();
-	return image_report(u->small_profile());
+	// Westnorth: only the phone HUD theme uses this report (a 200 px portrait
+	// on the unit card). Scaling it once at load gives a smoother picture than
+	// shrinking the 400-500 px portrait at every draw, and a texture of its own:
+	// sharing the [message] dialog's portrait texture made both disappear in
+	// the captures (docs/westnorth/achados-ui.md).
+	return image_report(u->small_profile() + "~SCALE_INTO(200,200)");
 }
 
 static config tod_stats_at(const reports::context& rc, const map_location& hex)
