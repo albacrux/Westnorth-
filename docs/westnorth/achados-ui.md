@@ -130,6 +130,12 @@ regras do layout de celular). Documentos detalhados: `diagnostico-toque.md` (eve
   `_header_grid`. Para cartões de largura uniforme, um `[spacer] width=` dentro do item.
   Texto com `<img>` (ex.: custo com ícone de ouro) precisa de `[rich_label]`.
   No `rich_label`, `<span size=...>` some (a linha fica em branco); use só `color`.
+- **Retrato que some** (tema Westnorth): quando o relatório `unit_profile` do cartão
+  desenhava o mesmo arquivo do retrato de uma fala (`[message]`), os dois sumiam a partir
+  da 2ª fala nas capturas. Sem o relatório o retrato voltava. O relatório agora usa
+  `small_profile()~SCALE_INTO(200,200)` (textura própria). Causa exata não achada (pode
+  ser do renderizador do Xvfb); se algo parecido aparecer, compare com e sem o elemento
+  do HUD que usa a mesma imagem.
 - Menus do jogo (`command_executor::show_menu`, `drop_down_menu`): não há título; uma
   linha pode ganhar rótulo/ícone próprios com `westnorth_label`/`westnorth_icon` no
   config do item (o `populate_menu_item_info` sobrescreve `label` antes). O hex do toque
